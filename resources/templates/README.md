@@ -58,6 +58,14 @@ Estrutura de pastas:
 └── orange     <- arquivos do Orange
 ~~~
 
+# Projeto Orange / Regras de Associação para Foodmart
+
+## Imagem do Projeto
+> Coloque uma imagem da captura de tela com o projeto do Orange.
+
+## Arquivo do Projeto
+> Coloque um link para o arquivo em Orange.
+
 # Projeto Orange / Análise de Dados do Google PlayStore
 
 ## Imagem do Projeto
@@ -68,14 +76,6 @@ Estrutura de pastas:
 
 ## Gráfico(s) de Análise
 > Apresente a seguir o(s) gráfico(s) de análise produzidos (se houver) com legendas.
-
-# Projeto Orange / Regras de Associação para Foodmart
-
-## Imagem do Projeto
-> Coloque uma imagem da captura de tela com o projeto do Orange.
-
-## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
 
 # Projeto de Composição de Componentes para Recomendação
 
