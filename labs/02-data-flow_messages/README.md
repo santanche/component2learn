@@ -40,3 +40,16 @@ Crie três personagens (`doctor`, `nurse` e `patient`) usando o `<dcc-lively-tal
 * `doctor` - mostra notícias sobre política (independentemente de região);
 * `nurse` - mostra notícias cuja região é o Brasil (independentemente do assunto);
 * `patient` - mostra todas as notícias.
+
+## Tarefa 2
+
+Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
+  * canal 1 (ciência): https://www.wired.com/category/science/feed
+  * canal 2 (design): https://www.wired.com/category/design/feed
+
+Crie um agregador de mensagens usando o `<dcc-aggregator>` para notícias de ciência.
+
+Crie três personagens (`doctor`, `nurse` e `patient`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) RSSs ou agregados, conforme os seguintes critérios:
+* `doctor` - mostra notícias agregadas de ciências;
+* `nurse` - mostra notícias de ciências;
+* `patient` - mostra notícias de design.
