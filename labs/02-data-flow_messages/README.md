@@ -24,7 +24,7 @@ Utilize o ambiente da seguinte maneira:
 3. Veja o resultado da execução no painel `Result`
 4. Mensagens enviadas por componentes podem ser vistas no painel `Messages`
 
-Para esta atividade, há uma referência compacta em que são selecionados os componentes usados, bem como padrões de mensagens: [Referência compacta](dcc-reference.html).
+Para esta atividade, há uma referência compacta em que são selecionados os componentes usados, bem como padrões de mensagens: [Referência compacta](dcc-reference.md).
 Para consultar a sintaxe e ver exemplos dos DCCs veja a [Referência dos DCCS](https://ds4h.org/harena-space/src/adonisjs/public/dccs/).
 
 ## Tarefa Web Components 1
