@@ -26,7 +26,7 @@ Utilize o ambiente da seguinte maneira:
 
 Para consultar a sintaxe e ver exemplos dos DCCs veja a [Referência dos DCCS](https://ds4h.org/harena-space/src/adonisjs/public/dccs/).
 
-## Tarefa 1
+## Tarefa Web Components 1
 
 Crie quatro botões com rótulos `Mundo`, `Brasil P`, `Brasil E` e `Bahia` que, ao serem clicados, publiquem notícias nos seguintes tópicos (conteúdo a sua escolha):
 * `noticia/mundo/politica`
@@ -41,7 +41,7 @@ Crie três personagens (`doctor`, `nurse` e `patient`) usando o `<dcc-lively-tal
 * `nurse` - mostra notícias cuja região é o Brasil (independentemente do assunto);
 * `patient` - mostra todas as notícias.
 
-## Tarefa 2
+## Tarefa Web Components 2
 
 Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
   * canal 1 (ciência): https://www.wired.com/category/science/feed

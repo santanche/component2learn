@@ -43,7 +43,7 @@ Segue abaixo o modelo de como devem ser documentadas as entregas.
 Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Classes, Interfaces e Componentes](https://docs.google.com/presentation/d/1ML3WrnDtzh-4wqLmdXN9au1TBIwEqo7TIbMLNOYSMAI/edit?usp=sharing)
 # Modelo para Apresentação do Aluno
 
-# Equipe
+# Aluno
 * `<nome completo>`
 
 # Modelo para Apresentação do Lab01 - Data Flow
@@ -112,3 +112,33 @@ Este é um diagrama inicial do projeto de jogos:
 Interfaces associadas a esse componente:
 
 ![Diagrama Interfaces](diagrama-interfaces.png)
+
+
+# Modelo para Apresentação do Lab02 - Data Flow & Mensagens
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+└── notebook   <- arquivo do notebook
+~~~
+
+# Notebook sobre catálogo de componentes
+
+## Arquivo do Notebook
+> Coloque um link para o arquivo do notebook com a resolução das seis tarefas. Ele estará dentro da pasta `notebook`.
+
+## Tarefa Web Components 1
+> Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
+~~~html
+<dcc-trigger label="News" action="start/rss">
+</dcc-trigger>
+
+<dcc-rss source="https://www.wired.com/category/science/feed">
+  <subscribe-dcc topic="start/rss" role="start"></subscribe-dcc>
+</dcc-rss>
+~~~
+
+## Tarefa Web Components 2
+> Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
