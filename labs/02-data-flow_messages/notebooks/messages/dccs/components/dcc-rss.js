@@ -4,7 +4,6 @@
 class DCCRSS extends DCCBase {
    constructor() {
       super();
-      // this.notify = this.notify.bind(this);
       this.next = this.next.bind(this);
 
       this._items = [];
@@ -75,9 +74,8 @@ class DCCRSS extends DCCBase {
    async step() {
       if (this._items.length == 0)
          await this._loadRSS();
-      console.log(this._items.length);
       if (this._currentCycle < this._items.length)
-         MessageBus.ext.publish(this.publish, {value: this._items[this._currentCycle]});
+         MessageBus.ext.publish(this.publish, this._items[this._currentCycle]);
       this._currentCycle++;
    }
 
@@ -106,12 +104,18 @@ class DCCRSS extends DCCBase {
                      (image.getAttribute("url")) ? image.getAttribute("url") :
                      (image.getAttribute("href")) ? image.getAttribute("href") :
                      null;
-                  this._items.push(
-                     DCCRSS.template
+                  let item = {
+                     title: it.querySelector("title").innerHTML,
+                     link: it.querySelector("link").innerHTML
+                  };
+                  if (imageURL != null)
+                     item.image = imageURL;
+                  item.value = DCCRSS.template
                         .replace("{img}", (imageURL == null) ? "" :
                            DCCRSS.imageTemplate.replace("{image}", imageURL))
-                        .replace("{link}", it.querySelector("link").innerHTML)
-                        .replace("{title}", it.querySelector("title").innerHTML));
+                        .replace("{link}", item.link)
+                        .replace("{title}", item.title);
+                  this._items.push(item);
                }
             });
       }
@@ -126,7 +130,7 @@ DCCRSS.imageEl = ["image", "thumbnail"];
 DCCRSS.template =
 `<article>{img}
    <h3>
-      <a href="{link}" target="_blank" rel="noopener">{title}</a>
+      <a href="{link}" target="_blank">{title}</a>
    </h3>
 </article>`;
 
