@@ -124,9 +124,8 @@ Estrutura de pastas:
 └── notebook   <- arquivo do notebook
 ~~~
 
-# Notebook sobre catálogo de componentes
+## Tarefa sobre catálogo de componentes
 
-## Arquivo do Notebook
 > Coloque um link para o arquivo do notebook com a resolução das seis tarefas. Ele estará dentro da pasta `notebook`.
 
 ## Tarefa Web Components 1
