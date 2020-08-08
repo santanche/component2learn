@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Player Panel */
+.sty-player-panel {
+   flex: 10%;
+   max-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.player-item {
+   max-width: 100%;
+}
+
+/* Knot Rendering */
+
+h1 {
+   text-align: center;
+}
+
+.alert-message {
+   font-size: 20pt;
+   color: blue;
+   font-weight: bold;
+}
+
+.central-buttons {
+   display: flex;
+   flex-direction: row;
+   max-width: 100%;
+   justify-content: center;
+}

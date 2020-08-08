@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Trigger DCC */
+
+.dcc-trigger-theme {
+   font-size: 3vmin;
+   /* vertical center */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* horizontal center */
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+
+   background-color: #ba2027;
+   color: white;
+   /* padding: 12px 0px 0px 0px; */
+   border-radius: 10px;
+   margin-bottom: .5rem;
+}
+
+@media (orientation: landscape) {
+   .dcc-trigger-theme {
+      height: 40px;
+      width: 600px;
+   }
+}
+
+@media (orientation: portrait) {
+   .dcc-trigger-theme {
+      height: 140px;
+      width: 300px;
+   }
+}
+
+.dcc-trigger-theme:hover {
+   cursor: pointer;
+}
+
+.dcc-trigger-image-theme {
+   max-width: 100%;
+   max-height: 100%;
+   cursor: pointer;
+}

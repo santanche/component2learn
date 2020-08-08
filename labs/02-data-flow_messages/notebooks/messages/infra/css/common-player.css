@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.breadcrumb {
+  list-style-type: inherit;
+  list-style-position: outside;
+  background-color: unset;
+  padding-left: 0px;
+  text-transform: uppercase;
+}
+
+.breadcrumb-item {
+  font-size: 8pt;
+  background-color: #a6a6a6;
+  color: white;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.breadcrumb-item::marker {
+  content: "";
+}
+
+.breadcrumb-item + .breadcrumb-item::marker {
+  content: " > ";
+  background-color: #f2f2f2;
+  color: #a6a6a6;
+  margin-right: 5px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none;
+  padding-right: 10px;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-item a {
+  color: white;
+}

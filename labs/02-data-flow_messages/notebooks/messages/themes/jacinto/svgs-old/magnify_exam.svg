@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Segunda_parte_3);
+      }
+
+      .cls-2, .cls-5, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        opacity: 0.95;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #346e93;
+      }
+
+      .cls-3 {
+        font-size: 28px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #ba2027;
+      }
+
+      .cls-5 {
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Segunda_parte_3">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Segunda_parte_3" data-name="Segunda parte – 3" class="cls-1">
+    <g id="Group_496" data-name="Group 496" transform="translate(-87 -215)">
+      <g id="Rectangle_36" data-name="Rectangle 36" class="cls-2" transform="translate(437 293)">
+        <rect class="cls-8" width="1220" height="937.4" rx="12"/>
+        <rect class="cls-9" x="0.5" y="0.5" width="1219" height="936.4" rx="11.5"/>
+      </g>
+      <text id="EKG" class="cls-3" transform="translate(473 324)"><tspan x="0" y="30">EKG</tspan></text>
+      <image id="Image_3" data-name="Image 3" width="1220" height="777" transform="translate(437 381)" xlink:href="zoom_exam.png"/>
+      <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-4" width="139" height="59" rx="29.5" transform="translate(464 1196.4)"/>
+      <text id="Return" class="cls-5" transform="translate(502 1234.4)"><tspan x="0" y="0">Return</tspan></text>
+    </g>
+    <path id="Path_378" data-name="Path 378" class="cls-6" d="M718.094,273.854a25,25,0,1,0,25,25A25,25,0,0,0,718.094,273.854Zm16.512,35.335a1.861,1.861,0,0,1,0,2.624l-3.553,3.554a1.861,1.861,0,0,1-2.624,0l-10.335-10.335-10.335,10.335a1.861,1.861,0,0,1-2.624,0l-3.553-3.554a1.861,1.861,0,0,1,0-2.624l10.335-10.335-10.335-10.335a1.861,1.861,0,0,1,0-2.624l3.553-3.554a1.861,1.861,0,0,1,2.624,0l10.335,10.335,10.335-10.335a1.861,1.861,0,0,1,2.624,0l3.553,3.554a1.861,1.861,0,0,1,0,2.624l-10.335,10.335Z" transform="translate(810.906 -172.854)"/>
+    <rect id="Rectangle_76" data-name="Rectangle 76" class="cls-7" width="87" height="936" transform="translate(144 78)"/>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>DCCs Presenter</title>
+
+   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
+
+   <link rel="stylesheet" href="../../lib/fontawesome-5-10-1/css/all.min.css">
+   <link rel="stylesheet" href="../../lib/bootstrap-4-3-1/css/bootstrap.min.css">
+   <link href="../../lib/quill-1-3-7/quill.snow.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="../../infra/css/common-player.css">
+   <link rel="stylesheet" href="../../infra/css/common-author.css">
+
+   <script src="../../lib/jquery-3-4-1/jquery-3.4.1.slim.min.js"></script>
+   <script src="../../lib/popper-1-15-0/popper.min.js"></script>
+   <script src="../../lib/bootstrap-4-3-1/js/bootstrap.min.js"></script>
+   <script src="../../lib/quill-1-3-7/quill.min.js"></script>
+
+   <script src="../../infra/bus.js"></script>
+   <script src="../../infra/basic.js"></script>
+   <script src="../../infra/dcc-common-server-proxy.js"></script>
+
+   <script src="../../dccs/subscribe-dcc.js"></script>
+   <script src="../../dccs/trigger-dcc.js"></script>
+   <script src="../../dccs/property-dcc.js"></script>
+   <script src="../../dccs/components/dcc-base.js"></script>
+   <script src="../../dccs/components/dcc-timer.js"></script>
+   <script src="../../dccs/components/dcc-visual.js"></script>
+   <script src="../../dccs/components/dcc-markdown.js"></script>
+   <script src="../../dccs/components/dcc-annotation.js"></script>
+   <script src="../../dccs/components/dcc-image.js"></script>
+   <script src="../../dccs/components/dcc-expression.js"></script>
+   <script src="../../dccs/components/dcc-block.js"></script>
+   <script src="../../dccs/components/dcc-state.js"></script>
+   <script src="../../dccs/components/dcc-group.js"></script>
+   <script src="../../dccs/components/dcc-trigger.js"></script>
+   <script src="../../dccs/components/dcc-character.js"></script>
+   <script src="../../dccs/components/dcc-lively-dialog.js"></script>
+   <script src="../../dccs/components/dcc-notice-input.js"></script>
+   <script src="../../dccs/components/dcc-state-select.js"></script>
+   <script src="../../dccs/components/dcc-image-marker.js"></script>
+   <script src="../../dccs/components/dcc-styler.js"></script>
+   <script src="../../dccs/components/dcc-entity.js"></script>
+   <script src="../../dccs/components/dcc-input.js"></script>
+   <script src="../../dccs/components/dcc-input-typed.js"></script>
+   <script src="../../dccs/components/dcc-input-choice.js"></script>
+   <script src="../../dccs/components/dcc-input-table.js"></script>
+   <script src="../../dccs/components/dcc-slider.js"></script>
+   <script src="../../dccs/components/dcc-compute.js"></script>
+   <script src="../../dccs/components/dcc-report.js"></script>
+   <script src="../../dccs/components/dcc-web.js"></script>
+
+   <script src="../../dccs/components/cell/dcc-space-cellular.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell-color.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell-image.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-transition.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-neighbor.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-expression.js"></script>
+
+   <script>
+      var source = null;
+
+      function start() {
+         MessageBus.ext.subscribe("control/playground", playground);
+
+         let parameters = window.location.search.substr(1);
+         if (parameters != null && parameters.length > 0) {
+            const sourceMatch = parameters.match(/source=([\w-\/]+)/i);
+            if (sourceMatch != null) {
+               source = sourceMatch[1];
+               let caseScript = document.createElement("script");
+               caseScript.src = "gallery/" + source + ".js";
+               document.head.appendChild(caseScript);
+            }
+         }
+      }
+
+      function insertSource(name, source) {
+         document.querySelector("#source-name").innerHTML = name;
+         document.querySelector("#render-panel").innerHTML = source;
+      }
+
+      function playground() {
+         window.location.href = "index.html?source=" + source;
+      }
+   </script>
+
+</head>
+
+<body onload="start()">
+   <script>
+      MessageBus.page = new MessageBus(false);
+      Basic.service.rootPath = "../../";
+   </script>
+
+  <main role="main">
+    <div class="d-flex flex-column vh-100 hidden-overflow">
+      <div class="align-items-stretch col-12">
+        <div class="std-panel h-100 w-100">
+           <div class="d-flex panel-label">
+              <span class="col-9" id="source-name">Result</span>
+              <div class="col-3">
+                <dcc-trigger action="control/playground" label="PLAYGROUND" xstyle="in">
+                </dcc-trigger>
+              </div>
+           </div>
+           <div id="render-panel" class="h-100 w-100"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   </body>
+</html>

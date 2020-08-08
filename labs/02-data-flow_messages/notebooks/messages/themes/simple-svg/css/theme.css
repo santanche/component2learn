@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Template Panels Jacinto */
+/***************************/
+
+/* Trigger DCC */
+
+.dcc-trigger-theme {
+   border: 1px solid lightgray;
+   border-radius: 5px;
+   margin: 1px;
+   color: #eeee;   
+   padding: 2px 2px;
+   /* text-align: center; */
+   text-decoration: none;
+   display: inline-block;
+}
+.dcc-trigger-theme:hover {
+   color: #ffff;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/* Input DCC */
+
+.dcc-input-theme {
+   font-size:28px;
+   font-family:Tahoma, Geneva, sans-serif;
+   fill:#707070;
+   stroke:none;
+}

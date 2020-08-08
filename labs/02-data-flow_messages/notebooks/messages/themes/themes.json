@@ -1,0 +1,26 @@
+{"Minimal":
+   {"description": "Minimal theme without extra format.",
+    "path": "minimal",
+    "icon": "mono-slide.svg",
+    "svg" : "false"},
+ "Classic":
+   {"description": "Will be the classic basic format.",
+    "path": "classic",
+    "icon": "mono-slide.svg",
+    "svg" : "false"},
+ "Simple":
+   {"description": "A simplified theme for the Jacinto cases.",
+    "path": "simple",
+    "icon": "jacinto-theme.png",
+    "svg" : "false"},
+ "Jacinto":
+   {"description": "The standard theme for the Jacinto cases.",
+    "path": "jacinto",
+    "icon": "jacinto-theme.png",
+    "svg" : "true"},
+ "Zombie":
+   {"description": "The standard theme for the Zombie Health cases.",
+    "path": "zombie",
+    "icon": "mono-slide.svg",
+    "svg" : "false"}
+}

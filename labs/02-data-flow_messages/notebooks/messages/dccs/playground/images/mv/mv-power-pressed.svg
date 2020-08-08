@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="12.011011mm"
+   height="12.011011mm"
+   viewBox="0 0 12.011011 12.011011"
+   version="1.1"
+   id="svg44"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)"
+   sodipodi:docname="mv-power-pressed.svg">
+  <defs
+     id="defs38" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="101.46818"
+     inkscape:cy="-48.184317"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata41">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-98.315923,-153.41116)">
+    <circle
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path7015"
+       cx="104.32143"
+       cy="159.41667"
+       r="5.2117558" />
+    <circle
+       style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path7021"
+       cx="104.32143"
+       cy="159.41667"
+       r="3.0735996" />
+  </g>
+</svg>

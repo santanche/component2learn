@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>DCCs Playground</title>
+
+   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
+
+   <link rel="stylesheet" href="../../lib/fontawesome-5-10-1/css/all.min.css">
+   <link rel="stylesheet" href="../../lib/bootstrap-4-3-1/css/bootstrap.min.css">
+   <link href="../../lib/quill-1-3-7/quill.snow.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="../../infra/css/common-player.css">
+   <link rel="stylesheet" href="../../infra/css/common-author.css">
+
+   <script src="../../lib/jquery-3-4-1/jquery-3.4.1.slim.min.js"></script>
+   <script src="../../lib/popper-1-15-0/popper.min.js"></script>
+   <script src="../../lib/bootstrap-4-3-1/js/bootstrap.min.js"></script>
+   <script src="../../lib/quill-1-3-7/quill.min.js"></script>
+
+   <script src="../../infra/bus.js"></script>
+   <script src="../../infra/basic.js"></script>
+   <script src="../../infra/dcc-common-server-proxy.js"></script>
+
+   <script src="../../dccs/subscribe-dcc.js"></script>
+   <script src="../../dccs/trigger-dcc.js"></script>
+   <script src="../../dccs/property-dcc.js"></script>
+   <script src="../../dccs/components/dcc-base.js"></script>
+   <script src="../../dccs/components/dcc-timer.js"></script>
+   <script src="../../dccs/components/dcc-visual.js"></script>
+   <script src="../../dccs/components/dcc-markdown.js"></script>
+   <script src="../../dccs/components/dcc-annotation.js"></script>
+   <script src="../../dccs/components/dcc-image.js"></script>
+   <script src="../../dccs/components/dcc-expression.js"></script>
+   <script src="../../dccs/components/dcc-block.js"></script>
+   <script src="../../dccs/components/dcc-state.js"></script>
+   <script src="../../dccs/components/dcc-group.js"></script>
+   <script src="../../dccs/components/dcc-trigger.js"></script>
+   <script src="../../dccs/components/dcc-character.js"></script>
+   <script src="../../dccs/components/dcc-lively-dialog.js"></script>
+   <script src="../../dccs/components/dcc-notice-input.js"></script>
+   <script src="../../dccs/components/dcc-state-select.js"></script>
+   <script src="../../dccs/components/dcc-image-marker.js"></script>
+   <script src="../../dccs/components/dcc-styler.js"></script>
+   <script src="../../dccs/components/dcc-entity.js"></script>
+   <script src="../../dccs/components/dcc-input.js"></script>
+   <script src="../../dccs/components/dcc-input-typed.js"></script>
+   <script src="../../dccs/components/dcc-input-choice.js"></script>
+   <script src="../../dccs/components/dcc-input-table.js"></script>
+   <script src="../../dccs/components/dcc-slider.js"></script>
+   <script src="../../dccs/components/dcc-compute.js"></script>
+   <script src="../../dccs/components/dcc-report.js"></script>
+   <script src="../../dccs/components/dcc-web.js"></script>
+   <script src="../../dccs/components/dcc-graph.js"></script>
+   <script src="../../dccs/components/dcc-rss.js"></script>
+
+   <script src="../../dccs/components/cell/dcc-space-cellular.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell-color.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell-image.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-transition.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-neighbor.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-expression.js"></script>
+
+   <script>
+      function start() {
+         document.querySelector("#json-message").value = "";
+         MessageBus.ext.subscribe("control/render/example", render);
+         MessageBus.ext.subscribe("#", showJson);
+
+         let parameters = window.location.search.substr(1);
+         if (parameters != null && parameters.length > 0) {
+            const source = parameters.match(/source=([\w-\/]+)/i);
+            if (source != null) {
+               let caseScript = document.createElement("script");
+               caseScript.src = "gallery/" + source[1] + ".js";
+               document.head.appendChild(caseScript);
+            }
+         }
+      }
+
+      function render(topic, message) {
+         document.querySelector("#render-panel").innerHTML = document.querySelector("#editor").value;
+      }
+
+      function insertSource(name, source) {
+         document.querySelector("#editor").value = source;
+         render();
+      }
+
+      function showJson(topic, message) {
+         if (topic != "control/render/example")
+            document.querySelector("#json-message").value =
+               document.querySelector("#json-message").value +
+               "topic: " + topic + "\n" +
+               "message: " + JSON.stringify(message) + "\n\n";
+      }
+   </script>
+
+</head>
+
+<body onload="start()">
+   <script>
+      MessageBus.page = new MessageBus(false);
+      Basic.service.rootPath = "../../";
+   </script>
+
+  <main role="main">
+    <div class="d-flex flex-column vh-100 hidden-overflow">
+      <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Developers</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Playground</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="container-fluid">
+        <h1>DCC Playground</h1>
+        <p class="lead">Test your Digital Content Components (DCCs) here.</p>
+      </div>
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-light">
+          <dcc-trigger action="control/render/example" label="RENDER" xstyle="in">
+          </dcc-trigger>
+        </nav>
+      </div>
+
+      <div class=" d-flex h-100 mb-3">
+        <div class=" d-flex col-6 flex-column align-items-stretch">
+          <div class="d-flex std-panel h-50 flex-column">
+            <div class="panel-label">Editor</div>
+            <div class="d-flex h-100 w-100">
+               <textarea id="editor" class="w-100 h-100 std-monospace"></textarea>
+            </div>
+          </div>
+          <div class="d-flex std-panel h-50 flex-column">
+            <div class="panel-label">Messages</div>
+            <div class="d-flex h-100 w-100">
+               <textarea id="json-message" class="w-100 h-100 std-monospace"></textarea>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="align-items-stretch col-6">
+          <div class="std-panel h-100 w-100">
+             <div class="panel-label">Result</div>
+             <div id="render-panel" class="h-100 w-100"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+   </body>
+</html>

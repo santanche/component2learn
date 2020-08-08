@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.styp-properties-panel {
+   flex: 95%;
+   width: auto;
+   height: 95%;
+   overflow: scroll;
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+}
+
+.styp-field-row {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+
+.styp-field-pair {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.styp-field-label {
+   font-size: 1rem;
+   font-weight: 400;
+   color: #212529;
+   margin-left: 3px;
+   margin-bottom: .3rem;
+}
+
+.styp-field-value, .styp-field-text {
+   font-size: 1rem;
+   font-weight: 400;
+   color: #495057;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   padding: .375rem .75rem;
+   margin-bottom: .7rem;
+}
+
+.styp-field-text {
+   width: 600px;
+}
+
+.styp-field-highlight {
+   border-style: dashed;
+   border-width: 5px;
+   border-color: blue;
+}

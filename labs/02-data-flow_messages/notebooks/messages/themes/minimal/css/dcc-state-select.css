@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Selector DCC */
+
+.dcc-state-select-theme:hover {
+   cursor: pointer;
+}
+
+.dcc-state-select-0-theme {
+   background-color: #d3d3d385;
+}
+
+.dcc-state-select-1-theme {
+   background-color: #90ee9078;
+}
+
+.dcc-state-select-2-theme {
+   background-color: #87cefac9;
+}
+
+.dcc-state-select-3-theme {
+   background-color: #ffff77;
+}
+
+.dcc-state-select-4-theme {
+   background-color: #f0808078;
+}

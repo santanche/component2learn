@@ -1,0 +1,16 @@
+.dcc-context-menu {
+   position: absolute;
+   background-color: white;
+   border-radius: 1px;
+   box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.5);
+   margin: 5px;
+}
+
+.dcc-context-menu-item {
+   margin: 2px;
+}
+
+.dcc-context-menu-item:hover {
+   cursor: pointer;
+   background-color: gray;
+}

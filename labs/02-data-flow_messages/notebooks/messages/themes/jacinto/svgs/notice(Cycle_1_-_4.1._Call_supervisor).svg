@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Cycle_1_-_4.1._Call_supervisor);
+      }
+
+      .cls-2 {
+        fill: #004270;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #707070;
+        opacity: 0.95;
+      }
+
+      .cls-4 {
+        fill: #ba2027;
+      }
+
+      .cls-5 {
+        font-size: 20px;
+      }
+
+      .cls-5, .cls-7 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #346e93;
+      }
+
+      .cls-6 {
+        font-size: 28px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        font-weight: 400;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Cycle_1_-_4.1._Call_supervisor">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Cycle_1_-_4.1._Call_supervisor" data-name="Cycle 1 - 4.1. Call supervisor" class="cls-1">
+    <rect id="Retângulo_163" data-name="Retângulo 163" class="cls-2" width="1920" height="1080"/>
+    <g id="Grupo_492" data-name="Grupo 492" transform="translate(-7 -238)">
+      <g id="Retângulo_36" data-name="Retângulo 36" class="cls-3" transform="translate(437 408)">
+        <rect class="cls-9" width="1075" height="749" rx="12"/>
+        <rect class="cls-10" x="0.5" y="0.5" width="1074" height="748" rx="11.5"/>
+      </g>
+      <rect id="Retângulo_18" data-name="Retângulo 18" class="cls-4" width="139" height="59" rx="29.5" transform="translate(464 1128)"/>
+      <text id="Return" class="cls-5" transform="translate(502 1166)"><tspan x="0" y="0">Return</tspan></text>
+      <text id="Likelihood_ratio_LR_Like_sensitivity_and_specificity_LR_describe_the_discriminatory_power_of_features_in_a_clinical_context_estimating_the_probability_of_disease._When_the_LR_is_higher_than_1_the_feature_increases_the_probability_when_lower_than_1_" data-name="Likelihood ratio (LR)
+
+Like sensitivity and specificity, LR describe the discriminatory power of features in a clinical context, estimating the probability of disease. When the LR is higher than 1, the feature increases the probability; when lower than 1, " class="cls-6" transform="translate(473 578)"><tspan x="0" y="30">Likelihood ratio (LR)</tspan><tspan x="0" y="67"></tspan><tspan class="cls-7"><tspan x="0" y="104">Like sensitivity and specificity, LR describe the discriminatory power of features in </tspan><tspan x="0" y="141">a clinical context, estimating the probability of disease. When the LR is higher </tspan><tspan x="0" y="178">than 1, the feature increases the probability; when lower than 1, reduces it.</tspan></tspan></text>
+    </g>
+    <path id="Caminho_377" data-name="Caminho 377" class="cls-8" d="M718.094,273.854a25,25,0,1,0,25,25A25,25,0,0,0,718.094,273.854Zm16.512,35.335a1.861,1.861,0,0,1,0,2.624l-3.553,3.554a1.861,1.861,0,0,1-2.624,0l-10.335-10.335-10.335,10.335a1.861,1.861,0,0,1-2.624,0l-3.553-3.554a1.861,1.861,0,0,1,0-2.624l10.335-10.335-10.335-10.335a1.861,1.861,0,0,1,0-2.624l3.553-3.554a1.861,1.861,0,0,1,2.624,0l10.335,10.335,10.335-10.335a1.861,1.861,0,0,1,2.624,0l3.553,3.554a1.861,1.861,0,0,1,0,2.624l-10.335,10.335Z" transform="translate(754.906 -96.854)"/>
+  </g>
+</svg>

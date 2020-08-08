@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.styt-std-border {
+   border: 1px solid gray;
+   border-radius: 5px;
+   margin: 5px;
+}
+
+/* picture-up-left
+ *****************/
+
+.styt-pul-main, .styt-pur-main {
+   width: 98%;
+   height: 100%;
+   font-size: 3vh;
+   margin-left: 1%;
+   margin-right: 1%;
+}
+
+.styt-pul-main img, .styt-pur-main img {
+   width: 50%;
+   height: 50%;
+   object-fit: contain;
+   margin-top: 10px;
+}
+
+.styt-pul-main img {
+   float: left;
+   margin-right: 10px;
+}
+
+.styt-pur-main img {
+   float: right;
+   margin-left: 10px;
+}
+
+/* note
+ ******/
+
+.styn-note {
+   background-color: White;
+   padding: 10px;
+   border-radius: 1px;
+   box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.5);
+   margin: 15px;
+   width: 100%;
+   height: 100%;
+}
+
+.styn-control-button {
+   width: 48px;
+   height: 48px;
+}

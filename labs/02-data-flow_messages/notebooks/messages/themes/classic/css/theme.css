@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/* picture-up-left
+ *****************/
+
+.tsty-pul-main {
+   width: 100%;
+   height: 100%;
+   font-size: 5vh;
+}
+
+.tsty-pul-main img {
+   width: 50%;
+   height: 50%;
+   object-fit: contain;
+   float: left;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+
+/* Knot (template) */
+/*******************/
+
+.template-knot {
+   display: flex;
+   flex-direction: column;
+   font-size: 20pt;
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+}
+
+.template-knot p {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-left: 0px;
+   margin-right: 0px;   
+}
+
+.template-knot img {
+   max-width: 200px;
+   max-height: 200px;   
+}
+
+.template-knot dcc-trigger {
+  display: block;
+  flex: 10%;
+  max-width: 50%;
+}
+
+/* Panel Left Picture (template) */
+/*********************************/
+
+.panel-left-pict {
+   display: flex;
+   flex-direction: row;
+   flex: 100%;
+   max-height: 100%;
+   width: 100%;
+}
+
+.panel-left-pict-image {
+   /*
+   flex-basis: auto;
+   max-height: 100%;
+   width: auto;
+   */
+}
+
+.panel-left-pict-image img {
+   max-height: 100%;
+}
+
+.panel-left-pict-text {
+   /* flex: 70%; */
+}
+
+/* Presentation (template) */
+/***************************/
+
+.template-presentation {
+   display: flex;
+   flex-direction: column;
+   font-size: 20pt;
+   width: 100%;
+}
+
+.template-presentation img, .template-presentation dcc-trigger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Tablet (template) */
+/*********************/
+
+.template-tablet {
+   width: 100%;
+   height: 100%;
+   
+   position: relative;
+   animation-name: template-tablet-displacement;
+   animation-duration: 2s;
+   background-image: url(../images/tablet.svg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;   
+}
+
+@keyframes template-tablet-displacement {
+   from {left: 100%;}
+   to {left: 0%;}
+}
+
+.template-tablet-inside {
+   display: flex;
+   flex-direction: column;
+   font-size: 20pt;
+   width: auto;
+   height: 90%;
+   padding: 4% 15% 0% 10%;
+   overflow: scrool;
+}
+
+.template-tablet-inside img, .template-tablet-inside dcc-trigger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Selector (template) */
+/***********************/
+
+.template-selector {
+   width: 100%;
+   height: 100%;
+   
+   background-image: url(../images/tablet.svg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;   
+}
+
+.template-selector-inside {
+   width: auto;
+   height: 90%;
+   
+   padding: 4% 15% 0% 10%;
+   overflow: scrool;
+   font-size: 12pt;
+}
+
+.template-selector-inside img, .template-selector-inside dcc-trigger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

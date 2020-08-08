@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>DCCs Playground</title>
+
+   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
+
+   <link rel="stylesheet" href="../../lib/fontawesome-5-10-1/css/all.min.css">
+   <link rel="stylesheet" href="../../lib/bootstrap-4-3-1/css/bootstrap.min.css">
+   <link href="../../lib/quill-1-3-7/quill.snow.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="../../infra/css/common-player.css">
+   <link rel="stylesheet" href="../../infra/css/common-author.css">
+
+   <script src="../../lib/jquery-3-4-1/jquery-3.4.1.slim.min.js"></script>
+   <script src="../../lib/popper-1-15-0/popper.min.js"></script>
+   <script src="../../lib/bootstrap-4-3-1/js/bootstrap.min.js"></script>
+   <script src="../../lib/quill-1-3-7/quill.min.js"></script>
+
+   <script src="../../infra/bus.js"></script>
+   <script src="../../infra/basic.js"></script>
+   <script src="../../infra/dcc-common-server-proxy.js"></script>
+
+   <script src="../../dccs/subscribe-dcc.js"></script>
+   <script src="../../dccs/trigger-dcc.js"></script>
+   <script src="../../dccs/property-dcc.js"></script>
+   <script src="../../dccs/components/dcc-base.js"></script>
+   <script src="../../dccs/components/dcc-timer.js"></script>
+   <script src="../../dccs/components/dcc-visual.js"></script>
+   <script src="../../dccs/components/dcc-markdown.js"></script>
+   <script src="../../dccs/components/dcc-annotation.js"></script>
+   <script src="../../dccs/components/dcc-image.js"></script>
+   <script src="../../dccs/components/dcc-expression.js"></script>
+   <script src="../../dccs/components/dcc-block.js"></script>
+   <script src="../../dccs/components/dcc-state.js"></script>
+   <script src="../../dccs/components/dcc-trigger.js"></script>
+   <script src="../../dccs/components/dcc-character.js"></script>
+   <script src="../../dccs/components/dcc-lively-dialog.js"></script>
+   <script src="../../dccs/components/dcc-notice-input.js"></script>
+   <script src="../../dccs/components/dcc-state-select.js"></script>
+   <script src="../../dccs/components/dcc-image-marker.js"></script>
+   <script src="../../dccs/components/dcc-styler.js"></script>
+   <script src="../../dccs/components/dcc-entity.js"></script>
+   <script src="../../dccs/components/dcc-input.js"></script>
+   <script src="../../dccs/components/dcc-input-typed.js"></script>
+   <script src="../../dccs/components/dcc-input-choice.js"></script>
+   <script src="../../dccs/components/dcc-input-table.js"></script>
+   <script src="../../dccs/components/dcc-slider.js"></script>
+   <script src="../../dccs/components/dcc-compute.js"></script>
+   <script src="../../dccs/components/dcc-report.js"></script>
+   <script src="../../dccs/components/dcc-web.js"></script>
+
+   <script src="../../dccs/components/cell/dcc-space-cellular.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell-color.js"></script>
+   <script src="../../dccs/components/cell/dcc-cell-image.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell.js"></script>
+   <script src="../../dccs/components/cell/rule-dcc-cell-neighbor.js"></script>
+
+   <script>
+      function start() {
+         document.querySelector("#json-message").value = "";
+         MessageBus.ext.subscribe("control/render/example", render);
+         MessageBus.ext.subscribe("#", showJson);
+
+         let parameters = window.location.search.substr(1);
+         if (parameters != null && parameters.length > 0) {
+            const source = parameters.match(/source=([\w-\/]+)/i);
+            if (source != null) {
+               let caseScript = document.createElement("script");
+               caseScript.src = "gallery/" + source[1] + ".js";
+               document.head.appendChild(caseScript);
+            }
+         }
+      }
+
+      function render(topic, message) {
+         document.querySelector("#render-panel").innerHTML = document.querySelector("#editor").value;
+      }
+
+      function insertSource(name, source) {
+         document.querySelector("#editor").value = source;
+         render();
+      }
+
+      function showJson(topic, message) {
+         if (topic != "control/render/example")
+            document.querySelector("#json-message").value =
+               document.querySelector("#json-message").value +
+               "topic: " + topic + "\n" +
+               "message: " + JSON.stringify(message) + "\n\n";
+      }
+   </script>
+
+</head>
+
+<body onload="start()">
+   <script>
+      MessageBus.page = new MessageBus(false);
+      Basic.service.rootPath = "../../";
+   </script>
+
+  <main role="main">
+    <div class="d-flex flex-column vh-100 hidden-overflow">
+      <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Developers</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Playground</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="container-fluid">
+        <h1>DCC Playground</h1>
+        <p class="lead">Test your Digital Content Components (DCCs) here.</p>
+      </div>
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-light">
+          <dcc-trigger action="control/render/example" label="RENDER" xstyle="in">
+          </dcc-trigger>
+        </nav>
+      </div>
+
+      <div class=" d-flex h-100 mb-3">
+        <div class=" d-flex col-6 flex-column align-items-stretch">
+          <div class="d-flex std-panel h-50 flex-column">
+            <div class="panel-label">Editor</div>
+            <div class="d-flex h-100 w-100">
+               <textarea id="editor" class="w-100 h-100 std-monospace"></textarea>
+            </div>
+          </div>
+          <div class="d-flex std-panel h-50 flex-column">
+            <div class="panel-label">Messages</div>
+            <div class="d-flex h-100 w-100">
+               <textarea id="json-message" class="w-100 h-100 std-monospace"></textarea>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="align-items-stretch col-6">
+          <div class="std-panel h-100 w-100">
+             <div class="panel-label">Result</div>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300px"
+   height="300px"
+   viewBox="0 0 183.40504 183.58199"
+   version="1.1"
+   id="svg6250"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)"
+   sodipodi:docname="mv01.svg">
+  <defs
+     id="defs6244">
+    <linearGradient
+       gradientTransform="translate(173.36997,-111.5369)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6193"
+       id="linearGradient6195-3"
+       x1="-144.05641"
+       y1="262.87122"
+       x2="-120.26451"
+       y2="262.87122"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient6193"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#fffff4;stop-opacity:1;"
+         offset="0"
+         id="stop6191" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(44.980968,-112.34988)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6193"
+       id="linearGradient6195"
+       x1="-144.05641"
+       y1="262.87122"
+       x2="-120.26451"
+       y2="262.87122"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="763.95844"
+     inkscape:cy="249.78372"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1299"
+     inkscape:window-height="713"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6247">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(115.13705,29.136229)">
+    <path
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -103.3747,-1.5031589 8.315485,-19.2767821 14.363091,-7.559524 123.220232,1.889881 9.82739,10.583334 6.80357,21.5446391 8.31547,88.8244119 -5.29166,52.916659 -167.821438,0.37798 -8.69345,-54.428569 z"
+       id="path5621"
+       inkscape:connector-curvature="0" />
+    <ellipse
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.78032422;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6174"
+       cx="-22.298809"
+       cy="87.850403"
+       rx="15.5896"
+       ry="15.778587" />
+    <rect
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6166"
+       width="116.41666"
+       height="77.863091"
+       x="-79.562195"
+       y="-11.708508" />
+    <ellipse
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6176"
+       cx="-22.487789"
+       cy="88.341797"
+       rx="8.3154764"
+       ry="8.5044641" />
+    <rect
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.44890559;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6187"
+       width="12.233827"
+       height="11.517818"
+       x="-99.513039"
+       y="120.89186" />
+    <rect
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6183"
+       width="27.970238"
+       height="17.386906"
+       x="-87.877678"
+       y="117.55934" />
+    <circle
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6178"
+       cx="-59.378288"
+       cy="123.38016"
+       r="11.717261" />
+    <path
+       style="fill:url(#linearGradient6195);fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -97.698475,148.22192 2.67269,4.6104 16.00277,-0.23387 2.40067,-4.39373 z"
+       id="path6189"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:url(#linearGradient6195-3);fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 30.690518,149.03489 2.67269,4.6104 16.00277,-0.23387 2.40067,-4.39373 z"
+       id="path6189-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300px"
+   height="300px"
+   viewBox="0 0 183.40504 183.58199"
+   version="1.1"
+   id="svg7109"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)"
+   sodipodi:docname="mv02.svg">
+  <defs
+     id="defs7103">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6964"
+       id="linearGradient7011"
+       gradientUnits="userSpaceOnUse"
+       x1="63.985523"
+       y1="76.293556"
+       x2="117.0599"
+       y2="76.293556" />
+    <linearGradient
+       id="linearGradient6964"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#fffff4;stop-opacity:1;"
+         offset="0"
+         id="stop6962" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(253.50092,-32.917852)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6964"
+       id="linearGradient6195-3"
+       x1="-144.05641"
+       y1="262.87122"
+       x2="-120.26451"
+       y2="262.87122"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(125.11193,-33.730832)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6964"
+       id="linearGradient6195"
+       x1="-144.05641"
+       y1="262.87122"
+       x2="-120.26451"
+       y2="262.87122"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6964"
+       id="linearGradient7236"
+       gradientUnits="userSpaceOnUse"
+       x1="63.985523"
+       y1="76.293556"
+       x2="117.0599"
+       y2="76.293556" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="219.15282"
+     inkscape:cy="421.13644"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1299"
+     inkscape:window-height="713"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7106">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(35.006095,-49.482818)">
+    <path
+       style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -23.243748,77.115889 8.315485,-19.276782 14.3630922,-7.559525 123.2202408,1.889882 9.82739,10.583334 6.80357,21.544639 8.31547,88.824413 -5.29166,52.91666 -167.821448,0.37798 -8.69345,-54.42857 z"
+       id="path5621"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient6195);fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -17.567523,226.84097 2.67269,4.6104 16.0027702,-0.23387 2.400671,-4.39373 z"
+       id="path6189"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:url(#linearGradient6195-3);fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 110.82148,227.65394 2.67269,4.6104 16.00277,-0.23387 2.40067,-4.39373 z"
+       id="path6189-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <g
+       transform="translate(-68.791667,15.119048)"
+       id="g6982">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6417"
+         d="m 65.590645,63.196694 47.440345,-0.133635 3.8754,25.390604 -48.643049,1.069078 -4.142679,-6.681737 z"
+         style="fill:url(#linearGradient7236);fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6978"
+         d="M 65.346582,69.779083 H 114.2945 v 3.023809 l -49.325893,0.283482 -0.377976,3.212797 50.270839,-0.377976 0.47247,2.929316 -50.747074,0.661458 -0.466204,3.329035 51.496758,-0.21073 0.66146,3.685268 H 66.669501"
+         style="fill:none;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,184.33528,15.382401)"
+       id="g6982-3">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6417-5"
+         d="m 65.590645,63.196694 47.440345,-0.133635 3.8754,25.390604 -48.643049,1.069078 -4.142679,-6.681737 z"
+         style="fill:url(#linearGradient7011);fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6978-6"
+         d="M 65.346582,69.779083 H 114.2945 v 3.023809 l -49.325893,0.283482 -0.377976,3.212797 50.270839,-0.377976 0.47247,2.929316 -50.747074,0.661458 -0.466204,3.329035 51.496758,-0.21073 0.66146,3.685268 H 66.669501"
+         style="fill:none;stroke:#666666;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="power-mv">
+      <title
+         id="title28">Power</title>
+      <circle
+         r="5.2117558"
+         cy="175.71935"
+         cx="4.4215288"
+         id="path7015"
+         style="fill:#fffff4;fill-opacity:1;stroke:#666666;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="3.0735996"
+         cy="175.71935"
+         cx="4.4215288"
+         id="path7021"
+         style="fill:#55d400;fill-opacity:1;stroke:none;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
+             <div id="render-panel" class="h-100 w-100"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+   </body>
+</html>

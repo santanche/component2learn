@@ -1,0 +1,60 @@
+<script>
+function zoomDetail() {
+  document.querySelector("#ekg1").style.display = "none";
+  document.querySelector("#ekg2").style.display = "initial";
+  document.querySelector("#ekg3").style.display = "none";
+}
+
+function zoomDetail2() {
+   document.querySelector("#ekg1").style.display = "none";
+   document.querySelector("#ekg2").style.display = "none";
+   document.querySelector("#ekg3").style.display = "initial";
+ }
+
+function zoomOut() {
+  document.querySelector("#ekg1").style.display = "initial";
+  document.querySelector("#ekg2").style.display = "none";
+  document.querySelector("#ekg3").style.display = "none";
+}
+</script>
+
+<style>
+ .image-spot:hover {
+     cursor: pointer;
+   }
+</style>
+    
+<div class="panel_presentation">
+  <div id="ekg1" class="panel_case">
+   <img src="images/3-estado01.png" usemap="#ekgmap1"></img>
+   <map name="ekgmap1" class="image-spot">
+    <area alt="DI" title="DI" coords="238,127,164,76" shape="rect" onmouseover="zoomDetail()">
+    <area alt="DII" title="DII" coords="231,328,148,273" shape="rect" onmouseover="zoomDetail()">
+    <area alt="DIII" title="DIII" href="" coords="67,484,148,528" shape="rect" onmouseover="zoomDetail2()">
+    <area alt="aVL" title="aVL" coords="413,286,515,332" shape="rect" onmouseover="zoomDetail()">
+    <area alt="IV" title="IV" coords="1005,40,1123,130" shape="rect" onmouseover="zoomDetail()">
+    <area alt="V" title="V" coords="1004,248,1133,323" shape="rect" onmouseover="zoomDetail()">
+    <area alt="VI" title="VI" coords="1010,460,1130,538" shape="rect" onmouseover="zoomDetail()">
+   </map>
+  </div>
+  <div id="ekg2" class="panel_case" style="display:none">
+   <img src="images/3-estado02.png" usemap="#ekgmap2"></img>
+   <map name="ekgmap2" class="image-spot">
+      <area target='' alt='DI' title='DI' coords='87,50,325,196' shape='rect' onmouseout='zoomOut()'>
+      <area target='' alt='DII' title='DII' coords='81,257,325,408' shape='rect' onmouseout='zoomOut()'>
+      <area target='' alt='aVL' title='aVL' coords='399,258,639,406' shape='rect' onmouseout='zoomOut()'>
+      <area target='' alt='V3' title='V3' coords='718,469,922,611' shape='rect' onmouseout='zoomOut()'>
+      <area target='' alt='V4' title='V4' coords='1002,48,1224,192' shape='rect' onmouseout='zoomOut()'>
+      <area target='' alt='V5' title='V5' coords='999,256,1224,408' shape='rect' onmouseout='zoomOut()'>
+      <area target='' alt='V6' title='V6' coords='1000,466,1224,614' shape='rect' onmouseout='zoomOut()'>
+   </map>
+  </div>
+  <div id="ekg3" class="panel_case" style="display:none">
+   <img src="images/3-estado03.png" usemap="#ekgmap3"></img>
+   <map name="ekgmap3" class="image-spot">
+     <area alt="DIII" title="DIII" href="" coords="154,648,340,783" shape="rect" onmouseover="zoomOut()">
+   </map>
+  </div>
+  
+  <div class="case_link" style="clear:both"><a href="#" onclick="goBack()">Return</a></div>
+</div>

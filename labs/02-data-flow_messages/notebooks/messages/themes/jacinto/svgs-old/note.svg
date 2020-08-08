@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="note.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata30">
+  <rdf:RDF>
+    <cc:Work
+       rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    </cc:Work>
+  </rdf:RDF>
+</metadata>
+<sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1299"
+   inkscape:window-height="704"
+   id="namedview28"
+   showgrid="false"
+   inkscape:zoom="5.85"
+   inkscape:cx="1842.158"
+   inkscape:cy="1016.6215"
+   inkscape:window-x="67"
+   inkscape:window-y="27"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg26" />
+<defs
+   id="defs7">
+  <style
+     id="style2">
+      .cls-1 {
+        clip-path: url(#clip-Segunda_parte_3);
+      }
+
+      .cls-2, .cls-5, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        opacity: 0.95;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #346e93;
+      }
+
+      .cls-3 {
+        font-size: 28px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #ba2027;
+      }
+
+      .cls-5 {
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+    </style>
+  <clipPath
+     id="clip-Segunda_parte_3">
+    <rect
+       width="1920"
+       height="1080"
+       id="rect4" />
+  </clipPath>
+</defs>
+<g
+   id="Rectangle_36"
+   data-name="Rectangle 36"
+   class="cls-2"
+   transform="matrix(1.5408053,0,0,1.0910982,21.157681,22.690015)"
+   style="opacity:0.95;fill:#ffffff;stroke:#707070">
+  <rect
+     class="cls-8"
+     width="1220"
+     height="937.40002"
+     rx="12"
+     id="rect9"
+     x="0"
+     y="0"
+     style="stroke:none" />
+  <rect
+     class="cls-9"
+     x="0.5"
+     y="0.5"
+     width="1219"
+     height="936.40002"
+     rx="11.5"
+     id="rect11"
+     style="fill:#004973" />
+</g>
+<foreignObject
+   data-name="Action"
+   y="10"
+   x="30"
+   height="500"
+   width="900"
+   transform="scale(2 2)">
+  <div
+     style="font-size:24px;font-family:Tahoma, Geneva, sans-serif;color:#ffffff;overflow:scrool">
+    <dcc-styler
+       xstyle="out"
+       locations="action">
+           {knot}
+        </dcc-styler>
+  </div>
+</foreignObject>
+<rect
+   id="Rectangle_18"
+   data-name="Rectangle 18"
+   class="cls-4"
+   width="139"
+   height="59"
+   rx="29.5"
+   x="51.529915"
+   y="1008.7504"
+   style="fill:#ba2027" />
+<circle
+   style="opacity:1;fill:#ffff6e;fill-opacity:1;stroke-width:1.08921933"
+   id="path828"
+   cx="1859.9829"
+   cy="60.401711"
+   r="25.042736" />
+<foreignObject
+   data-name="Action"
+   x="55"
+   y="1025"
+   width="130"
+   height="30">
+  <div
+     id="action"
+     class="cls-15"
+     style="font-size:20px;font-family:Tahoma, Geneva, sans-serif;color:#ffffff;text-align:center;width:100%">
+        action
+     </div>
+</foreignObject>
+<path
+   style="fill:#ffffff"
+   inkscape:connector-curvature="0"
+   d="m 1859.9402,35.358974 a 25,25 0 1 0 25,25 25,25 0 0 0 -25,-25 z m 16.512,35.335 a 1.861,1.861 0 0 1 0,2.624 l -3.553,3.554 a 1.861,1.861 0 0 1 -2.624,0 l -10.335,-10.335 -10.335,10.335 a 1.861,1.861 0 0 1 -2.624,0 l -3.553,-3.554 a 1.861,1.861 0 0 1 0,-2.624 l 10.335,-10.335 -10.335,-10.335 a 1.861,1.861 0 0 1 0,-2.624 l 3.553,-3.554 a 1.861,1.861 0 0 1 2.624,0 l 10.335,10.335 10.335,-10.335 a 1.861,1.861 0 0 1 2.624,0 l 3.553,3.554 a 1.861,1.861 0 0 1 0,2.624 l -10.335,10.335 z"
+   class="cls-6"
+   data-name="Close Window"
+   id="close-window" />
+<foreignObject>
+  <dcc-trigger
+     action="knot/" />
+</foreignObject>
+&quot; label=&quot;Previous Knot&quot; xstyle=&quot;out-image&quot; location=&quot;close-window&quot;&gt;</svg>
