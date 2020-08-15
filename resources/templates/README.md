@@ -182,6 +182,6 @@ Estrutura de pastas:
 > ![Tela Aplicativo](images/aplicativo.png)
 >
 > Exemplo de uma tela do diagrama de blocos:
-> ![Tela Aplicativo](images/blocos.png)
+> ![Tela Blocos](images/blocks.png)
 >
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
