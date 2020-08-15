@@ -166,6 +166,11 @@ Estrutura de pastas:
 > 2. os componentes do tipo A que assinam o tópico X fazem Z e postam uma mensagem com o tópico W.
 
 ## Tarefa 3
-> Coloque a imagem PNG da captura de tela do seu aplicativo conforme exemplo abaixo:
+> Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
+> tela 1 - nenhum produto selecionado
+> tela 2 - primeiro produto selecionado
+> tela 3 - segundo produto selecionado
+> tela 4 - compra de um dos produtos efetiva
+As telas devem ser apresentadas conforme exemplo abaixo:
 ![Tela Aplicativo](images/aplicativo.png)
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
