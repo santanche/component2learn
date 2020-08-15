@@ -21,14 +21,6 @@ Usando a representação de componentes que se comunicam por mensagens na forma 
 
 ## Tarefa 3
 
-Tarefa a ser feita com a equipe do trabalho:
-Usando o espaço que separa o MVC, detalhe os diagramas das Tarefas 1 e 2, da seguinte maneira:
-* considere que os diagramas que você fez fazem parte do Controller;
-* detalhe mais componentes referentes ao Model e ao View;
-* defina como será a interação entre esses componentes.
-
-## Tarefa 4
-
 Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inventor que simule uma interface de compra, com as seguintes funcionalidades:
 1. apresente uma interface com as seguintes áreas:
   * uma lista opções com o nome de três produtos (a sua escolha);
@@ -41,3 +33,11 @@ Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inven
   * seu nome;
   * o valor unitário e a unidade (g, kg, l);
 3. quando o botão de efetivação da compra for clicado, deve ser mostrado no campo de mensagem (rodapé) os dados da compra sendo efetivada: nome do produto, quantidade e o valor total a ser pago.
+
+## Tarefa 4
+
+Tarefa a ser feita com a equipe do trabalho:
+Usando o espaço que separa o MVC, detalhe os diagramas das Tarefas 1 e 2, da seguinte maneira:
+* considere que os diagramas que você fez fazem parte do Controller;
+* detalhe mais componentes referentes ao Model e ao View;
+* defina como será a interação entre esses componentes.
