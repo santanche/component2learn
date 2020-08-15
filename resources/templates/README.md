@@ -141,3 +141,28 @@ Estrutura de pastas:
 
 ## Tarefa Web Components 2
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
+
+# Modelo para Apresentação do Lab03 - Model-View-Controller
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── images     <- arquivos de imagens usadas no documento
+│
+└── app        <- aplicativo exportado em formato `aia`
+~~~
+
+## Tarefa 1
+> Coloque a imagem do PRNG do seu diagrama como ilustrado abaixo:
+![Diagrama de Orquestração](images/orquestracao.png)
+
+## Tarefa 2
+> Coloque a imagem do PNG do seu diagrama como ilustrado abaixo:
+![Diagrama de Coreografia](images/coreografia.png)
+
+## Tarefa 3
+> Coloque a imagem PNG da captura de tela do seu aplicativo conforme exemplo abaixo:
+![Tela Aplicativo](images/aplicativo.png)
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
