@@ -203,17 +203,17 @@ Estrutura de pastas:
 ## Tarefa 1
 > Coloque a imagem do PNG do seu diagrama como ilustrado abaixo:
 > 
-> ![Diagrama de Orquestração](images/componentizacao-negocio.png)
+> ![Negócio](images/componentizacao-negocio.png)
 
 ## Tarefa 2
 > Coloque a imagem do PNG do seu diagrama como ilustrado abaixo:
 > 
-> ![Diagrama de Orquestração](images/componentizacao-tecnico-view.png)
+> ![View](images/componentizacao-tecnico-view.png)
 
 ## Tarefa 3
 > Coloque a imagem do PNG do seu diagrama como ilustrado abaixo:
 > 
-> ![Diagrama de Orquestração](images/componentizacao-tecnico-model.png)
+> ![Model](images/componentizacao-tecnico-model.png)
 
 ## Tarefa 4
 
@@ -290,3 +290,18 @@ x-timer: S1598127769.058105,VS0,VE255
   "day": "1"
 }
 ~~~
+
+# Modelo para Apresentação do Lab05 - Subcomponentes e Páginas Dinâmicas
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+└── images     <- arquivos de imagens usadas no documento
+~~~
+
+## Tarefa 1
+> Coloque a imagem do PNG do seu diagrama como ilustrado abaixo:
+> 
+> ![Diagrama de Subcomponentes](images/diagrama-subcomponentes.png)
