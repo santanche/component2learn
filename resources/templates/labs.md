@@ -307,11 +307,31 @@ Estrutura de pastas:
 > ![Diagrama de Subcomponentes](images/diagrama-subcomponentes.png)
 
 ## Tarefa 2
-> Coloque um embed do seu Codepen:
+Link para o projeto no Codepen: [React 03 - Componente Barra](https://codepen.io/santanche/pen/KKzmbwR)
+
+> Coloque o código do seu componente:
 >
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="santanche" data-slug-hash="KKzmbwR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="React 03 - Componente Barra">
-  <span>See the Pen <a href="https://codepen.io/santanche/pen/KKzmbwR">
-  React 03 - Componente Barra</a> by André Santanchè (<a href="https://codepen.io/santanche">@santanche</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+**HTML**
+~~~html
+<div id="root"></div>
+~~~
+
+**JavaScript**
+~~~javascript
+class Barra extends React.Component {
+  render() {
+    let resultado = "";
+    for (let b = 1; b <= this.props.tamanho; b++)
+      resultado += "=";
+    return resultado;
+  }
+}
+
+const elemento = <div>
+                   <h2>O dinossauro</h2>
+                   <Barra tamanho="10"/>
+                   <h2>pulou na lama.</h2>
+                 </div>
+ReactDOM.render(elemento, 
+        document.getElementById("root"));
+~~~
