@@ -2,5 +2,5 @@
 
 Devem ser considerados dois templates:
 
-* [Laboratórios](labs.html) - template para entrega de laboratórios individuais
-* [Projeto Final](project.html) – template para entrega do projeto final em equipe
+* [Laboratórios](labs.md) - template para entrega de laboratórios individuais
+* [Projeto Final](project.md) – template para entrega do projeto final em equipe
