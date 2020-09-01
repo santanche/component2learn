@@ -151,7 +151,7 @@ Para cada componente será apresentado um documento conforme o modelo a seguir:
 
 > <Resumo do papel do componente e serviços que ele oferece.>
 
-![Componente](diagrama-componente.png)
+![Componente](images/diagrama-componente.png)
 
 **Interfaces**
 > * Listagem das interfaces do componente.
@@ -162,7 +162,7 @@ As interfaces listadas são detalhadas a seguir:
 
 ### Interface `<nome da interface>`
 
-> ![Diagrama da Interface](diagrama-interface-itableproducer.png)
+> ![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
 
 > <Resumo do papel da interface.>
 
@@ -174,7 +174,7 @@ Método | Objetivo
 
 ### Interface `ITableProducer`
 
-![Diagrama da Interface](diagrama-interface-itableproducer.png)
+![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
 
 Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
 
@@ -185,7 +185,7 @@ Método | Objetivo
 
 ### Interface `IDataSetProperties`
 
-![Diagrama da Interface](diagrama-interface-idatasetproperties.png)
+![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
 
 Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
 
