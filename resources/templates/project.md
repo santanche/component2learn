@@ -68,7 +68,7 @@ As interfaces listadas são detalhadas a seguir:
 
 Classes que representam objetos JSON associados às mensagens da interface:
 
-![Diagrama Interfaces](diagrama-uma-interface.png)
+![Diagrama Classe](images/diagrama-classes-rest.png)
 
 ~~~json
 <Formato da mensagem JSON associada ao objeto enviado/recebido por essa interface.>
