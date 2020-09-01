@@ -68,7 +68,7 @@ As interfaces listadas são detalhadas a seguir:
 
 Classes que representam objetos JSON associados às mensagens da interface:
 
-![Diagrama Classe](images/diagrama-classes-rest.png)
+![Diagrama Classes REST](images/diagrama-classes-rest.png)
 
 ~~~json
 <Formato da mensagem JSON associada ao objeto enviado/recebido por essa interface.>
@@ -90,7 +90,7 @@ Interface para envio de dados do pedido com itens associados.
 
 Classes que representam objetos JSON associados às mensagens da interface:
 
-![Diagrama Interfaces](diagrama-classes-rest.png)
+![Diagrama Classes REST](images/diagrama-classes-rest.png)
 
 ~~~json
 {
