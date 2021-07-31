@@ -48,4 +48,8 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 # Aluno
 * `<nome completo>`
 
-Cada laboratório tem seu template que está especificado dentro da respectiva pasta.
+Cada laboratório tem seu template que está especificado dentro da respectiva pasta:
+
+# Laboratórios
+
+* [Laboratório 1](01-data-flow/)

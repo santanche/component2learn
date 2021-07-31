@@ -1,0 +1,7 @@
+title: Component2Learn
+
+theme: minima
+
+header_pages:
+ - labs/README.md
+ - resources/templates/README.md
