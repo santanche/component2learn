@@ -52,4 +52,4 @@ Cada laboratório tem seu template que está especificado dentro da respectiva p
 
 # Laboratórios
 
-* [Laboratório 1](01-data-flow/)
+* [Laboratório 1](lab01/)
