@@ -1,4 +1,4 @@
-# Especificação de Laboratórios
+# Template Labs
 
 Escolha a pasta do seu ano de curso:
 
