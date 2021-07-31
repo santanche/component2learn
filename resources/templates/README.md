@@ -1,6 +1,3 @@
-# Templates da Disciplina
+# Especificação de Laboratórios
 
-Devem ser considerados dois templates:
-
-* [Laboratórios](labs.md) - template para entrega de laboratórios individuais
-* [Projeto Final](project.md) – template para entrega do projeto final em equipe
+Escolha a pasta do seu ano de curso.
