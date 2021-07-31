@@ -1,6 +1,6 @@
 # Laboratórios de 2021
 
-## Passos para submissão dos Labs
+## Passos para submissão dos Laboratórios.
 
  * Faça fork deste repositório.
  * No seu fork, dentro pasta do laboratório a ser submetido, crie uma nova pasta com o mesmo nome do deu ID do GitHub.
