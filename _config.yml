@@ -4,4 +4,4 @@ theme: minima
 
 header_pages:
  - labs/README.md
- - resources/templates/README.md
+ - templates/README.md
