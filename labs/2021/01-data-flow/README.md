@@ -3,10 +3,7 @@
 
 # Zombie Meals
 
-Estude o exemplo construído Orange no diretório:
-* [orange/](orange/)
-
-Especificamente o arquivo `zombie-meals.ows` que carrega o arquivo `zombie-meals-recommend.csv` (pode ser necessário reconfigurar o caminho de entrada do arquivo no Orange).
+Estude o workflow exemplo construído em Orange no arquivo `zombie-meals.ows` que carrega o arquivo `zombie-meals-recommend.csv` (pode ser necessário reconfigurar o caminho de entrada do arquivo no Orange). Abaixo a imagem do workflow:
 
 ![Meal Recommendation](images/orange-zombie-meals-prediction-comments.png)
 
@@ -56,7 +53,7 @@ Faça modificações no workflow com o intuito de explorar diferentes possibilid
 * mude o critério de recomendação mudando a expressão
 * modifique as features que você vai analisar para recomendação (quanto menos melhor)
 
-Esta tarefa será submetida na forma de um arquivo Orange mais uma captura da imagem (png) do workflow, conforme template: [/templates/2021/lab01/](/templates/2021/lab01/).
+Esta tarefa será submetida na forma de um arquivo Orange mais uma captura da imagem (png) do workflow, conforme template: [/templates/2021/lab01/](../../../templates/2021/lab01/).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
@@ -72,4 +69,4 @@ Utilize o template disponível em [Lab01 - Diagramas de Referência](https://doc
 
 Descreva textualmente como o processo se desenvolve entre os componentes e o que será transmitido de um componente para outro em cada interface.
 
-Submeta a imagem (png) do seu modelo e o texto conforme template: [/templates/2021/lab01/](/templates/2021/lab01/).
+Submeta a imagem (png) do seu modelo e o texto conforme template: [/templates/2021/lab01/](../../../templates/2021/lab01/).
