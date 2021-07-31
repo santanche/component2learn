@@ -11,7 +11,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Renato Fernandes Reis`
 
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
