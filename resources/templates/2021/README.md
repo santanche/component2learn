@@ -1,5 +1,13 @@
 # Template para Entrega dos Laboratórios Individuais
 
+# Templates de Laboratórios
+
+Cada laboratório tem seu template que está especificado dentro da respectiva pasta:
+
+* [Laboratório 1](lab01/)
+
+Abaixo são dadas orientações gerais para todos os laboratórios.
+
 # Estrutura de Arquivos e Pastas
 
 A seguir é apresentada a estrutura de pastas esperada para entrega de laboratórios:
@@ -47,9 +55,3 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 
 # Aluno
 * `<nome completo>`
-
-Cada laboratório tem seu template que está especificado dentro da respectiva pasta:
-
-# Laboratórios
-
-* [Laboratório 1](lab01/)
