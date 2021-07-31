@@ -56,7 +56,7 @@ Faça modificações no workflow com o intuito de explorar diferentes possibilid
 * mude o critério de recomendação mudando a expressão
 * modifique as features que você vai analisar para recomendação (quanto menos melhor)
 
-Esta tarefa será submetida na forma de um arquivo Orange mais uma captura da imagem (png) do workflow, conforme [template](/resources/templates/2021/lab01/).
+Esta tarefa será submetida na forma de um arquivo Orange mais uma captura da imagem (png) do workflow, conforme template: [/resources/templates/2021/lab01/](/resources/templates/2021/lab01/).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
@@ -72,4 +72,4 @@ Utilize o template disponível em [Lab01 - Diagramas de Referência](https://doc
 
 Descreva textualmente como o processo se desenvolve entre os componentes e o que será transmitido de um componente para outro em cada interface.
 
-Submeta a imagem (png) do seu modelo e o texto conforme [template](/resources/templates/2021/lab01/).
+Submeta a imagem (png) do seu modelo e o texto conforme template: [/resources/templates/2021/lab01/](/resources/templates/2021/lab01/).
