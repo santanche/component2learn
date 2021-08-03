@@ -24,8 +24,6 @@ Estrutura de pastas:
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
-
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
 ![Diagrama Venda](images/atividade2.png)
 
 ## Texto Explicativo
