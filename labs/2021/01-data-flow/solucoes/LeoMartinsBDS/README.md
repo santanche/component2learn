@@ -8,7 +8,7 @@
 ![Workflow Orange](images/zombie-meal-predicitions.png)
 
 ## Arquivo do Projeto
-> [Link arquivo Orange](/orange).
+> [Link arquivo Orange](/orange/zombie-meals.ows).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
