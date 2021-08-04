@@ -8,7 +8,7 @@
 ![Workflow Orange](images/zombie-meal-predicitions.png)
 
 ## Arquivo do Projeto
-> [Link arquivo Orange](https://github.com/LeoMartinsBDS/component2learn/blob/master/labs/2021/01-data-flow/solucoes/LeoMartinsBDS/orange/zombie-meals.ows).
+> [Link arquivo Orange](/orange).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
