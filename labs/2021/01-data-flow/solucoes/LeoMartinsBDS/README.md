@@ -8,13 +8,13 @@
 ![Workflow Orange](images/zombie-meal-predicitions.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+> [Link arquivo Orange](https://github.com/LeoMartinsBDS/component2learn/blob/master/labs/2021/01-data-flow/solucoes/LeoMartinsBDS/orange/zombie-meals.ows).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](images/diagrama-componentes.png)
+![Diagrama](images/diagrama-componentes.png)
 
 ## Texto Explicativo
 
