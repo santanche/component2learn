@@ -19,3 +19,12 @@
 ## Arquivos do Projeto
 > Link para o arquivo em Orange "zombie-meals-tree":
 [zombie-meals-tree](lab01/orange/zombie-meals-tree.ows).
+
+> Link para o arquivo em Orange "zombie-meals-logistic-regression":
+[zombie-meals-logistic-regression](lab01/orange/zombie-meals-logistic-regression.ows).
+
+> Link para o arquivo em Orange "zombie-meals-recomendacao":
+[zombie-meals-recomendacao](lab01/orange/zombie-meals-recomendacao.ows).
+
+> Link para o arquivo em Orange "zombie-meals-features":
+[zombie-meals-features](lab01/orange/zombie-meals-features.ows).
