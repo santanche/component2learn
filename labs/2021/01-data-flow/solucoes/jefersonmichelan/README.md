@@ -23,11 +23,11 @@ Estrutura de pastas:
 > Coloque um link para o arquivo em Orange.
 ![Workflow Orange](orange/zombie-meals-logistic.png)
 
-Realizando as duas alterações e comparando o Tree com o Logistic o resultado apresentado mostra que o Logistic apresenta um desempenho melhor que o Tree.
-O Logistid apresentou CA de 0,938 contra 0,750 do Tree.
-O Logistic apresentou F1 de 0,907 contra 0,750 do Tree.
-O Logistic apresentou Presicion de 0,879 contra 0,750 do Tree.
-O Logistic apresentou Recall de 0,938 contra 0,750 do Tree
+> Realizando as duas alterações e comparando o Tree com o Logistic o resultado apresentado mostra que o Logistic apresenta um desempenho melhor que o Tree.
+> O Logistid apresentou CA de 0,938 contra 0,750 do Tree.
+> O Logistic apresentou F1 de 0,907 contra 0,750 do Tree.
+> O Logistic apresentou Presicion de 0,879 contra 0,750 do Tree.
+> O Logistic apresentou Recall de 0,938 contra 0,750 do Tree
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
