@@ -9,4 +9,4 @@
 
 ## Arquivo do Projeto
 > Coloque um link para o arquivo em Orange.
-[zombie-meals-tree](lab01/orange/).
+[zombie-meals-tree](lab01/orange/zombie-meals-tree.ows).
