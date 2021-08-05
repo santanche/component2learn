@@ -24,7 +24,7 @@ Comparando os métodos de predição testados, o Logistic Regression possui um m
 
 
 ## Arquivo do Projeto
-> [/orange/tarefa1_zombie-meals.ows](../orange/tarefa1_zombie-meals.ows).
+> [/orange/tarefa1_zombie-meals.ows](../orange/).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
