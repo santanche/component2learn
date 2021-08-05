@@ -8,5 +8,5 @@
 ![Workflow Orange](lab01/images/zombie-meals-tree.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+> Link para o arquivo em Orange "zombie-meals-tree":
 [zombie-meals-tree](lab01/orange/zombie-meals-tree.ows).
