@@ -30,7 +30,7 @@ Comparando os métodos de predição testados, o Logistic Regression possui um m
 
 ## Arquivo do Projeto
 Arquivo com o método de predição Logistic Regressio e as alterações de critério de recomendação e features atualizado
-> [/orange/tarefa1_zombie-meals.ows](../orange/).
+> [/orange/tarefa1_zombie-meals.ows](orange/).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
