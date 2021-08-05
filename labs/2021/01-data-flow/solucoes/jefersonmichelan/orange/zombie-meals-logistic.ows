@@ -21,18 +21,18 @@
 	<annotations />
 	<thumbnail />
 	<node_properties>
-		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/unicamp/componentizacao/lab1/component2learn/labs/2021/01-data-flow/zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 16, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals-recommend.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/unicamp/componentizacao/lab1/component2learn/labs/2021/01-data-flow', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1e\x00\x00\x00\xf0\x00\x00\x033\x00\x00\x02$\x00\x00\x02\x1e\x00\x00\x00\xf0\x00\x00\x033\x00\x00\x02$\x00\x00\x00\x00\x00\x00\x00\x00\x05P\x00\x00\x02\x1e\x00\x00\x00\xf0\x00\x00\x033\x00\x00\x02$', '__version__': 3}</properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/unicamp/componentizacao/lab1/component2learn/labs/2021/01-data-flow/zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 16, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals-recommend.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/unicamp/componentizacao/lab1/component2learn/labs/2021/01-data-flow', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1d\x00\x00\x00\xd1\x00\x00\x034\x00\x00\x02%\x00\x00\x02\x1e\x00\x00\x00\xf0\x00\x00\x033\x00\x00\x02$\x00\x00\x00\x00\x00\x00\x00\x00\x05P\x00\x00\x02\x1e\x00\x00\x00\xf0\x00\x00\x033\x00\x00\x02$', '__version__': 3}</properties>
 		<properties node_id="1" format="pickle">gASVDwgAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAWgAAAB8
-AAAD6QAAAnsAAAFpAAAAmwAAA+gAAAJ6AAAAAAAAAAAFUAAAAWkAAACbAAAD6AAAAnqUjBJ1c2Vf
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAWkAAACb
+AAAD6AAAAnoAAAFpAAAAmwAAA+gAAAJ6AAAAAAAAAAAFUAAAAWkAAACbAAAD6AAAAnqUjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
 cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
-aW5fcm9sZV9oaW50c5R9lCiMBG5hbWWUSwOGlIwJYXZhaWxhYmxllEsAhpSMBnJhdGluZ5RLAoaU
-aBVLAYaUjANtZnKUSwGGlIwJYXR0cmlidXRllEsAhpSMBndlaWdodJRLAoaUaBxLAYaUjAhjYWxv
-cmllc5RLAoaUaBxLAoaUjAdwcm90ZWlulEsChpRoHEsDhpSMA2ZhdJRLAoaUaBxLBIaUjAZzb2Rp
-dW2USwKGlGgcSwWGlIwFZmliZXKUSwKGlGgcSwaGlIwFY2FyYm+USwKGlGgcSweGlIwGc3VnYXJz
-lEsChpRoHEsIhpSMBnBvdGFzc5RLAoaUaBxLCYaUjAh2aXRhbWluc5RLAoaUaBxLCoaUjAVzaGVs
-ZpRLAoaUaBxLC4aUjARjdXRzlEsChpRoHEsMhpSMBHR5cGWUSwGGlGgcSw2GlIwOcmVjb21tZW5k
+aW5fcm9sZV9oaW50c5R9lCiMBG5hbWWUSwOGlIwJYXZhaWxhYmxllEsAhpSMBndlaWdodJRLAoaU
+aBVLAYaUjARjdXRzlEsChpRoFUsChpSMBHR5cGWUSwGGlGgVSwOGlIwFc2hlbGaUSwKGlGgVSwSG
+lIwDbWZylEsBhpSMCWF0dHJpYnV0ZZRLAIaUjAhjYWxvcmllc5RLAoaUaCVLAYaUjAdwcm90ZWlu
+lEsChpRoJUsChpSMA2ZhdJRLAoaUaCVLA4aUjAZzb2RpdW2USwKGlGglSwSGlIwFZmliZXKUSwKG
+lGglSwWGlIwFY2FyYm+USwKGlGglSwaGlIwGc3VnYXJzlEsChpRoJUsHhpSMBnBvdGFzc5RLAoaU
+aCVLCIaUjAh2aXRhbWluc5RLAoaUaCVLCYaUjAZyYXRpbmeUSwKGlGglSwqGlIwOcmVjb21tZW5k
 YXRpb26USwGGlIwFY2xhc3OUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQojANtZnKU
 SwGMBHR5cGWUSwGMCGNhbG9yaWVzlEsCjAdwcm90ZWlulEsCjANmYXSUSwKMBnNvZGl1bZRLAowF
 ZmliZXKUSwKMBWNhcmJvlEsCjAZzdWdhcnOUSwKMBnBvdGFzc5RLAowIdml0YW1pbnOUSwKMBXNo
@@ -60,32 +60,33 @@ jAR0eXBllEsBhpRoaEsNhpSMCXJlY29tbWVuZJRLAYaUaIVLAIaUdUr+////hpRoB0sBdWhKfZQo
 aM5LAWj1SwFo1EsCaNdLAmjaSwJo3UsCaOBLAmjjSwJo5ksCaOlLAmjsSwJo70sCaNFLAmjySwJo
 y0sCaPhLAXVoXH2UaMhLA3N1YmV1Lg==
 </properties>
-		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06y\x00\x00\x01\xae\x00\x00\x07\x7f\x00\x00\x03\x81\x00\x00\x06y\x00\x00\x01\xd3\x00\x00\x07\x7f\x00\x00\x03\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x06y\x00\x00\x01\xd3\x00\x00\x07\x7f\x00\x00\x03\x81', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
-		<properties node_id="3" format="pickle">gASVCgEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
-lENCAdnQywADAAD/////////+AAABVAAAALYAAAAAAAAABcAAAVPAAAC1wAAAAACAAAABVAAAAAA
-AAAAFwAABU8AAALXlIwJc2VsZWN0aW9ulF2UjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2NvcmVz
-lI+UKIwEUk1TRZSMAkNBlIwCRjGUjAlQcmVjaXNpb26UjAZSZWNhbGyUjANNU0WUjAJSMpSMA01B
-RZSMA0FVQ5SQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02@\x00\x00\x00\xae\x00\x00\x03\x11\x00\x00\x02I\x00\x00\x02A\x00\x00\x00\xcd\x00\x00\x03\x10\x00\x00\x02H\x00\x00\x00\x00\x00\x00\x00\x00\x05P\x00\x00\x02A\x00\x00\x00\xcd\x00\x00\x03\x10\x00\x00\x02H', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVDQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAAAAAAAFwAABU8AAALXAAAAAAAAABcAAAVPAAAC1wAAAAACAAAABVAAAAAA
+AAAAFwAABU8AAALXlIwJc2VsZWN0aW9ulF2USwthjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2Nv
+cmVzlI+UKIwDQVVDlIwDTVNFlIwEUk1TRZSMAkNBlIwCRjGUjANNQUWUjAJSMpSMCVByZWNpc2lv
+bpSMBlJlY2FsbJSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
 </properties>
-		<properties node_id="4" format="pickle">gASVaAMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
-lENCAdnQywADAAAAAAFoAAAAfAAAA+kAAAJ7AAABaQAAAJsAAAPoAAACegAAAAAAAAAABVAAAAFp
+		<properties node_id="4" format="pickle">gASVjQMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAFpAAAAmwAAA+gAAAJ6AAABaQAAAJsAAAPoAAACegAAAAAAAAAABVAAAAFp
 AAAAmwAAA+gAAAJ6lIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFu
 Z2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAxjdXJyZW50
 SW5kZXiUSwBK/v///4aUjAtkZXNjcmlwdG9yc5RdlIwoT3JhbmdlLndpZGdldHMuZGF0YS5vd2Zl
 YXR1cmVjb25zdHJ1Y3RvcpSMEkRpc2NyZXRlRGVzY3JpcHRvcpSTlCiMDnJlY29tbWVuZGF0aW9u
-lIwcInkiIGlmIHJhdGluZyA+PSA1MCBlbHNlICJuIpQpiXSUgZRhaARLAXWMCmF0dHJpYnV0ZXOU
-fZQojANtZnKUSwGMBHR5cGWUSwGMCGNhbG9yaWVzlEsCjAdwcm90ZWlulEsCjANmYXSUSwKMBnNv
-ZGl1bZRLAowFZmliZXKUSwKMBWNhcmJvlEsCjAZzdWdhcnOUSwKMBnBvdGFzc5RLAowIdml0YW1p
-bnOUSwKMBXNoZWxmlEsCjAZ3ZWlnaHSUSwKMBGN1dHOUSwKMBnJhdGluZ5RLAnWMBW1ldGFzlH2U
-jARuYW1llEsDc3ViaAkpgZR9lChoDH2UKIwMY3VycmVudEluZGV4lEsASv7///+GlIwLZGVzY3Jp
-cHRvcnOUXZRoFCiMA3JlY5SMHCJZIiBpZiByYXRpbmcgPj0gNTAgZWxzZSAiTiKUKYl0lIGUYWgE
-SwF1aBl9lCiMA21mcpRLAYwEdHlwZZRLAYwIY2Fsb3JpZXOUSwKMB3Byb3RlaW6USwKMA2ZhdJRL
-AowGc29kaXVtlEsCjAVmaWJlcpRLAowFY2FyYm+USwKMBnN1Z2Fyc5RLAowGcG90YXNzlEsCjAh2
-aXRhbWluc5RLAowFc2hlbGaUSwKMBndlaWdodJRLAowEY3V0c5RLAowGcmF0aW5nlEsCjAlyZWNv
-bW1lbmSUSwF1aCp9lIwEbmFtZZRLA3N1YmV1Lg==
+lIxBInkiIGlmIHJhdGluZyA+PSA1MCBhbmQgIHNvZGl1bSA8IDUwIGFuZCBjYWxvcmllcyA8IDEw
+MCAgZWxzZSAibiKUKYl0lIGUYWgESwF1jAphdHRyaWJ1dGVzlH2UKIwDbWZylEsBjAR0eXBllEsB
+jAhjYWxvcmllc5RLAowHcHJvdGVpbpRLAowDZmF0lEsCjAZzb2RpdW2USwKMBWZpYmVylEsCjAVj
+YXJib5RLAowGc3VnYXJzlEsCjAZwb3Rhc3OUSwKMCHZpdGFtaW5zlEsCjAVzaGVsZpRLAowGd2Vp
+Z2h0lEsCjARjdXRzlEsCjAZyYXRpbmeUSwJ1jAVtZXRhc5R9lIwEbmFtZZRLA3N1YmgJKYGUfZQo
+aAx9lCiMDGN1cnJlbnRJbmRleJRLAEr+////hpSMC2Rlc2NyaXB0b3JzlF2UaBQojANyZWOUjBwi
+WSIgaWYgcmF0aW5nID49IDUwIGVsc2UgIk4ilCmJdJSBlGFoBEsBdWgZfZQojANtZnKUSwGMBHR5
+cGWUSwGMCGNhbG9yaWVzlEsCjAdwcm90ZWlulEsCjANmYXSUSwKMBnNvZGl1bZRLAowFZmliZXKU
+SwKMBWNhcmJvlEsCjAZzdWdhcnOUSwKMBnBvdGFzc5RLAowIdml0YW1pbnOUSwKMBXNoZWxmlEsC
+jAZ3ZWlnaHSUSwKMBGN1dHOUSwKMBnJhdGluZ5RLAowJcmVjb21tZW5klEsBdWgqfZSMBG5hbWWU
+SwNzdWJldS4=
 </properties>
-		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01i\x00\x00\x00\x9b\x00\x00\x03\xe8\x00\x00\x02z\x00\x00\x01i\x00\x00\x00\x9b\x00\x00\x03\xe8\x00\x00\x02z\x00\x00\x00\x00\x00\x00\x00\x00\x05P\x00\x00\x01i\x00\x00\x00\x9b\x00\x00\x03\xe8\x00\x00\x02z', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
-		<properties node_id="6" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05O\x00\x00\x02\xd7\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05O\x00\x00\x02\xd7\x00\x00\x00\x00\x02\x00\x00\x00\x05P\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05O\x00\x00\x02\xd7', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="6" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02?\x00\x00\x00\xd2\x00\x00\x03\x11\x00\x00\x01\xe8\x00\x00\x02@\x00\x00\x00\xf1\x00\x00\x03\x10\x00\x00\x01\xe7\x00\x00\x00\x00\x00\x00\x00\x00\x05P\x00\x00\x02@\x00\x00\x00\xf1\x00\x00\x03\x10\x00\x00\x01\xe7', '__version__': 1}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
