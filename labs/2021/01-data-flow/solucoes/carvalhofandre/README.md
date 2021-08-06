@@ -29,16 +29,20 @@ Comparando os métodos de predição testados, o Logistic Regression possui um m
 
 
 ## Arquivo do Projeto
-Arquivo com o método de predição Logistic Regressio e as alterações de critério de recomendação e features atualizado
+Arquivo com o método de predição Logistic Regression e as alterações de critério de recomendação e features atualizado
 > [/orange/tarefa1_zombie-meals.ows](orange/).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/diagrama-componentes-venda.png)
+![Diagrama Venda](images/tarefa2-diagrama-componentes-venda.PNG)
 
 ## Texto Explicativo
 
-> Texto explicando diagrama, conforme especificação do laboratório.
+> O primeiro componente de iteração do cliente no marketplace é o componente que monta a lista de produtos disponíveis. Ele possui uma interface de que consome dados e uma interface que produz dados. Ao abrir a página que a lista de produtos, o componente consome dados de 3 componentes:
+- Componente por Predição por Itens comprados e avaliados pelo próprio cliente. Esse componente gera dados de recomendação baseado em itens já comprados e avaliados pelo cliente.
+- Componente por Predição por Itens comprados e avaliados por todos os clientes. Esse componente gera dados de recomendação baseado em itens já comprados e avaliados por todas os clientes na base do marketplace.
+- Componente que retorna lista de produtos disponíveis no marketplace. Esse componente consome dados de um outro componente, que fornece os produtos disponíveis no marketplace.
+
+A interface fornecida pelo componente gera uma lista de produtos disponíveis para o cliente. O componente "Carrinho com os produtos selecionados pelo cliente" consome esses dados e gera a lista dos produtos selecionados pelo cliente para a finalização da compra
