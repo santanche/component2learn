@@ -57,18 +57,18 @@
 	</annotations>
 	<thumbnail />
 	<node_properties>
-		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals-recommend.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/component2learn/labs/2021/01-data-flow', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04V\x00\x00\x01E\x00\x00\x05\x8f\x00\x00\x02\xa8\x00\x00\x04V\x00\x00\x01j\x00\x00\x05\x8f\x00\x00\x02\xa8\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x04V\x00\x00\x01j\x00\x00\x05\x8f\x00\x00\x02\xa8', '__version__': 3}</properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/vntheju/Development/gitUnicamp/component2learn/labs/2021/01-data-flow/zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 16, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals-recommend.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/vntheju/Development/gitUnicamp/component2learn/labs/2021', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xd9\x00\x00\x01S\x00\x00\x04%\x00\x00\x02\xca\x00\x00\x02\xd9\x00\x00\x01o\x00\x00\x04%\x00\x00\x02\xca\x00\x00\x00\x00\x02\x00\x00\x00\x07\x00\x00\x00\x02\xd9\x00\x00\x01o\x00\x00\x04%\x00\x00\x02\xca', '__version__': 3}</properties>
 		<properties node_id="1" format="pickle">gASVDwgAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAMsAAACJ
-AAAGNAAAA5QAAADLAAAApQAABjQAAAOUAAAAAAAAAAAHAAAAAMsAAAClAAAGNAAAA5SUjBJ1c2Vf
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAUMAAABC
+AAAGrAAAA00AAAFDAAAAXgAABqwAAANNAAAAAAAAAAAHAAAAAUMAAABeAAAGrAAAA02UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
 cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
 aW5fcm9sZV9oaW50c5R9lCiMBG5hbWWUSwOGlIwJYXZhaWxhYmxllEsAhpSMBnJhdGluZ5RLAoaU
-aBVLAYaUjANtZnKUSwGGlIwJYXR0cmlidXRllEsAhpSMBndlaWdodJRLAoaUaBxLAYaUjAhjYWxv
-cmllc5RLAoaUaBxLAoaUjAdwcm90ZWlulEsChpRoHEsDhpSMA2ZhdJRLAoaUaBxLBIaUjAZzb2Rp
-dW2USwKGlGgcSwWGlIwFZmliZXKUSwKGlGgcSwaGlIwFY2FyYm+USwKGlGgcSweGlIwGc3VnYXJz
-lEsChpRoHEsIhpSMBnBvdGFzc5RLAoaUaBxLCYaUjAh2aXRhbWluc5RLAoaUaBxLCoaUjAVzaGVs
-ZpRLAoaUaBxLC4aUjARjdXRzlEsChpRoHEsMhpSMBHR5cGWUSwGGlGgcSw2GlIwOcmVjb21tZW5k
+aBVLAYaUjAhjYWxvcmllc5RLAoaUaBVLAoaUjAZzb2RpdW2USwKGlGgVSwOGlIwDZmF0lEsChpRo
+FUsEhpSMBnN1Z2Fyc5RLAoaUaBVLBYaUjAVjYXJib5RLAoaUaBVLBoaUjAZ3ZWlnaHSUSwKGlGgV
+SweGlIwHcHJvdGVpbpRLAoaUaBVLCIaUjAVmaWJlcpRLAoaUaBVLCYaUjAZwb3Rhc3OUSwKGlGgV
+SwqGlIwEdHlwZZRLAYaUaBVLC4aUjAVzaGVsZpRLAoaUaBVLDIaUjAh2aXRhbWluc5RLAoaUaBVL
+DYaUjARjdXRzlEsChpRoFUsOhpSMA21mcpRLAYaUjAlhdHRyaWJ1dGWUSwCGlIwOcmVjb21tZW5k
 YXRpb26USwGGlIwFY2xhc3OUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQojANtZnKU
 SwGMBHR5cGWUSwGMCGNhbG9yaWVzlEsCjAdwcm90ZWlulEsCjANmYXSUSwKMBnNvZGl1bZRLAowF
 ZmliZXKUSwKMBWNhcmJvlEsCjAZzdWdhcnOUSwKMBnBvdGFzc5RLAowIdml0YW1pbnOUSwKMBXNo
@@ -97,11 +97,11 @@ aM5LAWj1SwFo1EsCaNdLAmjaSwJo3UsCaOBLAmjjSwJo5ksCaOlLAmjsSwJo70sCaNFLAmjySwJo
 y0sCaPhLAXVoXH2UaMhLA3N1YmV1Lg==
 </properties>
 		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xfe\x00\x00\x01*\x00\x00\x04\x00\x00\x00\x02\xf3\x00\x00\x02\xfe\x00\x00\x01F\x00\x00\x04\x00\x00\x00\x02\xf3\x00\x00\x00\x00\x02\x00\x00\x00\x07\x00\x00\x00\x02\xfe\x00\x00\x01F\x00\x00\x04\x00\x00\x00\x02\xf3', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
-		<properties node_id="3" format="pickle">gASVCgEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
-lENCAdnQywADAAAAAAArAAAAoAAABtQAAAN8AAAAKwAAALwAAAbUAAADfAAAAAAAAAAABwAAAAAr
-AAAAvAAABtQAAAN8lIwJc2VsZWN0aW9ulF2UjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2NvcmVz
-lI+UKIwEUk1TRZSMAkYxlIwDQVVDlIwJUHJlY2lzaW9ulIwDTUFFlIwDTVNFlIwCQ0GUjAZSZWNh
-bGyUjAJSMpSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+		<properties node_id="3" format="pickle">gASVDQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAAJAAAAUgAABi4AAAMuAAAACQAAAG4AAAYuAAADLgAAAAAAAAAABwAAAAAJ
+AAAAbgAABi4AAAMulIwJc2VsZWN0aW9ulF2USwBhjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2Nv
+cmVzlI+UKIwDTVNFlIwCRjGUjARSTVNFlIwGUmVjYWxslIwCQ0GUjANBVUOUjAlQcmVjaXNpb26U
+jAJSMpSMA01BRZSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
 </properties>
 		<properties node_id="4" format="literal">{'C': 1.0, 'auto_apply': True, 'coef0': 0.0, 'controlAreaVisible': True, 'degree': 3, 'epsilon': 0.1, 'gamma': 0.0, 'kernel_type': 2, 'learner_name': '', 'limit_iter': True, 'max_iter': 100, 'nu': 0.5, 'nu_C': 1.0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00H\x00\x00\x00\x00\x00\x00\x01\x95\x00\x00\x02,\x00\x00\x00H\x00\x00\x00%\x00\x00\x01\x95\x00\x00\x02,\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x00H\x00\x00\x00%\x00\x00\x01\x95\x00\x00\x02,', 'svm_type': 0, 'tol': 0.001, '__version__': 1}</properties>
 		<properties node_id="5" format="pickle">gASVaAMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5

@@ -58,7 +58,17 @@ Destaca-se também os valores obtidos através da regressão logística. Os resu
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](images/diagrama-componentes-venda.png)
+![Diagrama Venda](images/diagrama-recomendacoes-heliorosajr.png)
 
 ## Texto Explicativo
-> TEXT TO BE REPLACED
+O diagrama apresentado acima apresenta o fluxo de pedido de uma refeição.
+
+O zumbi acessa a plataforma e realiza uama busca para obter as refeições disponíveis no cardápio.
+
+O componente de cardápio pode interagir com o componente de recomendações e o componente de carrinho, ambos descritos a seguir.
+
+O componente de recomendações interage com dois componentes de predição, que são responsáveis por criar modelos preditivos, que tem como objetivo sugerir refeições para os zumbis de acordo com avaliações do próprio zumbi e também de outros usuários que realizaram outras avaliações.
+
+Por sua vez, o componente de carrinho é responsável por armazenar os itens que foram pedidos pelo usuário até o momento de efetivação do pedido.
+
+O carrinho interage com o componente de pedido, que é responsável por concretizar o pedido do usuário. Após essa etapa o fluxo pode se dividir em duas vertentes. A primeira delas é destinada ao preparo e entrega do pedido do usuário, enquanto que a segunda se refere à avaliação de pedidos.
