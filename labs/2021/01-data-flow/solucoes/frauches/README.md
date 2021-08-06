@@ -17,4 +17,4 @@
 
 ## Texto Explicativo
 
-> O mecanismo de funcionamento das recomendações inicialmente baseia-se a partir da listagem de compras e suas avaliações pelos clientes, estas servem como base para o componente de predição analisar os dados e preparar uma listagem de recomendações.
+> O mecanismo de funcionamento das recomendações baseia-se a partir da listagem de compras e suas avaliações pelos clientes, estas servem como base para o componente de predição preparar recomendações considerando determinados critérios para analisar os dados de compras.
