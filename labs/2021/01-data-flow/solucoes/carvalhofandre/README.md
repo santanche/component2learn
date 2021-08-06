@@ -40,7 +40,7 @@ Arquivo com o método de predição Logistic Regression e as alterações de cri
 
 ## Texto Explicativo
 
-> O primeiro componente de iteração do cliente no marketplace é o componente que monta a lista de produtos disponíveis. Ele possui uma interface de que consome dados e uma interface que produz dados. Ao abrir a página que a lista de produtos, o componente consome dados de 3 componentes:
+O primeiro componente de iteração do cliente no marketplace é o componente que monta a lista de produtos disponíveis. Ele possui uma interface de que consome dados e uma interface que produz dados. Ao abrir a página que a lista de produtos, o componente consome dados de 3 componentes:
 - Componente por Predição por Itens comprados e avaliados pelo próprio cliente. Esse componente gera dados de recomendação baseado em itens já comprados e avaliados pelo cliente.
 - Componente por Predição por Itens comprados e avaliados por todos os clientes. Esse componente gera dados de recomendação baseado em itens já comprados e avaliados por todas os clientes na base do marketplace.
 - Componente que retorna lista de produtos disponíveis no marketplace. Esse componente consome dados de um outro componente, que fornece os produtos disponíveis no marketplace.
