@@ -16,7 +16,6 @@ Estrutura de pastas:
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
 ## Imagem do Projeto
-> Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
 ![Workflow Orange](images/Workflow.png)
 
 ## Arquivo do Projeto
@@ -26,7 +25,7 @@ Estrutura de pastas:
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](images/diagrama-componentes-venda.png)
+![Diagrama Venda](orange/zombie-meals_rodrigo_sartorato.ows)
 
 ## Texto Explicativo
 
