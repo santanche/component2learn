@@ -8,7 +8,7 @@ Professor: André Santanchè
 A utilização do SVM como método de predição, como originalmente estabelecido no projeto leva aos resultados expostos na figura 1.
 
 <p align="center">
-  <img width="460" height="300" src="images/ResultadoSVM.png">
+  <img width="460" height="300" src="images/ResultadoSVM.PNG">
 </p>
 
 <p align=center>Figura 1 - Resultado da predição usando o método SVG</p>
