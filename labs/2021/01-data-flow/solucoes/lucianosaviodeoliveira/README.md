@@ -34,7 +34,7 @@
 ## Diagrama de Componentes
 ![Fluxo Marketplace](lab01/images/fluxo-marketplace.png)
 
-## Texte Explicativo
+## Texto Explicativo
 > Cliente escolhe a refeição.
 > Sistema sugere refeições avaliadas pelo próprio cliente.
 > Sistema sugere refeições avaliadas por outros clientes.
