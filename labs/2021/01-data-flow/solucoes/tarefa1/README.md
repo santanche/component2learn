@@ -100,5 +100,5 @@ Para facilitar a experimentação com os diferentes tipos de predição e a comp
 
  <p align=center>Figura 9 -  Diagrama da solução proposta usando Logistic Regression e permitindo, mediante fácil edição a alteração do modelo a ser adotado</p>
 
-O arquivo  ows pode ser encontrado em: file://orange/
+O arquivo ows pode ser encontrado em: [zombi-meals.ows](./orange/zombie-meals.ows)
 
