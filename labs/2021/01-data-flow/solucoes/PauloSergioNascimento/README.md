@@ -8,7 +8,7 @@
 ![Workflow Orange](images/workflow.png)
 
 ## Arquivo do Projeto
-link do arquivo gerado pelo orange após as mudanças realizadas: .
+link do arquivo gerado pelo orange após as mudanças realizadas: [arquivo](https://github.com/paulobazooka/component2learn/blob/master/labs/2021/01-data-flow/solucoes/PauloSergioNascimento/zombie-meals.ows).
 
 ## Detalhamento da tarefa 1
 Foi alterado do projeto inicial o novo model para teste de recomendação, foi escolhido a logistic regression. É possível observar que o valor de F1 teve uma melhora considerável como pode ser visto nas imagens abaixo:
