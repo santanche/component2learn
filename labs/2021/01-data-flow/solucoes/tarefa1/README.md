@@ -2,6 +2,8 @@
 
 Nome: André Luiz da Cruz Moreira (aluno avulso/extensão)
 Professor: André Santanchè
+Trabalho: labs/2021/01-dataflow/2021 
+Tarefa: 1 - Workflow para Recomendação de Zombie Meals
 
 **1)Modificando os métodos utilizados para fazer a predição obtemos diferentes resultados:**
 
