@@ -31,4 +31,4 @@ Estrutura de pastas:
 
 ## Texto Explicativo
 
-> Texto explicando diagrama, conforme especificação do laboratório.
+> O usuário primeiro escolhe uma refeição mediante a entrada "Solicita uma refeição" no componente escolha de refeição nesse momento é transmitido para o componente "Historico de pedidos e notas (raing)" a informação da refreição selecionada, esse componente a sua vez passa as informações necesarias para o componente "Sistema de Recomendação", que a sua vez faz uma recomendação de refeições ou complementos para essas reifeições baseadas nos históricos de pedidos e notas. Finalmente quando o usuário termine o pedido, o componente de escolha de refeição passa o pedido para o componente de despacho refeição quem a sua vez solicita uma avaliação ao usuário que será feito no componente avaliação de pedido, quem finalmente alimenta o banco de dado para futuras previsões e recomendações de refeição.
