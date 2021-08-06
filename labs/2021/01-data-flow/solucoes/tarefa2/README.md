@@ -1,7 +1,13 @@
 Nome: André Luiz da Cruz Moreira (aluno avulso/extensão)
+
 Professor: André Santanchè
+
 Trabalho: labs/2021/01-dataflow/2021 
+
 Tarefa: 2 - Projeto de Composição para Venda e Recomendação
+
+
+**Introdução**
 
 Para implementar o mecanismo de recomendações de refeições para os clientes, são necessários diferentes módulos, que são apresentados no diagrama UML do sistema, que pode ser visto na figura 1.
 
@@ -16,7 +22,7 @@ A solução apresentada se restringe aos fluxos considerados relevantes para a a
 
 A seguir os componentes são brevemente descritos com as suas interface. 
 
-1 - Componente GeraMenu
+**1 - Componente GeraMenu**
 
   Este componente gera a lista de opções de restaurantes e seus menus para o usuário em função do usuário e da sua localização. 
   
@@ -24,13 +30,13 @@ A seguir os componentes são brevemente descritos com as suas interface.
 
   Através da interface requerida IRecomendação ele requisita as recomendacões ofertadas pelo componente de Predição.
 
-2 - Componenente OfertaMenu
+**2 - Componente OfertaMenu**
 
   Este componente oferece ao usuário as opções de restaurantes e seus menus ofertadas pelo componente GeraMenu a partir da interface IMenu.
 
   Ele requer a interface ISolicitaçãoPedido para poder efetuar a solicitação de pedido ao componente Pedido através da interface ISolicitaçãoPedido.
 
-3 - Componente Pedido
+**3 - Componente Pedido**
 
   Este componente oferece ao componente OfertaMenu a interface para realização de pedidos a partir da interface ISolicitaçãoPedido.
 
@@ -40,7 +46,7 @@ A seguir os componentes são brevemente descritos com as suas interface.
 
   Além disto, este componente requer a interface IPedidoRealizado para poder enviar ao componente HistóricoPedidos o pedido realizado para futuras consultas por outros componentes. Esta interface contem os dados providos pela interface IAvaliação de forma que os pedidos avaliados sejam armazenados com suas avaliações, quando houver avaliação para o pedido em questão.
 
-4 - Componente HistóricoPedidos
+**4 - Componente HistóricoPedidos**
 
   Este componente é responsável por armazenar os pedidos realizados com suas respectivas avaliações e fornecer informações a respeito dos mesmos. 
 
@@ -48,13 +54,13 @@ A seguir os componentes são brevemente descritos com as suas interface.
 
   Ele oferece também a interface HistóricoPedidos para o componente Predição que a requisita a fim de, tendo acesso aos pedidos passados, poder gerar recomendações para o usuário.
 
-5 - Componente Avaliação
+**5 - Componente Avaliação**
 
   Este componente é responsável por obter a avaliação do pedido realizado e fornecê-la ao componente pedido uma vez que o pedido tenha sido concluído. 
 
   Ele oferece o serviço através da interface provida IAvaliação.
 
-6 - Componente Predição
+**6 - Componente Predição**
 
   Este componente oferece a interface IRecomendação para o componente GeraMenu a fim de  que este possa fornecer ao usuário recomendações de refeições. 
 
