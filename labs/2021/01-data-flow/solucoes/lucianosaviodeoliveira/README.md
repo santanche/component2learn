@@ -28,3 +28,21 @@
 
 > Link para o arquivo em Orange "zombie-meals-features":
 [zombie-meals-features](lab01/orange/zombie-meals-features.ows).
+
+# Tarefa 2 - Projeto de Composição para Venda e Recomendação
+
+## Diagrama de Componentes
+![Fluxo Marketplace](lab01/images/fluxo-marketplace.png)
+
+## Texto Explicativo
+> Cliente escolhe a refeição.
+> Sistema sugere refeições avaliadas pelo próprio cliente.
+> Sistema sugere refeições avaliadas por outros clientes.
+> Cliente realiza o pedido da refeição escolhida e realiza o pagamento.
+> Sistema avisa vendedor.
+> Vendedor prepara a refeição.
+> Vendedor envia o pedido ao entregador.
+> Vendedor fornece status de pedido ao sistema.
+> Sistema fornece status do pedido ao cliente.
+> Entregagor realiza a entrega do pedido ao cliente.
+> Cliente avalia a refeição.
