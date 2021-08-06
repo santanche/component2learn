@@ -20,7 +20,7 @@ Estrutura de pastas:
 ![Workflow Orange](images/orange-zombie-meals-prediction.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+> <https://github.com/byronacunia/component2learn/tree/master/labs/2021/01-data-flow/solucoes/byronacunia/orange>.
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
