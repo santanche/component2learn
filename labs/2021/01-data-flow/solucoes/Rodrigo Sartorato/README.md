@@ -1,5 +1,34 @@
-## Dentro desta pasta deve estar a sua solução do laboratório.
-Aluno: Rodrigo Leonel Sartorato 37.964.956-1
+#Lab01 - Data Flow
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── images     <- arquivos de imagens usadas no documento
+│
+└── orange     <- arquivos do Orange
+~~~
+
+# Aluno
+* `Rodrigo Leonel Sartotato 37.964.956-1`
+
+# Tarefa 1 - Workflow para Recomendação de Zombie Meals
+
+## Imagem do Projeto
+> Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
+![Workflow Orange](images/Workflow.png)
+
+## Arquivo do Projeto
+> Coloque um link para o arquivo em Orange.
+
+# Tarefa 2 - Projeto de Composição para Venda e Recomendação
+
+## Diagrama de Componentes
+
+![Diagrama Venda](images/diagrama-componentes-venda.png)
+
+## Texto Explicativo
 
 Tarefa 1:
 
@@ -18,6 +47,7 @@ Rating >60	0,907	0,879	        0,938
 Rating >50	0,94	0,95	        0,938
 Rating >40	0,812	0,817	        0,812
 Rating >30	1	1	        1
+
 
 
 
