@@ -20,8 +20,7 @@ Estrutura de pastas:
 ![Workflow Orange](images/recomendacao-zombie-tarefa01.jpg)
 
 ## Arquivo do Projeto
-![Workflow Orange](orange/zombie-meals-lab01-tarefa01.ows)
-[/thalih/orange/](../../../thali/orange/).
+[/thalih/orange/](https://github.com/thalih/component2learn/tree/master/labs/2021/01-data-flow/solucoes/thalih/orange/)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
