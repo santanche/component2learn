@@ -19,13 +19,13 @@ Estrutura de pastas:
 ![Workflow Orange](images/Workflow.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+![Diagrama Venda](orange/zombie-meals_rodrigo_sartorato.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](orange/zombie-meals_rodrigo_sartorato.ows)
+![Componente](images/Workflow.png)
 
 ## Texto Explicativo
 
