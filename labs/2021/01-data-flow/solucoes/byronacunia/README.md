@@ -20,7 +20,7 @@ Estrutura de pastas:
 ![Workflow Orange](images/orange-zombie-meals-prediction.png)
 
 ## Arquivo do Projeto
-> <orange/zombie-meals.ows>.
+> <./orange/zombie-meals.ows>.
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
