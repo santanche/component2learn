@@ -18,7 +18,7 @@ Estrutura de pastas:
 
 ## Imagem do Projeto
 > Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-zombie-meals-prediction.png)
+![Workflow Orange](images/recomendacao-zombie-tarefa01.jpg)
 
 ## Arquivo do Projeto
 > Coloque um link para o arquivo em Orange.
