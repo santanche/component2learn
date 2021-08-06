@@ -56,4 +56,19 @@ depende fortemente de proteínas e vitaminas para nutrir a matéria em decomposi
 
 ## Diagrama de Componentes
 
+Dada a arquitetura proposta:
+
+![Anterior](images/INF331.png)
+
+Adicionamos o componente de predição como um suporte anterior a formação do pedido:
+
+![Novo](images/INF331_add.png)
+
 ## Texto Explicativo
+
+Antes do sistema ser capaz de chamar o componente que efetiva a montagem do pedido ele invoca um componente que permite ao consumidor escolher itens para este
+pedido. No caso em estudo o tipo dos itens que podem ser escolhidos são refeições. É responsabilidade então desse componente de Escolha de Produtos invocar
+instâncias do componente de predição, ora invocado com o dataset de refeições anteriores deste usuário, ora com o dataset de todos os usuários do marketplace,
+montando dois grupos de recomendações de refeição a fazer para este usuário.
+Opcionalmente este componente pode alterar o limiar de nota de avaliação das refeições, mas é esperado que o modelo do Componente de Predição já esteja
+previamente sintonizado para a realidade dessa aplicação.
