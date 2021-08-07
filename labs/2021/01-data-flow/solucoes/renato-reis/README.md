@@ -30,7 +30,7 @@ Estrutura de pastas:
 ## Texto Explicativo
 
 
-* `Componente Busca:` Componente que realiza busca das refeiçoes disponíveis e retorna para o front-end exibir para o usuário. Este componente possui as seguintes interfaces: Finalizar compra(Interface com componente Carrinho para finalizar compra), Consulta Refeições: Consulta o banco de dados das refeiçoes cadastradas, Recomenda Item (Interface com o componente de Predição que ira retornar recomendaçoes de refeiçoes para o cliente), Remover/Adicionar item(Interface com o componente Carrinho que permite adicionar e remover items do carrinho).
+* `Componente Busca:` Componente que realiza busca das refeiçoes disponíveis e retorna para o front-end exibir para o usuário. Este componente possui as seguintes interfaces: *Finalizar compra*(Interface com componente Carrinho para finalizar compra), *Consulta Refeições*(Consulta o banco de dados das refeiçoes cadastradas), *Recomenda Item* (Interface com o componente de *Predição* que ira retornar recomendaçoes de refeiçoes para o cliente), *Remover/Adicionar item*(Interface com o componente Carrinho que permite adicionar e remover items do carrinho).
 
 > Texto explicando diagrama, conforme especificação do laboratório.
 
