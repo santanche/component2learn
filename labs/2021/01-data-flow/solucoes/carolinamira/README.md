@@ -31,7 +31,7 @@ Esta interface recebe os dados transmitidos por meio da interface provida ITable
 estabelecidos para definir qual refeição seria uma melhor recomendação, considerando o cenário escolhido (pessoal ou geral).\
 O PredictionComponent, por sua vez, tem como fonte o DataSetComponent com todos os dados registrados quanto às seguintes propriedades: refeições pessoais, recomendações pessoais, 
 refeições dos clientes e recomendações dos clientes. O fornecimento destes dados é feito com uma interface provida (ITableProducer (DataSetComponent)) e uma interface requerida 
-(ITableProducer (PredictionComponent)).\ 
+(ITableProducer (PredictionComponent)). 
 Após o envio das recomendações, o cliente pode seguir ou não as sugestões apresentadas, e continuar com o fluxo padrão do processo de compra do Marketplace: seleção do pedido, 
 inserção dos dados de pagamento, confirmação do pedido e recebimento.
 
