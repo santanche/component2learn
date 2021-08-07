@@ -30,4 +30,7 @@ Estrutura de pastas:
 
 ## Texto Explicativo
 
-> .
+> O processo de aquisição de uma refeição virtualmente: 
+Basicamente, O componente "Pesquisa Refeição" está ligado ao componente "Escolha Refeição".
+Entre esse processo de ligação, haverá a filtragem e a configuração dos dados.
+Finalizando assim, com o componente "Solicita Refeição" que transpõem para os demais componentes a escolha da refeição. .
