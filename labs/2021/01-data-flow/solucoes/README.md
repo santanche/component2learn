@@ -10,16 +10,15 @@
 > Utilização do método preditivo Logistic Regression
 ![Workflow Orange](images/logistic.png)
 > Utilização do método preditivo SVM 
-![Workflow Orange](images/SVM.png)
+![Workflow Orange](images/svm.png)
 > Utilização do método preditivo Tree 
 ![Workflow Orange](images/tree.png)
 
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
-![Workflow Orange](orange/zombie-meals-LOGISTIC.ows)
-![Workflow Orange](orange/zombie-meals-TREE.ows)
-![Workflow Orange](orange/SVM.png)
+* [Especificação de Laboratórios](orange/zombie-meals-LOGISTIC.ows)
+* [Especificação de Laboratórios](orange/zombie-meals-TREE.ows)
+* [Especificação de Laboratórios](zombie-meals-SVM.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
