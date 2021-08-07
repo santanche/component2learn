@@ -17,7 +17,7 @@ Estrutura de pastas:
 
 ## Imagem do Projeto
 > Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/alterado-orange-zombie-meals-prediction-comments.png)
+![Workflow Orange](images/alterado-orange-zombie-meals-prediction-comments.PNG)
 
 ## Arquivo do Projeto
 > Link para o arquivo em Orange: [Arquivo Tarefa 1](https://github.com/victorhugoliveira/component2learn/tree/master/labs/2021/01-data-flow/solucoes/victorhugooliveira/orange).
@@ -27,7 +27,7 @@ Estrutura de pastas:
 ## Diagrama de Componentes
 
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/diagrama-componentes-marketplace.png)
+![Diagrama Venda](images/diagrama-componentes-marketplace.PNG)
 
 ## Texto Explicativo
 
