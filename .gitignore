@@ -1,0 +1,5 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Java Compiled Files
+/eclipse/bin/
