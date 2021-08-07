@@ -1,26 +1,14 @@
-# Modelo para Apresentação do Lab01 - Data Flow
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-├── images     <- arquivos de imagens usadas no documento
-│
-└── orange     <- arquivos do Orange
-~~~
-
 # Aluno
-* `<Carolina Gonçalves Mira>`
+* `Carolina Gonçalves Mira`
 
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
 ## Imagem do Projeto
-> Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-zombie-meals-prediction.png)
+> Imagem da captura de tela com o projeto do Orange.
+![Workflow Orange](images/carolina-zombie-meals-pred.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+> Link para o arquivo em Orange: [Arquivo Tarefa 1]().
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
