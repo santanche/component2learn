@@ -16,17 +16,18 @@
 
 
 ## Arquivo do Projeto
-* [Especificação de Laboratórios](orange/zombie-meals-LOGISTIC.ows)
-* [Especificação de Laboratórios](orange/zombie-meals-TREE.ows)
-* [Especificação de Laboratórios](zombie-meals-SVM.ows)
+* [Solução com Logistic Regression](orange/zombie-meals-LOGISTIC.ows)
+* [Solução com Tree](orange/zombie-meals-TREE.ows)
+* [Solução com SVM](zombie-meals-SVM.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/diagrama-componentes-venda.png)
+![Diagrama Venda](images/diagrama.png)
 
 ## Texto Explicativo
 
-> Texto explicando diagrama, conforme especificação do laboratório.
+> O sistema verifica o estoque, ordenando os produtos disponíveis de acordo com o gosto do cliente. Isso, levando em consideração as últimas compras e o grau de satisfação do usuário
+> Após a seleção dos produtos, o cliente realiza a compra. A compra é despachada e entregue ao usuário.
