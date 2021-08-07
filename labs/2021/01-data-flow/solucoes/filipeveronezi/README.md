@@ -26,8 +26,13 @@ Estrutura de pastas:
 ## Diagrama de Componentes
 
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/diagrama-componentes-venda.png)
+![Fluxo de recomendação e compra de refeição](images/meal-workflow.png)
 
 ## Texto Explicativo
 
-> Texto explicando diagrama, conforme especificação do laboratório.
+1. Usuário efetua *login* através do componente de **Autenticação**;
+2. A partir das informações do usuário, são estabelecidos alguns inputs para uma lista de recomendações, gerada pelo componente **Recomendação**. Caso o usuário seja novo, a lista poderá ser gerada com base nas refeições mais populares;
+3. Um componente visual **Lista de refeições** fornece uma interface para escolha da refeição desejada;
+4. Ao escolher a refeição, o usuário pode observar mais detalhes na **Página da refeição**;
+5. O usuário pode confirmar os dados do pedido no componente visual **Confirmação do pedido**;
+6. O usuário prossegue para o pagamento no componente **Pagamento**.
