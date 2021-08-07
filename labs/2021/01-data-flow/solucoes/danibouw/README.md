@@ -4,11 +4,10 @@
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
 ## Imagem do Projeto
-> Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-zombie-meals-prediction.png)
+![Workflow Orange](images/ImagemOrangeDataFlow.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+[Arquivo Orange](https://github.com/danibouw/component2learn/blob/master/labs/2021/01-data-flow/solucoes/danibouw/orange/zombie-meals-solucao.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
