@@ -19,12 +19,12 @@ Estrutura de pastas:
 ![Workflow Orange](images/orange-zombie-meals-prediction.png)
 
 ## Arquivo do Projeto
-![Orange File ](orange/zombie-meals.ows)
+![Orange File ](https://github.com/mazevedofs/component2learn/blob/master/labs/2021/01-data-flow/solucoes/marina-azevedo-ferreira-soares-mazevedofs/orange/zombie-meals.ows)
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](images/diagrama-componentes-venda.png)
+![Diagrama Venda](https://github.com/mazevedofs/component2learn/blob/master/labs/2021/01-data-flow/solucoes/marina-azevedo-ferreira-soares-mazevedofs/images/orange-zombie-meals-prediction.png)
 
 ## Texto Explicativo
 
