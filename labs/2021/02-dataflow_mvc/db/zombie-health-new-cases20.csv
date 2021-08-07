@@ -1,0 +1,21 @@
+paralysis,yellow_tongue,member_loss,chest_pain,trembiling_finger,severe_anger,red_eye,blue_skin,diagnostic
+f,t,t,f,f,f,f,t,bacterial_infection
+f,f,t,t,f,f,f,f,Infecção Viral
+f,f,t,t,f,f,f,f,Infecção Viral
+f,f,t,f,f,t,f,f,fight
+f,f,f,f,f,f,f,f,fight
+f,f,f,f,t,t,f,t,t_virus
+f,t,t,f,t,f,f,f,zulombriga
+f,t,f,f,f,f,f,f,zulombriga
+t,t,f,f,f,f,f,f,bacterial_infection
+f,f,t,t,f,f,f,f,Infecção Viral
+f,f,t,t,f,t,f,f,fight
+f,t,t,f,t,f,f,f,zulombriga
+f,f,f,f,t,f,f,t,t_virus
+t,f,t,f,f,f,f,t,bacterial_infection
+f,f,f,f,t,t,f,t,t_virus
+t,t,t,f,f,f,f,f,bacterial_infection
+f,f,f,f,t,t,f,t,t_virus
+f,t,t,f,t,f,f,f,zulombriga
+t,t,t,f,f,f,f,t,bacterial_infection
+f,f,f,f,t,f,f,f,zulombriga
