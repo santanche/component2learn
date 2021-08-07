@@ -8,13 +8,13 @@
 ![Workflow Orange](images/carolina-zombie-meals-pred.png)
 
 ## Arquivo do Projeto
-> Link para o arquivo em Orange: [Arquivo Tarefa 1]().
+> Link para o arquivo no Orange: [Arquivo Tarefa 1](https://github.com/carolinamira/component2learn/blob/master/labs/2021/01-data-flow/solucoes/carolinamira/orange/carolina-zombie-meals.ows).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
+> Imagem (`PNG`) do diagrama de componentes.
 ![Diagrama Venda](images/diagrama-componentes-venda.png)
 
 ## Texto Explicativo
