@@ -7,7 +7,7 @@
 
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
-![Workflow Orange em formato PNG](images/orange-zombie-meals-prediction-lucas-franzolin.PNG)
+![Workflow Orange](images/orange-zombie-meals-prediction-lucas-franzolin.PNG)
 
 [zombie-meals-lucas-franzolin.ows](zombie-meals-lucas-franzolin.ows)
 
@@ -31,3 +31,5 @@
     15 Usuário envia avaliação do pedido
 
 ## Diagrama de Componentes
+
+![Fluxo marketplace](images/fluxo_marketplace.PNG)
