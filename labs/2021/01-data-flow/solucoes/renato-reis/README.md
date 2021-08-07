@@ -19,7 +19,7 @@ Estrutura de pastas:
 ![Workflow Orange](images/orange-zombie-meals-prediction.png)
 
 ## Arquivo do Projeto
-> [/labs/component2learn/labs/2021/01-data-flow/solucoes/renato-reis/orange](../../../labs/component2learn/labs/2021/01-data-flow/solucoes/renato-reis/orange/zombie-meals.ows).
+> [/labs/2021/01-data-flow/solucoes/renato-reis/orange](../../../labs/2021/01-data-flow/solucoes/renato-reis/orange/zombie-meals.ows).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
