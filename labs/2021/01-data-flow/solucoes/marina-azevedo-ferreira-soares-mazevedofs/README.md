@@ -24,7 +24,7 @@ Estrutura de pastas:
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](https://github.com/mazevedofs/component2learn/blob/master/labs/2021/01-data-flow/solucoes/marina-azevedo-ferreira-soares-mazevedofs/images/orange-zombie-meals-prediction.png)
+![Diagrama Venda](images/diagrama-componentes-venda.png)
 
 ## Texto Explicativo
 
