@@ -1,34 +1,20 @@
-# Modelo para Apresentação do Lab01 - Data Flow
+# Modelo para Apresentação do Lab02 - Data Flow & MVC
 
 Estrutura de pastas:
 
 ~~~
 ├── README.md  <- arquivo apresentando a tarefa
 │
-├── images     <- arquivos de imagens usadas no documento
-│
-└── orange     <- arquivos do Orange
+└── notebook   <- arquivo do notebook
 ~~~
 
 # Aluno
 * `<nome completo>`
 
-# Tarefa 1 - Workflow para Recomendação de Zombie Meals
+## Tarefas da parte 1 sobre criação de componentes
 
-## Imagem do Projeto
-> Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-zombie-meals-prediction.png)
+> Coloque um link para o arquivo do notebook com a resolução das duas tarefas do notebook `components-1-chart-single-class.ipynb`. Ele estará dentro da pasta `notebook`.
 
-## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+## Tarefas da parte 2 sobre composição de componentes do catálogo
 
-# Tarefa 2 - Projeto de Composição para Venda e Recomendação
-
-## Diagrama de Componentes
-
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/diagrama-componentes-venda.png)
-
-## Texto Explicativo
-
-> Texto explicando diagrama, conforme especificação do laboratório.
+> Coloque um link para o arquivo do notebook com a resolução das seis tarefas do notebook `components-4-catalog.ipynb`. Ele estará dentro da pasta `notebook`.
