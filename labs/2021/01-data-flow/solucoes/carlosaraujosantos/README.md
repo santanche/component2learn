@@ -11,16 +11,16 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Carlos Eduardo Araujo dos Santos`
 
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
 ## Imagem do Projeto
 > Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-zombie-meals-prediction.png)
+![Workflow Orange](images/solucao_orange.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+> [link para Arquivo](./orange/zombie-meals.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
