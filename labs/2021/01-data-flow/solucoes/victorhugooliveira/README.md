@@ -11,13 +11,13 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `Victor Hugo Gomes de Oliveira` <! --- colocar seu nome  -->
+* `Victor Hugo Gomes de Oliveira`
 
 # Tarefa 1 - Workflow para Recomendação de Zombie Meals
 
 ## Imagem do Projeto
 > Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-zombie-meals-prediction.png) <! --- trocar o link para a imagem nova  -->
+![Workflow Orange](images/alterado-orange-zombie-meals-prediction-comments.png)
 
 ## Arquivo do Projeto
 > Link para o arquivo em Orange: [Arquivo Tarefa 1](https://guides.github.com/features/mastering-markdown/).
