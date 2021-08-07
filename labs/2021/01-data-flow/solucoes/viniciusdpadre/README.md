@@ -18,7 +18,7 @@
 ## Arquivo do Projeto
 * [Solução com Logistic Regression](orange/zombie-meals-LOGISTIC.ows)
 * [Solução com Tree](orange/zombie-meals-TREE.ows)
-* [Solução com SVM](zombie-meals-SVM.ows)
+* [Solução com SVM](orange/zombie-meals-SVM.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
