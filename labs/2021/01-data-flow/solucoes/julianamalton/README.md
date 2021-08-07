@@ -21,4 +21,4 @@
 
 ## Texto Explicativo
 
-> Texto explicando diagrama, conforme especificação do laboratório.
+> Na primeira interface será realizado a criação do pedido, e então será passado a número do pedido para o componente checar pedido que verificará se o pedido ainda pode ser realizado e se está disponível, após isso todos os detalhados do pedido são enviados para o Compenente de Predição e o número do pedido é encaminhado para o compenente Finalizar Pedido.
