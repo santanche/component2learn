@@ -20,15 +20,15 @@ Estrutura de pastas:
 ![Workflow Orange](images/alterado-orange-zombie-meals-prediction-comments.png)
 
 ## Arquivo do Projeto
-> Link para o arquivo em Orange: [Arquivo Tarefa 1](https://guides.github.com/features/mastering-markdown/).
+> Link para o arquivo em Orange: [Arquivo Tarefa 1](https://github.com/victorhugoliveira/component2learn/tree/master/labs/2021/01-data-flow/solucoes/victorhugooliveira/orange).
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
 ## Diagrama de Componentes
 
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/diagrama-componentes-venda.png) <! --- trocar o link para a imagem nova  -->
+![Diagrama Venda](images/diagrama-componentes-marketplace.png)
 
 ## Texto Explicativo
 
-> Texto explicando diagrama, conforme especificação do laboratório.
+> Catálogo de produtos é disponibilizado ao usuário (DataSetComponent) para escolhar de um ou mais produtos. A partir do produto selecionado a "predição" é feita para indicar outros produtos similares e/ou complementares a escolha realizada pelo usuário (SelectionComponent). É realizada a consulta da disponibilidade dos produtos em estoque. E por fim, o pedido é fechado e preparado para envio (ConsoleComponent). 
