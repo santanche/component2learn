@@ -10,7 +10,7 @@
 ![Workflow Orange](images/lab1-at1-components.jpeg)
 
 ## Arquivo do Projeto
-> <orange/zombie-meals-solucao.ows>
+> [Link OWS](orange/zombie-meals-solucao.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
