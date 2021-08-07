@@ -25,7 +25,6 @@ Estrutura de pastas:
 
 ## Diagrama de Componentes
 
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
 ![Diagrama Venda](images/diagrama-componentes-venda.png)
 
 ## Texto Explicativo
