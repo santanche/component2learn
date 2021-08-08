@@ -3,3 +3,6 @@
 
 # Java Compiled Files
 /eclipse/bin/
+
+# Ignore .idea folder
+.idea
