@@ -5,11 +5,11 @@
 
 #Tarefa 1 - Workflow para Recomendação de Zombie Meals com fluxo Alternativo
   
-![](images/orange_00.png) <br>
+![](images/Lab02-T1.png) <br>
 
 #Tarefa 2 - Projeto de Componentes de Formas de Pagamento
    
-![](images/INF331-T2.png) <br>
+![](images/Lab01-T2.png) <br>
 
 ### Componentes para Forma de Pagamento
 
