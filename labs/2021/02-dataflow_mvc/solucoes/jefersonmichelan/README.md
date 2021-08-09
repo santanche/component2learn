@@ -9,11 +9,13 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* Jeferson Luis Michelan
 
 ## Tarefas da parte 1 sobre criação de componentes
 
 > Coloque um link para o arquivo do notebook com a resolução das duas tarefas do notebook `components-1-chart-single-class.ipynb`. Ele estará dentro da pasta `notebook`.
+[Notebok da componente Media](notebook/components-1-chart-single-class.ipynb)
+
 
 ## Tarefas da parte 2 sobre composição de componentes do catálogo
 
