@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Zombie Meals Import" position="(325.3636363636365, 257.1717171717171)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Target Rate" position="(731.090909090909, 251.89898989898973)" />
+		<node id="2" name="Data Sampler" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Data Sampler" position="(962.636363636364, 250.89898989898984)" />
+		<node id="3" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(1396.0909090909092, 245.80808080808072)" />
+		<node id="4" name="Feature Constructor" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Feature Constructor" position="(509.72727272727275, 258.35353535353534)" />
+		<node id="5" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Table Preview" position="(679.7272727272727, 376.53535353535335)" />
+		<node id="6" name="Calibrated Learner" qualified_name="Orange.widgets.model.owcalibratedlearner.OWCalibratedLearner" project_name="Orange3" version="" title="Calibrated Learner" position="(1149.0, 108.69444444444446)" />
+		<node id="7" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(1151.75, 317.44444444444446)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Remaining Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="4" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="2" sink_node_id="6" source_channel="Data Sample" sink_channel="Data" enabled="true" />
+		<link id="6" source_node_id="6" sink_node_id="3" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="7" source_node_id="2" sink_node_id="7" source_channel="Data Sample" sink_channel="Data" enabled="true" />
+		<link id="8" source_node_id="7" sink_node_id="3" source_channel="Model" sink_channel="Predictors" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(274.4949494949492, 475.1414141414141, 875.0, 354.0)" font-family="Sans Serif" font-size="16">Meals consumed by zombies and their respective ratings.
+* name: name of the meal
+* mfr: Manufacturer
+* type: cold or hot
+* calories: calories per serving
+* protein: grams of protein
+* fat: grams of fat
+* sodium: milligrams of sodium
+* fiber: grams of dietary fiber
+* carbo: grams of complex carbohydrates
+* sugars: grams of sugars
+* potass: milligrams of potassium
+* vitamins: vitamins and minerals - 0, 25, or 100, indicating the typical percentage of FDA recommended
+* shelf: display shelf (1, 2, or 3, counting from the floor)
+* weight: weight in ounces of one serving
+* cuts: number of pieces in one serving
+* rating: a rating of the meals
+* recommend: if the meal is recommended or not (according to the rating)</text>
+		<arrow id="1" start="(389.0, 458.2626262626262)" end="(341.72727272727275, 316.0808080808081)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(694.5454545454543, 37.89898989898984, 322.0, 73.0)" font-family="Sans Serif" font-size="16">Defines the fields used to predict (meals compounds) and the field to be predicted (recommend).</text>
+		<arrow id="3" start="(816.9999999999998, 109.3535353535352)" end="(736.0909090909088, 221.7171717171715)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(960.090909090909, 412.3535353535351, 286.0, 65.0)" font-family="Sans Serif" font-size="16">Splits the training dataset (up) from the validation dataset (straight).</text>
+		<arrow id="5" start="(1095.0909090909095, 405.3535353535353)" end="(987.3636363636369, 308.89898989898984)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(357.090909090909, 75.80808080808083, 277.2727272727273, 55.18181818181819)" font-family="Sans Serif" font-size="16">Creates a recommendation field for meals with a rating &gt;= 50.</text>
+		<arrow id="7" start="(485.27272727272725, 138.80808080808075)" end="(512.5454545454545, 225.1717171717171)" fill="#C1272D" />
+		<arrow id="8" start="(549.8181818181818, 452.44444444444446)" end="(640.7272727272726, 396.0808080808081)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-meals-recommend.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/component2learn/labs/2021/01-data-flow', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04V\x00\x00\x01E\x00\x00\x05\x8f\x00\x00\x02\xa8\x00\x00\x04V\x00\x00\x01j\x00\x00\x05\x8f\x00\x00\x02\xa8\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x04V\x00\x00\x01j\x00\x00\x05\x8f\x00\x00\x02\xa8', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVbgcAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACK8AAABy
+AAAOGAAAA4YAAAivAAAAlwAADhgAAAOGAAAAAAAAAAAHgAAACK8AAACXAAAOGAAAA4aUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMBG5hbWWUSwOGlIwJYXZhaWxhYmxllEsAhpSMBnJhdGluZ5RLAoaU
+aBVLAYaUjANtZnKUSwGGlIwJYXR0cmlidXRllEsAhpSMBndlaWdodJRLAoaUaBxLAYaUjAhjYWxv
+cmllc5RLAoaUaBxLAoaUjAdwcm90ZWlulEsChpRoHEsDhpSMA2ZhdJRLAoaUaBxLBIaUjAZzb2Rp
+dW2USwKGlGgcSwWGlIwFZmliZXKUSwKGlGgcSwaGlIwFY2FyYm+USwKGlGgcSweGlIwGc3VnYXJz
+lEsChpRoHEsIhpSMBnBvdGFzc5RLAoaUaBxLCYaUjAh2aXRhbWluc5RLAoaUaBxLCoaUjAVzaGVs
+ZpRLAoaUaBxLC4aUjARjdXRzlEsChpRoHEsMhpSMBHR5cGWUSwGGlGgcSw2GlIwOcmVjb21tZW5k
+YXRpb26USwGGlIwFY2xhc3OUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQoaBpLAWhC
+SwFoIUsCaCRLAmgnSwJoKksCaC1LAmgwSwJoM0sCaDZLAmg5SwJoPEsCaB5LAmg/SwJoF0sCaEVL
+AXWMBW1ldGFzlH2UaBNLA3N1YmgMKYGUfZQoaA99lChoEX2UKGgTSwOGlGgVSwCGlGgaSwGGlGgc
+SwCGlGgeSwKGlGgcSwGGlGghSwKGlGgcSwKGlGgkSwKGlGgcSwOGlGgnSwKGlGgcSwSGlGgqSwKG
+lGgcSwWGlGgtSwKGlGgcSwaGlGgwSwKGlGgcSweGlGgzSwKGlGgcSwiGlGg2SwKGlGgcSwmGlGg5
+SwKGlGgcSwqGlGg8SwKGlGgcSwuGlGg/SwKGlGgcSwyGlGhCSwGGlGgcSw2GlGgXSwKGlGhHSwCG
+lHVK/v///4aUaAdLAXVoSn2UKIwDbWZylEsBjAR0eXBllEsBjAhjYWxvcmllc5RLAowHcHJvdGVp
+bpRLAowDZmF0lEsCjAZzb2RpdW2USwKMBWZpYmVylEsCjAVjYXJib5RLAowGc3VnYXJzlEsCjAZw
+b3Rhc3OUSwKMCHZpdGFtaW5zlEsCjAVzaGVsZpRLAowGd2VpZ2h0lEsCjARjdXRzlEsCjAZyYXRp
+bmeUSwJ1aEx9lIwEbmFtZZRLA3N1YmgMKYGUfZQoaA99lChoEX2UKGgTSwOGlGgVSwCGlGgaSwGG
+lGgcSwCGlGgeSwKGlGgcSwGGlGghSwKGlGgcSwKGlGgkSwKGlGgcSwOGlGgnSwKGlGgcSwSGlGgq
+SwKGlGgcSwWGlGgtSwKGlGgcSwaGlGgwSwKGlGgcSweGlGgzSwKGlGgcSwiGlGg2SwKGlGgcSwmG
+lGg5SwKGlGgcSwqGlGg8SwKGlGgcSwuGlGg/SwKGlGgcSwyGlGhCSwGGlGgcSw2GlIwDcmVjlEsB
+hpRoHEsOhpRoF0sChpRoR0sAhpR1Sv7///+GlGgHSwF1aEp9lChoGksBaEJLAWghSwJoJEsCaCdL
+AmgqSwJoLUsCaDBLAmgzSwJoNksCaDlLAmg8SwJoHksCaD9LAmgXSwJop0sBdWhMfZRoE0sDc3Vi
+aAwpgZR9lChoD32UKGgRfZQojARuYW1llEsDhpRoFUsAhpSMBnJhdGluZ5RLAoaUaBVLAYaUjANt
+ZnKUSwGGlGgcSwCGlIwGd2VpZ2h0lEsChpRoHEsBhpSMCGNhbG9yaWVzlEsChpRoHEsChpSMB3By
+b3RlaW6USwKGlGgcSwOGlIwDZmF0lEsChpRoHEsEhpSMBnNvZGl1bZRLAoaUaBxLBYaUjAVmaWJl
+cpRLAoaUaBxLBoaUjAVjYXJib5RLAoaUaBxLB4aUjAZzdWdhcnOUSwKGlGgcSwiGlIwGcG90YXNz
+lEsChpRoHEsJhpSMCHZpdGFtaW5zlEsChpRoHEsKhpSMBXNoZWxmlEsChpRoHEsLhpSMBGN1dHOU
+SwKGlGgcSwyGlIwEdHlwZZRLAYaUaBxLDYaUjAlyZWNvbW1lbmSUSwGGlGhHSwCGlHVK/v///4aU
+aAdLAXVoSn2UKGi5SwFo4EsBaL9LAmjCSwJoxUsCaMhLAmjLSwJozksCaNFLAmjUSwJo10sCaNpL
+Ami8SwJo3UsCaLZLAmjjSwF1aEx9lGizSwNzdWJldS4=
+</properties>
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06y\x00\x00\x01\xae\x00\x00\x07\x7f\x00\x00\x03\x81\x00\x00\x06y\x00\x00\x01\xd3\x00\x00\x07\x7f\x00\x00\x03\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x06y\x00\x00\x01\xd3\x00\x00\x07\x7f\x00\x00\x03\x81', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVCgEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAe+AAABAwAADmcAAAPoAAAHvgAAASgAAA5nAAAD6AAAAAAAAAAAB4AAAAe+
+AAABKAAADmcAAAPolIwJc2VsZWN0aW9ulF2UjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2NvcmVz
+lI+UKIwDTUFFlIwCUjKUjAlQcmVjaXNpb26UjAJGMZSMA0FVQ5SMBFJNU0WUjAZSZWNhbGyUjAJD
+QZSMA01TRZSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+</properties>
+		<properties node_id="4" format="pickle">gASVTwMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAmKAAABrwAADc8AAANfAAAJigAAAdQAAA3PAAADXwAAAAAAAAAAB4AAAAmK
+AAAB1AAADc8AAANflIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFu
+Z2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAxjdXJyZW50
+SW5kZXiUSwBK/v///4aUjAtkZXNjcmlwdG9yc5RdlIwoT3JhbmdlLndpZGdldHMuZGF0YS5vd2Zl
+YXR1cmVjb25zdHJ1Y3RvcpSMEkRpc2NyZXRlRGVzY3JpcHRvcpSTlCiMDnJlY29tbWVuZGF0aW9u
+lIwcInkiIGlmIHJhdGluZyA+PSA1MCBlbHNlICJuIpQpiXSUgZRhaARLAXWMCmF0dHJpYnV0ZXOU
+fZQojANtZnKUSwGMBHR5cGWUSwGMCGNhbG9yaWVzlEsCjAdwcm90ZWlulEsCjANmYXSUSwKMBnNv
+ZGl1bZRLAowFZmliZXKUSwKMBWNhcmJvlEsCjAZzdWdhcnOUSwKMBnBvdGFzc5RLAowIdml0YW1p
+bnOUSwKMBXNoZWxmlEsCjAZ3ZWlnaHSUSwKMBGN1dHOUSwKMBnJhdGluZ5RLAnWMBW1ldGFzlH2U
+jARuYW1llEsDc3ViaAkpgZR9lChoDH2UKGgOSwBK/v///4aUaBBdlGgUKIwDcmVjlIwcIlkiIGlm
+IHJhdGluZyA+PSA1MCBlbHNlICJOIpQpiXSUgZRhaARLAXVoGX2UKIwDbWZylEsBjAR0eXBllEsB
+jAhjYWxvcmllc5RLAowHcHJvdGVpbpRLAowDZmF0lEsCjAZzb2RpdW2USwKMBWZpYmVylEsCjAVj
+YXJib5RLAowGc3VnYXJzlEsCjAZwb3Rhc3OUSwKMCHZpdGFtaW5zlEsCjAVzaGVsZpRLAowGd2Vp
+Z2h0lEsCjARjdXRzlEsCjAZyYXRpbmeUSwKMCXJlY29tbWVuZJRLAXVoKn2UjARuYW1llEsDc3Vi
+ZXUu
+</properties>
+		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\tH\x00\x00\x00\xa7\x00\x00\r&gt;\x00\x00\x03j\x00\x00\tH\x00\x00\x00\xcc\x00\x00\r&gt;\x00\x00\x03j\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\tH\x00\x00\x00\xcc\x00\x00\r&gt;\x00\x00\x03j', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="6" format="literal">{'auto_apply': True, 'calibration': 0, 'controlAreaVisible': True, 'learner_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xbf\x00\x00\x01\x1a\x00\x00\x03\x81\x00\x00\x02A\x00\x00\x02\xbf\x00\x00\x01\x1a\x00\x00\x03\x81\x00\x00\x02A\x00\x00\x00\x00\x00\x00\x00\x00\x06@\x00\x00\x02\xbf\x00\x00\x01\x1a\x00\x00\x03\x81\x00\x00\x02A', 'threshold': 1, '__version__': 1}</properties>
+		<properties node_id="7" format="literal">{'C_index': 51, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xb7\x00\x00\x01\x14\x00\x00\x03\x89\x00\x00\x02*\x00\x00\x02\xb8\x00\x00\x013\x00\x00\x03\x88\x00\x00\x02)\x00\x00\x00\x00\x00\x00\x00\x00\x06@\x00\x00\x02\xb8\x00\x00\x013\x00\x00\x03\x88\x00\x00\x02)', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
