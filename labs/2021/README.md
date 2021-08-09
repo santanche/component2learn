@@ -3,6 +3,7 @@
 ## Laboratórios
 
 * [Laboratório 1](01-data-flow/)
+* [Laboratório 2](02-data-flow_mvc/)
 
 ## Passos para submissão dos Laboratórios.
 
