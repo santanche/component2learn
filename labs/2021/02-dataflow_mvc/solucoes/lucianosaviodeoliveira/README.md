@@ -25,7 +25,5 @@
 ## Tarefa 5
 
 ## Arquivos do Projeto
-
-## Arquivos do Projeto
 > Link para o arquivo "components-4-catalog":
 [components-4-catalog](lab02/components-4-catalog.ipynb).
