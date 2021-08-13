@@ -13,8 +13,8 @@ Estrutura de pastas:
 
 ## Tarefas da parte 1 sobre criação de componentes
 
-> Coloque um link para o arquivo do notebook com a resolução das duas tarefas do notebook `components-1-chart-single-class.ipynb`. Ele estará dentro da pasta `notebook`.
+> [Arquivo Notebook](https://github.com/danibouw/component2learn/blob/master/labs/2021/02-dataflow_mvc/solucoes/danibouw/components-4-catalog.ipynb)
 
 ## Tarefas da parte 2 sobre composição de componentes do catálogo
 
-> Coloque um link para o arquivo do notebook com a resolução das seis tarefas do notebook `components-4-catalog.ipynb`. Ele estará dentro da pasta `notebook`.
+> [Arquivo Notebook](https://github.com/danibouw/component2learn/blob/master/labs/2021/02-dataflow_mvc/solucoes/danibouw/components-4-catalog.ipynb)
