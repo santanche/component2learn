@@ -17,4 +17,4 @@ Estrutura de pastas:
 
 ## Tarefas da parte 2 sobre composição de componentes do catálogo
 
-> [Arquivo Notebook](https://github.com/danibouw/component2learn/blob/master/labs/2021/02-dataflow_mvc/solucoes/danibouw/components-4-catalog.ipynb)
+> [Arquivo Notebook](https://github.com/danibouw/component2learn/blob/master/labs/2021/02-dataflow_mvc/solucoes/danibouw/notebook/components-4-catalog.ipynb)
