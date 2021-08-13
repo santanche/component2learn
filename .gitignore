@@ -1,8 +1,35 @@
-# Jupyter Notebook
-.ipynb_checkpoints
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
-# Java Compiled Files
-/eclipse/bin/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Ignore .idea folder
+### IntelliJ IDEA ###
 .idea
+*.xml
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### .DS_Store ### 
+.DS_Store 
