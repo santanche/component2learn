@@ -17,10 +17,10 @@ Estrutura de pastas:
 
 ## Imagem do Projeto
 > Coloque uma imagem da captura de tela com o projeto do Orange (veja exemplo abaixo).
-![Workflow Orange](images/orange-starling.png)
+![Workflow Orange](images/orange-starling.PNG)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+> [Link para Arquivo Orange](./orange/zombie-meals-starling.ows)
 
 # Tarefa 2 - Projeto de Composição para Venda e Recomendação
 
