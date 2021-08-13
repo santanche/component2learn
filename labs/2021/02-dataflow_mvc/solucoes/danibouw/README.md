@@ -13,7 +13,7 @@ Estrutura de pastas:
 
 ## Tarefas da parte 1 sobre criação de componentes
 
-> [Arquivo Notebook](https://github.com/danibouw/component2learn/blob/master/labs/2021/02-dataflow_mvc/solucoes/danibouw/components-4-catalog.ipynb)
+> [Arquivo Notebook](https://github.com/danibouw/component2learn/blob/master/labs/2021/02-dataflow_mvc/solucoes/danibouw/notebook/components-1-chart-single-class.ipynb)
 
 ## Tarefas da parte 2 sobre composição de componentes do catálogo
 
