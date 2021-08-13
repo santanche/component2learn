@@ -9,7 +9,6 @@ Estrutura de pastas:
 │
 └── components-4-catalog.ipynb <- Arquivo tipo notebook Jupyter 
 ~~~
-
 # Aluno
 * `Jean Costa Campos da Silva - EX150334`
 
