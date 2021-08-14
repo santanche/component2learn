@@ -1,13 +1,5 @@
 # Modelo para Apresentação do Lab02 - Data Flow & MVC
 
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── notebook   <- arquivo do notebook
-~~~
-
 # Aluno
 * `Juliana Cardoso Malton`
 
