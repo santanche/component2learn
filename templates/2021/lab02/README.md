@@ -9,7 +9,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Luis Guilherme Piovan Costa - EX150351`
 
 ## Tarefas da parte 1 sobre criação de componentes
 
