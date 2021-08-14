@@ -32,3 +32,15 @@ Apresente um diagrama equivalente para a aplicação que você desenvolveu na Ta
 * capture as instruções executadas quando o evento é capturado e coloque próximo ao evento que responde - conecte essas instruções à interface que recebe o evento e propriedades relacionadas, como ilustra a figura.
 
 Para construir o diagrama, utilize o [Template do Lab3](https://docs.google.com/presentation/d/1KcXoJJa4up8X8M-7crZzSSg_ZcBGjFH2UX8OugLu-LI/edit?usp=sharing).
+
+
+# Tarefa 3
+
+Modifique o aplicativo que você fez na tarefa anterior da seguinte maneira:
+
+1. Acrescente um campo que mostre a **Lista de Produtos a Serem Comprados**. Quando o usuário clicar no botão de efetivação de compra:
+  * adicione no banco de dados CloudDB o item de compras com o rótulo: “compra”:
+    * o item deve ser uma string concatenando os seguintes itens separados por vírgula: nome do produto, quantidade e o valor total a ser pago;
+  * apresente o item adicionado no campo de **Lista de Produtos a Serem Comprados**.
+
+2. Sempre que o aplicativo iniciar, verifique se há compras adicionadas no CloudDB com o rótulo “compra” e, se houver, as mostre na **Lista de Produtos a Serem Comprados**.
