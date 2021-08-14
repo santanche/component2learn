@@ -14,8 +14,8 @@ Estrutura de pastas:
 
 ## Tarefas da parte 1 sobre criação de componentes
 
-> Coloque um link para o arquivo do notebook com a resolução das duas tarefas do notebook `components-1-chart-single-class.ipynb`. Ele estará dentro da pasta `notebook`.
+> ![parte 1](components-1-chart-single-class.ipynb)
 
 ## Tarefas da parte 2 sobre composição de componentes do catálogo
 
-> Coloque um link para o arquivo do notebook com a resolução das seis tarefas do notebook `components-4-catalog.ipynb`. Ele estará dentro da pasta `notebook`.
+> ![parte 2](components-4-catalog.ipynb)
