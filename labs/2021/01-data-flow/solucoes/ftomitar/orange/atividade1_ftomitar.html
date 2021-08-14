@@ -1,0 +1,422 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+    <script>
+    function scrollToId(id) {
+        var sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.scrollIntoView();
+            return true;
+        }
+        return false;
+    };
+
+    function setSelectedId(id) {
+        var sel_el = document.getElementsByClassName('selected')[0];
+        if (sel_el != undefined && sel_el.id != id) {
+           sel_el.className = 'normal';
+        }
+        sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.className = 'selected';
+            return true;
+        }
+        return false;
+    };
+    </script>
+
+</head><body onload="(function (id) {     setSelectedId(id); scrollToId(id); }(&quot;140161622459008&quot;));">
+
+ 
+
+<div id="140162358843712" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Predictions <span class="timestamp">Mon Aug 02 21, 23:14:09</span></h1><div class="content">
+<h2>Info</h2><p>Data:<br><nobr><b><u>zombie-meals</u></b>: 63 instances, 7 variables</nobr><br><nobr>Features: 4 numeric (no missing values)</nobr><br><nobr>Target: categorical</nobr><br><nobr>Metas: 2 (1 categorical, 1 numeric)</nobr></p><hr>Model:<br>No model on input.<p></p><h2>Data &amp; Predictions</h2><table>
+  <tbody><tr>
+    <th></th><th>recommendation</th><th>Cluster</th><th>Silhouette</th><th>fat</th><th>sugars</th><th>vitamins</th><th>sodium</th></tr>
+  <tr>
+    <th>1</th><td>n</td><td>C3</td><td>0.66854</td><td>1</td><td>3</td><td>25</td><td>250</td></tr>
+  <tr>
+    <th>2</th><td>n</td><td>C1</td><td>0.636457</td><td>1</td><td>12</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>3</th><td>n</td><td>C1</td><td>0.636447</td><td>1</td><td>12</td><td>25</td><td>135</td></tr>
+  <tr>
+    <th>4</th><td>n</td><td>C3</td><td>0.674634</td><td>0</td><td>3</td><td>25</td><td>220</td></tr>
+  <tr>
+    <th>5</th><td>n</td><td>C1</td><td>0.491523</td><td>1</td><td>8</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>6</th><td>n</td><td>C1</td><td>0.59362</td><td>0</td><td>14</td><td>25</td><td>125</td></tr>
+  <tr>
+    <th>7</th><td>n</td><td>C1</td><td>0.628008</td><td>2</td><td>10</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>8</th><td>n</td><td>C2</td><td>0.638135</td><td>1</td><td>3</td><td>25</td><td>0</td></tr>
+  <tr>
+    <th>9</th><td>n</td><td>C3</td><td>0.636123</td><td>0</td><td>3</td><td>25</td><td>170</td></tr>
+  <tr>
+    <th>10</th><td>n</td><td>C3</td><td>0.555289</td><td>1</td><td>5</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>11</th><td>n</td><td>C2</td><td>0.644477</td><td>0</td><td>6</td><td>25</td><td>0</td></tr>
+  <tr>
+    <th>12</th><td>n</td><td>C3</td><td>0.641758</td><td>1</td><td>5</td><td>25</td><td>260</td></tr>
+  <tr>
+    <th>13</th><td>n</td><td>C1</td><td>0.562163</td><td>0</td><td>15</td><td>25</td><td>45</td></tr>
+  <tr>
+    <th>14</th><td>n</td><td>C1</td><td>0.619862</td><td>3</td><td>11</td><td>25</td><td>95</td></tr>
+  <tr>
+    <th>15</th><td>n</td><td>C3</td><td>0.558193</td><td>0</td><td>0</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>16</th><td>n</td><td>C1</td><td>0.522761</td><td>1</td><td>10</td><td>25</td><td>250</td></tr>
+  <tr>
+    <th>17</th><td>n</td><td>C1</td><td>0.521295</td><td>0</td><td>11</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>18</th><td>n</td><td>C1</td><td>0.535851</td><td>0</td><td>11</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>19</th><td>n</td><td>C1</td><td>0.607827</td><td>1</td><td>12</td><td>25</td><td>210</td></tr>
+  <tr>
+    <th>20</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>21</th><td>n</td><td>C1</td><td>0.60652</td><td>2</td><td>8</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>22</th><td>n</td><td>C1</td><td>0.58566</td><td>3</td><td>7</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>23</th><td>n</td><td>C1</td><td>0.569609</td><td>2</td><td>8</td><td>25</td><td>210</td></tr>
+  <tr>
+    <th>24</th><td>n</td><td>C1</td><td>0.613103</td><td>2</td><td>11</td><td>25</td><td>220</td></tr>
+  <tr>
+    <th>25</th><td>n</td><td>C4</td><td>0.675936</td><td>1</td><td>3</td><td>100</td><td>200</td></tr>
+  <tr>
+    <th>26</th><td>n</td><td>C1</td><td>0.626804</td><td>1</td><td>12</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>27</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>28</th><td>n</td><td>C2</td><td>0.609046</td><td>0</td><td>0</td><td>0</td><td>80</td></tr>
+  <tr>
+    <th>29</th><td>n</td><td>C1</td><td>0.623935</td><td>1</td><td>14</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>30</th><td>n</td><td>C1</td><td>0.634038</td><td>2</td><td>10</td><td>25</td><td>160</td></tr>
+  <tr>
+    <th>31</th><td>n</td><td>C2</td><td>0.645616</td><td>0</td><td>5</td><td>25</td><td>15</td></tr>
+  <tr>
+    <th>32</th><td>n</td><td>C1</td><td>0.571858</td><td>0</td><td>12</td><td>25</td><td>90</td></tr>
+  <tr>
+    <th>33</th><td>n</td><td>C3</td><td>0.670299</td><td>0</td><td>3</td><td>25</td><td>290</td></tr>
+  <tr>
+    <th>34</th><td>n</td><td>C2</td><td>0.626487</td><td>0</td><td>7</td><td>25</td><td>0</td></tr>
+  <tr>
+    <th>35</th><td>n</td><td>C1</td><td>0.609631</td><td>1</td><td>10</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>36</th><td>n</td><td>C2</td><td>0.605172</td><td>2</td><td>-1</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>37</th><td>n</td><td>C3</td><td>0.640856</td><td>0</td><td>5</td><td>25</td><td>190</td></tr>
+  <tr>
+    <th>38</th><td>n</td><td>C1</td><td>0.620152</td><td>3</td><td>11</td><td>25</td><td>150</td></tr>
+  <tr>
+    <th>39</th><td>n</td><td>C3</td><td>0.605431</td><td>2</td><td>1</td><td>25</td><td>290</td></tr>
+  <tr>
+    <th>40</th><td>n</td><td>C4</td><td>0.681549</td><td>1</td><td>6</td><td>100</td><td>170</td></tr>
+  <tr>
+    <th>41</th><td>n</td><td>C3</td><td>0.667194</td><td>1</td><td>3</td><td>25</td><td>260</td></tr>
+  <tr>
+    <th>42</th><td>n</td><td>C1</td><td>0.639222</td><td>1</td><td>13</td><td>25</td><td>125</td></tr>
+  <tr>
+    <th>43</th><td>n</td><td>C1</td><td>0.631846</td><td>2</td><td>10</td><td>25</td><td>170</td></tr>
+  <tr>
+    <th>44</th><td>n</td><td>C1</td><td>0.551126</td><td>2</td><td>6</td><td>25</td><td>150</td></tr>
+  <tr>
+    <th>45</th><td>n</td><td>C4</td><td>0.675936</td><td>1</td><td>3</td><td>100</td><td>200</td></tr>
+  <tr>
+    <th>46</th><td>n</td><td>C1</td><td>0.584031</td><td>2</td><td>7</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>47</th><td>n</td><td>C1</td><td>0.632116</td><td>1</td><td>13</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>48</th><td>n</td><td>C3</td><td>0.653072</td><td>1</td><td>3</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>49</th><td>n</td><td>C3</td><td>0.666307</td><td>1</td><td>3</td><td>25</td><td>230</td></tr>
+  <tr>
+    <th>50</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>51</th><td>n</td><td>C3</td><td>0.672105</td><td>0</td><td>2</td><td>25</td><td>290</td></tr>
+  <tr>
+    <th>52</th><td>n</td><td>C4</td><td>0.671102</td><td>1</td><td>9</td><td>100</td><td>170</td></tr>
+  <tr>
+    <th>53</th><td>n</td><td>C3</td><td>0.587051</td><td>1</td><td>6</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>54</th><td>n</td><td>C1</td><td>0.622778</td><td>1</td><td>15</td><td>25</td><td>70</td></tr>
+  <tr>
+    <th>55</th><td>n</td><td>C1</td><td>0.553408</td><td>1</td><td>9</td><td>25</td><td>190</td></tr>
+  <tr>
+    <th>56</th><td>n</td><td>C4</td><td>0.617092</td><td>1</td><td>14</td><td>100</td><td>190</td></tr>
+  <tr>
+    <th>57</th><td>n</td><td>C1</td><td>0.528342</td><td>2</td><td>7</td><td>25</td><td>220</td></tr>
+  <tr>
+    <th>58</th><td>n</td><td>C4</td><td>0.609472</td><td>0</td><td>3</td><td>100</td><td>320</td></tr>
+  <tr>
+    <th>59</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>60</th><td>n</td><td>C3</td><td>0.673454</td><td>0</td><td>3</td><td>25</td><td>280</td></tr>
+  <tr>
+    <th>61</th><td>n</td><td>C3</td><td>0.679268</td><td>0</td><td>2</td><td>25</td><td>240</td></tr>
+  <tr>
+    <th>62</th><td>n</td><td>C1</td><td>0.646059</td><td>2</td><td>13</td><td>25</td><td>150</td></tr>
+  <tr>
+    <th>63</th><td>n</td><td>C1</td><td>0.545965</td><td>5</td><td>8</td><td>0</td><td>15</td></tr>
+</tbody></table><h2>Scores</h2><table>
+<tbody><tr><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Model</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">AUC</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">CA</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">F1</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Precision</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Recall</th></tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="140161622459008" class="selected" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Predictions <span class="timestamp">Mon Aug 02 21, 23:14:11</span></h1><div class="content">
+<h2>Info</h2><p>Data:<br><nobr><b><u>zombie-meals</u></b>: 63 instances, 7 variables</nobr><br><nobr>Features: 4 numeric (no missing values)</nobr><br><nobr>Target: categorical</nobr><br><nobr>Metas: 2 (1 categorical, 1 numeric)</nobr></p><hr>Model:<br>No model on input.<p></p><h2>Data &amp; Predictions</h2><table>
+  <tbody><tr>
+    <th></th><th>recommendation</th><th>Cluster</th><th>Silhouette</th><th>fat</th><th>sugars</th><th>vitamins</th><th>sodium</th></tr>
+  <tr>
+    <th>1</th><td>n</td><td>C3</td><td>0.66854</td><td>1</td><td>3</td><td>25</td><td>250</td></tr>
+  <tr>
+    <th>2</th><td>n</td><td>C1</td><td>0.636457</td><td>1</td><td>12</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>3</th><td>n</td><td>C1</td><td>0.636447</td><td>1</td><td>12</td><td>25</td><td>135</td></tr>
+  <tr>
+    <th>4</th><td>n</td><td>C3</td><td>0.674634</td><td>0</td><td>3</td><td>25</td><td>220</td></tr>
+  <tr>
+    <th>5</th><td>n</td><td>C1</td><td>0.491523</td><td>1</td><td>8</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>6</th><td>n</td><td>C1</td><td>0.59362</td><td>0</td><td>14</td><td>25</td><td>125</td></tr>
+  <tr>
+    <th>7</th><td>n</td><td>C1</td><td>0.628008</td><td>2</td><td>10</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>8</th><td>n</td><td>C2</td><td>0.638135</td><td>1</td><td>3</td><td>25</td><td>0</td></tr>
+  <tr>
+    <th>9</th><td>n</td><td>C3</td><td>0.636123</td><td>0</td><td>3</td><td>25</td><td>170</td></tr>
+  <tr>
+    <th>10</th><td>n</td><td>C3</td><td>0.555289</td><td>1</td><td>5</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>11</th><td>n</td><td>C2</td><td>0.644477</td><td>0</td><td>6</td><td>25</td><td>0</td></tr>
+  <tr>
+    <th>12</th><td>n</td><td>C3</td><td>0.641758</td><td>1</td><td>5</td><td>25</td><td>260</td></tr>
+  <tr>
+    <th>13</th><td>n</td><td>C1</td><td>0.562163</td><td>0</td><td>15</td><td>25</td><td>45</td></tr>
+  <tr>
+    <th>14</th><td>n</td><td>C1</td><td>0.619862</td><td>3</td><td>11</td><td>25</td><td>95</td></tr>
+  <tr>
+    <th>15</th><td>n</td><td>C3</td><td>0.558193</td><td>0</td><td>0</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>16</th><td>n</td><td>C1</td><td>0.522761</td><td>1</td><td>10</td><td>25</td><td>250</td></tr>
+  <tr>
+    <th>17</th><td>n</td><td>C1</td><td>0.521295</td><td>0</td><td>11</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>18</th><td>n</td><td>C1</td><td>0.535851</td><td>0</td><td>11</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>19</th><td>n</td><td>C1</td><td>0.607827</td><td>1</td><td>12</td><td>25</td><td>210</td></tr>
+  <tr>
+    <th>20</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>21</th><td>n</td><td>C1</td><td>0.60652</td><td>2</td><td>8</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>22</th><td>n</td><td>C1</td><td>0.58566</td><td>3</td><td>7</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>23</th><td>n</td><td>C1</td><td>0.569609</td><td>2</td><td>8</td><td>25</td><td>210</td></tr>
+  <tr>
+    <th>24</th><td>n</td><td>C1</td><td>0.613103</td><td>2</td><td>11</td><td>25</td><td>220</td></tr>
+  <tr>
+    <th>25</th><td>n</td><td>C4</td><td>0.675936</td><td>1</td><td>3</td><td>100</td><td>200</td></tr>
+  <tr>
+    <th>26</th><td>n</td><td>C1</td><td>0.626804</td><td>1</td><td>12</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>27</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>28</th><td>n</td><td>C2</td><td>0.609046</td><td>0</td><td>0</td><td>0</td><td>80</td></tr>
+  <tr>
+    <th>29</th><td>n</td><td>C1</td><td>0.623935</td><td>1</td><td>14</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>30</th><td>n</td><td>C1</td><td>0.634038</td><td>2</td><td>10</td><td>25</td><td>160</td></tr>
+  <tr>
+    <th>31</th><td>n</td><td>C2</td><td>0.645616</td><td>0</td><td>5</td><td>25</td><td>15</td></tr>
+  <tr>
+    <th>32</th><td>n</td><td>C1</td><td>0.571858</td><td>0</td><td>12</td><td>25</td><td>90</td></tr>
+  <tr>
+    <th>33</th><td>n</td><td>C3</td><td>0.670299</td><td>0</td><td>3</td><td>25</td><td>290</td></tr>
+  <tr>
+    <th>34</th><td>n</td><td>C2</td><td>0.626487</td><td>0</td><td>7</td><td>25</td><td>0</td></tr>
+  <tr>
+    <th>35</th><td>n</td><td>C1</td><td>0.609631</td><td>1</td><td>10</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>36</th><td>n</td><td>C2</td><td>0.605172</td><td>2</td><td>-1</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>37</th><td>n</td><td>C3</td><td>0.640856</td><td>0</td><td>5</td><td>25</td><td>190</td></tr>
+  <tr>
+    <th>38</th><td>n</td><td>C1</td><td>0.620152</td><td>3</td><td>11</td><td>25</td><td>150</td></tr>
+  <tr>
+    <th>39</th><td>n</td><td>C3</td><td>0.605431</td><td>2</td><td>1</td><td>25</td><td>290</td></tr>
+  <tr>
+    <th>40</th><td>n</td><td>C4</td><td>0.681549</td><td>1</td><td>6</td><td>100</td><td>170</td></tr>
+  <tr>
+    <th>41</th><td>n</td><td>C3</td><td>0.667194</td><td>1</td><td>3</td><td>25</td><td>260</td></tr>
+  <tr>
+    <th>42</th><td>n</td><td>C1</td><td>0.639222</td><td>1</td><td>13</td><td>25</td><td>125</td></tr>
+  <tr>
+    <th>43</th><td>n</td><td>C1</td><td>0.631846</td><td>2</td><td>10</td><td>25</td><td>170</td></tr>
+  <tr>
+    <th>44</th><td>n</td><td>C1</td><td>0.551126</td><td>2</td><td>6</td><td>25</td><td>150</td></tr>
+  <tr>
+    <th>45</th><td>n</td><td>C4</td><td>0.675936</td><td>1</td><td>3</td><td>100</td><td>200</td></tr>
+  <tr>
+    <th>46</th><td>n</td><td>C1</td><td>0.584031</td><td>2</td><td>7</td><td>25</td><td>140</td></tr>
+  <tr>
+    <th>47</th><td>n</td><td>C1</td><td>0.632116</td><td>1</td><td>13</td><td>25</td><td>180</td></tr>
+  <tr>
+    <th>48</th><td>n</td><td>C3</td><td>0.653072</td><td>1</td><td>3</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>49</th><td>n</td><td>C3</td><td>0.666307</td><td>1</td><td>3</td><td>25</td><td>230</td></tr>
+  <tr>
+    <th>50</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>51</th><td>n</td><td>C3</td><td>0.672105</td><td>0</td><td>2</td><td>25</td><td>290</td></tr>
+  <tr>
+    <th>52</th><td>n</td><td>C4</td><td>0.671102</td><td>1</td><td>9</td><td>100</td><td>170</td></tr>
+  <tr>
+    <th>53</th><td>n</td><td>C3</td><td>0.587051</td><td>1</td><td>6</td><td>25</td><td>200</td></tr>
+  <tr>
+    <th>54</th><td>n</td><td>C1</td><td>0.622778</td><td>1</td><td>15</td><td>25</td><td>70</td></tr>
+  <tr>
+    <th>55</th><td>n</td><td>C1</td><td>0.553408</td><td>1</td><td>9</td><td>25</td><td>190</td></tr>
+  <tr>
+    <th>56</th><td>n</td><td>C4</td><td>0.617092</td><td>1</td><td>14</td><td>100</td><td>190</td></tr>
+  <tr>
+    <th>57</th><td>n</td><td>C1</td><td>0.528342</td><td>2</td><td>7</td><td>25</td><td>220</td></tr>
+  <tr>
+    <th>58</th><td>n</td><td>C4</td><td>0.609472</td><td>0</td><td>3</td><td>100</td><td>320</td></tr>
+  <tr>
+    <th>59</th><td>y</td><td>C2</td><td>0.684479</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr>
+    <th>60</th><td>n</td><td>C3</td><td>0.673454</td><td>0</td><td>3</td><td>25</td><td>280</td></tr>
+  <tr>
+    <th>61</th><td>n</td><td>C3</td><td>0.679268</td><td>0</td><td>2</td><td>25</td><td>240</td></tr>
+  <tr>
+    <th>62</th><td>n</td><td>C1</td><td>0.646059</td><td>2</td><td>13</td><td>25</td><td>150</td></tr>
+  <tr>
+    <th>63</th><td>n</td><td>C1</td><td>0.545965</td><td>5</td><td>8</td><td>0</td><td>15</td></tr>
+</tbody></table><h2>Scores</h2><table>
+<tbody><tr><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Model</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">AUC</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">CA</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">F1</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Precision</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Recall</th></tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>
