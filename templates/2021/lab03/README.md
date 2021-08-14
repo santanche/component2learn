@@ -40,3 +40,14 @@ Estrutura de pastas:
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
 > ![Diagrama Eventos](images/mit-app-inventor-events.png)
+
+## Tarefa 3
+
+Modifique o aplicativo que você fez na tarefa anterior da seguinte maneira:
+
+1. Acrescente um campo que mostre a **Lista de Produtos a Serem Comprados**. Quando o usuário clicar no botão de efetivação de compra:
+  * adicione no banco de dados CloudDB o item de compras com o rótulo: “compra”:
+    * o item deve ser uma string concatenando os seguintes itens separados por vírgula: nome do produto, quantidade e o valor total a ser pago;
+  * apresente o item adicionado no campo de **Lista de Produtos a Serem Comprados**.
+
+2. Sempre que o aplicativo iniciar, verifique se há compras adicionadas no CloudDB com o rótulo “compra” e, se houver, as mostre na **Lista de Produtos a Serem Comprados**.
