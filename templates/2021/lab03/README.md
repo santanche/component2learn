@@ -23,16 +23,6 @@ Estrutura de pastas:
 > * tela 5 - compra de um dos produtos efetivada
 > * tela 6 - diagrama de blocos do aplicativo
 >
-> As telas devem ser apresentadas conforme exemplos a seguir.
->
-> Exemplo de uma tela do aplicativo:
->
-> ![Tela Aplicativo](images/aplicativo.png)
->
-> Exemplo de uma tela do diagrama de blocos:
->
-> ![Tela Blocos](images/blocks.png)
->
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
@@ -49,14 +39,18 @@ Estrutura de pastas:
 > * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
 >
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+>
 > As telas devem ser apresentadas conforme exemplos a seguir.
 >
-> Exemplo de uma tela do aplicativo:
+> Exemplo de uma captura de tela completa de design de interface:
 >
-> ![Tela Aplicativo](images/aplicativo.png)
+> ![Tela App](images/design.png)
+>
+> Exemplo de uma captura de tela do app:
+>
+> ![Tela App](images/aplicativo.png)
 >
 > Exemplo de uma tela do diagrama de blocos:
 >
 > ![Tela Blocos](images/blocks.png)
->
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
