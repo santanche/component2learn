@@ -48,22 +48,15 @@ labs/2021/03-mvc/solucoes/leticia ruttimann/app/Compras_copy.aia
 
 > Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
+> <img width="1434" alt="tela 1 - captura da tela completa de design de interface " src="https://user-images.githubusercontent.com/88326093/129636144-2728f1ec-66d7-4af7-8ede-54216595260a.png">
 > * tela 2 - captura de tela do app com nenhum produto selecionado
+> <img width="351" alt="tela 2 - captura de tela do app com nenhum prd selecionado " src="https://user-images.githubusercontent.com/88326093/129636162-09de56f5-28c5-42b3-972a-e75674245e23.png">
 > * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
+> <img width="420" alt="tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na Lista de Produtos a Serem Comprados " src="https://user-images.githubusercontent.com/88326093/129636197-19789d1c-e289-417f-bc28-a3ed58502078.png">
+
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
->
+> <img width="605" alt="tela 4 - diagrama de blocos do app mostrando apenas os relacionados com o CloudDB" src="https://user-images.githubusercontent.com/88326093/129636214-20118dad-b7a5-4826-a182-c1dc87ad25bd.png">
+
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
->
-> As telas devem ser apresentadas conforme exemplos a seguir.
->
-> Exemplo de uma captura de tela completa de design de interface:
->
-> ![Tela App](images/design.png)
->
-> Exemplo de uma captura de tela do app:
->
-> ![Tela App](images/aplicativo.png)
->
-> Exemplo de uma tela do diagrama de blocos:
->
-> ![Tela Blocos](images/blocks.png)
+> labs/2021/03-mvc/solucoes/leticia ruttimann/app/compras_clouddb.aia
+
