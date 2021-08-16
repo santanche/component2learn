@@ -1,46 +1,67 @@
-# MVC e Event-driven App
-*Lab de Componentização e Reúso de Software 14/08/2021*
+# Modelo para Apresentação do Lab03 - MVC
 
-## Tarefa 1
+Estrutura de pastas:
 
-Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inventor que simule uma interface de compra, com as seguintes funcionalidades:
-1. apresente uma interface com as seguintes áreas:
-  * uma lista opções com o nome de três produtos (a sua escolha);
-  * um quadro de detalhes do produto;
-  * um campo para o usuário digitar a quantidade que deseja comprar;
-  * um botão de efetivação da compra;
-  * um campo de mensagens no rodapé.
-2. ao clicar no produto da lista de opções, deve ser apresentado no quadro de detalhamento:
-  * a imagem do produto;
-  * seu nome;
-  * o valor unitário e a unidade (g, kg, l);
-3. quando o botão de efetivação da compra for clicado, deve ser mostrado no campo de mensagem (rodapé) os dados da compra sendo efetivada: nome do produto, quantidade e o valor total a ser pago.
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── images     <- arquivos de imagens usadas no documento
+│
+└── app        <- apps do MIT App Inventor exportados em formato `aia`
+~~~
 
-Neste protótipo, não haverá uso de bancos de dados. Tudo será executado
+# Aluno
+* Letícia Rüttimann
 
-# Tarefa 2
+# Tarefa 1 - App no MIT App Inventor
 
-Considere a seguinte abordagem visual para representar os componentes da sua composição e as relações usando uma abordagem dirigida a eventos:
+> Coloque as imagens PNG da captura de seis telas do seu aplicativo:
+> * tela 1 - captura da tela completa de design de interface
+> <img width="1425" alt="tela 1 - captura da tela completa design de interface" src="https://user-images.githubusercontent.com/88326093/129591788-5a31b802-ef92-46be-a9e3-6320fdf7471e.png">
 
-![MIT App Inventor](images/mit-app-inventor-events.png)
+> * tela 2 - captura de tela do app com nenhum produto selecionado
+> <img width="427" alt="tela 2 - captura de tela do app com nenhum prd" src="https://user-images.githubusercontent.com/88326093/129591854-cf1a3961-5752-4958-a0be-795d8bb51f20.png">
 
-Apresente um diagrama equivalente para a aplicação que você desenvolveu na Tarefa 1, considerando:
-* para cada evento representado pela cláusula do MIT App Inventor [When (...).Click do], deve haver uma interface que gera eventos equivalente, cujo evento é o capturado (no exemplo apresentado, o evento é o Click);
-* a geração do evento está sempre associado ao componente que o produz, neste exemplo, é o Button1;
-* capture a imagem Box do MIT App Inventor que representa a captura do evento e coloque próximo à interface, como está na ilustração;
-* o componente que responde ao evento deve ter uma interface que monitora o respectivo evento;
-* capture as instruções executadas quando o evento é capturado e coloque próximo ao evento que responde - conecte essas instruções à interface que recebe o evento e propriedades relacionadas, como ilustra a figura.
+> * tela 3 - captura de tela do app com primeiro produto selecionado
+> <img width="358" alt="tela 3 - captura de tela do app com 1o prd selecionado" src="https://user-images.githubusercontent.com/88326093/129591871-17997f5e-b558-4de7-b39f-575190ca62a4.png">
 
-Para construir o diagrama, utilize o [Template do Lab3](https://docs.google.com/presentation/d/1KcXoJJa4up8X8M-7crZzSSg_ZcBGjFH2UX8OugLu-LI/edit?usp=sharing).
+> * tela 4 - captura de tela do app com segundo produto selecionado
+> <img width="349" alt="tela 4 - captura de tela do app com 2o prd selecionado " src="https://user-images.githubusercontent.com/88326093/129591921-93eff121-fdcf-4a5a-87ae-482ba4131136.png">
+
+> * tela 5 - compra de um dos produtos efetivada
+> <img width="420" alt="tela 5 - compra de um dos produtos efetivada " src="https://user-images.githubusercontent.com/88326093/129591953-8c0dcfaf-84cf-41ad-b4df-b6e7d7c1d3ae.png">
 
 
-# Tarefa 3
+> * tela 6 - diagrama de blocos do aplicativo
+> <img width="1440" alt="tela 6 - diagrama de blocos do aplicativo" src="https://user-images.githubusercontent.com/88326093/129591983-13eeec50-f24a-4bff-9ecb-c7954f413af7.png">
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+labs/2021/03-mvc/solucoes/leticia ruttimann/app/Compras_copy.aia
+# Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-Modifique o aplicativo que você fez na tarefa anterior da seguinte maneira:
+> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
+>
+> ![Diagrama Eventos](images/mit-app-inventor-events.png)
 
-1. Acrescente um campo que mostre a **Lista de Produtos a Serem Comprados**. Quando o usuário clicar no botão de efetivação de compra:
-  * adicione no banco de dados CloudDB o item de compras com o rótulo: “compra”:
-    * o item deve ser uma string concatenando os seguintes itens separados por vírgula: nome do produto, quantidade e o valor total a ser pago;
-  * apresente o item adicionado no campo de **Lista de Produtos a Serem Comprados**.
+# Tarefa 3 - App com CoudDB
 
-2. Sempre que o aplicativo iniciar, verifique se há compras adicionadas no CloudDB com o rótulo “compra” e, se houver, as mostre na **Lista de Produtos a Serem Comprados**.
+> Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
+> * tela 1 - captura da tela completa de design de interface
+> * tela 2 - captura de tela do app com nenhum produto selecionado
+> * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
+> * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
+>
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+>
+> As telas devem ser apresentadas conforme exemplos a seguir.
+>
+> Exemplo de uma captura de tela completa de design de interface:
+>
+> ![Tela App](images/design.png)
+>
+> Exemplo de uma captura de tela do app:
+>
+> ![Tela App](images/aplicativo.png)
+>
+> Exemplo de uma tela do diagrama de blocos:
+>
+> ![Tela Blocos](images/blocks.png)
