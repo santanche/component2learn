@@ -40,7 +40,9 @@ labs/2021/03-mvc/solucoes/leticia ruttimann/app/Compras_copy.aia
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> <img width="987" alt="SpinnerAfterSelecting Event" src="https://user-images.githubusercontent.com/88326093/129614689-88d08b3e-2dc6-4561-8fd4-573d4dd69b63.png">
+> <img width="991" alt="ButtonClickEvent" src="https://user-images.githubusercontent.com/88326093/129614695-a33d5e56-89f2-4a0d-bcaf-55e312035978.png">
+
 
 # Tarefa 3 - App com CoudDB
 
