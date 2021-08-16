@@ -47,10 +47,13 @@ labs/2021/03-mvc/solucoes/leticia ruttimann/app/Compras_copy.aia
 # Tarefa 3 - App com CoudDB
 
 > Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
+> 
 > * tela 1 - captura da tela completa de design de interface
 > <img width="1434" alt="tela 1 - captura da tela completa de design de interface " src="https://user-images.githubusercontent.com/88326093/129636144-2728f1ec-66d7-4af7-8ede-54216595260a.png">
+> 
 > * tela 2 - captura de tela do app com nenhum produto selecionado
 > <img width="351" alt="tela 2 - captura de tela do app com nenhum prd selecionado " src="https://user-images.githubusercontent.com/88326093/129636162-09de56f5-28c5-42b3-972a-e75674245e23.png">
+> 
 > * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
 > <img width="420" alt="tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na Lista de Produtos a Serem Comprados " src="https://user-images.githubusercontent.com/88326093/129636197-19789d1c-e289-417f-bc28-a3ed58502078.png">
 
