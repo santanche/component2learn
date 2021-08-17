@@ -25,8 +25,8 @@
 ![Bloco Aplicativo](images/bloco_app_inventor.png)
 
 
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
-[App Tarefa1](notebook/components-1-chart-single-class.ipynb)
+> * Arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`
+[App Tarefa1](app/tarefa1.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
