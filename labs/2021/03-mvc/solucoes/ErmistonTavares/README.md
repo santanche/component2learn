@@ -71,7 +71,7 @@ Estrutura de pastas:
 
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
 
-> ![Tela Blocos](./images/Tela11.png)
+> ![Tela Blocos](./images/Tela11.PNG)
 
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 > ![Aplicativo](./app/Tarefa3.aia)
