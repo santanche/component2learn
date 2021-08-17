@@ -26,7 +26,7 @@
 
 
 
-> * Arquivo do projeto exportado
+> * Arquivo do aplicativo exportado a partir do MIT App Inventor em formato aia
 [App Tarefa1](app/tarefa1.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
