@@ -73,7 +73,6 @@ Estrutura de pastas:
 
 > ![Tela Blocos](images/tela11.png)
 
->
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 > ![Aplicativo](app/Tarefa3.aia)
 
