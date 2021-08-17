@@ -25,8 +25,9 @@
 ![Bloco Aplicativo](images/bloco_app_inventor.png)
 
 
-> * Arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`
-![App Tarefa1](app/tarefa1.aia)
+
+> * Arquivo do projeto exportado
+[App Tarefa1](app/tarefa1.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
