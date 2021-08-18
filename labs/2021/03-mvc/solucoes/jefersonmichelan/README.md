@@ -31,9 +31,13 @@
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> Imagens do diagrama:
+
+![Diagrama Eventos](images/componente1.png)
+![Diagrama Eventos](images/componente2.png)
+![Diagrama Eventos](images/componente3.png)
+![Diagrama Eventos](images/componente4.png)
+![Diagrama Eventos](images/componente5.png)
 
 # Tarefa 3 - App com CoudDB
 
