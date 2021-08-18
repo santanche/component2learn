@@ -31,13 +31,13 @@
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> Imagens do diagrama:
+> * Imagens dos diagramas
 
-![Diagrama Eventos](images/componente1.png)
-![Diagrama Eventos](images/componente2.png)
-![Diagrama Eventos](images/componente3.png)
-![Diagrama Eventos](images/componente4.png)
-![Diagrama Eventos](images/componente5.png)
+![Diagrama Eventos Spinner AfterSelecting](images/componente1.png)
+![Diagrama Eventos Spinner AfterSelecting Continue1](images/componente2.png)
+![Diagrama Eventos Spinner AfterSelecting Continue3](images/componente3.png)
+![Diagrama Eventos Botom1](images/componente4.png)
+![Diagrama Eventos Screen Initialize](images/componente5.png)
 
 # Tarefa 3 - App com CoudDB
 
