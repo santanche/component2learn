@@ -15,7 +15,7 @@
 > * Tela 4 - captura de tela do app com segundo produto selecionado
 > ![Tela 4](images/tela4.png)
 >
-> * Tela 5 - compra de um dos produtos efetivada
+> * Tela 5 - compra de um dos produtos efetivada  
 > ![Tela 5](images/tela5.png)
 >
 > * Tela 6 - diagrama de blocos do aplicativo
