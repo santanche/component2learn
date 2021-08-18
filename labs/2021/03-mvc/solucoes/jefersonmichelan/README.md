@@ -33,11 +33,11 @@
 
 > * Imagens dos diagramas
 
-![Diagrama Eventos Spinner AfterSelecting](images/componente1.png)
-![Diagrama Eventos Spinner AfterSelecting Continue1](images/componente2.png)
-![Diagrama Eventos Spinner AfterSelecting Continue3](images/componente3.png)
-![Diagrama Eventos Botom1](images/componente4.png)
-![Diagrama Eventos Screen Initialize](images/componente5.png)
+![Diagrama Eventos Spinner AfterSelecting](images/componente1.PNG)
+![Diagrama Eventos Spinner AfterSelecting Continue1](images/componente2.PNG)
+![Diagrama Eventos Spinner AfterSelecting Continue3](images/componente3.PNG)
+![Diagrama Eventos Botom1](images/componente4.PNG)
+![Diagrama Eventos Screen Initialize](images/componente5.PNG)
 
 # Tarefa 3 - App com CoudDB
 
