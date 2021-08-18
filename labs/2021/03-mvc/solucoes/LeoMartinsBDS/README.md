@@ -5,22 +5,22 @@
 
 > * Tela 1 - captura da tela completa de design de interface
 > ![Tela 1](images/tela1.png)
-
+>
 > * Tela 2 - captura de tela do app com nenhum produto selecionado
 > ![Tela 2](images/tela2.png)
-
+>
 > * Tela 3 - captura de tela do app com primeiro produto selecionado
 > ![Tela 3](images/tela3.png)
-
+>
 > * Tela 4 - captura de tela do app com segundo produto selecionado
 > ![Tela 4](images/tela4.png)
-
+>
 > * Tela 5 - compra de um dos produtos efetivada
 > ![Tela 5](images/tela5.png)
-
+>
 > * Tela 6 - diagrama de blocos do aplicativo
 > ![Diagrama de Blocos](images/tela6.png)
-
+>
 > Link para o [Arquivo .aia](app/lab03.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
@@ -35,16 +35,16 @@
 
 # Tarefa 3 - App com CoudDB
 
-> * tela 1 - captura da tela completa de design de interface
+> * Tela 1 - captura da tela completa de design de interface
 > ![Tela 1](images/tela1_tarefa3.png)
 
-> * tela 2 - captura de tela do app com nenhum produto selecionado
+> * Tela 2 - captura de tela do app com nenhum produto selecionado
 > ![Tela 2](images/sem_produto.png)
 
-> * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
+> * Tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
 > ![Tela 3](images/com_produto.png)
 
-> * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
+> * Tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
 > ![Tela 4](images/blocos_atividad3.png)
 
 >
