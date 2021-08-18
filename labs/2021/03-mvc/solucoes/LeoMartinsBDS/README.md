@@ -45,7 +45,7 @@
 > ![Tela 3](images/com_produto.png)
 
 > * Tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
-> ![Tela 4](images/blocos_atividad3.png)
+> ![Tela 4](images/blocos_atividade3.png)
 
 >
 > Link para o [Arquivo .aia Tarefa 3](app/lab03_tarefa3.aia)
