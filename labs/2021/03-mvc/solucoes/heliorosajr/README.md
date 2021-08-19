@@ -54,3 +54,22 @@ Diagrama de blocos do aplicativo
 ![Initialize screen](images/tarefa2/initialize_screen.png)
 
 ![Close screen](images/tarefa2/close_screen.png)
+
+ # Tarefa 3 - App com CloudDB
+
+![Design interface](images/tarefa3/tela_1.png)
+
+Captura de tela do app com nenhum produto selecionado
+
+![App - sem produtos selecionados](images/tarefa3/tela_2.png)
+
+Capturas de tela do app com produtos selecionados
+
+![App - com primeiro produtos selecionados](images/tarefa3/tela_3.png)
+
+Diagrama de blocos do aplicativo
+
+![App - Diagrama de blocos](images/tarefa3/tela_4.png)
+
+
+[Arquivo aia tarefa 3](app/listaCompras_cloudDb.aia).
