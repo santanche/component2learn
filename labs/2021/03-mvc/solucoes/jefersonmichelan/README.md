@@ -41,24 +41,19 @@
 
 # Tarefa 3 - App com CoudDB
 
-> Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
+>Captura de quatro telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
+![Tela Design Interface Tarefa3](images/interface_appinventor_tarefa3.png)
+
 > * tela 2 - captura de tela do app com nenhum produto selecionado
+![Tela Sem Selecao](images/nenhum_selecionado_tarefa3.png)
+
 > * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
+![Tela Sem Selecao](images/preenchendo_compra.png)
+![Tela Lista Itens Comprados](images/lista_compra_efetivada.png)
+
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
+![Bloco Tarefa3](images/bloco_tarefa3.png)
 >
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
->
-> As telas devem ser apresentadas conforme exemplos a seguir.
->
-> Exemplo de uma captura de tela completa de design de interface:
->
-> ![Tela App](images/design.png)
->
-> Exemplo de uma captura de tela do app:
->
-> ![Tela App](images/aplicativo.png)
->
-> Exemplo de uma tela do diagrama de blocos:
->
-> ![Tela Blocos](images/blocks.png)
+> * Arquivo do aplicativo exportado a partir do MIT App Inventor em formato aia
+[App Tarefa1](app/tarefa3.aia)
