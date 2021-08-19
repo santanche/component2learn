@@ -56,4 +56,4 @@
 ![Bloco Tarefa3](images/bloco_tarefa3.png)
 >
 > * Arquivo do aplicativo exportado a partir do MIT App Inventor em formato aia
-[App Tarefa1](app/tarefa3.aia)
+[App Tarefa3](app/tarefa3.aia)
