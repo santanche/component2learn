@@ -43,3 +43,14 @@ Diagrama de blocos do aplicativo
 
 
  [Arquivo aia tarefa 1](app/listaCompras.aia).
+
+
+ # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
+
+![List](images/tarefa2/item_list_selection.png)
+
+![Buy Button](images/tarefa2/buy_button_click.png)
+
+![Initialize screen](images/tarefa2/initialize_screen.png)
+
+![Close screen](images/tarefa2/close_screen.png)
