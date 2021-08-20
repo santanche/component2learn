@@ -53,4 +53,4 @@ Estrutura de pastas:
 > ## tela 5 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
 > ![tela8](images/tela14.png)
 
-## [**purchasefinal-2.aia**](app/purchasefinal-2.aia)
+## [**purchasefinal-2.aia**](app/purchasefinal-3.aia)
