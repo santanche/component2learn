@@ -35,3 +35,6 @@ build/
 
 ### .DS_Store ###
 .DS_Store
+
+## Java .class files ##
+*.class
