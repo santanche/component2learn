@@ -37,8 +37,8 @@
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+- botão de aumentar
+![desing](images/btnAumentar.png)
 
 # Tarefa 3 - App com CoudDB
 
