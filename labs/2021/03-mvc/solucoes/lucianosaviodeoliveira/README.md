@@ -3,8 +3,9 @@
 
 # Tarefa 1 - App no MIT App Inventor
 
-> Coloque as imagens PNG da captura de seis telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
+> ![Workflow Orange](images/design_de_interface.png)
+> 
 > * tela 2 - captura de tela do app com nenhum produto selecionado
 > * tela 3 - captura de tela do app com primeiro produto selecionado
 > * tela 4 - captura de tela do app com segundo produto selecionado
