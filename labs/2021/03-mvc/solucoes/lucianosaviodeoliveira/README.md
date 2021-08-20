@@ -1,17 +1,5 @@
-# Modelo para Apresentação do Lab03 - MVC
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-├── images     <- arquivos de imagens usadas no documento
-│
-└── app        <- apps do MIT App Inventor exportados em formato `aia`
-~~~
-
 # Aluno
-* `<nome completo>`
+* Luciano Sávio de Oliveira
 
 # Tarefa 1 - App no MIT App Inventor
 
