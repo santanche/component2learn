@@ -4,22 +4,22 @@
 # Tarefa 1 - App no MIT App Inventor
 
 > * tela 1 - captura da tela completa de design de interface
-> ![design_de_interface](images/design_de_interface.png)
+> ![design_de_interface](images/Tar1_design_de_interface.png)
 > 
 > * tela 2 - captura de tela do app com nenhum produto selecionado
-> ![nenhum_produto_selecionado](images/nenhum_produto_selecionado.png)
+> ![nenhum_produto_selecionado](images/Tar1_nenhum_produto_selecionado.png)
 > 
 > * tela 3 - captura de tela do app com primeiro produto selecionado
-> ![primeiro_produto_selecionado](images/primeiro_produto_selecionado.png)
+> ![primeiro_produto_selecionado](images/Tar1_primeiro_produto_selecionado.png)
 >
 > * tela 4 - captura de tela do app com segundo produto selecionado
-> ![segundo_produto_selecionado](images/segundo_produto_selecionado.png)
+> ![segundo_produto_selecionado](images/Tar1_segundo_produto_selecionado.png)
 > 
 > * tela 5 - compra de um dos produtos efetivada
-> ![compra_de_um_dos_produtos_efetivada](images/compra_de_um_dos_produtos_efetivada.png)
+> ![compra_de_um_dos_produtos_efetivada](images/Tar1_compra_de_um_dos_produtos_efetivada.png)
 > 
 > * tela 6 - diagrama de blocos do aplicativo
-> ![diagrama_de_blocos_do_aplicativo](images/diagrama_de_blocos_do_aplicativo.png)
+> ![diagrama_de_blocos_do_aplicativo](images/Tar1_diagrama_de_blocos_do_aplicativo.png)
 >
 > Link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`:
 > [Tarefa_1](app/Tarefa_1.aia).
@@ -28,12 +28,12 @@
 
 > Imagem PNG do diagrama:
 >
-> ![diagrama_1](images/diagrama_1.png)
-> ![diagrama_2](images/diagrama_2.png)
-> ![diagrama_3](images/diagrama_3.png)
-> ![diagrama_4](images/diagrama_4.png)
-> ![diagrama_5](images/diagrama_5.png)
-> ![diagrama_6](images/diagrama_6.png)
+> ![diagrama_1](images/Tar2_diagrama_1.png)
+> ![diagrama_2](images/Tar2_diagrama_2.png)
+> ![diagrama_3](images/Tar2_diagrama_3.png)
+> ![diagrama_4](images/Tar2_diagrama_4.png)
+> ![diagrama_5](images/Tar2_diagrama_5.png)
+> ![diagrama_6](images/Tar2_diagrama_6.png)
 
 # Tarefa 3 - App com CoudDB
 
