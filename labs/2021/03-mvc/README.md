@@ -1,34 +1,76 @@
-# MVC e Event-driven App
-*Lab de Componentização e Reúso de Software 14/08/2021*
+# Modelo para Apresentação do Lab03 - MVC
 
-## Tarefa 1
+Estrutura de pastas:
 
-Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inventor que simule uma interface de compra, com as seguintes funcionalidades:
-1. apresente uma interface com as seguintes áreas:
-  * uma lista opções com o nome de três produtos (a sua escolha);
-  * um quadro de detalhes do produto;
-  * um campo para o usuário digitar a quantidade que deseja comprar;
-  * um botão de efetivação da compra;
-  * um campo de mensagens no rodapé.
-2. ao clicar no produto da lista de opções, deve ser apresentado no quadro de detalhamento:
-  * a imagem do produto;
-  * seu nome;
-  * o valor unitário e a unidade (g, kg, l);
-3. quando o botão de efetivação da compra for clicado, deve ser mostrado no campo de mensagem (rodapé) os dados da compra sendo efetivada: nome do produto, quantidade e o valor total a ser pago.
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── images     <- arquivos de imagens usadas no documento
+│
+└── app        <- app do MIT App Inventor exportado em formato `aia`
+~~~
 
-Neste protótipo, não haverá uso de bancos de dados. Tudo será executado
+# Aluno
+* `Vinicius Del Padre`
 
-# Tarefa 2
+# Tarefa 1 - App no MIT App Inventor
 
-Considere a seguinte abordagem visual para representar os componentes da sua composição e as relações usando uma abordagem dirigida a eventos:
+> Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
+> * tela 1 - captura da tela completa de design de interface
+![Tela Aplicativo](interface.png)
+> * tela 2 - nenhum produto selecionado
+![Tela Aplicativo](1.jpg)
+> * tela 3 - primeiro produto selecionado
+![Tela Aplicativo](2.jpg)
+> * tela 4 - segundo produto selecionado
+![Tela Aplicativo](6.jpg)
+> * tela 5 - compra de um dos produtos efetiva
+![Tela Aplicativo](3.jpg)
+> * tela 6 - diagrama de blocos do aplicativo
+![Tela Aplicativo](diagrama.jpg)
+>
+> As telas devem ser apresentadas conforme exemplos a seguir.
+>
+> Exemplo de uma tela do aplicativo:
+>
+> ![Tela Aplicativo](images/aplicativo.png)
+>
+> Exemplo de uma tela do diagrama de blocos:
+>
+> ![Tela Blocos](images/blocks.png)
+>
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
-![MIT App Inventor](images/mit-app-inventor-events.png)
+# Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-Apresente um diagrama equivalente para a aplicação que você desenvolveu na Tarefa 1, considerando:
-* para cada evento representado pela cláusula do MIT App Inventor [When (...).Click do], deve haver uma interface que gera eventos equivalente, cujo evento é o capturado (no exemplo apresentado, o evento é o Click);
-* a geração do evento está sempre associado ao componente que o produz, neste exemplo, é o Button1;
-* capture a imagem Box do MIT App Inventor que representa a captura do evento e coloque próximo à interface, como está na ilustração;
-* o componente que responde ao evento deve ter uma interface que monitora o respectivo evento;
-* capture as instruções executadas quando o evento é capturado e coloque próximo ao evento que responde - conecte essas instruções à interface que recebe o evento e propriedades relacionadas, como ilustra a figura.
+> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
+>
+> ![Diagrama Eventos](images/mit-app-inventor-events.png)
 
-Para construir o diagrama, utilize o [Template do Lab3](https://docs.google.com/presentation/d/1KcXoJJa4up8X8M-7crZzSSg_ZcBGjFH2UX8OugLu-LI/edit?usp=sharing).
+# Tarefa 3 - App com CoudDB
+
+> Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
+> * tela 1 - captura da tela completa de design de interface
+![Tela Aplicativo](interface-2.png)
+> * tela 2 - captura de tela do app com nenhum produto selecionado
+![Tela Aplicativo](7.jpg)
+> * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
+Tela Aplicativo](8.jpg)
+> * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
+![Tela Aplicativo](diagrama-2.jpg)
+>
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+>
+> As telas devem ser apresentadas conforme exemplos a seguir.
+>
+> Exemplo de uma captura de tela completa de design de interface:
+>
+> ![Tela App](images/design.png)
+>
+> Exemplo de uma captura de tela do app:
+>
+> ![Tela App](images/aplicativo.png)
+>
+> Exemplo de uma tela do diagrama de blocos:
+>
+> ![Tela Blocos](images/blocks.png)
