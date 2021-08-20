@@ -59,5 +59,5 @@ Estrutura de pastas:
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
 ![Tela Aplicativo](images/diagrama-2.jpg)
 >
-> Acesse o projeto do app [clicando aqui](./app/LojaVirtual.aia).
+> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 >
