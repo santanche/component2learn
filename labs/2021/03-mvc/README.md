@@ -17,15 +17,15 @@ Estrutura de pastas:
 
 > Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
-![Tela Aplicativo](interface.png)
+![Tela Aplicativo](images/interface.png)
 > * tela 2 - nenhum produto selecionado
-![Tela Aplicativo](1.jpg)
+![Tela Aplicativo](images/1.jpg)
 > * tela 3 - primeiro produto selecionado
-![Tela Aplicativo](2.jpg)
+![Tela Aplicativo](images/2.jpg)
 > * tela 4 - segundo produto selecionado
-![Tela Aplicativo](6.jpg)
+![Tela Aplicativo](images/6.jpg)
 > * tela 5 - compra de um dos produtos efetiva
-![Tela Aplicativo](3.jpg)
+![Tela Aplicativo](images/3.jpg)
 > * tela 6 - diagrama de blocos do aplicativo
 ![Tela Aplicativo](diagrama.jpg)
 >
@@ -51,13 +51,13 @@ Estrutura de pastas:
 
 > Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
-![Tela Aplicativo](interface-2.png)
+![Tela Aplicativo](images/interface-2.png)
 > * tela 2 - captura de tela do app com nenhum produto selecionado
-![Tela Aplicativo](7.jpg)
+![Tela Aplicativo](images/7.jpg)
 > * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
-Tela Aplicativo](8.jpg)
+Tela Aplicativo](images/8.jpg)
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
-![Tela Aplicativo](diagrama-2.jpg)
+![Tela Aplicativo](images/diagrama-2.jpg)
 >
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 >
