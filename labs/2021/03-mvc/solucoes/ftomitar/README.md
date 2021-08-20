@@ -7,7 +7,7 @@ Estrutura de pastas:
 │
 ├── images     <- arquivos de imagens usadas no documento
 │
-└── app        <- apps do MIT App Inventor exportados em formato `aia`\
+└── app        <- apps do MIT App Inventor exportados em formato `aia`
 ~~~
 
 # Aluno
@@ -15,83 +15,180 @@ Estrutura de pastas:
 
 # Tarefa 1 - App no MIT App Inventor
 
-1 - Captura da tela completa de design de interface\
-`Tela 1`\
-<img src="images/tarefa1-1-tela-completa-1.png" width=60% height=60% />\
-`Tela 2`\
-<img src="images/tarefa1-1-tela-completa-2.png" width=60% height=60% />\
-`Tela 3`\
-<img src="images/tarefa1-1-tela-completa-3.png" width=60% height=60% />
+1 - Captura da tela completa de design de interface
+<br />
 
-2 - Captura de tela do app com nenhum produto selecionado\
-`Tela sem produtos selecionados`\
-<img src="images/tarefa1-2.jpeg" width=20% height=20% />
+`Tela 1`
+<p align="center">
+    <img src="images/tarefa1-1-tela-completa-1.png" width=60% height=60% />
+</p>
 
-3 - Captura de tela do app com primeiro produto selecionado na lista\
-`Tela com produto selecionado`\
-<img src="images/tarefa1-3-produto-1-1.jpeg" width=20% height=20% />\
-`Descrição`\
-<img src="images/tarefa1-3-produto-1-2.jpeg" width=20% height=20% />
+`Tela 2`
+<p align="center">
+    <img src="images/tarefa1-1-tela-completa-2.png" width=60% height=60% />
+</p>
+ 
+`Tela 3`
+<p align="center">
+    <img src="images/tarefa1-1-tela-completa-3.png" width=60% height=60% />
+</p>
 
-4 - Captura de tela do app com segundo produto selecionado na lista\
-`Tela com produto selecionado`\
-<img src="images/tarefa1-4-produto-2-1.jpeg" width=20% height=20% />\
-`Descrição`\
-<img src="images/tarefa1-4-produto-2-2.jpeg" width=20% height=20% />
+<br />
+<br />
+2 - Captura de tela do app com nenhum produto selecionado
+<br />
 
-5 - Compra\
-`Compra - Seleção de produto`\
-<img src="images/tarefa1-5-compra1.jpeg" width=20% height=20% />\
-`Compra - Detalhe do produto`\
-<img src="images/tarefa1-5-compra2.jpeg" width=20% height=20% />\
-`Compra - Compra efetivada`\
-<img src="images/tarefa1-5-compra3.jpeg" width=20% height=20% />
+`Tela sem produtos selecionados`
+<p align="center">
+    <img src="images/tarefa1-2.jpeg" width=30% height=30% />
+</p>
 
-6 - Diagrama de blocos\
-`Diagrama de blocos - tela 1`\
-<img src="images/tarefa1-6-blocos-tela1.png" width=60% height=60% />\
-`Diagrama de blocos - tela 2`\
-<img src="images/tarefa1-6-blocos-tela2.png" width=60% height=60% />\
-`Diagrama de blocos - tela 3`\
-<img src="images/tarefa1-6-blocos-tela3.png" width=60% height=60% />
+<br />
+<br />
+3 - Captura de tela do app com primeiro produto selecionado na lista
+<br />
 
-7 - Link da aplicação\
-`Link do App`\
-<img src="app/Tarefa1.aia" width=60% height=60% />\
+`Tela com produto selecionado`
+<p align="center">
+    <img src="images/tarefa1-3-produto-1-1.jpeg" width=30% height=30% /> 
+</p>
 
+`Descrição`
+<p align="center">
+    <img src="images/tarefa1-3-produto-1-2.jpeg" width=30% height=30% />
+</p>
+
+<br />
+<br />
+4 - Captura de tela do app com segundo produto selecionado na lista
+<br />
+
+`Tela com produto selecionado`
+<p align="center">
+    <img src="images/tarefa1-4-produto-2-1.jpeg" width=30% height=30% /> 
+</p>
+
+`Descrição`
+<p align="center">
+    <img src="images/tarefa1-4-produto-2-2.jpeg" width=30% height=30% />
+</p>
+
+<br />
+<br />
+5 - Compra
+<br />
+
+`Compra - Seleção de produto`
+<p align="center">
+    <img src="images/tarefa1-5-compra1.jpeg" width=30% height=30% /> 
+</p>
+
+`Compra - Detalhe do produto`
+<p align="center">
+    <img src="images/tarefa1-5-compra2.jpeg" width=30% height=30% /> 
+</p>
+
+`Compra - Compra efetivada`
+<p align="center">
+    <img src="images/tarefa1-5-compra3.jpeg" width=30% height=30% />
+</p>
+
+<br />
+<br />
+6 - Diagrama de blocos
+<br />
+
+`Diagrama de blocos - tela 1`
+<p align="center">
+    <img src="images/tarefa1-6-blocos-tela1.png" width=60% height=60% /> 
+</p>
+
+`Diagrama de blocos - tela 2`
+<p align="center">
+    <img src="images/tarefa1-6-blocos-tela2.png" width=60% height=60% /> 
+</p>
+
+`Diagrama de blocos - tela 3`
+<p align="center">
+    <img src="images/tarefa1-6-blocos-tela3.png" width=60% height=60% />
+</p>
+
+<br />
+<br />
+7 - Link da aplicação
+<br />
+
+[App sem banco de dados]("app/Tarefa1.aia")
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-`Diagrama Eventos 1`\
-<img src="images/tarefa2-1.png" width=60% height=60% />\
-`Diagrama Eventos 2`\
-<img src="images/tarefa2-2.png" width=60% height=60% />\
-`Diagrama Eventos 3`\
-<img src="images/tarefa2-3.png" width=60% height=60% />
+`Diagrama Eventos 1`
+<p align="center">
+    <img src="images/tarefa2-1.png" width=60% height=60% /> 
+</p>
+
+`Diagrama Eventos 2`
+<p align="center">
+    <img src="images/tarefa2-2.png" width=60% height=60% /> 
+</p>
+
+`Diagrama Eventos 3`
+<p align="center">
+    <img src="images/tarefa2-3.png" width=60% height=60% />
+</p>
 
 # Tarefa 3 - App com CoudDB
 
-1- Captura do design das Telas\
-`Tela 1`\
-<img src="images/tarefa3-1.png" width=60% height=60% />\
-`Tela 2`\
-<img src="images/tarefa3-2.png" width=60% height=60% />\
-`Tela 3`\
-<img src="images/tarefa3-3.png" width=60% height=60% />
+<br />
+<br />
+1- Captura do design das Telas
+<br />
 
+`Tela 1`
+<p align="center">
+    <img src="images/tarefa3-1.png" width=60% height=60% /> 
+</p>
+
+`Tela 2`
+<p align="center">
+    <img src="images/tarefa3-2.png" width=60% height=60% /> 
+</p>
+
+`Tela 3`
+<p align="center">
+    <img src="images/tarefa3-3.png" width=60% height=60% />
+</p>
+
+<br />
+<br />
 2 - Captura de tela do app com nenhum produto selecionado
 e
-3 - Captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**\
-`Vídeo ilustrando a compra de 2 produtos`\
-<img src="images/tarefa3-compra.gif" width=60% height=60% />
+3 - Captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
+<br />
 
-4 - Diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB\
-`Tela de detalhes`\
-<img src="images/tarefa3-blocos-1.png" width=60% height=60% />\
-`Tela de compra`\
-<img src="images/tarefa3-blocos-2.png" width=60% height=60% />
+`Vídeo ilustrando a compra de 2 produtos`
+<p align="center">
+    <img src="images/tarefa3-compra.gif" width=30% height=30% />
+</p>
 
-5 - Link da aplicação\
-`Link do App`\
-<img src="app/Tarefa3.aia" width=60% height=60% />\
+<br />
+<br />
+4 - Diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
+<br />
 
+`Tela de detalhes`
+<p align="center">
+    <img src="images/tarefa3-blocos-1.png" width=60% height=60% /> 
+</p>
+
+`Tela de compra`
+<p align="center">
+    <img src="images/tarefa3-blocos-2.png" width=60% height=60% />
+</p>
+
+<br />
+<br />
+5 - Link da aplicação
+<br />
+
+[App com banco de dados]("app/Tarefa3.aia")
