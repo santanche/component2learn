@@ -11,8 +11,6 @@ Estrutura de pastas:
 
 ## Tarefa 1 - Web Components e Tópicos
 
-> Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
-
 ~~~html
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="dengue symptoms">
 </dcc-button>
@@ -39,7 +37,34 @@ Estrutura de pastas:
 > ![Tarefa 1](images/tarefa1.png)
 
 ## Tarefa 2 - Web Components e RSS
-> Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
+
+~~~html
+
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/science/rss:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/design/rss:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-lively-talk character="https://renareis-content.s3.amazonaws.com/dino.png" speech="Design News: " subscribe="rss/design:speech" duration="2s" delay="10s" direction="left">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://renareis-content.s3.amazonaws.com/nurse.png" speech="Science News: " subscribe="rss/science:speech" duration="2s" delay="10s" direction="left">
+</dcc-lively-talk>
+
+
+<dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science">
+</dcc-aggregator>
+
+<dcc-lively-talk character="https://renareis-content.s3.amazonaws.com/doctor.png" speech="Compact: " subscribe="aggregate/science:speech" duration="2s" delay="10s" direction="right">
+</dcc-lively-talk>
+
+<dcc-button label="Ciências Próxima" topic="next/science/rss"></dcc-button>
+<dcc-button label="Design Próxima" topic="next/design/rss"></dcc-button>
+~~~
+
+> ![Tarefa 1](images/tarefa2.png)
+
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
