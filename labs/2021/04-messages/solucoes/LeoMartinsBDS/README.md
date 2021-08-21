@@ -1,9 +1,9 @@
 # Aluno
 * `Leonardo Martins de Oliveira (ex150339)`
 
-## Tarefa 1 - Web Components e T髉icos
+## Tarefa 1 - Web Components e T贸picos
 
-> C骴igo
+> C贸digo
 
 ~~~html
 <dcc-button label="Mundo Politica" topic="noticia/mundo/politica" message="Politica mundo">
@@ -15,11 +15,11 @@
 <dcc-button label="Bahia Dinos" topic="noticia/bahia/dinos" message="Bahia dinos">
 </dcc-button>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Not韈ias sobre: " subscribe="noticia/+/politica:speech"></dcc-lively-talk>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Not铆cias sobre: " subscribe="noticia/+/politica:speech"></dcc-lively-talk>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Not韈ias sobre: " subscribe="+/brasil#:speech"></dcc-lively-talk>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Not铆cias sobre: " subscribe="+/brasil#:speech"></dcc-lively-talk>
 
-<dcc-lively-talk speech="Not韈ias sobre: " subscribe="noticia/#:speech"></dcc-lively-talk>
+<dcc-lively-talk speech="Not铆cias sobre: " subscribe="noticia/#:speech"></dcc-lively-talk>
 ~~~
 
 > Imagem
@@ -28,9 +28,9 @@
 
 ## Tarefa 2 - Web Components e RSS
 
-> C骴igo
+> C贸digo
 
-~~html
+~~~html
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="ciencias/rss:next" topic="rss/science">
 </dcc-rss>
 <dcc-rss source="https://www.wired.com/category/design/feed" subscribe="design/rss:next" topic="rss/design">
@@ -39,9 +39,9 @@
 <dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science">
 </dcc-aggregator>
 
-<dcc-button label="Ci阯cias Pr髕ima" topic="ciencias/rss">
+<dcc-button label="Ci锚ncias Pr贸xima" topic="ciencias/rss">
 </dcc-button>
-<dcc-button label="Design Pr髕ima" topic="design/rss">
+<dcc-button label="Design Pr贸xima" topic="design/rss">
 </dcc-button>
 
 <dcc-lively-talk subscribe="rss/design:speech"></dcc-lively-talk>
@@ -55,11 +55,11 @@
 
 ![Tarefa 2](images/tarefa2.png)
 
-## Tarefa 3 - Pain閕s de Mensagens com Timer
+## Tarefa 3 - Pain茅is de Mensagens com Timer
 
-> C骴igo
+> C贸digo
 
-~~html
+~~~html
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="nextScience/rss:next" topic="rss/science">
 </dcc-rss>
 <dcc-rss source="https://www.wired.com/category/design/feed" subscribe="nextDesign/rss:next" topic="rss/design">
