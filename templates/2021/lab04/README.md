@@ -3,7 +3,9 @@
 Estrutura de pastas:
 
 ~~~
-└── README.md  <- arquivo apresentando a tarefa
+├── README.md  <- arquivo apresentando a tarefa
+│
+└── images     <- arquivos de imagens usadas no documento
 ~~~
 
 # Aluno
@@ -14,13 +16,23 @@ Estrutura de pastas:
 > Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
 
 ~~~html
-<dcc-trigger label="News" action="start/rss">
-</dcc-trigger>
-
-<dcc-rss source="https://www.wired.com/category/science/feed">
-  <subscribe-dcc topic="start/rss" role="start"></subscribe-dcc>
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
 </dcc-rss>
+
+<dcc-aggregator topic="aggregate/science" quantity="3" subscribe="rss/science">
+</dcc-aggregator>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="News: " subscribe="rss/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Compact: " subscribe="aggregate/science:speech">
+</dcc-lively-talk>
+
+<dcc-button label="Next Item" topic="next/rss">
+</dcc-button>
 ~~~
+
+![Composition Screenshot](images/dcc-composition.png)
 
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
