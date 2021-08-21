@@ -55,7 +55,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 </dcc-lively-talk>
 ```
 ## Imagem Solução 1
-![Workflow Orange](images/orange-starling.PNG)
+!(questao1.PNG)
 
 ## Tarefa 2 - Web Components e RSS
 
