@@ -21,7 +21,7 @@
 > ![Tela 2](images/2.png)
 > ![Tela 3](images/3.png)
 >
-> ![Tela 3](app/aplicativo.aia)
+> ![Aplicativo .aia](app/aplicativo.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
@@ -39,5 +39,5 @@
 >> ![Segundo Produto](images/2_pedido.jpg)
 > * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
 > ![Tela 3](images/3.png)
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
-> ![Tela 3](app/aplicativo.aia)
+
+> ![Aplicativo .aia](app/aplicativo.aia)
