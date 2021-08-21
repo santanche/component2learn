@@ -7,7 +7,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `Renato Fernandes reis`
+* `Renato Fernandes Reis`
 
 ## Tarefa 1 - Web Components e Tópicos
 
