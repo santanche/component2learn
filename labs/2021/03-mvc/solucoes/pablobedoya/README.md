@@ -11,46 +11,50 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Pablo Gabriel Rodrigues Neves Bedoya`
 
 # Tarefa 1 - App no MIT App Inventor
 
-> Coloque as imagens PNG da captura de seis telas do seu aplicativo:
-> * tela 1 - captura da tela completa de design de interface
-> * tela 2 - captura de tela do app com nenhum produto selecionado
-> * tela 3 - captura de tela do app com primeiro produto selecionado
-> * tela 4 - captura de tela do app com segundo produto selecionado
-> * tela 5 - compra de um dos produtos efetivada
-> * tela 6 - diagrama de blocos do aplicativo
->
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+> Tela 1 - captura da tela completa de design de interface:
+![Tela 1](images/tarefa-1-tela-1.png)
+
+> Tela 2 - captura de tela do app com nenhum produto selecionado:
+![Tela 2](images/tarefa-1-tela-2.png)
+
+> Tela 3 - captura de tela do app com primeiro produto selecionado:
+![Tela 3](images/tarefa-1-tela-3.png)
+
+> Tela 4 - captura de tela do app com segundo produto selecionado:
+![Tela 4](images/tarefa-1-tela-4.png)
+
+> Tela 5 - compra de um dos produtos efetivada:
+![Tela 5](images/tarefa-1-tela-5.png)
+
+> Tela 6 - Diagrama de blocos do aplicativo:
+![Tela 6](images/tarefa-1-blocks.png)
+
+> [Link para arquivo exportado - Tarefa 1](images/tarefa-1-interface_compra.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> Diagrama de eventos 1:
+![Diagrama Eventos 1](images/tarefa-2-diagrama-1.png)
+
+> Diagrama de eventos 2:
+![Diagrama Eventos 2](images/tarefa-2-diagrama-2.png)
 
 # Tarefa 3 - App com CoudDB
 
-> Coloque as imagens PNG da captura de quatro telas do seu aplicativo:
-> * tela 1 - captura da tela completa de design de interface
-> * tela 2 - captura de tela do app com nenhum produto selecionado
-> * tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**
-> * tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB
->
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
->
-> As telas devem ser apresentadas conforme exemplos a seguir.
->
-> Exemplo de uma captura de tela completa de design de interface:
->
-> ![Tela App](images/design.png)
->
-> Exemplo de uma captura de tela do app:
->
-> ![Tela App](images/aplicativo.png)
->
-> Exemplo de uma tela do diagrama de blocos:
->
-> ![Tela Blocos](images/blocks.png)
+> Tela 1 - captura da tela completa de design de interface:
+![Tela 1](images/tarefa-3-tela-1.png)
+
+> Tela 2 - captura de tela do app com nenhum produto selecionado:
+![Tela 2](images/tarefa-3-tela-2.png)
+
+> Tela 3 - captura de tela do app com dois com compra efetivados e aparecendo na **Lista de Produtos a Serem Comprados**:
+![Tela 3](images/tarefa-3-tela-3.png)
+
+> Tela 4 - diagrama de blocos do aplicativo mostrando apenas aqueles relacionados com o CloudDB:
+![Tela 3](images/tarefa-3-blocks.png)
+
+> [Link para arquivo exportado - Tarefa 3](images/tarefa-3-interface_compra.aia)
