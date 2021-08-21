@@ -103,7 +103,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 </dcc-button>
 ```
 ## Imagem Solução 2
-![Workflow Orange](images/orange-starling.PNG)
+<img width="478" alt="questao2" src="https://user-images.githubusercontent.com/88891692/130337317-7aba5efd-b430-4c8a-88d2-c9e6ae616615.PNG">
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -151,5 +151,6 @@ Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar not�
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
 ```
-## Imagem Solução 2
-![Workflow Orange](images/orange-starling.PNG)
+## Imagem Solução 3
+
+
