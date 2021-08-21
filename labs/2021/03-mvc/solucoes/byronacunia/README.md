@@ -11,17 +11,24 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Byron Alejandro Acuña Acurio`
 
 # Tarefa 1 - App no MIT App Inventor
 
 > Coloque as imagens PNG da captura de seis telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
+> ![Tela 1](images/Tarea1-tela1.png)
 > * tela 2 - captura de tela do app com nenhum produto selecionado
+> ![Tela 1](images/Tarea1-tela2.png)
 > * tela 3 - captura de tela do app com primeiro produto selecionado
+> ![Tela 1](images/Tarea1-tela3.1.png)
+> ![Tela 1](images/Tarea1-tela3.2.png)
 > * tela 4 - captura de tela do app com segundo produto selecionado
+> ![Tela 1](images/Tarea1-tela4.png)
 > * tela 5 - compra de um dos produtos efetivada
+> ![Tela 1](images/Tarea1-tela5.png)
 > * tela 6 - diagrama de blocos do aplicativo
+> ![Tela 1](images/Tarea1-tela6.png)
 >
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
