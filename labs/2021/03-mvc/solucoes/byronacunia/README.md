@@ -19,16 +19,16 @@ Estrutura de pastas:
 > * tela 1 - captura da tela completa de design de interface
 > ![Tela 1](images/Tarea1-tela1.png)
 > * tela 2 - captura de tela do app com nenhum produto selecionado
-> ![Tela 1](images/Tarea1-tela2.png)
+> ![Tela 2](images/Tarea1-tela2.png)
 > * tela 3 - captura de tela do app com primeiro produto selecionado
-> ![Tela 1](images/Tarea1-tela3.1.png)
-> ![Tela 1](images/Tarea1-tela3.2.png)
+> ![Tela 3.1](images/Tarea1-tela3.1.png)
+> ![Tela 3.2](images/Tarea1-tela3.2.png)
 > * tela 4 - captura de tela do app com segundo produto selecionado
-> ![Tela 1](images/Tarea1-tela4.png)
+> ![Tela 4](images/Tarea1-tela4.png)
 > * tela 5 - compra de um dos produtos efetivada
-> ![Tela 1](images/Tarea1-tela5.png)
+> ![Tela 5](images/Tarea1-tela5.png)
 > * tela 6 - diagrama de blocos do aplicativo
-> ![Tela 1](images/Tarea1-tela6.png)
+> ![Tela 6](images/Tarea1-tela6.png)
 >
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 > [Link Arquivo aia](https://github.com/byronacunia/component2learn/blob/master/labs/2021/03-mvc/solucoes/byronacunia/app/MarketPlaceByron.aia).
