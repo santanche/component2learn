@@ -32,9 +32,10 @@ Estrutura de pastas:
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> - Diagrama 1:
+>   <img src="images/event1.png" alt="Diagrama Eventos" style="zoom:50%;" />
+> - Diagrama 2:
+>   <img src="images/event2.png" alt="Diagrama Eventos" style="zoom:50%;" />
 
 # Tarefa 3 - App com CoudDB
 
