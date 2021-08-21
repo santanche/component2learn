@@ -56,6 +56,6 @@ Crie um agregador de mensagens usando o `<dcc-aggregator>` para notícias tanto 
 Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) RSSs ou agregados, conforme os seguintes critérios:
 * `doutor` - mostra notícias de ciências a cada 1.000 milisegundos;
 * `enfermeira` - mostra notícias de design a cada 2.000 milisegundos;
-* `dino` - mostra notícias agregadas a cada 3.000 milisegundos.
+* `dino` - mostra notícias agregadas a cada 2.000 milisegundos.
 
 Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
