@@ -79,7 +79,7 @@ Estrutura de pastas:
 
 ![RSS Screenshot parte 1](images/dcc-rss-1.png)
 
-![RSS Screenshot parte 2](images/dcc-rss-1.png)
+![RSS Screenshot parte 2](images/dcc-rss-2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
