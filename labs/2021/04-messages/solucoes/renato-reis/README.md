@@ -63,9 +63,46 @@ Estrutura de pastas:
 <dcc-button label="Design Próxima" topic="next/design/rss"></dcc-button>
 ~~~
 
-> ![Tarefa 1](images/tarefa2.png)
+> ![Tarefa 2](images/tarefa2.png)
 
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
-> Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
+
+~~~html
+
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/science/rss:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/design/rss:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-lively-talk character="https://renareis-content.s3.amazonaws.com/dino.png" speech="Design News: " subscribe="aggregate:speech" direction="left">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://renareis-content.s3.amazonaws.com/nurse.png" speech="Science News: " subscribe="rss/design:speech" direction="left">
+</dcc-lively-talk>
+
+
+<dcc-aggregator topic="aggregate" quantity="3" subscribe="rss/+">
+</dcc-aggregator>
+
+<dcc-lively-talk character="https://renareis-content.s3.amazonaws.com/doctor.png" speech="Compact: " subscribe="rss/science:speech" direction="right">
+</dcc-lively-talk>
+
+<dcc-timer cycles="10" interval="1000" topic="next/science/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="2000" topic="next/design/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="3000" topic="aggregate" subscribe="start/feed:start">
+</dcc-timer>
+
+
+<dcc-button label="Start" topic="start/feed">
+</dcc-button>
+~~~
+
+> ![Tarefa 3](images/tarefa3.png)
+
 
