@@ -1,7 +1,7 @@
 # Componentes, Mensagens, Eventos e Barramento
 *Lab de Componentização e Reúso de Software 21/08/2021*
 
-FELIPE STARLING MEDEIROS (EX150367)
+# FELIPE STARLING MEDEIROS (EX150367)
 
 Esse lab será voltado a componentes na Web usando a implementação do Digital Content Component (DCC).
 
@@ -31,7 +31,8 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `dino` - mostra todas as notícias.
 
 Solução:
-
+---
+```
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="mostra notícias sobre política do mundo">
 </dcc-button>
 
@@ -52,7 +53,7 @@ Solução:
 
 <dcc-lively-talk speech="I heard about: " subscribe="noticia#:speech">
 </dcc-lively-talk>
-
+```
 
 ## Tarefa 2 - Web Components e RSS
 
@@ -72,7 +73,8 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `dino` - mostra notícias de design (sem agregar).
 
 Solução:
-
+---
+```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
 </dcc-rss>
 
@@ -97,7 +99,7 @@ Solução:
 
 <dcc-button label="Design Próxima" topic="next/rss/design">
 </dcc-button>
-
+```
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -115,7 +117,8 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
 
 Solução:
-
+---
+```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
 </dcc-rss>
 
@@ -143,3 +146,5 @@ Solução:
 
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
+
+```
