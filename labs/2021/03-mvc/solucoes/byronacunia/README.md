@@ -36,7 +36,11 @@ Estrutura de pastas:
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> ![Diagrama Eventos1](images/fig1.png)
+> ![Diagrama Eventos2](images/fig2.png)
+> ![Diagrama Eventos3](images/fig3.png)
+> ![Diagrama Eventos4](images/fig4.png)
+> ![Diagrama Eventos5](images/fig5.png)
 
 # Tarefa 3 - App com CoudDB
 
