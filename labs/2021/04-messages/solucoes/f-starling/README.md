@@ -30,7 +30,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `enfermeira` - mostra notícias cuja região é o Brasil (independentemente do assunto);
 * `dino` - mostra todas as notícias.
 
-Solução:
+## Solução 1:
 ---
 ```
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="mostra notícias sobre política do mundo">
@@ -54,6 +54,8 @@ Solução:
 <dcc-lively-talk speech="I heard about: " subscribe="noticia#:speech">
 </dcc-lively-talk>
 ```
+## Imagem Solução 1
+![Workflow Orange](images/orange-starling.PNG)
 
 ## Tarefa 2 - Web Components e RSS
 
@@ -72,7 +74,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `enfermeira` - mostra notícias de ciências (sem agregar);
 * `dino` - mostra notícias de design (sem agregar).
 
-Solução:
+## Solução 2:
 ---
 ```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
@@ -100,6 +102,8 @@ Solução:
 <dcc-button label="Design Próxima" topic="next/rss/design">
 </dcc-button>
 ```
+## Imagem Solução 2
+![Workflow Orange](images/orange-starling.PNG)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -116,7 +120,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 
 Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
 
-Solução:
+## Solução 3:
 ---
 ```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
@@ -146,5 +150,6 @@ Solução:
 
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
-
 ```
+## Imagem Solução 2
+![Workflow Orange](images/orange-starling.PNG)
