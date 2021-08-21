@@ -20,8 +20,9 @@ Crie quatro botões com rótulos `Mundo Política`, `Brasil Política`, `Brasil 
 * `noticia/brasil/politica`
 * `noticia/brasil/dinos`
 * `noticia/bahia/dinos`
-Solução:
 
+## Solução:
+```
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="mostra notícias sobre política">
 </dcc-button>
 
@@ -42,7 +43,7 @@ Solução:
 
 <dcc-lively-talk speech="I heard about: " subscribe="noticia#:speech">
 </dcc-lively-talk>
-
+```
 
 O segundo nível do tópico indica a região da notícia e o terceiro o assunto. Associe a cada tópico o texto de uma mensagem de sua criação.
 
@@ -68,7 +69,8 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `enfermeira` - mostra notícias de ciências (sem agregar);
 * `dino` - mostra notícias de design (sem agregar).
 
-Solução:
+## Solução:
+```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
 </dcc-rss>
 
@@ -90,7 +92,7 @@ Solução:
 
 <dcc-button label="Design Próxima" topic="next/rss/design">
 </dcc-button>
-
+```
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -107,7 +109,8 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 
 Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
 
-Solução:
+## Solução:
+```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
 </dcc-rss>
 
@@ -139,3 +142,4 @@ Solução:
 
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
+```
