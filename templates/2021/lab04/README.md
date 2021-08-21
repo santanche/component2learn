@@ -9,9 +9,10 @@ Estrutura de pastas:
 # Aluno
 * `<nome completo>`
 
-## Tarefa 1 - Web Components
+## Tarefa 1 - Web Components e Tópicos
 
 > Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
+
 ~~~html
 <dcc-trigger label="News" action="start/rss">
 </dcc-trigger>
@@ -22,4 +23,7 @@ Estrutura de pastas:
 ~~~
 
 ## Tarefa 2 - Web Components e RSS
+> Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
+
+## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
