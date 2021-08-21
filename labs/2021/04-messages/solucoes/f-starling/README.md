@@ -55,7 +55,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 </dcc-lively-talk>
 ```
 ## Imagem Solução 1
-!(questao1.PNG)
+![Imagem_Solucao_1](https://github.com/f-starling/component2learn/blob/master/labs/2021/04-messages/solucoes/f-starling/questao1.PNG)
 
 ## Tarefa 2 - Web Components e RSS
 
@@ -103,7 +103,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 </dcc-button>
 ```
 ## Imagem Solução 2
-<img width="478" alt="questao2" src="https://user-images.githubusercontent.com/88891692/130337317-7aba5efd-b430-4c8a-88d2-c9e6ae616615.PNG">
+![Imagem_Solucao_2](https://github.com/f-starling/component2learn/blob/master/labs/2021/04-messages/solucoes/f-starling/questao2.PNG)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -152,5 +152,5 @@ Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar not�
 </dcc-button>
 ```
 ## Imagem Solução 3
-
+![Imagem_Solucao_3](https://github.com/f-starling/component2learn/blob/master/labs/2021/04-messages/solucoes/f-starling/questao3.PNG)
 
