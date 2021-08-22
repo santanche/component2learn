@@ -85,7 +85,9 @@ Estrutura de pastas:
 <dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/countd:next" topic="rss/design">
 </dcc-rss>
 
-<dcc-aggregator topic="aggregate/news" quantity="3" subscribe="rss/#" subscribe="next/ag">
+<dcc-aggregator quantity="3" topic="aggregate/news" subscribe="next/ag">
+   <subscribe-dcc topic="rss/science"></subscribe-dcc>
+   <subscribe-dcc topic="rss/design"></subscribe-dcc>
 </dcc-aggregator>
 
 <dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Ciência: " subscribe="#/science:speech">
