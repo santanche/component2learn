@@ -3,6 +3,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+bin
+.ipynb_checkpoints
 
 ### STS ###
 .apt_generated
@@ -31,5 +33,8 @@ build/
 ### VS Code ###
 .vscode/
 
-### .DS_Store ### 
-.DS_Store 
+### .DS_Store ###
+.DS_Store
+
+## Java .class files ##
+*.class
