@@ -65,6 +65,11 @@
 </dcc-lively-talk>
 ~~~
 
+![Composition Screenshot_5](images/5_dcc-composition.png)
+![Composition Screenshot_6](images/6_dcc-composition.png)
+![Composition Screenshot_7](images/7_dcc-composition.png)
+![Composition Screenshot_8](images/8_dcc-composition.png)
+
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
 > Código da composição de componentes Web:
@@ -100,3 +105,6 @@
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
 ~~~
+
+![Composition Screenshot_9](images/9_dcc-composition.png)
+![Composition Screenshot_10](images/10_dcc-composition.png)
