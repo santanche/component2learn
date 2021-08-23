@@ -45,7 +45,7 @@ Crie quatro botões com rótulos `Mundo Política`, `Brasil Política`, `Brasil 
 </dcc-lively-talk>
 ```
 
-![Workflow dentro Componente](images/tarefa-01.png)
+![Tarefa-01](../images/tarefa-01.png)
 
 
 O segundo nível do tópico indica a região da notícia e o terceiro o assunto. Associe a cada tópico o texto de uma mensagem de sua criação.
@@ -97,7 +97,7 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 </dcc-button>
 ```
 
-![Workflow dentro Componente](images/tarefa-02.png)
+![Tarefa-02](../images/tarefa-02.png)
 
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
@@ -150,4 +150,4 @@ Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar not�
 </dcc-button>
 ```
 
-![Workflow dentro Componente](images/tarefa-03.png)
+![Tarefa-03](../images/tarefa-03.png)
