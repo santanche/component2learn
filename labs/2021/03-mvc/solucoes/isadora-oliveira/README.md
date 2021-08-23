@@ -1,20 +1,19 @@
 # Aluno
-* Isadora Mendonça de Oliveira 
+* Isadora Mendonça de Oliveira  ex150703
 
-# Tarefa 1 - App no MIT App Inventor
+### Imagens Interface e Telas
+![](./images/Interface.png)
+![](./images/Interface_semProduto.png)
+![](./images/Interface_umProduto.png)
+![](./images/Interface_doisProdutos.jpg)
 
-
-
-
-> Link para o arquivo *.aia do projeto MIT App Inventor: [ex125352_app_componentes.aia]()
-
-# Tarefa 2 - Diagrama de Componentes dirigida a Eventos
-
-
-
-# Tarefa 3 - App com CoudDB
-
-
+### Imagens Diagramas
+![](./images/DiagramaItem1.png)
+![](./images/DiagramaItem2.png)
+![](./images/DiagramaComprar.png)
+![](./images/BlocksMvc.png)
 
 ### Arquivo 'aia'
-> Link para o arquivo *.aia do projeto MIT App Inventor: [ex125352_app_componentes_cloud.aia](https://github.com/paulobazooka/component2learn/blob/master/labs/2021/03-mvc/solucoes/PauloSergioNascimento/app/ex125352_app_componentes_cloud.aia) 
+> Link para o arquivo *.aia do projeto MIT App Inventor:
+>[MIT APP Inventor](./app/Trabalho_3.aia)
+
