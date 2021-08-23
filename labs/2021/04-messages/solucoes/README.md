@@ -45,6 +45,9 @@ Crie quatro botões com rótulos `Mundo Política`, `Brasil Política`, `Brasil 
 </dcc-lively-talk>
 ```
 
+![Workflow dentro Componente](images/tarefa-01.png)
+
+
 O segundo nível do tópico indica a região da notícia e o terceiro o assunto. Associe a cada tópico o texto de uma mensagem de sua criação.
 
 Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) notícias publicadas pelos botões, conforme os seguintes critérios:
@@ -93,6 +96,9 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 <dcc-button label="Design Próxima" topic="next/rss/design">
 </dcc-button>
 ```
+
+![Workflow dentro Componente](images/tarefa-02.png)
+
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -143,3 +149,5 @@ Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar not�
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
 ```
+
+![Workflow dentro Componente](images/tarefa-03.png)
