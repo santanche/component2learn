@@ -35,6 +35,7 @@ Lab04 - Componentes, Mensagens, Eventos e Barramento
 ![Brasil Politica](images/Tarefa1_brasilPolitica.jpg)
 
 ## Tarefa 2 - Web Components e RSS
+
 > Código:
 
 ~~~html
@@ -71,7 +72,8 @@ Lab04 - Componentes, Mensagens, Eventos e Barramento
 ![Aggregate](images/Tarefa2_aggreagate.jpg)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+
+> Código:
 
 ~~~html
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/count1s:next" topic="rss/science">
