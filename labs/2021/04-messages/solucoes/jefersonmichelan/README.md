@@ -33,7 +33,7 @@
 
 > Imagem da composição em funcionamento:
 
-![Tarefa1](images/tarefa1.PNG)
+![Tarefa1](images/tarefa1.png)
 
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
@@ -67,7 +67,7 @@
 
 > Imagem da composição em funcionamento:
 
-![Tarefa2](images/tarefa2.PNG)
+![Tarefa2](images/tarefa2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
@@ -105,4 +105,4 @@
 ~~~
 > Imagem da composição em funcionamento:
 
-![Tarefa3](images/tarefa3.PNG)
+![Tarefa3](images/tarefa3.png)
