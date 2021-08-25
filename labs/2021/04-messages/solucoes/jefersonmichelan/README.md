@@ -31,7 +31,7 @@
   </dcc-lively-talk>
 ~~~
 
-> Imagem da composição em funcionamento:
+> Acrescente uma imagem da composição em funcionamento:
 
 ![Tarefa1](images/tarefa1.png)
 
