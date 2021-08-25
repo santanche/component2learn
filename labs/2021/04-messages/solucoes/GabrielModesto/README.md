@@ -105,10 +105,13 @@ Estrutura de pastas:
 
 ---
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
-![Composition Screenshot](images/dcc-composition.png) ## Tarefa 2 - Web
+## Tarefa 2 - Web
 Components e RSS > Escreva aqui o código da sua composição de componentes Web
 seguida de uma imagem que captura o funcionamento, como foi feito na tarefa
-anterior. ## Tarefa 3 - Painéis de Mensagens com Timer > Escreva aqui o código
+anterior.
+
+---
+
+## Tarefa 3 - Painéis de Mensagens com Timer > Escreva aqui o código
 da sua composição de componentes Web seguida de uma imagem que captura o
 funcionamento, como foi feito na tarefa anterior.
