@@ -105,7 +105,7 @@ Estrutura de pastas:
 <dcc-timer cycles="10" interval="1000" topic="next/counts" subscribe="start/timer:start">
 </dcc-timer>
 
-<dcc-timer cycles="10" interval="3000" topic="next/ag" subscribe="start/timer:start">
+<dcc-timer cycles="10" interval="2000" topic="next/ag" subscribe="start/timer:start">
 </dcc-timer>
 
 <dcc-button label="Start" topic="start/timer">
