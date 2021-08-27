@@ -50,7 +50,44 @@ Estrutura de pastas:
 ![Composition Screenshot](images/image1.png)
 
 ## Tarefa 2 - Web Components e RSS
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+```html
+<!-- RSS -->
+<dcc-rss source="https://www.wired.com/category/science/feed" 
+	subscribe="ciencias/rss:next" 
+	topic="rss/science">
+</dcc-rss>
+<dcc-rss source="https://www.wired.com/category/design/feed" 
+	subscribe="design/rss:next" 
+	topic="rss/design">
+</dcc-rss>
+
+<!-- Aggregator -->
+<dcc-aggregator topic="aggregate/science" 
+	quantity="4" 
+	subscribe="rss/science">
+</dcc-aggregator>
+
+<!-- Buttons -->
+<dcc-button label="Ciências Próxima" 
+	topic="ciencias/rss">
+</dcc-button>
+<dcc-button label="Design Próxima" 
+	topic="design/rss">
+</dcc-button>
+
+<!-- Characters -->
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" 
+	subscribe="aggregate/science:speech">
+</dcc-lively-talk>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" 
+	subscribe="rss/science:speech">
+</dcc-lively-talk>
+<dcc-lively-talk 
+	subscribe="rss/design:speech">
+</dcc-lively-talk>
+
+```
+![Composition Screenshot](images/image1.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
