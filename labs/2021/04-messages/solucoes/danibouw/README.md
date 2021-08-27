@@ -90,4 +90,49 @@ Estrutura de pastas:
 ![Composition Screenshot](images/image2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+```html
+
+<dcc-rss source="https://www.wired.com/category/science/feed" 
+	subscribe="nextScience/rss:next" 
+	topic="rss/science">
+</dcc-rss>
+<dcc-rss source="https://www.wired.com/category/design/feed" 
+	subscribe="nextDesign/rss:next" 
+	topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate/news" 
+	quantity="3" 
+	subscribe="rss/#">
+</dcc-aggregator>
+
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" 
+	subscribe="aggregate/news:speech">
+</dcc-lively-talk>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" 
+	subscribe="rss/science:speech">
+</dcc-lively-talk>
+<dcc-lively-talk 
+	subscribe="rss/design:speech">
+</dcc-lively-talk>
+
+
+<dcc-timer interval="1000" 
+	topic="nextScience/rss" 
+	subscribe="start/feed:start">
+</dcc-timer>
+<dcc-timer interval="2000" 
+	topic="nextDesign/rss" 
+	subscribe="start/feed:start">
+</dcc-timer>
+<dcc-timer interval="2000" 
+	topic="nextAgregado/rss" 
+	subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-button label="Inicia" 
+	topic="start/feed">
+</dcc-button>
+
+```
