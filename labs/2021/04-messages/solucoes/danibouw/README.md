@@ -87,7 +87,7 @@ Estrutura de pastas:
 </dcc-lively-talk>
 
 ```
-![Composition Screenshot](images/image1.png)
+![Composition Screenshot](images/image2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
