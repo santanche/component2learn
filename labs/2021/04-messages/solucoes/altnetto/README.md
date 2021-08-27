@@ -61,5 +61,33 @@
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
 
 ~~~html
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
+</dcc-rss>
 
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate/all" quantity="3" subscribe="rss/#">
+</dcc-aggregator>
+
+<dcc-timer cycles="10" interval="1000" topic="next/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="2000" topic="next/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="2000" topic="next/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-lively-talk speech="Notícias Agregadas: " subscribe="aggregate/all:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Design: " subscribe="rss/design:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Ciência: " subscribe="rss/science:speech">
+</dcc-lively-talk>
+
+<dcc-button label="Inicia" topic="start/feed">
+</dcc-button>
 ~~~
