@@ -36,16 +36,16 @@ Para esta atividade, há um [Tutorial de DCCs](https://harena-lab.github.io/hare
 >``<dcc-button label="Design Próxima" topic="next/design"></dcc-button>``
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
+>``<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/reference/images/doctor.png" subscribe="rss/science:speech" ></dcc-lively-talk>``
+>``<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/reference/images/nurse.png" subscribe="rss/design:speech"></dcc-lively-talk>``
+>``<dcc-lively-talk subscribe="aggregate/feed:speech"></dcc-lively-talk>``
 
-Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
-  * canal 1 (ciência): https://www.wired.com/category/science/feed
-  * canal 2 (design): https://www.wired.com/category/design/feed
+>``<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/science:next" topic="rss/science"></dcc-rss>``
+>``<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/design:next" topic="rss/design"></dcc-rss>``
 
-Crie um agregador de mensagens usando o `<dcc-aggregator>` para notícias tanto de ciência quanto de design em grupos de três.
+>``<dcc-aggregator topic="aggregate/feed" quantity="3" subscribe="rss/#"></dcc-aggregator>``
 
-Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) RSSs ou agregados, conforme os seguintes critérios:
-* `doutor` - mostra notícias de ciências a cada 1.000 milisegundos;
-* `enfermeira` - mostra notícias de design a cada 2.000 milisegundos;
-* `dino` - mostra notícias agregadas a cada 2.000 milisegundos.
+>``<dcc-timer cycles="50" interval="2000" topic="next/science" subscribe="start/feed:start"></dcc-timer>``
+>``<dcc-timer cycles="50" interval="1000" topic="next/design" subscribe="start/feed:start"></dcc-timer>``
 
-Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
+>``<dcc-button label="Inicia" topic="start/feed"></dcc-button>``
