@@ -13,7 +13,7 @@ Estrutura de pastas:
 
 ## Tarefa 1 - Web Components e Tópicos
 
-> Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
+> Código da composição de componentes Web:
 
 ~~~html
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="USA esta indo em bora de Afganistan">
@@ -38,12 +38,12 @@ Estrutura de pastas:
   </dcc-lively-talk>
 ~~~
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
+> Imagem da composição em funcionamento:
 
 ![Composition Screenshot](images/dcc-tarefa1.png)
 
 ## Tarefa 2 - Web Components e RSS
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+> Código da composição de componentes Web:
 ~~~html
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
 </dcc-rss>
@@ -70,8 +70,43 @@ Estrutura de pastas:
   <dcc-lively-talk speech="I heard about: " subscribe="rss/design:speech">
   </dcc-lively-talk>
 ~~~
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
+> Imagem da composição em funcionamento:
 
 ![Composition Screenshot](images/dcc-tarefa2.png)
 ## Tarefa 3 - Painéis de Mensagens com Timer
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+> Código da composição de componentes Web:
+~~~html
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
+</dcc-rss>
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss2:next" topic="rss/design">
+</dcc-rss>
+<dcc-aggregator topic="aggregate/science" quantity="3" subscribe="rss/science">
+</dcc-aggregator>
+
+<dcc-aggregator2 topic="aggregate/design" quantity="3" subscribe="rss/design">
+</dcc-aggregator2>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="I heard about: " subscribe="rss/science:speech">
+  </dcc-lively-talk>
+
+  <dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="I heard about: " subscribe="rss/design:speech">
+  </dcc-lively-talk>
+
+  <dcc-lively-talk speech="I heard about: " subscribe="aggregate/#:speech">
+  </dcc-lively-talk>
+
+
+<dcc-timer cycles="10" interval="1000" topic="next/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="2000" topic="next/rss2" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="2000" topic="next/rss3" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-button label="Inicia" topic="start/feed">
+</dcc-button>
+~~~
+> Imagem da composição em funcionamento:
+
+![Composition Screenshot](images/dcc-tarefa3.png)
