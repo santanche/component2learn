@@ -39,7 +39,7 @@ Seguindo as intruções do execício, temos:
 </dcc-lively-talk>
 ~~~
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
+> Imagem da composição em funcionamento, como o exemplo a seguir:
 
 ![Composition Screenshot](tarefa4_imagem1.png)
 
