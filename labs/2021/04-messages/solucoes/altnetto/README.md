@@ -31,5 +31,35 @@
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
 
+~~~html
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science">
+</dcc-aggregator>
+
+<dcc-lively-talk speech="Deign: " subscribe="rss/design:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Ciência: " subscribe="rss/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Agregadas Ciência: " subscribe="aggregate/science:speech">
+</dcc-lively-talk>
+
+<dcc-button label="Ciências Próxima" topic="next/rss">
+</dcc-button>
+
+<dcc-button label="Design Próxima" topic="next/rss">
+</dcc-button>
+~~~
+
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web, seguindo a mesma abordagem da tarefa anterior.
+
+~~~html
+
+~~~
