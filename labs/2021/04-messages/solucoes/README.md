@@ -1,4 +1,4 @@
-# Modelo para Apresentação do Lab04 - Componentes, Mensagens, Eventos e Barramento
+# Lab04 - Componentes, Mensagens, Eventos e Barramento
 
 Estrutura de pastas:
 
