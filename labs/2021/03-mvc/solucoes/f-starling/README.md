@@ -1,5 +1,5 @@
 # MVC e Event-driven App
-*Lab de Componentização e Reúso de Software 14/08/2021*
+
 FELIPE STARLING MEDEIROS EX150367
 
 ## Tarefa 1
