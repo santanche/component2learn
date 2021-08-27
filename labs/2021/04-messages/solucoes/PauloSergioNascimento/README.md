@@ -24,21 +24,16 @@ Para esta atividade, há um [Tutorial de DCCs](https://harena-lab.github.io/hare
 >``<dcc-lively-talk subscribe="noticia/#:speech"></dcc-lively-talk>``
 
 ## Tarefa 2 - Web Components e RSS
+>``<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/reference/images/nurse.png" subscribe="rss/science:speech"></dcc-lively-talk>``
+>``<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/reference/images/doctor.png" subscribe="aggregate/science:speech" ></dcc-lively-talk>``
+>``<dcc-lively-talk subscribe="rss/design:speech"></dcc-lively-talk>``
 
-Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
-  * canal 1 (ciência): https://www.wired.com/category/science/feed
-  * canal 2 (design): https://www.wired.com/category/design/feed
+>``<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/science:next" topic="rss/science"></dcc-rss>``
+>``<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/design:next" topic="rss/design"></dcc-rss>``
+>``<dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science"></dcc-aggregator>``
 
-Crie um agregador de mensagens usando o `<dcc-aggregator>` para notícias de ciência em grupos de quatro.
-
-Apresente um botão com o rótulo `Ciências Próxima` que carregue o próximo RSS de Ciência.
-
-Apresente um botão com o rótulo `Design Próxima` que carregue o próximo RSS de Design.
-
-Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) RSSs ou agregados, conforme os seguintes critérios:
-* `doutor` - mostra notícias agregadas de ciências;
-* `enfermeira` - mostra notícias de ciências (sem agregar);
-* `dino` - mostra notícias de design (sem agregar).
+>``<dcc-button label="Ciências Próxima" topic="next/science"></dcc-button>``
+>``<dcc-button label="Design Próxima" topic="next/design"></dcc-button>``
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
