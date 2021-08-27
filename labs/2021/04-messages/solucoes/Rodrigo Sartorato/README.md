@@ -1,4 +1,4 @@
-# Modelo para Apresentação do Lab04 - Componentes, Mensagens, Eventos e Barramento
+# Lab04 - Componentes, Mensagens, Eventos e Barramento
 
 Estrutura de pastas:
 
@@ -41,7 +41,7 @@ Seguindo as intruções do execício, temos:
 
 > Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
 
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](tarefa4_imagem1.png)
 
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
