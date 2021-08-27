@@ -47,10 +47,7 @@ Estrutura de pastas:
 	subscribe="noticia/#:speech">
 </dcc-lively-talk>
 ```
-
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
-
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/image1.png)
 
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
