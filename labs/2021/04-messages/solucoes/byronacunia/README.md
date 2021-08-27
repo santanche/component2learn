@@ -44,6 +44,34 @@ Estrutura de pastas:
 
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+~~~html
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
+</dcc-rss>
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss2:next" topic="rss/design">
+</dcc-rss>
+<dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science">
+</dcc-aggregator>
 
+<dcc-aggregator2 topic="aggregate/design" quantity="4" subscribe="rss/design">
+</dcc-aggregator2>
+
+<dcc-button label="Ciências Próxima" topic="next/rss">
+</dcc-button>
+
+<dcc-button label="Design Próxima" topic="next/rss2">
+</dcc-button>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="I heard about: " subscribe="aggregate/science:speech">
+  </dcc-lively-talk>
+
+  <dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="I heard about: " subscribe="rss/science:speech">
+  </dcc-lively-talk>
+
+  <dcc-lively-talk speech="I heard about: " subscribe="rss/design:speech">
+  </dcc-lively-talk>
+~~~
+> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
+
+![Composition Screenshot](images/dcc-tarefa2.png)
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
