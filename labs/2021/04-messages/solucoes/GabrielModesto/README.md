@@ -98,10 +98,10 @@ Estrutura de pastas:
 
 > Nível 2 - Imagens
 
-![Nível 2_1](images/tarefa1/nivel2_vazio.png)
-![Nível 2_2](images/tarefa1/nivel2_dino.png)
-![Nível 2_3](images/tarefa1/nivel2_medico.png)
-![Nível 2_4](images/tarefa1/nivel2_enfermeira.png)
+![Nível 2 vazio](images/tarefa1/nivel2_vazio.png)
+![Nível 2 dino](images/tarefa1/nivel2_dino.png)
+![Nível 2 medico](images/tarefa1/nivel2_medico.png)
+![Nível 2 enfermeira](images/tarefa1/nivel2_enfermeira.png)
 
 ---
 
@@ -110,6 +110,36 @@ Components e RSS > Escreva aqui o código da sua composição de componentes Web
 seguida de uma imagem que captura o funcionamento, como foi feito na tarefa
 anterior.
 
+```html
+<dcc-button label="Ciênicas Próxima" topic="next/rss/science">
+</dcc-button>
+
+<dcc-button label="Design Próxima" topic="next/rss/design">
+</dcc-button>
+
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
+</dcc-rss>
+
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/design:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science">
+</dcc-aggregator>
+
+<dcc-lively-talk speech="Design: " subscribe="rss/design:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Ciências Compactas: " subscribe="aggregate/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Ciências: " subscribe="rss/science:speech">
+</dcc-lively-talk>
+```
+![Vazio](images/tarefa2/imagem1.png)
+![Ciências](images/tarefa2/ciencias.png)
+![Ciências compactas](images/tarefa2/cienciasAgregada.png)
+![Design](images/tarefa2/design.png)
 ---
 
 ## Tarefa 3 - Painéis de Mensagens com Timer > Escreva aqui o código
