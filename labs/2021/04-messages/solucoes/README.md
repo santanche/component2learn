@@ -33,7 +33,7 @@ Estrutura de pastas:
 
 > Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
 
-![Composition Screenshot](images/Imagem_Parte01.png)
+![Composition Screenshot](labs/2021/04-messages/solucoes/imagens/Imagem_Parte01.PNG)
 
 ## Tarefa 2 - Web Components e RSS
 ~~~html
@@ -53,7 +53,7 @@ Estrutura de pastas:
 <div style="width: 80px"><dcc-button label="Design Próxima" topic="next/rss"></dcc-button></div>
 ~~~
 
-![Composition Screenshot](images/Imagem_Parte02.png)
+![Composition Screenshot](labs/2021/04-messages/solucoes/imagens/Imagem_Parte02.PNG)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~html
@@ -75,4 +75,4 @@ Estrutura de pastas:
 <dcc-timer cycles="10" interval="2000" topic="next1/rss" subscribe="start/feed:start"></dcc-timer>
 <div style="width: 80px"><dcc-button label="Inicia" topic="start/feed"></dcc-button></div>
 ~~~
-![Composition Screenshot](images/Imagem_Parte03.png)
+![Composition Screenshot](labs/2021/04-messages/solucoes/imagens/Imagem_Parte03.PNG)
