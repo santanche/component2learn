@@ -51,7 +51,7 @@ Estrutura de pastas:
 
 > Nível 1 - Imagem
 
-![Nível 1](images/tarefa1/nivel1.png)
+> > ![Nível 1](images/tarefa1/nivel1.PNG)
 
 ---
 
@@ -76,14 +76,14 @@ Estrutura de pastas:
 </dcc-button>
 
 <dcc-lively-talk
-  character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png"
+  character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.PNG"
   speech="Eu leio sobre: "
   subscribe="noticias/politica:speech"
 >
 </dcc-lively-talk>
 
 <dcc-lively-talk
-  character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png"
+  character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.PNG"
   speech="Eu leio sobre: "
   subscribe="noticias/brasil:speech"
 >
@@ -98,10 +98,10 @@ Estrutura de pastas:
 
 > Nível 2 - Imagens
 
-![Nível 2 vazio](images/tarefa1/nivel2_vazio.png)
-![Nível 2 dino](images/tarefa1/nivel2_dino.png)
-![Nível 2 medico](images/tarefa1/nivel2_medico.png)
-![Nível 2 enfermeira](images/tarefa1/nivel2_enfermeira.png)
+> ![Nível 2 vazio](images/tarefa1/nivel2_vazio.PNG)
+> ![Nível 2 dino](images/tarefa1/nivel2_dino.PNG)
+> ![Nível 2 medico](images/tarefa1/nivel2_medico.PNG)
+> ![Nível 2 enfermeira](images/tarefa1/nivel2_enfermeira.PNG)
 
 ---
 
@@ -130,16 +130,16 @@ anterior.
 <dcc-lively-talk speech="Design: " subscribe="rss/design:speech">
 </dcc-lively-talk>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Ciências Compactas: " subscribe="aggregate/science:speech">
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.PNG" speech="Ciências Compactas: " subscribe="aggregate/science:speech">
 </dcc-lively-talk>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Ciências: " subscribe="rss/science:speech">
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.PNG" speech="Ciências: " subscribe="rss/science:speech">
 </dcc-lively-talk>
 ```
-![Vazio](images/tarefa2/imagem1.png)
-![Ciências](images/tarefa2/ciencias.png)
-![Ciências compactas](images/tarefa2/cienciasAgregada.png)
-![Design](images/tarefa2/design.png)
+> ![Vazio](images/tarefa2/imagem1.PNG)
+> ![Ciências](images/tarefa2/ciencias.PNG)
+> ![Ciências compactas](images/tarefa2/cienciasAgregada.PNG)
+> ![Design](images/tarefa2/design.PNG)
 ---
 
 ## Tarefa 3 - Painéis de Mensagens com Timer > Escreva aqui o código
@@ -169,12 +169,12 @@ funcionamento, como foi feito na tarefa anterior.
 <dcc-lively-talk speech="Todas as notícias: " subscribe="aggregate/next/rss:speech">
 </dcc-lively-talk>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Ciências Notícias: " subscribe="+/science:speech">
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.PNG" speech="Ciências Notícias: " subscribe="+/science:speech">
 </dcc-lively-talk>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Design Notícias: " subscribe="+/design:speech">
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.PNG" speech="Design Notícias: " subscribe="+/design:speech">
 </dcc-lively-talk>
 ```
 
-![Imagem 1](images/tarefa3/imagem1.png)
-![Imagem 2](images/tarefa3/print1.png)
+> ![Imagem 1](images/tarefa3/imagem1.PNG)
+> ![Imagem 2](images/tarefa3/print1.PNG)
