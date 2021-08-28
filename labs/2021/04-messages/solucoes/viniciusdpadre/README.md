@@ -36,10 +36,6 @@ Estrutura de pastas:
 </dcc-lively-talk>
 ~~~
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
-
-![Composition Screenshot](images/dcc-composition.png)
-
 ## Tarefa 2 - Web Components e RSS
 ```
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
