@@ -93,4 +93,4 @@
 
 ~~~
 
-![Imagem](./images/tarefa_3_paineis_com_timer.png)
+![Imagem](./images/tarefa_3_paineis_com_timer2.png)
