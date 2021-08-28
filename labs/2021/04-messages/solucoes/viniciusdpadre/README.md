@@ -9,7 +9,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Vinicius Del Padre  - ex150380`
 
 ## Tarefa 1 - Web Components e Tópicos
 
