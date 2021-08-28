@@ -53,7 +53,7 @@ Estrutura de pastas:
 <div style="width: 80px"><dcc-button label="Design Próxima" topic="next/rss"></dcc-button></div>
 ~~~
 
-![Composition Screenshot](labs/2021/04-messages/solucoes/imagens/Imagem_Parte02.PNG)
+![Composition Screenshot](imagens/Imagem_Parte02.PNG)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~html
