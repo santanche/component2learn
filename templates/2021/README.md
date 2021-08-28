@@ -2,7 +2,9 @@
 
 # Template do Projeto
 
-O projeto deve seguir o template detalhado na pasta [project](project/).
+O projeto deve seguir o template detalhado na pasta:
+
+* [Projeto](project/)
 
 # Templates de Laboratórios
 
