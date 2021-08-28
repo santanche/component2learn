@@ -6,6 +6,7 @@
 * [Laboratório 2](02-data-flow_mvc/)
 * [Laboratório 3](03-mvc/)
 * [Laboratório 4](04-messages/)
+* [Laboratório 5](05-services/)
 
 ## Passos para submissão dos Laboratórios.
 
