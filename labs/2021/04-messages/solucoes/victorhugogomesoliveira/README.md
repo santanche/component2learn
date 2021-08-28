@@ -35,7 +35,7 @@ Estrutura de pastas:
   </dcc-lively-talk>
 ~~~
 > Acrescente uma imagem da composição em funcionamento:
-![Composition Screenshot](images/tarefa_01.png)
+![Composition Screenshot](images/tarefa_01.PNG)
 
 ## Tarefa 2 - Web Components e RSS
 
@@ -69,7 +69,7 @@ topic="rss/design">
 ~~~
 
 > Acrescente uma imagem da composição em funcionamento:
-![Composition Screenshot](images/tarefa_02.png)
+![Composition Screenshot](images/tarefa_02.PNG)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -108,4 +108,4 @@ topic="rss/design">
 ~~~
 
 > Acrescente uma imagem da composição em funcionamento:
-![Composition Screenshot](images/tarefa_03.png)
+![Composition Screenshot](images/tarefa_03.PNG)
