@@ -145,3 +145,36 @@ anterior.
 ## Tarefa 3 - Painéis de Mensagens com Timer > Escreva aqui o código
 da sua composição de componentes Web seguida de uma imagem que captura o
 funcionamento, como foi feito na tarefa anterior.
+
+```html
+<dcc-button label="Inicia" topic="start/timer">
+</dcc-button>
+
+<dcc-timer cycles="10" interval="1000" topic="next/rss/science" subscribe="start/timer:start">
+</dcc-timer>
+<dcc-timer cycles="10" interval="2000" topic="next/rss/design" subscribe="start/timer:start">
+</dcc-timer>
+<dcc-timer cycles="5" interval="2000" topic="aggregate/next/rss" subscribe="start/timer:start">
+</dcc-timer>
+
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/design:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate/next/rss" quantity="3" subscribe="rss/science">
+</dcc-aggregator>
+
+<dcc-lively-talk speech="Todas as notícias: " subscribe="aggregate/next/rss:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Ciências Notícias: " subscribe="+/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Design Notícias: " subscribe="+/design:speech">
+</dcc-lively-talk>
+```
+
+![Imagem 1](images/tarefa3/imagem1.png)
+![Imagem 2](images/tarefa3/print1.png)
