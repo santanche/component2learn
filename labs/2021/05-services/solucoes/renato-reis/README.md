@@ -15,7 +15,7 @@ Estrutura de pastas:
 
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
-![Diagrama 1 - Interface](images/diagrama1-componentes_ barramento.png)
+![Diagrama 1 - Interface](images/diagrama1-componentes_barramento.png)
 > * Diagrama 1 - Componentes e Barramento
 > 
 ![Diagrama 2 - Interface](images/diagrama2-interface.png)
