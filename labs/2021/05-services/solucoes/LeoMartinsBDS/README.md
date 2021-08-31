@@ -18,4 +18,4 @@
 
 # Bloco 2 - Acesso REST via Jupyter
 
-> Link para o arquivo: [clique aqui](notebook/lab5-tarefas.ipynb);
+> Link para o arquivo: [clique aqui](notebook/lab5-tarefas.ipynb)
