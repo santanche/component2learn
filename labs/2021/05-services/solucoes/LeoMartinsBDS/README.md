@@ -1,9 +1,8 @@
 # Aluno
 * `Leonardo Martins de Oliveira (ex150339)`
 
-# Bloco 1 - Diagramas relacionados com Leilão Invertido
+# Bloco 1 - Diagramas relacionados com LeilÃ£o Invertido
 
-> Coloque as imagens PNG de (no mínimo) três diagramas:
 > * diagrama 1 - componentes e barramento
 
 ![Diagrama 1] (images/componentebarramento.png)
