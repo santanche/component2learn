@@ -5,17 +5,17 @@
 
 > * diagrama 1 - componentes e barramento
 
-![Diagrama 1] (images/componentebarramento.png)
+![Diagrama 1](images/componentebarramento.png)
 
 > * diagrama 2 - interface
 
-![Diagrama 2] (images/interface.png)
+![Diagrama 2](images/interface.png)
 
 
 > * diagrama 3 - mensagens
 
-![Diagrama 3] (images/mensagens.png)
+![Diagrama 3](images/mensagens.png)
 
 # Bloco 2 - Acesso REST via Jupyter
 
-> Link para o arquivo: [clique aqui] (notebook/lab5-tarefas.ipynb);
+> Link para o arquivo: [clique aqui](notebook/lab5-tarefas.ipynb);
