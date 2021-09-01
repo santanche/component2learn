@@ -30,4 +30,4 @@ Estrutura de pastas:
 
 # Bloco 2 - Acesso REST via Jupyter
 
-![Jupiter](notebook/lab5-tarefas.ipynb)
+> Link para o arquivo: [clique aqui](notebook/lab5-tarefas.ipynb)
