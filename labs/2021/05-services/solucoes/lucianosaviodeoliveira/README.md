@@ -1,17 +1,7 @@
 # Modelo para Apresentação do Lab05 - Composição, Serviços e REST
 
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-│
-└── notebook   <- arquivo do notebook
-~~~
-
 # Aluno
-* `<nome completo>`
+* Luciano Sávio de Oliveira
 
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
