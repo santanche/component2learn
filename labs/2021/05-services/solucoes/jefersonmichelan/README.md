@@ -17,15 +17,15 @@ Estrutura de pastas:
 
 > Coloque as imagens PNG de (no mínimo) três diagramas:
 > * diagrama 1 - componentes e barramento
-![Componentes](images/component.png)
+![Componentes](images/component.PNG)
 > * diagrama 2 - interface
-![interface1](images/interface1.png)
-![interface2](images/interface2.png)
-![interface3](images/interface3.png)
+![interface1](images/interface1.PNG)
+![interface2](images/interface2.PNG)
+![interface3](images/interface3.PNG)
 > * diagrama 3 - mensagens
-![message1](images/message1.png)
-![message2](images/message2.png)
-![message3](images/message3.png)
+![message1](images/message1.PNG)
+![message2](images/message2.PNG)
+![message3](images/message3.PNG)
 
 # Bloco 2 - Acesso REST via Jupyter
 
