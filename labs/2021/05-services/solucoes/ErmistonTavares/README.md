@@ -18,15 +18,15 @@ Estrutura de pastas:
 
 > * diagrama 1 - componentes e barramento
 
-(images/componente_e_barramento.png)
+!(images/componente_e_barramento.png)
 
 > * diagrama 2 - interface
 
-(images/interfaces.png)
+!(images/interfaces.png)
 
 > * diagrama 3 - mensagens
 
-(images/mensagens.png)
+!(images/mensagens.png)
 
 # Bloco 2 - Acesso REST via Jupyter
 
