@@ -1,11 +1,11 @@
-# Modelo para Apresentação do Lab05 - Composição, Serviços e REST
+# Apresentação do Lab05 - Composição, Serviços e REST
 
 # Aluno
 * Luciano Sávio de Oliveira
 
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
-> Coloque as imagens PNG de (no mínimo) três diagramas:
+> Imagens PNG de três diagramas:
 > * diagrama 1 - componentes e barramento
 > * diagrama 2 - interface
 > * diagrama 3 - mensagens
