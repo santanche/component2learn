@@ -16,15 +16,15 @@ Estrutura de pastas:
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
 > * diagrama 1 - componentes e barramento
-![Componentes](images/component.PNG)
+![Componentes](images/component.png)
 > * diagrama 2 - interface
-![interface1](images/interface1.PNG)
-![interface2](images/interface2.PNG)
-![interface3](images/interface3.PNG)
+![interface1](images/interface1.png)
+![interface2](images/interface2.png)
+![interface3](images/interface3.png)
 > * diagrama 3 - mensagens
-![message1](images/typeMessage1.PNG)
-![message2](images/typeMessage2.PNG)
-![message3](images/typeMessage3.PNG)
+![message1](images/typeMessage1.png)
+![message2](images/typeMessage2.png)
+![message3](images/typeMessage3.png)
 
 # Bloco 2 - Acesso REST via Jupyter
 
