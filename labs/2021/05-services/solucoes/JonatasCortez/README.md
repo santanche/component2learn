@@ -11,7 +11,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `Jonatas Cortez`
+* `Jonatas Laureano da Silva Cortez`
 
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
