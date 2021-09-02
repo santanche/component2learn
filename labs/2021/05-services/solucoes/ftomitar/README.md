@@ -23,5 +23,5 @@ Estrutura de pastas:
 
 # Bloco 2 - Acesso REST via Jupyter
 
-[Link para o notebook](https://github.com/user/repo/blob/branch/other_file.md)
+[Link para o notebook](https://github.com/ftomitar/component2learn/blob/master/labs/2021/05-services/solucoes/ftomitar/notebook/lab5-tarefas-ftomitar.ipynb)
 
