@@ -14,5 +14,4 @@
 
 # Bloco 2 - Acesso REST via Jupyter
 
-> * Notebook
 [Jupyter Notebook](notebook/lab5-notebook.ipynb)
