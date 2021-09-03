@@ -7,13 +7,11 @@
 
 > Coloque as imagens PNG de (no mínimo) três diagramas:
 
-![Diagrama_1] (https://github.com/f-starling/component2learn/blob/master/labs/2021/05-services/solucoes/f-starling/images/Componentes_e_Barramento.PNG)
-## Imagem Solução 3
-![Imagem_Solucao_3](https://github.com/f-starling/component2learn/blob/master/labs/2021/04-messages/solucoes/f-starling/questao3.png)
+![Diagrama 1 - Barramento e Componentes](https://github.com/f-starling/component2learn/blob/master/labs/2021/05-services/solucoes/f-starling/images/Componentes_e_Barramento.PNG)
 
-> * diagrama 2 - interface
-> 
-> * diagrama 3 - mensagens
+![Diagrama 2 - Interfaces](https://github.com/f-starling/component2learn/blob/master/labs/2021/05-services/solucoes/f-starling/images/Interfaces.PNG)
+
+![Diagrama 3 - Messages](https://github.com/f-starling/component2learn/blob/master/labs/2021/05-services/solucoes/f-starling/images/Messages.PNG)
 
 # Bloco 2 - Acesso REST via Jupyter
 
