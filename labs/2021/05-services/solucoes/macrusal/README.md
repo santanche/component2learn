@@ -17,14 +17,14 @@ Estrutura de pastas:
 # Bloco 1 - Diagramas relacionados com Leilão Invertido.
 
 > * diagrama 1 - componentes e barramento
-![Diagrama 1](images/Barramento.png)
+![Diagrama 1](images/Barramento_Componentes.png)
 
 > * diagrama 2 - interface
-![Diagrama 2](images/Interface.png)
+![Diagrama 2](images/Interfaces.png)
 
 > * diagrama 3 - mensagens
-![Diagrama 3](images/Message.png)
+![Diagrama 3](images/Mensagens.png)
 
 # Bloco 2 - Acesso REST via Jupyter
 
-> Link para o arquivo: [clique aqui](notebook/lab5-tarefas-respostas.ipynb)
+> Link para o arquivo: [clique aqui](notebook/Lab5-tarefas-respostas.ipynb)
