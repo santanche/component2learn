@@ -17,4 +17,4 @@
 > * diagrama 3 - mensagens
 
 # Bloco 2 - Acesso REST via Jupyter
-> Link para o arquivo *.ipynb da tarefa 2: [tarefa2_lab5.ipynb](https://github.com/paulobazooka/component2learn/blob/master/labs/2021/05-mservices/solucoes/PauloSergioNascimento/notebook/tarefa2_lab5.ipynb) 
+> Link para o arquivo *.ipynb da tarefa 2: [tarefa2_lab5.ipynb](https://github.com/paulobazooka/component2learn/blob/master/labs/2021/05-services/solucoes/PauloSergioNascimento/notebook/tarefa2_lab5.ipynb) 
