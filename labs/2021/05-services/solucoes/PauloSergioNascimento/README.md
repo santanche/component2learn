@@ -1,15 +1,3 @@
-# Modelo para Apresentação do Lab05 - Composição, Serviços e REST
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-│
-└── notebook   <- arquivo do notebook
-~~~
-
 # Aluno
 * `Paulo Sérgio do Nascimento RA.: ex150352`
 
@@ -17,11 +5,11 @@ Estrutura de pastas:
 >* diagrama 1 - Componentes e barramento
 ![Componentes e Barramento](images/diagrama_lab5.png)
 
-* diagrama 2 - Interface
-![Componentes e Barramento](images/diagrama_lab5.png)
+>* diagrama 2 - Interface
+![Interface](images/diagrama_lab5_interfaces.png)
 
-* diagrama 3 - Mensagens
-![Componentes e Barramento](images/diagrama_lab5.png)
+>* diagrama 3 - Mensagens
+![Mensagens](images/diagrama_lab5_mensagens.png)
 
 > Coloque as imagens PNG de (no mínimo) três diagramas:
 > * diagrama 1 - componentes e barramento
@@ -29,5 +17,4 @@ Estrutura de pastas:
 > * diagrama 3 - mensagens
 
 # Bloco 2 - Acesso REST via Jupyter
-
-> Coloque um link para o arquivo do notebook com a resolução das quatro tarefas do mesmo, especificadas em `labs/2021/05-services/notebook/lab5-tarefas.ipynb`. Esse arquivo de resolução ficará dentro da pasta `notebook`.
+> Link para o arquivo *.ipynb da tarefa 2: [tarefa2_lab5.ipynb](https://github.com/paulobazooka/component2learn/blob/master/labs/2021/05-mservices/solucoes/PauloSergioNascimento/notebook/tarefa2_lab5.ipynb) 
