@@ -21,6 +21,33 @@ Crie quatro botões com rótulos `Mundo Política`, `Brasil Política`, `Brasil 
 * `noticia/brasil/dinos`
 * `noticia/bahia/dinos`
 
+## Solução:
+```
+<dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="mostra notícias sobre política">
+</dcc-button>
+
+<dcc-button label="Brasil Política" topic="noticia/brasil/politica" message="mostra notícias sobre política no Brasil">
+</dcc-button>
+
+<dcc-button label="Brasil Dinos" topic="noticia/brasil/dinos" message="mostra notícias sobre dinos brasileiros">
+</dcc-button>
+
+<dcc-button label="Bahia Dinos" topic="noticia/bahia/dinos" message="mostra notícias sobre dinos baianos">
+</dcc-button>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="I heard about: " subscribe="noticia/#/politica:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="I heard about: " subscribe="noticia/brasil#:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk speech="I heard about: " subscribe="noticia#:speech">
+</dcc-lively-talk>
+```
+
+![Tarefa-01](images/tarefa-01.png)
+
+
 O segundo nível do tópico indica a região da notícia e o terceiro o assunto. Associe a cada tópico o texto de uma mensagem de sua criação.
 
 Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) notícias publicadas pelos botões, conforme os seguintes critérios:
@@ -45,6 +72,34 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `enfermeira` - mostra notícias de ciências (sem agregar);
 * `dino` - mostra notícias de design (sem agregar).
 
+## Solução:
+```
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/design:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate/science" quantity="4" subscribe="rss/science">
+</dcc-aggregator>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="News: " subscribe="rss/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Compact: " subscribe="aggregate/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk speech="I heard about: " subscribe="rss/design:speech">
+</dcc-lively-talk>
+<dcc-button label="Ciências Próxima" topic="next/rss/science">
+</dcc-button>
+
+<dcc-button label="Design Próxima" topic="next/rss/design">
+</dcc-button>
+```
+
+![Tarefa-02](images/tarefa-02.png)
+
+
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
 Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
@@ -59,3 +114,40 @@ Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-t
 * `dino` - mostra notícias agregadas a cada 2.000 milisegundos.
 
 Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
+
+## Solução:
+```
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/design:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Science News: " subscribe="rss/science:speech">
+</dcc-lively-talk>
+
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="Design News: " subscribe="rss/design:speech">
+</dcc-lively-talk>
+
+<dcc-aggregator topic="aggregate/#" quantity="6" subscribe="rss/#">
+</dcc-aggregator>
+<dcc-lively-talk speech="Aggregated News :" subscribe="aggregate/#:speech">
+</dcc-lively-talk>
+
+
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="aggregate/science:speech"  topic="rss/science">
+</dcc-rss>
+
+
+<dcc-timer cycles="10" interval="1000" topic="next/rss/science" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-timer cycles="10" interval="2000" topic="next/rss/design" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-button label="Inicia" topic="start/feed">
+</dcc-button>
+```
+
+![Tarefa-03](images/tarefa-03.png)
