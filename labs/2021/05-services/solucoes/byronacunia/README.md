@@ -25,3 +25,4 @@ Estrutura de pastas:
 # Bloco 2 - Acesso REST via Jupyter
 
 > Link para o arquivo do notebook com a resolução das quatro tarefas.
+> [Link Notebook](https://github.com/byronacunia/component2learn/blob/master/labs/2021/05-services/solucoes/byronacunia/notebook/lab5-tarefas.ipynb).
