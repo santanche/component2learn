@@ -5,7 +5,6 @@
 
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
-> Coloque as imagens PNG de (no mínimo) três diagramas:
 > * diagrama 1 - componentes e barramento
 ![Diagrama 1](images/lab5-diagram1.jpg)
 > * diagrama 2 - interface
@@ -16,4 +15,4 @@
 # Bloco 2 - Acesso REST via Jupyter
 
 > * Notebook
-![Notebook](notebook/lab5-notebook.ipynb)
+[Jupyter Notebook](notebook/lab5-notebook.ipynb)
