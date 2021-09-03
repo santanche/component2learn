@@ -15,9 +15,14 @@ Estrutura de pastas:
 
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
+## Diagrama
 ![Diagrama](images/diagrama.png)
+
+## Interfaces
 ![Interfaces](images/interfaces.png)
-![Mensagens](images/mensagens.png)
+
+## Mensagens
+![Mensagens](images/messages.png)
 
 # Bloco 2 - Acesso REST via Jupyter
 
