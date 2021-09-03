@@ -16,9 +16,9 @@ Estrutura de pastas:
 # Bloco 1 - Diagramas relacionados com Leilão Invertido
 
 > Coloque as imagens PNG de (no mínimo) três diagramas:
-> * diagrama 1 - componentes e barramento ![print](images/print01.png)
-> * diagrama 2 - interface ![print](images/print02.png)
-> * diagrama 3 - mensagens ![print](images/print03.png)
+> * diagrama 1 - componentes e barramento ![print](images/print1.png)
+> * diagrama 2 - interface ![print](images/print2.png)
+> * diagrama 3 - mensagens ![print](images/print3.png)
 
 # Bloco 2 - Acesso REST via Jupyter
 
