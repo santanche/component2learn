@@ -13,7 +13,8 @@ Todos os exemplos no diretório `notebook` são preparados para o ambiente Jupyt
 # Disciplina de Componentização e Reúso de Software
 
 * [Especificação de Laboratórios](labs/)
-* [Templates de Laboratórios](templates/)
+* [Especificação do Projeto Final](project/)
+* [Templates de Laboratórios e Projeto Final](templates/)
 
 # Git tutorial
 
