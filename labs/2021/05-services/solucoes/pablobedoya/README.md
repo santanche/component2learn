@@ -28,4 +28,4 @@ Estrutura de pastas:
 # Bloco 2 - Acesso REST via Jupyter
 
 > Link para o arquivo do notebook com a resolução das quatro tarefas, especificadas em `labs/2021/05-services/notebook/lab5-tarefas.ipynb`:
-> [Bloco 2](images/lab5-tarefas.ipynb)
+> [lab5-tarefas.ipynb](images/lab5-tarefas.ipynb)
