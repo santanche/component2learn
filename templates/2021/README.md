@@ -1,4 +1,10 @@
-# Template para Entrega dos Laboratórios Individuais
+# Template para Entrega dos Laboratórios Individuais e Projeto em Grupo
+
+# Template do Projeto
+
+O projeto deve seguir o template detalhado na pasta:
+
+* [Projeto](project/)
 
 # Templates de Laboratórios
 
@@ -8,6 +14,7 @@ Cada laboratório tem seu template que está especificado dentro da respectiva p
 * [Laboratório 2](lab02/)
 * [Laboratório 3](lab03/)
 * [Laboratório 4](lab04/)
+* [Laboratório 5](lab05/)
 
 Abaixo são dadas orientações gerais para todos os laboratórios.
 
@@ -54,6 +61,7 @@ Segue abaixo o modelo de como devem ser documentadas as entregas.
 > Tudo o que aparecer neste modo de citação se refere algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos da sua apresentação.
 
 Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Classes, Interfaces e Componentes](https://docs.google.com/presentation/d/1ML3WrnDtzh-4wqLmdXN9au1TBIwEqo7TIbMLNOYSMAI/edit?usp=sharing)
+
 # Modelo para Apresentação do Aluno
 
 # Aluno
