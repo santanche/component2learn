@@ -38,7 +38,7 @@ Estrutura de pastas:
 * tela 6 - diagrama de blocos do aplicativo:
 ![Diagrama Eventos](images/app7.png)
 
-[Link App] (https://github.com/danibouw/component2learn/blob/master/labs/2021/03-mvc/solucoes/danibouw/app/inf331_interface_de_compra.aia)
+[Link App](./app/inf331_interface_de_compra.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
