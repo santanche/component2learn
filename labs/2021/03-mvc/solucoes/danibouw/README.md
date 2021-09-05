@@ -16,6 +16,7 @@ Estrutura de pastas:
 # Tarefa 1 - App no MIT App Inventor
 
 * tela 1 - captura da tela completa de design de interface:
+![Diagrama Eventos](images/app1.png)
 * tela 2 - captura de tela do app com nenhum produto selecionado:
 ![Diagrama Eventos](images/app2.png)
 * tela 3 - captura de tela do app com primeiro produto selecionado:
