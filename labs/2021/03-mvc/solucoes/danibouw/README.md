@@ -17,18 +17,28 @@ Estrutura de pastas:
 
 * tela 1 - captura da tela completa de design de interface:
 ![Diagrama Eventos](images/app1.png)
+
+
 * tela 2 - captura de tela do app com nenhum produto selecionado:
 ![Diagrama Eventos](images/app2.png)
+
+
 * tela 3 - captura de tela do app com primeiro produto selecionado:
 ![Diagrama Eventos](images/app3.png)
+
+
 * tela 4 - captura de tela do app com segundo produto selecionado:
 ![Diagrama Eventos](images/app4.png)
+
+
 * tela 5 - compra de um dos produtos efetivada:
 ![Diagrama Eventos](images/app5.png)
+
+
 * tela 6 - diagrama de blocos do aplicativo:
 ![Diagrama Eventos](images/app7.png)
 
-[Link App (https://github.com/danibouw/component2learn/blob/master/labs/2021/03-mvc/solucoes/danibouw/app/inf331_interface_de_compra.aia)]
+[Link App] (https://github.com/danibouw/component2learn/blob/master/labs/2021/03-mvc/solucoes/danibouw/app/inf331_interface_de_compra.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
