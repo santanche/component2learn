@@ -28,7 +28,7 @@ Estrutura de pastas:
 * tela 6 - diagrama de blocos do aplicativo:
 ![Diagrama Eventos](images/app7.png)
 
-Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+[Link App (https://github.com/danibouw/component2learn/blob/master/labs/2021/03-mvc/solucoes/danibouw/app/inf331_interface_de_compra.aia)]
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
