@@ -23,8 +23,9 @@ Estrutura de pastas:
 * tela 4 - captura de tela do app com segundo produto selecionado:
 ![Diagrama Eventos](images/app4.png)
 * tela 5 - compra de um dos produtos efetivada:
-![Diagrama Eventos](images/app4.png)
+![Diagrama Eventos](images/app5.png)
 * tela 6 - diagrama de blocos do aplicativo:
+![Diagrama Eventos](images/app7.png)
 
 Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
