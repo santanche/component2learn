@@ -3,7 +3,12 @@
 # Projeto `Final`
 
 # Equipe
+* `André Fagundes Carvalho`
+* `Carolina Gonçalves Mira`
+* `Érmiston Luiz Reis Tavares`
+* `Gabriel Rodrigues Modesto`
 * `Luciano Sávio de Oliveira`
+* `Vinicius Del Padres`
 
 # Nível 1
 
