@@ -8,7 +8,7 @@
 * `Érmiston Luiz Reis Tavares`
 * `Gabriel Rodrigues Modesto`
 * `Luciano Sávio de Oliveira`
-* `Vinicius Del Padres`
+* `Vinicius Del Padre`
 
 # Nível 1
 
@@ -18,7 +18,7 @@
 
 > Apresente um diagrama conforme o modelo a seguir:
 
-![Modelo de diagrama no nível 1](images/diagrama-barramento.png)
+![Modelo de diagrama no nível 1](images/nivel1/diagrama-barramento.png)
 
 ### Detalhamento da interação de componentes
 
@@ -56,7 +56,7 @@ As interfaces listadas são detalhadas a seguir:
 
 > Ou em formato de imagem, conforme exemplo:
 
-![Diagrama de Interface de Mensagens](images/diagrama-interface-mensagens.png)
+![Diagrama de Interface de Mensagens](images/nivel1/diagrama-interface-mensagens.png)
 
 > Diagrama representando o esquema das mensagens JSON utilizadas na interface, pode ser em formato texto conforme exemplo:
 
@@ -76,13 +76,13 @@ As interfaces listadas são detalhadas a seguir:
 
 > Ou em formato de imagem, conforme exemplo:
 
-![Diagrama de Mensagens JSON](images/diagrama-interface-json.png)
+![Diagrama de Mensagens JSON](images/nivel1/diagrama-interface-json.png)
 
 # Nível 2
 
 ## Diagrama do Nível 2
 
-> ![Diagrama no nível 2](images/diagrama-subcomponentes.png)
+> ![Diagrama no nível 2](images/nivel2/diagrama-subcomponentes.png)
 
 ### Detalhamento da interação de componentes
 
@@ -95,31 +95,31 @@ As interfaces listadas são detalhadas a seguir:
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Gerencia Pesquisa](images/diagrama-componente-gerencia-pesquisa.png)
+![Gerencia Pesquisa](images/nivel2/diagrama-componente-gerencia-pesquisa.png)
 
 ## Componente `Preenchimento de Palavra Chave`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Preenchimento de Palavra Chave](images/diagrama-componente-preenchimento-de-palavra-chave.png)
+![Preenchimento de Palavra Chave](images/nivel2/diagrama-componente-preenchimento-de-palavra-chave.png)
 
 ## Componente `Seleção de Produtos`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Seleção de Produtos](images/diagrama-componente-selecao-de-produtos.png)
+![Seleção de Produtos](images/nivel2/diagrama-componente-selecao-de-produtos.png)
 
 ## Componente `Gerencia Chamada`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Gerencia Chamada](images/diagrama-componente-gerencia-chamada.png)
+![Gerencia Chamada](images/nivel2/diagrama-componente-gerencia-chamada.png)
 
 ## Componente `Executa Detalhamento`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Executa Detalhamento](images/diagrama-componente-executa-detalhamento.png)
+![Executa Detalhamento](images/nivel2/diagrama-componente-executa-detalhamento.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
@@ -128,39 +128,37 @@ As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
+### Interface `ConsultarDisponibilidade`
 
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+![Diagrama da Interface ConsultarDisponibilidade](images/nivel2/consultarDisponibilidadeInterface.jpg)
 
 > Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
-`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
+`disponivel` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
 
-## Exemplos:
+### Interface `ConsultarPrecoFinal`
 
-### Interface `ITableProducer`
+![Diagrama da Interface ConsultarPrecoFinal](images/nivel2/consultarPrecoFinalInterface.jpg)
 
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+`calculoFrete` | Retorna o valor total do custo referente ao frete, tendo como parâmetro a entidade produto
+`calculoUnitario` | Retorna o valor total da unidade do produto, tendo como parâmetro a entidade produto
 
-### Interface `IDataSetProperties`
+### Interface `FinalizarPedido`
 
-![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
+![Diagrama da Interface FinalizarPedido](images/nivel2/finalizarPedidoInterface.jpg)
 
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`disponivel` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
+`precoFinal` | Retorno o preco final do produto conforme consulta do preco final do produto
 
 ## Diagrama do Nível 3
 
