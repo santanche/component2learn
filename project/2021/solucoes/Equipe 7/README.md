@@ -1117,17 +1117,12 @@ Esquema das mensagens JSON:
 ![Componente](images/diagrama-fase2-fillpaymentmethod.png)
 
 **Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
 ### Interface `IReceivePaymentMethod`
 
 ![Diagrama da Interface](images/diagrama-fase2-IReceivePaymentMethod.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1140,17 +1135,12 @@ Método | Objetivo
 ![Componente](images/diagrama-fase2-completepurchase.png)
 
 **Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
 ### Interface `IDiscountCoupon`
 
 ![Diagrama da Interface](images/diagrama-fase2-IDiscountCoupon.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1160,8 +1150,6 @@ Método | Objetivo
 
 ![Diagrama da Interface](images/diagrama-fase2-IAdress.png)
 
-> Resumo do papel da interface.
-
 Método | Objetivo
 -------| --------
 `setAddress(Address): void` | `Recebe um objeto do tipo Address que possui os dados de endereço para envio da compra`
@@ -1170,8 +1158,6 @@ Método | Objetivo
 
 ![Diagrama da Interface](images/diagrama-fase2-IRequestPaymentMethod.png)
 
-> Resumo do papel da interface.
-
 Método | Objetivo
 -------| --------
 `sendPaymentToValidade(PaymentRequest): void` | `Recebe um objeto do tipo PaymentRequest para validação do método de compra`
@@ -1179,8 +1165,6 @@ Método | Objetivo
 ### Interface `IRequestFinishSopping`
 
 ![Diagrama da Interface](images/diagrama-fase2-IRequestFinishShopping.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1193,17 +1177,12 @@ Método | Objetivo
 ![Componente](images/diagrama-fase2-controlPurchase.png)
 
 **Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
 ### Interface `ISendPurchaseRequest`
 
 ![Diagrama da Interface](images/diagrama-fase2-ISendPurchaseRequest.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1216,17 +1195,12 @@ Método | Objetivo
 ![Componente](images/diagrama-fase2-controlcart.png)
 
 **Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
 ### Interface `IReceiveAddProduct`
 
 ![Diagrama da Interface](images/diagrama-fase2-IReceiveAddProduct.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1239,17 +1213,12 @@ Método | Objetivo
 ![Componente](images/diagrama-fase2-viewshoppingcartitems.png)
 
 **Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
 ### Interface `<nome da interface>`
 
 ![Diagrama da Interface](images/diagrama-fase2-IViewItemToShoppCart.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1262,17 +1231,12 @@ Método | Objetivo
 ![Componente](images/diagrama-fase2-viewcart.png)
 
 **Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
+### Interface `IViewAddProductToCart`
 
 ![Diagrama da Interface](images/diagrama-fase2-IViewAddProductToCart.png)
-
-> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
@@ -1282,10 +1246,7 @@ Método | Objetivo
 
 > Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
-
 <img width="810" alt="captura-prototipo" src="https://user-images.githubusercontent.com/88326093/132544498-68d34450-be6d-478b-b99a-ed94a527e3f1.png">
-
 
 > Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
 
