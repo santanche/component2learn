@@ -1137,17 +1137,22 @@ Método | Objetivo
 
 ## Diagrama do Nível 3
 
-> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
+> Imagens com captura de tela do protótipo feito no MIT App Inventor:
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
+![Captura de Tela do Protótipo](images/prototipo.png)
 
-<img width="810" alt="captura-prototipo" src="https://user-images.githubusercontent.com/88326093/132544498-68d34450-be6d-478b-b99a-ed94a527e3f1.png">
+![Captura de Tela do Protótipo](images/prototipo-tree.png)
 
 
-> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
+> Diagrama referente ao protótipo:
 
 ![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir o mesmo formato usado no Nível 2.
+- O componente `CompletePurchase` responde ao evento de clique no botão "Finalizar Pedido" e é dependente dos componentes `FillAddress`, `FillDiscountCoupon` e `FillPaymentMethod`;
+- O componente `FillAddress` reage a seleção de uma entre duas opções: "Novo" e "Padrão":
+  - "Novo": o componente deverá validar os novos dados de endereço preenchidos pelo usuário nos campos da interface;
+  - "Padrão": o componente deverá preencher os campos da interface com o último endereço utilizado pelo usuário em compras recentes;
+- O componente `FillDiscountCoupon` responde ao evento de clique no botão "Aplicar" e então verifica se os dados preenchidos no campo "Cupom de desconto" são validos como cupom de desconto;
+- O componente `FillPaymentMethod` recebe as informações da seleção das caixas "Forma Pagamento" e "Tipo Pagamento" e então notifica o componente `CompletePurchase`. Como o dado de pagamento deve ser validado, `CompletePurchase` notifica `ControlPayment` publicando a mensagem `PaymentRequest`, com os dados de pagamento, no tópico "`payment/{orderId}/request`".
