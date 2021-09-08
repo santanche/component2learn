@@ -1141,6 +1141,9 @@ Método | Objetivo
 
 ![Captura de Tela do Protótipo](images/captura-prototipo.png)
 
+<img width="810" alt="captura-prototipo" src="https://user-images.githubusercontent.com/88326093/132544498-68d34450-be6d-478b-b99a-ed94a527e3f1.png">
+
+
 > Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
 
 ![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
