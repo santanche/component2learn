@@ -1079,7 +1079,7 @@ Esquema das mensagens JSON:
 
 ### Detalhamento da interação de componentes
 
-*Adição de produtos no carrinho
+* Adição de produtos no carrinho
 
  * O componente `ControlShoppingCart` assina no barramento mensagens o tópico "`payment/{userId}/add`" por meio da interface `IAddProductToCart` e "`payment/{orderId}/outcome`" por meio da interface IreceivePaymentOutcome.
 
@@ -1087,7 +1087,7 @@ Esquema das mensagens JSON:
   
  * `ViewCart deve carregar o novo produto adicionado ao carrinho e suas informações. `ViewCart` exibe de forma resumida o produto adicionado e notifica `ViewShoppingCartItems` que deve exibir o novo produto adicionado com as informações detalhadas.
 
-*Pagamento
+* Pagamento
 
  * Por meio de `FillAddress` e `FillDiscountCoupon`, o usuário preenche os dados de endereço e cupom de desconto. Essas informações são enviadas para o componente `CompletePurchase` que consolida as informações do pedido, usando as interfaces IDiscountCoupon e IAddress de `CompletePurchase`.
 
