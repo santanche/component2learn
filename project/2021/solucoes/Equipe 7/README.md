@@ -1097,7 +1097,7 @@ Esquema das mensagens JSON:
 
   - Se todos os dados forem preenchidos com sucesso e o pagamento foi validado, `CompletePurchase` notifica `ControlPurchase` o pedido foi concluído.
 
-  - `ControlPurchase` por sua vez envia a mensagem `PurchaseRequest` via barramento no tópico `purchase/{orderId}/request`, informando que a compra foi concluída e enviando o pedido para a próxima etapa de processamento.
+  - `ControlPurchase` por sua vez envia a mensagem `PurchaseRequest` via barramento no tópico "`purchase/{orderId}/request`", informando que a compra foi concluída e enviando o pedido para a próxima etapa de processamento.
 
 
 ## Componente `FillDiscountCoupon`
