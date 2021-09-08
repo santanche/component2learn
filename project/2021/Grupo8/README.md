@@ -86,10 +86,10 @@ As interfaces listadas são detalhadas a seguir:
 
 ### Detalhamento da interação de componentes
 
-* O componente `Gerencia Pesquisa` envia a palavra chave para o componente `Preenchimento de Palavra Chave`. Este por sua vez assina no barramento mensagens de tópico "`produto/+/oferta`" através da interface `Consulta Ofertas`. Ao receber uma mensagem de tópico "`produto/+/oferta`", são listadas as ofertas para o produto buscado.
-* Caso a opção seja por seleção de categorias, o componente `Gerencia Pesquisa` envia a palavra chave para o componente `Seleção de Produtos`. Este por sua vez assina no barramento mensagens de tópico "`produto/+/oferta`" através da interface `Consulta Ofertas`. Ao receber uma mensagem de tópico "`produto/+/oferta`", são listadas as ofertas para o produto buscado.
-* Ao selecionar um produto, o componete `Gerencia Pesquisa` envia os dados para o componente `Gerencia Chamada` que dispara ao componente `Executa Detalhamento`. Este por sua vez solicita a loja através da interface `Consulta Disponibilidade` uma posição de estoque para o produto selecionado.
-* O componente `Executa Detalhamento` assina no barramento mensagens de tópico "`produto/+/disponibilidade`" através da interface `Assina Leilão`. Desta maneira o componente `Executa Detalhamento` carrega o mesmo produto disponível em outras lojas.
+* O componente `Gerencia Pedido` envia a quantidade de produtos selecionados com seus respectivos valores para o componente `Valor do Pedido`. Este por sua vez envia o tópico "`produto`" para a interface `Finalizar Pedido`. Ao receber uma mensagem de tópico "`produto`", são listados a disponibilidade e preço final dos produtos.
+* O componente `Detalhe Pedido` recebe os produtos selecionados da interface `Finalizar Pedido` e retorna para o componente `Gerencia Pedido`, confirmando assim os produtos selecionados. 
+* O componeten `Gerencia Pedido` envia os dados para o componente `Executa Listagem`. Este por sua vez executa a consulta de disponibilidade através do componente `Consulta Disponibilidade`.
+* Estando disponível os produtos, o componente `Gerencia Pedido` realiza a interação através do comunicador `Dados Selecionados` e envia os dados para o componente `Executa Calculo preço total`. Este por sua vez calcula o preço total através da interface `Consulta Preço final`.
 
 ## Componente `Gerencia Pesquisa`
 
