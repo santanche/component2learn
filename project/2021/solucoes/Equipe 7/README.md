@@ -1079,20 +1079,164 @@ Esquema das mensagens JSON:
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
+* O componente `ControlShoppingCart` assina no barramento mensagens o tópico "`payment/{userId}/add`" por meio da interface `IAddProductToCart` e "`payment/{orderId}/outcome`" por meio da interface IreceivePaymentOutcome.
 
-* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
-  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
-* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
-  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+  * Ao receber uma mensagem `AddProduct` do tópico "`payment/{userId}/add", `ControlCart` dispara a adição de um produto no carrinho e solicita ao Model de ShoppingCart o carregamento das informações do produto, preço, quantidade, desconto aplicado e vendedor. Com a mudança no model de `ShoppingCart`, `ViewCart` é  notificado usando a interface `IViewAddProductToCart`.
+  
+  * `ViewCart deve carregar o novo produto adicionado ao carrinho e suas informações. `ViewCart` exibe de forma resumida o produto adicionado e notifica `ViewShoppingCartItems` que deve exibir o novo produto adicionado com as informações detalhadas.
 
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
+* Por meio de `FillAddress` e `FillDiscountCoupon`, o usuário preenche os dados de endereço e cupom de desconto. Essas informações são enviadas para o componente `CompletePurchase` que consolida as informações do pedido, usando as interfaces IDiscountCoupon e IAddress de `CompletePurchase`.
 
-## Componente `<Nome do Componente>`
+* Quando o usuário completa as informações de pagamento do pedido, o componente `FillPaymentMethod` notifica `CompletePurchase`. Como o dado de pagamento deve ser validado, `CompletePurchase` notifica `ControlPayment` publica a mensagem `PaymentRequest`, com os dados de pagamento, no tópico "`payment/{orderId}/request`".
 
-> Resumo do papel do componente e serviços que ele oferece.
+* Quando o pagamento é validado, o componente ControlShoppingCart recebe a mensagem `ReceivePaymentOutcome` no tópico "`payment/{orderId}/outcome" com os dados da validação do pagamento. `ControlPayment` notifica `FillPaymentMehod` por meio do componente `CompletePurchase` se o pagamento é valido ou não.
 
-![Componente](images/diagrama-componente.png)
+ * Se todos os dados forem preenchidos com sucesso e o pagamento foi validado, `CompletePurchase` notifica `ControlPurchase` o pedido foi concluído.
+
+`ControlPurchase` por sua vez envia a mensagem `PurchaseRequest` via barramento no tópico `purchase/{orderId}/request`, informando que a compra foi concluída e enviando o pedido para a próxima etapa de processamento.
+
+
+## Componente `FillDiscountCoupon`
+
+> Este componente provê uma interface gráfica para entrada do cupom de desconto.
+
+![Componente](images/diagrama-fase2-filldiscountcoupon.png)
+
+
+## Componente `FillAddress`
+
+> Este componente provê uma interface gráfica para entrada do endereço de destino da compra.
+
+![Componente](images/diagrama-fase2-filladdress.png)
+
+
+## Componente `FillPaymentMethod`
+
+> Este componente provê uma interface gráfica para entrada do meio de pagamento da compra.
+
+![Componente](images/diagrama-fase2-fillpaymentmethod.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `IReceivePaymentMethod`
+
+![Diagrama da Interface](images/diagrama-fase2-IReceivePaymentMethod.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`recvPaymentOutcome` | `Recebe o status de validação do pagamento`
+
+## Componente `CompletePurchase`
+
+> Consolida os dados da compra no marketplace para envio da compra.
+
+![Componente](images/diagrama-fase2-completepurchase.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `IDiscountCoupon`
+
+![Diagrama da Interface](images/diagrama-fase2-IDiscountCoupon.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`setDiscountCoupon(DiscountCoupon): void` | `Recebe um objeto do tipo DiscountCoupon que possui os dados do cupom de desconto`
+
+### Interface `IAddress`
+
+![Diagrama da Interface](images/diagrama-fase2-IAdress.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`setAddress(Address): void` | `Recebe um objeto do tipo Address que possui os dados de endereço para envio da compra`
+
+### Interface `IRequestPaymentMethod`
+
+![Diagrama da Interface](images/diagrama-fase2-IRequestPaymentMethod.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`sendPaymentToValidade(PaymentRequest): void` | `Recebe um objeto do tipo PaymentRequest para validação do método de compra`
+
+### Interface `IRequestFinishSopping`
+
+![Diagrama da Interface](images/diagrama-fase2-IRequestFinishShopping.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+` recvFinishShopping(PaymentOutcome): void` | `Recebe um objeto do tipo PaymentOutcome que indica que o status do pagamento do pedido`
+
+## Componente `ControlPurchase`
+
+> Componente responsável por enviar a solicitação de efetivação da compra do pedido
+
+![Componente](images/diagrama-fase2-controlPurchase.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `ISendPurchaseRequest`
+
+![Diagrama da Interface](images/diagrama-fase2-ISendPurchaseRequest.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`sendPurchaseRequest(PurchaseRequest): void` | `Recebe um objeto do tipo PurchaseRequest para finalizar e enviar o pedido para a próxima etapa de processamento.`
+
+## Componente `ControlCart`
+
+> Recebe as mensagens para adicionar o produto no carrinho.
+
+![Componente](images/diagrama-fase2-controlcart.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `IReceiveAddProduct`
+
+![Diagrama da Interface](images/diagrama-fase2-IReceiveAddProduct.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`recvAddProductToCart(AddProduct): void` | `Recebe um objeto do tipo AddProduct que será adicionado ao carrinho de compras`
+
+## Componente `ViewShoppingCartItems`
+
+> Componente para visualizar os itens do carrinho de maneira detalhada
+
+![Componente](images/diagrama-fase2-viewshoppingcartitems.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
@@ -1103,37 +1247,36 @@ As interfaces listadas são detalhadas a seguir:
 
 ### Interface `<nome da interface>`
 
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+![Diagrama da Interface](images/diagrama-fase2-IViewItemToShoppCart.png)
 
 > Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
-`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
+`showAddedProductToCart(AddProduct): void` | `<objetivo do método e descrição dos parâmetros>`
 
-## Exemplos:
+## Componente `ViewCart`
 
-### Interface `ITableProducer`
+> Componente para visualizar os itens do carrinho de maneira resumida
 
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+![Componente](images/diagrama-fase2-viewcart.png)
 
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `<nome da interface>`
+
+![Diagrama da Interface](images/diagrama-fase2-IViewAddProductToCart.png)
+
+> Resumo do papel da interface.
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
-
-### Interface `IDataSetProperties`
-
-![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
-
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
-
-Método | Objetivo
--------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`recvAddProductToCart(AddProduct): void` | `Recebe um objeto do tipo AddProduct para exibí-lo`
 
 ## Diagrama do Nível 3
 
