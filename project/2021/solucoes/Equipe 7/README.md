@@ -1079,21 +1079,25 @@ Esquema das mensagens JSON:
 
 ### Detalhamento da interação de componentes
 
-* O componente `ControlShoppingCart` assina no barramento mensagens o tópico "`payment/{userId}/add`" por meio da interface `IAddProductToCart` e "`payment/{orderId}/outcome`" por meio da interface IreceivePaymentOutcome.
+*Adição de produtos no carrinho
 
-  * Ao receber uma mensagem `AddProduct` do tópico "`payment/{userId}/add", `ControlCart` dispara a adição de um produto no carrinho e solicita ao Model de ShoppingCart o carregamento das informações do produto, preço, quantidade, desconto aplicado e vendedor. Com a mudança no model de `ShoppingCart`, `ViewCart` é  notificado usando a interface `IViewAddProductToCart`.
+    * O componente `ControlShoppingCart` assina no barramento mensagens o tópico "`payment/{userId}/add`" por meio da interface `IAddProductToCart` e "`payment/{orderId}/outcome`" por meio da interface IreceivePaymentOutcome.
+
+    * Ao receber uma mensagem `AddProduct` do tópico "`payment/{userId}/add", `ControlCart` dispara a adição de um produto no carrinho e solicita ao Model de ShoppingCart o carregamento das informações do produto, preço, quantidade, desconto aplicado e vendedor. Com a mudança no model de `ShoppingCart`, `ViewCart` é  notificado usando a interface `IViewAddProductToCart`.
   
-  * `ViewCart deve carregar o novo produto adicionado ao carrinho e suas informações. `ViewCart` exibe de forma resumida o produto adicionado e notifica `ViewShoppingCartItems` que deve exibir o novo produto adicionado com as informações detalhadas.
+    * `ViewCart deve carregar o novo produto adicionado ao carrinho e suas informações. `ViewCart` exibe de forma resumida o produto adicionado e notifica `ViewShoppingCartItems` que deve exibir o novo produto adicionado com as informações detalhadas.
 
-* Por meio de `FillAddress` e `FillDiscountCoupon`, o usuário preenche os dados de endereço e cupom de desconto. Essas informações são enviadas para o componente `CompletePurchase` que consolida as informações do pedido, usando as interfaces IDiscountCoupon e IAddress de `CompletePurchase`.
+*Pagamento
 
-* Quando o usuário completa as informações de pagamento do pedido, o componente `FillPaymentMethod` notifica `CompletePurchase`. Como o dado de pagamento deve ser validado, `CompletePurchase` notifica `ControlPayment` publica a mensagem `PaymentRequest`, com os dados de pagamento, no tópico "`payment/{orderId}/request`".
+    * Por meio de `FillAddress` e `FillDiscountCoupon`, o usuário preenche os dados de endereço e cupom de desconto. Essas informações são enviadas para o componente `CompletePurchase` que consolida as informações do pedido, usando as interfaces IDiscountCoupon e IAddress de `CompletePurchase`.
 
-* Quando o pagamento é validado, o componente ControlShoppingCart recebe a mensagem `ReceivePaymentOutcome` no tópico "`payment/{orderId}/outcome" com os dados da validação do pagamento. `ControlPayment` notifica `FillPaymentMehod` por meio do componente `CompletePurchase` se o pagamento é valido ou não.
+    * Quando o usuário completa as informações de pagamento do pedido, o componente `FillPaymentMethod` notifica `CompletePurchase`. Como o dado de pagamento deve ser validado, `CompletePurchase` notifica `ControlPayment` publica a mensagem `PaymentRequest`, com os dados de pagamento, no tópico "`payment/{orderId}/request`".
 
- * Se todos os dados forem preenchidos com sucesso e o pagamento foi validado, `CompletePurchase` notifica `ControlPurchase` o pedido foi concluído.
+    * Quando o pagamento é validado, o componente ControlShoppingCart recebe a mensagem `ReceivePaymentOutcome` no tópico "`payment/{orderId}/outcome" com os dados da validação do pagamento. `ControlPayment` notifica `FillPaymentMehod` por meio do componente `CompletePurchase` se o pagamento é valido ou não.
 
-`ControlPurchase` por sua vez envia a mensagem `PurchaseRequest` via barramento no tópico `purchase/{orderId}/request`, informando que a compra foi concluída e enviando o pedido para a próxima etapa de processamento.
+    * Se todos os dados forem preenchidos com sucesso e o pagamento foi validado, `CompletePurchase` notifica `ControlPurchase` o pedido foi concluído.
+
+    * `ControlPurchase` por sua vez envia a mensagem `PurchaseRequest` via barramento no tópico `purchase/{orderId}/request`, informando que a compra foi concluída e enviando o pedido para a próxima etapa de processamento.
 
 
 ## Componente `FillDiscountCoupon`
@@ -1144,7 +1148,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`setDiscountCoupon(DiscountCoupon): void` | `Recebe um objeto do tipo DiscountCoupon que possui os dados do cupom de desconto`
+`setDiscountCoupon(DiscountCoupon): void` | Recebe um objeto do tipo DiscountCoupon que possui os dados do cupom de desconto
 
 ### Interface `IAddress`
 
@@ -1152,7 +1156,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`setAddress(Address): void` | `Recebe um objeto do tipo Address que possui os dados de endereço para envio da compra`
+`setAddress(Address): void` | Recebe um objeto do tipo Address que possui os dados de endereço para envio da compra
 
 ### Interface `IRequestPaymentMethod`
 
@@ -1160,7 +1164,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`sendPaymentToValidade(PaymentRequest): void` | `Recebe um objeto do tipo PaymentRequest para validação do método de compra`
+`sendPaymentToValidade(PaymentRequest): void` | Recebe um objeto do tipo PaymentRequest para validação do método de compra
 
 ### Interface `IRequestFinishSopping`
 
@@ -1168,7 +1172,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-` recvFinishShopping(PaymentOutcome): void` | `Recebe um objeto do tipo PaymentOutcome que indica que o status do pagamento do pedido`
+`recvFinishShopping(PaymentOutcome): void` | Recebe um objeto do tipo PaymentOutcome que indica que o status do pagamento do pedido
 
 ## Componente `ControlPurchase`
 
@@ -1186,7 +1190,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`sendPurchaseRequest(PurchaseRequest): void` | `Recebe um objeto do tipo PurchaseRequest para finalizar e enviar o pedido para a próxima etapa de processamento.`
+`sendPurchaseRequest(PurchaseRequest): void` | Recebe um objeto do tipo PurchaseRequest para finalizar e enviar o pedido para a próxima etapa de processamento.
 
 ## Componente `ControlCart`
 
@@ -1222,7 +1226,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`showAddedProductToCart(AddProduct): void` | `<objetivo do método e descrição dos parâmetros>`
+`showAddedProductToCart(AddProduct): void` | Recebe um objeto do tipo AddProduct para exibí-lo de maneira detalhada
 
 ## Componente `ViewCart`
 
@@ -1240,7 +1244,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`recvAddProductToCart(AddProduct): void` | `Recebe um objeto do tipo AddProduct para exibí-lo`
+`recvAddProductToCart(AddProduct): void` | Recebe um objeto do tipo AddProduct para exibí-lo de maneira resumida
 
 ## Diagrama do Nível 3
 
