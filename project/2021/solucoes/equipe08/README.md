@@ -29,8 +29,8 @@ Foram representados o diagrama do processo, o detalhamento dos componentes e das
   * O componente Price publica mensagens com o tópico notification/price/clientId
   * O componente Recommendation publica mensagens com o tópico notification/recommendation/clientId
   * O componente Sponsored publica mensagens com o tópico notification/sponsored/clientId
-* O componente NotificationAggregator escuta os seguintes os tópicos na seguinte forma “notification/#”. Assim, o agregador consegue juntar todas as recomendações dos 3 componentes e enviar as notificações para os clientes
-
+* O componente NotificationAggregator escuta os seguintes os tópicos na seguinte forma “notification/#”. Assim, o agregador consegue juntar todas as recomendações dos 3 componentes e enviar as notificações para os clientes. Com as notificações e sugestões recebidas pelo cliente, ele pode escolher produtos para serem adicionados. 
+* O componente OrderManager escuta modificações no pedido pelas interfaces AddProduct (product/add/{orderId}/#) e RemoveProduct (product/remove/{orderId}/#). Após a finalização do pedido, uma mensagem é gerada através da interface OrderFinished com o tópico order/finished/{clientId}/{orderId}. Dois componentes escutam essas mensagens: RecommendNotificator e TrackOrder, com o tópico order/finished/#. O componente RecommendNotificator utiliza essas informações para gerar recomendações de produtos para cada cliente. Já o TrackOrder utiliza esse novo pedido para fazer o rastreio do pedido.
 
 ## Componente `PriceNotificator`
 
