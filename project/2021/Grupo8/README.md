@@ -88,38 +88,45 @@ As interfaces listadas são detalhadas a seguir:
 
 * O componente `Gerencia Pedido` envia a quantidade de produtos selecionados com seus respectivos valores para o componente `Valor do Pedido`. Este por sua vez envia o tópico "`produto`" para a interface `Finalizar Pedido`. Ao receber uma mensagem de tópico "`produto`", são listados a disponibilidade e preço final dos produtos.
 * O componente `Detalhe Pedido` recebe os produtos selecionados da interface `Finalizar Pedido` e retorna para o componente `Gerencia Pedido`, confirmando assim os produtos selecionados. 
-* O componeten `Gerencia Pedido` envia os dados para o componente `Executa Listagem`. Este por sua vez executa a consulta de disponibilidade através do componente `Consulta Disponibilidade`.
+* O componeten `Gerencia Pedido` envia os dados para o componente `Executa Listagem`. Este por sua vez executa a consulta de disponibilidade através da interface `Consulta Disponibilidade`.
 * Estando disponível os produtos, o componente `Gerencia Pedido` realiza a interação através do comunicador `Dados Selecionados` e envia os dados para o componente `Executa Calculo preço total`. Este por sua vez calcula o preço total através da interface `Consulta Preço final`.
 
-## Componente `Gerencia Pesquisa`
+## Componente `Gerencia Pedido View`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Envia quantidade e valores de produtos selecionados.
 
-![Gerencia Pesquisa](images/nivel2/diagrama-componente-gerencia-pesquisa.png)
+![Gerencia Pedido View](images/nivel2/diagrama-componente-gerencia-pedido-view.png)
 
-## Componente `Preenchimento de Palavra Chave`
+## Componente `Valor do Pedido`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Envia o tópico "`produto`" para a interface `Finalizar Pedido`.
 
-![Preenchimento de Palavra Chave](images/nivel2/diagrama-componente-preenchimento-de-palavra-chave.png)
+![Valor do Pedido](images/nivel2/diagrama-componente-valor-do-pedido.png)
 
-## Componente `Seleção de Produtos`
+## Componente `Detalhe do Pedido`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Recebe os produtos selecionados da interface `Finalizar Pedido` e retorna para o componente `Gerencia Pedido`.
 
-![Seleção de Produtos](images/nivel2/diagrama-componente-selecao-de-produtos.png)
+![Detalhe do Pedido](images/nivel2/diagrama-componente-detalhe-do-pedido.png)
 
-## Componente `Gerencia Chamada`
+## Componente `Gerencia Pedido Controller`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Envia os dados para o componente `Executa Listagem`.
+> Envia os dados para o componente `Executa Calculo preço total`.
 
-![Gerencia Chamada](images/nivel2/diagrama-componente-gerencia-chamada.png)
+![Gerencia Pedido Controller](images/nivel2/diagrama-componente-gerencia-pedido-controller.png)
 
-## Componente `Executa Detalhamento`
+## Componente `Executa Listagem`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Executa a consulta de disponibilidade através da interface `Consulta Disponibilidade`.
 
-![Executa Detalhamento](images/nivel2/diagrama-componente-executa-detalhamento.png)
+![Executa Listagem](images/nivel2/diagrama-componente-executa-listagem.png)
+
+## Componente `Executa Calculo Preço Total`
+
+> Calcula o preço total através da interface `Consulta Preço final`.
+
+![Executa Calculo Preço Total](images/nivel2/diagrama-componente-executa-calculo-preco-total.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
