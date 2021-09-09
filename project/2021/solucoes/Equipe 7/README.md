@@ -7,7 +7,7 @@
 │
 ├── images     <- arquivos de imagens usadas no documento
 │
-└── resources  <- outros recursos (se houver)
+└── app        <- aplicativo feito no MIT Inventor
 ~~~
 
 # Relatório do Projeto
