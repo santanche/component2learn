@@ -291,3 +291,6 @@ Método | Objetivo
 > Caso o usuário deseje remover algum produto, é disparado o fluxo representado pela [imagem 004](images/nivel3/004.jpg) que acarreta na atualização no valor final da compra.
 > Ainda é possível adicionar mais produtos, clicando nas seções disponíveis ou pode buscar textualmente, conforme [imagem 001](images/nivel3/001.jpg) e [imagem 002](images/nivel3/002.jpg). As  informações do produto será buscado no servidor e ao retornar as informações, a aplicação irá redirecionar para o componente relacionado ao produto escolhido.
 > Quando a compra estiver pronta, o cliente pode iniciar o fluxo de finalização, seguindo a [imagem 006](images/nivel3/006.jpg). As informações de compra será enviada para o servidor e ao retornar a confirmação, o aplicativo irá redirecionar para o componente de compra realizada.
+
+
+> [Infinity](resources/Infinity.aia)
