@@ -48,7 +48,17 @@ Caso o usuário decida realizar a compra de um produto, ao adicionar este produt
 
 * O `ShoppingCart` recebe através da interface `AddProductToCart` os produtos que o usuário deseja incluir no carrinho. Através da interface `SendPurchaseRequest`, é publicada a mensagem de solicitação de compra dos produtos do carrinho. A solicitação de pagamento dos produtos que estão no carrinho é realizada através da publicação da mensagem da interface `SendPaymentRequest`, que aguarda uma resposta na mensagem da interface `ReceivePaymentOutcome`.
 
+* O `PaymentValidator` recebe a solicitação de pagamento na mensagem da interface `ReceivePaymentRequest`, processa o pagamento conforme o método escolhido e devolve seu resultado na mensagem da interface `SendPaymentOutcome`.
 
+* O `PurchaseRegister` recebe a solicitação de registro da compra efetuada na mensagem da interface `ReceivePurchaseRequest`, realiza seu registro e publica as mensagens das interfaces `SendPurchaseStatus` e `SendOrderRequest`.
+
+* O `OrderPreparer` recebe a solicitação de encomenda na mensagem da interface `ReceiveOrderRequest`, realiza o preparo da encomenda e publica as mensagens das interfaces `SendOrderStatus` e `SendDispatchRequest`.
+
+* O `PurchaseDispatcher` recebe a solicitação de despacho na mensagem da interface `ReceiveDispatchRequest`, realiza o despacho da encomenda e publica as mensagens das interfaces `SendDispatchStatus` e `SendTrackingRequest`.
+
+* O `PurchaseTracking` recebe a solicitação de rastreio da encomenda na mensagem da interface `ReceiveTrackingRequest`, obtém a informação de rastreio e publica a mensagem da interface `SendTrackingStatus`.
+
+* O `PurchaseHistory` recebe o status de cada etapa do processo nas mensagens das interfaces `ReceivePurchaseStatus`, `ReceiveOrderStatus`, `ReceiveDispatchStatus` e `ReceiveTrackingStatus`.
 
 
 ## Componente `Account`
