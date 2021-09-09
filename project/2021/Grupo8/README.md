@@ -91,35 +91,41 @@ As interfaces listadas são detalhadas a seguir:
 * O componeten `Gerencia Pedido` envia os dados para o componente `Executa Listagem`. Este por sua vez executa a consulta de disponibilidade através do componente `Consulta Disponibilidade`.
 * Estando disponível os produtos, o componente `Gerencia Pedido` realiza a interação através do comunicador `Dados Selecionados` e envia os dados para o componente `Executa Calculo preço total`. Este por sua vez calcula o preço total através da interface `Consulta Preço final`.
 
-## Componente `Gerencia Pesquisa`
+## Componente `Gerencia Pedido View`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Gerencia Pesquisa](images/nivel2/diagrama-componente-gerencia-pesquisa.png)
+![Gerencia Pedido View](images/nivel2/diagrama-componente-gerencia-pedido-view.png)
 
-## Componente `Preenchimento de Palavra Chave`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Preenchimento de Palavra Chave](images/nivel2/diagrama-componente-preenchimento-de-palavra-chave.png)
-
-## Componente `Seleção de Produtos`
+## Componente `Valor do Pedido`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Seleção de Produtos](images/nivel2/diagrama-componente-selecao-de-produtos.png)
+![Valor do Pedido](images/nivel2/diagrama-componente-valor-do-pedido.png)
 
-## Componente `Gerencia Chamada`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Gerencia Chamada](images/nivel2/diagrama-componente-gerencia-chamada.png)
-
-## Componente `Executa Detalhamento`
+## Componente `Detalhe do Pedido`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Executa Detalhamento](images/nivel2/diagrama-componente-executa-detalhamento.png)
+![Detalhe do Pedido](images/nivel2/diagrama-componente-detalhe-do-pedido.png)
+
+## Componente `Gerencia Pedido Controller`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Gerencia Pedido Controller](images/nivel2/diagrama-componente-gerencia-pedido-controller.png)
+
+## Componente `Executa Listagem`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Executa Listagem](images/nivel2/diagrama-componente-executa-listagem.png)
+
+## Componente `Executa Calculo Preço Total`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Executa Calculo Preço Total](images/nivel2/diagrama-componente-executa-calculo-preco-total.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
@@ -164,21 +170,12 @@ Método | Objetivo
 
 > Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
 
-![Modelo de diagrama no nível 2](images/nivel3/ide.jpg)
+![Captura de Tela do Protótipo](images/captura-prototipo.png)
 
 > Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
 
-![Captura de Tela do Protótipo](images/nivel3/001.jpg)
-![Captura de Tela do Protótipo](images/nivel3/002.jpg)
-![Captura de Tela do Protótipo](images/nivel3/003.jpg)
-![Captura de Tela do Protótipo](images/nivel3/004.jpg)
-![Captura de Tela do Protótipo](images/nivel3/005.jpg)
-![Captura de Tela do Protótipo](images/nivel3/006.jpg)
+![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
 
 ### Detalhamento da interação de componentes
 
-> A renderização da tela começa com o carregamento das formas de pagamento, que são provenientes do backend, representados na imagem 005. 
-> Após a construção da tela, o usuário interage mudando a quantidade dos produtos, conforme imagem 003, que acarreta na alteração do valor agregado do produto, além da atualização do total da compra
-> Caso o usuário deseje remover algum produto, é disparado o fluxo representado pela imagem 003
-> Ainda é possível adicionar mais produtos, clicando nas seções disponíveis ou pode buscar textualmente, conforme fluxo 001 e 002
-> Quando a compra estiver pronta, o cliente pode iniciar o fluxo de finalização, seguindo o fluco 006
+> O detalhamento deve seguir o mesmo formato usado no Nível 2.
