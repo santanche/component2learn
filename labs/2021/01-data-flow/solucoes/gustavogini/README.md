@@ -8,7 +8,7 @@
 
 ## Imagem do Projeto
 
-![Workflow Orange](Images/Tarefa_01_LAB01_Gustavo_Gini.png)
+![Workflow Orange](Images/Tarefa_01_LAB01_Gustavo_Gini.PNG)
 
 ## Arquivo do Projeto
 > Coloque um link para o arquivo em Orange.
