@@ -144,7 +144,7 @@ Tipo | Objetivo
 
 Tipo | Objetivo
 -------| --------
-`sink` | (atualizar)
+`sink` | Recepciona as notificações emitidas pelos componentes de recomendação.
 
 ### Interface `OrderFinished`
 
