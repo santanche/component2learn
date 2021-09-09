@@ -8,7 +8,7 @@
 
 ## Imagem do Projeto
 
-![Workflow Orange](images/Tarefa_01_LAB01_Gustavo_Gini.png)
+![Workflow Orange](Images/Tarefa_01_LAB01_Gustavo_Gini.png)
 
 ## Arquivo do Projeto
 > Coloque um link para o arquivo em Orange.
@@ -19,7 +19,7 @@
 
 ## Diagrama de Componentes
 
-![Diagrama Venda](images/Tarefa_02_LAB01_Gustavo_Gini.png)
+![Diagrama Venda](Images/Tarefa_02_LAB01_Gustavo_Gini.png)
 
 ## Texto Explicativo
 
