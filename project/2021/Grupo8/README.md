@@ -12,7 +12,9 @@
 
 # Nível 1
 
-> Apresente aqui o detalhamento do Nível 1 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
+> Este projeto descreve o detalhamento da modelagem baseada em componentes referente ao tema: "Evolução do Marketplace".
+Para o primeiro nível foram descritas as interações com destaque no Processo de Lançamento e Distribuição de Ofertas, considerando um maior nível de granularidade dos módulos do sistema.
+Foram representados o diagrama do processo, o detalhamento dos componentes e das interfaces/mensagens, e a interação de um processo de compra completo.
 
 ## Diagrama Geral do Nível 1 -  Processo de distribuição de ofertas
 
