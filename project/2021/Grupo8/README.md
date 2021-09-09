@@ -29,7 +29,6 @@
   * O componente Sponsored publica mensagens com o tópico notification/sponsored/clientId
 * O componente NotificationAggregator escuta os seguintes os tópicos na seguinte forma “notification/#”. Assim, o agregador consegue juntar todas as recomendações dos 3 componentes e enviar as notificações para os clientes
 
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
 
 ## Componente `PriceNotificator`
 
@@ -41,7 +40,7 @@
 
 > Identifica uma nova oferta e realiza recomendações de acordo com compras anteriores registradas no histórico. 
 
-![RecommendNotificator](images/nivel1/recommend_noti.png)
+![RecommendNotificator](images/nivel1/recomment_noti.png)
 
 ## Componente `SponsoredNotificator`
 
@@ -80,11 +79,94 @@ As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
+### Interface `AddOffer`
 
 > Resumo do papel da interface.
 
-ATUALIZAR
+Tipo | Objetivo
+-------| --------
+`source` | Adiciona uma oferta ao barramento de comunicação.
+
+
+### Interface `OfferAdded`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`sink` | Recebe uma ação de oferta adicionada.
+
+### Interface `RemoveOffer`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`source` | Remove uma oferta antes adicionada ao barramento de comunicação.
+
+### Interface `OfferRemoved`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`sink` | Recebe uma ação de oferta removida.
+
+### Interface `NewPriceAvailable`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`source` | Notifica a existência de um novo preço de produto.
+
+### Interface `NewRecommendationAvailable`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`source` | Notifica a existência de uma nova recomendação de produto.
+
+### Interface `NewSponsoredAvailable`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`source` | Notifica a existência de uma nova recomendação patrocinada de produto.
+
+### Interface `NotificationToSend`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`sink` | (atualizar)
+
+### Interface `OrderFinished`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`source` | Indica que um pedido foi finalizado.
+
+### Interface `NewPurchase`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`sink` | Recebe o evento de uma compra realizada para referência de histórico de compras.
+
+### Interface `NewOrder`
+
+> Resumo do papel da interface.
+
+Tipo | Objetivo
+-------| --------
+`sink` | Recebe o evento de uma compra realizada para rastreio.
 
 > Interfaces:
 
@@ -92,7 +174,7 @@ ATUALIZAR
 
 ![Diagrama de Interface de Mensagens](images/nivel1/interfaces_2.jpg)
 
-> Mensagens JSON utilizadas na interface:
+> Mensagens JSON utilizadas nas interfaces:
 
 ![Diagrama de Mensagens JSON](images/nivel1/mensagens_1.jpg)
 
