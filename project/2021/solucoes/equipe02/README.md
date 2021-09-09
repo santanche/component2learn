@@ -37,76 +37,67 @@
 
 > ![Exemplo de utilizacao de interfaces](images/interface_example_01.jpg)
 
-> ![Exemplo de utilizacao de interfaces](images/interface_example_02.png)
+> ![Exemplo de utilizacao de interfaces](images/interface_example_02.jpg)
 
 
 # Nível 2
 
-> Apresente aqui o detalhamento do Nível 2 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
-
 ## Diagrama do Nível 2
 
-> Apresente um diagrama conforme o modelo a seguir:
+> ![Diagrama nv2](images/diagrama_nv2_compra.jpg)
 
-> ![Modelo de diagrama no nível 2](images/diagrama-subcomponentes.png)
+### Detalhamento da interação de componentes **Fluxo Compra**
 
-### Detalhamento da interação de componentes
+* O componente `Gerencia Preenchimento` dentro da view Compra fica responsável por validar se os outros 4 componentes foram preenchidos de acordo com os critérios desejados, sendo `Preenchimento de endereco` o único que necessita de uma comunicação externa da view para consultar CEP.
+Após isso, ele se comunica com a Controller Compra que publica no barramento uma mensagem "`send/{id}/compra`" assinada pela view Compra. Depois dessa interação o componente `Gerencia Compra` fica responsável por validar o pagamento daquele cliente, sendo possível somente através do componente `Processa pagamento`,
+que por sua vez necessita de acesso externo ao da controller para validar créditos do cliente. Após receber uma resposta, o componente `Gerencia Compra` fecha o pedido e o processa dentro do componente `Efetiva Compra`, que solicita acesso externo ao da controller para realizar essa operação, assim, finalizando o fluxo.
 
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
+> ![Diagrama nv2](images/diagrama_nv2_oferta.jpg)
 
-* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
-  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
-* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
-  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+### Detalhamento da interação de componentes **Fluxo Oferta**
 
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
+* O componente `Gerencia Oferta` dentro da view Oferta, fica responsável por se comunicar com os outros 3 componentes passando os dados a serem preenchidos da oferta, isso so e possivel pois o componente `Gerencia Distribuicao de Oferta` publica a mensagem com tópico "`oferta/{id}/start`". Também deve-se ressaltar que o componente `Selecao de produto` necessita de acesso externo ao da view para validar se aquele produto encontra-se disponível.
+Chegando na controller o componente `Gerencia distribuição de ofertas` nos fornece os dados das ofertas e cria ofertas com a loja através da comunicação com o componente `Processa dados Loja` que por sua vez necessita de acesso externo ao da controller para consultar a loja desejada. Outra funcionalidade também é a de validar a compra, sendo possível somente se comunicando com o componente `Processa Oferta` que por sua vez necessita de acesso externo ao da controller para
+enviar a compra para a loja ou validar se foi processada ou não essa compra.
 
-## Componente `<Nome do Componente>`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Componente](images/diagrama-componente.png)
-
-**Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
+### Interface `ICompra`
 
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+![Diagrama da Interface ICompra](images/interface_ICompra.png)
 
-> Resumo do papel da interface.
-
-Método | Objetivo
--------| --------
-`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
-
-## Exemplos:
-
-### Interface `ITableProducer`
-
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+> Interface responsavel por fornecer todos os dados da compra
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+`getProduto` | `obter os produtos que estao sendo comprados (produtos no carrinho)`
+`getLoja` | `obter a loja que esta vendendo o produto`
+`setProduto` | `guardar os produtos escolhidos`
+`getValor` | `calcular o valor da compra`
+`getPrazo` | `retorna o prazo necessario de entrega`
+`getMeioDePagamento` | `retorna os tipos de pagamento disponiveis`
+`setMeioDePagamento` | `envia o meio de pagamento escolhido pelo cliente`
+`getStatus` | `retorna o status daquela compra`
+`getEndereco` | `retorna o endereco preenchido para entrega`
+`setEndereco` | `envia o endereco preenchido pelo cliente`
 
-### Interface `IDataSetProperties`
 
-![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
+### Interface `IOferta`
 
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+![Diagrama da Interface IOferta](images/interface_IOferta.png)
+
+> Interface responsavel por fornecer todos os dados da oferta
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`getProduto` | `obter os produtos em ofertas`
+`setProduto` | `guardar os produtos que vao estar em oferta`
+`setNomeOferta` | `salvar o nome da oferta`
+`setQtdProduto` | `colocar qual a quantidade disponivel daquele produto para oferta`
+`setValor` | `colocar valor antigo e valor atual (oferta) daquele produto`
+`setDataDeExpiracao` | `colocar a data limite para a oferta`
+`getLoja` | `obter a loja`
 
 ## Diagrama do Nível 3
 
