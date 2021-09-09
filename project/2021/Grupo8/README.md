@@ -50,21 +50,15 @@ As interfaces listadas são detalhadas a seguir:
 
 > Resumo do papel da interface.
 
-> Dados da interface podem ser apresentados em formato texto, conforme exemplo:
+ATUALIZAR
 
-* Type: `sink`
-* Topic: `pedido/+/entrega`
-* Message type: `Order`
-
-> Ou em formato de imagem, conforme exemplo:
+> Interfaces:
 
 ![Diagrama de Interface de Mensagens](images/nivel1/interfaces_1.jpg)
 
 ![Diagrama de Interface de Mensagens](images/nivel1/interfaces_2.jpg)
 
-> Diagrama representando o esquema das mensagens JSON utilizadas na interface, pode ser em formato texto conforme exemplo:
-
-> Ou em formato de imagem, conforme exemplo:
+> Mensagens JSON utilizadas na interface:
 
 ![Diagrama de Mensagens JSON](images/nivel1/mensagens_1.jpg)
 
