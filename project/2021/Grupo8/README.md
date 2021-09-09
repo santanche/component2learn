@@ -14,18 +14,20 @@
 
 > Apresente aqui o detalhamento do Nível 1 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
 
-## Diagrama Geral do Nível 1
+## Diagrama Geral do Nível 1 -  Processo de distribuição de ofertas
 
-> Apresente um diagrama conforme o modelo a seguir:
-
-![Modelo de diagrama no nível 1](images/nivel1/diagrama-barramento.png)
+![Diagrama Nível 1 - Processo de distribuição de ofertas](images/nivel1/2_processo_distribuicao_ofertas/diagrama.jpg)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
-
-* O componente `Leilão` inicia o leilão publicando no barramento a mensagem de tópico "`auction/{auctionId}/start`" através da interface `AuctionStart`, iniciando um leilão.
-* Os componentes Loja assinam no barramento mensagens de tópico "`auction/+/start`" através da interface `AuctionEngage`. Quando recebe uma mensagem…
+* Os componentes Loja indicam uma atualização na oferta por meio da mensagem Offer. Quando novo(s) produto(s) é(são) disponibilizado(s), é enviado uma mensagem offer/added/{storedId}. Da mesma forma, quando este não está disponível mais, uma mensagem offer/removed/{storeId} é enviada.
+* Todos os componentes de Notification (Price, Recommendation, Sponsored) escutam essas mensagens para saber os produtos disponíveis para oferta.
+* Além disso, o componente Recommendation escuta todas as contas efetuadas através do tópico “purchase/clientId/+”. Dessa forma, o componente consegue criar recomendações personalizadas para cada cliente de acordo com o histórico de compras.
+* Com cada componente de sugestão de produtos envia uma mensagem:
+  * O componente Price publica mensagens com o tópico notification/price/clientId
+  * O componente Recommendation publica mensagens com o tópico notification/recommendation/clientId
+  * O componente Sponsored publica mensagens com o tópico notification/sponsored/clientId
+* O componente NotificationAggregator escuta os seguintes os tópicos na seguinte forma “notification/#”. Assim, o agregador consegue juntar todas as recomendações dos 3 componentes e enviar as notificações para os clientes
 
 > Para cada componente será apresentado um documento conforme o modelo a seguir:
 
@@ -56,27 +58,15 @@ As interfaces listadas são detalhadas a seguir:
 
 > Ou em formato de imagem, conforme exemplo:
 
-![Diagrama de Interface de Mensagens](images/nivel1/diagrama-interface-mensagens.png)
+![Diagrama de Interface de Mensagens](images/nivel1/2_processo_distribuicao_ofertas/interfaces_1.jpg)
+
+![Diagrama de Interface de Mensagens](images/nivel1/2_processo_distribuicao_ofertas/interfaces_2.jpg)
 
 > Diagrama representando o esquema das mensagens JSON utilizadas na interface, pode ser em formato texto conforme exemplo:
 
-~~~json
-{
-  orderId: string,
-  dueDate: date,
-  total: number,
-  items: [
-    {
-         itemid: string,
-         quantity: number
-    }
-  ]  
-}
-~~~
-
 > Ou em formato de imagem, conforme exemplo:
 
-![Diagrama de Mensagens JSON](images/nivel1/diagrama-interface-json.png)
+![Diagrama de Mensagens JSON](images/nivel1/2_processo_distribuicao_ofertas/mensagens_1.jpg)
 
 # Nível 2
 
