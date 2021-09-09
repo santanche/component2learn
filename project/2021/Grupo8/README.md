@@ -164,12 +164,21 @@ Método | Objetivo
 
 > Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
+![Modelo de diagrama no nível 2](images/ide.jpg)
 
 > Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
 
-![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
+![Captura de Tela do Protótipo](images/001.jpg)
+![Captura de Tela do Protótipo](images/002.jpg)
+![Captura de Tela do Protótipo](images/003.jpg)
+![Captura de Tela do Protótipo](images/004.jpg)
+![Captura de Tela do Protótipo](images/005.jpg)
+![Captura de Tela do Protótipo](images/006.jpg)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir o mesmo formato usado no Nível 2.
+> A renderização da tela começa com o carregamento das formas de pagamento, que são provenientes do backend, representados na imagem 005. 
+> Após a construção da tela, o usuário interage mudando a quantidade dos produtos, conforme imagem 003, que acarreta na alteração do valor agregado do produto, além da atualização do total da compra
+> Caso o usuário deseje remover algum produto, é disparado o fluxo representado pela imagem 003
+> Ainda é possível adicionar mais produtos, clicando nas seções disponíveis ou pode buscar textualmente, conforme fluxo 001 e 002
+> Quando a compra estiver pronta, o cliente pode iniciar o fluxo de finalização, seguindo o fluco 006
