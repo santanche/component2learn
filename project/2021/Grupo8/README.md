@@ -164,7 +164,7 @@ Método | Objetivo
 
 > Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
 
-![Modelo de diagrama no nível 2](images/ide.jpg)
+![Modelo de diagrama no nível 2](images/nivel3/ide.jpg)
 
 > Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
 
