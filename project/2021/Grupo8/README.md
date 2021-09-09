@@ -168,12 +168,12 @@ Método | Objetivo
 
 > Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
 
-![Captura de Tela do Protótipo](images/001.jpg)
-![Captura de Tela do Protótipo](images/002.jpg)
-![Captura de Tela do Protótipo](images/003.jpg)
-![Captura de Tela do Protótipo](images/004.jpg)
-![Captura de Tela do Protótipo](images/005.jpg)
-![Captura de Tela do Protótipo](images/006.jpg)
+![Captura de Tela do Protótipo](images/nivel3/001.jpg)
+![Captura de Tela do Protótipo](images/nivel3/002.jpg)
+![Captura de Tela do Protótipo](images/nivel3/003.jpg)
+![Captura de Tela do Protótipo](images/nivel3/004.jpg)
+![Captura de Tela do Protótipo](images/nivel3/005.jpg)
+![Captura de Tela do Protótipo](images/nivel3/006.jpg)
 
 ### Detalhamento da interação de componentes
 
