@@ -159,6 +159,7 @@ Método | Objetivo
 -------| --------
 `disponivel` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
 `precoFinal` | Retorno o preco final do produto conforme consulta do preco final do produto
+`listagem` | Retorna a listagem de produtos tendo como parâmetro a entidade produto
 
 ## Diagrama do Nível 3
 
