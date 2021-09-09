@@ -37,7 +37,7 @@
 
 > ![Exemplo de utilizacao de interfaces](images/interface_example_01.jpg)
 
-> ![Exemplo de utilizacao de interfaces](images/interface_example_02.jpg)
+> ![Exemplo de utilizacao de interfaces](images/interface_example_02.png)
 
 
 # Nível 2
