@@ -11,7 +11,6 @@
 ![Workflow Orange](Images/Tarefa_01_LAB01_Gustavo_Gini.PNG)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
 
 ![File Orange](orange/zombie-meals_gustavo_gini.ows)
 
