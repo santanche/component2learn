@@ -1,25 +1,21 @@
-# Equipe
+# Equipe 02
 * Gustavo Henrique Souza Silva Doll 
 * Isadora Mendonça de Oliveira
 * Maximiliano Pires
 * Ronaldo Monteiro Lopes
 
 # Nível 1
-## Diagrama Geral do Nível 1
 
-> Apresente um diagrama conforme o modelo a seguir:
+## Diagrama Geral do Nível 1
 
 ![Diagrama geral do nivel 1](images/diagrama_nv_1.jpeg)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
-
 * O(s) componente(s) `Loja` iniciam a oferta publicando no barramento a mensagem de tópico tópico "`oferta/{ofertaId}/start`" através da interface `OfertaStart`, iniciando o processo de criação e publicação de uma oferta.
 * O componente `Servico de distribuicao de ofertas` assina no barramento mensagens de tópico "`oferta/+/start`" através da interface `GetOferta` e após recebê-la, processa essa oferta e envia para o cliente através da interface IOferta.
 * O cliente por sua vez seleciona o produto da oferta enviada e efetua sua compra através da interface ICompra. Após isso o componente `Compra` recebe essa interface e processa essa compra retornando seu status para o componente `Servico de distribuição de ofertas`.
-* Uma vez com o status em mãos o componente `Servico de distribuicao de ofertas` publica no barramento uma mensagem com o tópico "`send/{id}/compra`". Assim o(s) componente(s) `Loja` assina no barramento mensagens do tipo "`send/+/compra`" 
-* finalizando assim o fluxo e validando se foi ou não efetuada a compra com sucesso.
+* Uma vez com o status em mãos o componente `Servico de distribuicao de ofertas` publica no barramento uma mensagem com o tópico "`send/{id}/compra`". Assim o(s) componente(s) `Loja` assina no barramento mensagens do tipo "`send/+/compra`" finalizando assim o fluxo e validando se foi ou não efetuada a compra com sucesso.
 
 ## Componente `Servico de distribuicao de ofertas`
 * Tem como principal função gerenciar as ofertas, assim como oferecer formas de validá-las, critérios de aceitação e formas de se adquiri-las. Ele também é responsável por dar o feedback para o componente `Loja` sobre a compra efetuada para aquela oferta.
@@ -33,14 +29,9 @@
 ## Componente `Loja`
 * Representa a Loja que está realizando a oferta, ela se comunica pelo barramento com o `Servico de distribuicao de ofertas` a fim de enviar a oferta criada e também receber um status sobre a compra realizada para então dar baixa ou não no estoque e realizar o procedimento de entrega do produto.
 
-**Interfaces**
-> Listagem das interfaces do componente.
-
-
 ## Detalhamento das Interfaces
 
-* As interfaces presentes no diagrama anterior foram necessárias para realizar a comunicação entre os principais componentes do diagrama `Compra` e `Servico de distribuicao de ofertas`,
-* com elas conseguimos pegar os dados das ofertas e mostrá-los para os cliente, assim conseguimos obter os dados das compras feitas e enviá-los para as lojas para que elas possam realizar as tarefas necessárias para entrega e afins com os clientes.
+* As interfaces presentes no diagrama anterior foram necessárias para realizar a comunicação entre os principais componentes do diagrama `Compra` e `Servico de distribuicao de ofertas`, com elas conseguimos pegar os dados das ofertas e mostrá-los para os cliente, assim conseguimos obter os dados das compras feitas e enviá-los para as lojas para que elas possam realizar as tarefas necessárias para entrega e afins com os clientes.
 
 > ![Interfaces representadas no NV1](images/interfaces_nv_1.jpg)
 
