@@ -15,15 +15,30 @@ Estrutura de pastas:
 
 # Tarefa 1 - App no MIT App Inventor
 
-> Coloque as imagens PNG da captura de seis telas do seu aplicativo:
-> * tela 1 - captura da tela completa de design de interface
-> * tela 2 - captura de tela do app com nenhum produto selecionado
-> * tela 3 - captura de tela do app com primeiro produto selecionado
-> * tela 4 - captura de tela do app com segundo produto selecionado
-> * tela 5 - compra de um dos produtos efetivada
-> * tela 6 - diagrama de blocos do aplicativo
->
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+* tela 1 - captura da tela completa de design de interface:
+![Diagrama Eventos](images/app1.png)
+
+
+* tela 2 - captura de tela do app com nenhum produto selecionado:
+![Diagrama Eventos](images/app2.png)
+
+
+* tela 3 - captura de tela do app com primeiro produto selecionado:
+![Diagrama Eventos](images/app3.png)
+
+
+* tela 4 - captura de tela do app com segundo produto selecionado:
+![Diagrama Eventos](images/app4.png)
+
+
+* tela 5 - compra de um dos produtos efetivada:
+![Diagrama Eventos](images/app5.png)
+
+
+* tela 6 - diagrama de blocos do aplicativo:
+![Diagrama Eventos](images/app7.png)
+
+[Link App](./app/inf331_interface_de_compra.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
