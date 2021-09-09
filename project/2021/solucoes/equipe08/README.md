@@ -289,7 +289,7 @@ Método | Objetivo
 > A renderização da tela começa com o carregamento das formas de pagamento, que são provenientes do servidor, representados na [imagem 005](images/nivel3/005.jpg). 
 > Após a construção da tela, o usuário interage mudando a quantidade dos produtos, conforme [imagem 003](images/nivel3/003.jpg), que acarreta na alteração do valor agregado do produto, além da atualização do total da compra.
 > Caso o usuário deseje remover algum produto, é disparado o fluxo representado pela [imagem 004](images/nivel3/004.jpg) que acarreta na atualização no valor final da compra.
-> Ainda é possível adicionar mais produtos, clicando nas seções disponíveis ou pode buscar textualmente, conforme [imagem 001](images/nivel3/001.jpg) e [imagem 002](images/nivel3/002.jpg). As  informações do produto será buscado no servidor e ao retornar as informações, a aplicação irá redirecionar para o componente relacionado ao produto escolhido.
+> Ainda é possível adicionar mais produtos, clicando nas seções disponíveis ou pode buscar textualmente, conforme [imagem 001](images/nivel3/001.jpg) e [imagem 002](images/nivel3/002.jpg). As  informações do produto serão buscados no servidor e ao retornar as informações, a aplicação irá redirecionar para o componente relacionado ao produto escolhido.
 > Quando a compra estiver pronta, o cliente pode iniciar o fluxo de finalização, seguindo a [imagem 006](images/nivel3/006.jpg). As informações de compra será enviada para o servidor e ao retornar a confirmação, o aplicativo irá redirecionar para o componente de compra realizada.
 
 
