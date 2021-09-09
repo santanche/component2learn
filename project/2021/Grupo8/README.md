@@ -16,7 +16,7 @@
 
 ## Diagrama Geral do Nível 1 -  Processo de distribuição de ofertas
 
-![Diagrama Nível 1 - Processo de distribuição de ofertas](images/nivel1/2_processo_distribuicao_ofertas/diagrama.jpg)
+![Diagrama Nível 1 - Processo de distribuição de ofertas](images/nivel1/diagrama.jpg)
 
 ### Detalhamento da interação de componentes
 
@@ -58,15 +58,15 @@ As interfaces listadas são detalhadas a seguir:
 
 > Ou em formato de imagem, conforme exemplo:
 
-![Diagrama de Interface de Mensagens](images/nivel1/2_processo_distribuicao_ofertas/interfaces_1.jpg)
+![Diagrama de Interface de Mensagens](images/nivel1/interfaces_1.jpg)
 
-![Diagrama de Interface de Mensagens](images/nivel1/2_processo_distribuicao_ofertas/interfaces_2.jpg)
+![Diagrama de Interface de Mensagens](images/nivel1/interfaces_2.jpg)
 
 > Diagrama representando o esquema das mensagens JSON utilizadas na interface, pode ser em formato texto conforme exemplo:
 
 > Ou em formato de imagem, conforme exemplo:
 
-![Diagrama de Mensagens JSON](images/nivel1/2_processo_distribuicao_ofertas/mensagens_1.jpg)
+![Diagrama de Mensagens JSON](images/nivel1/mensagens_1.jpg)
 
 # Nível 2
 
