@@ -4,6 +4,7 @@
 * Jean Costa
 * Lucas Franzolin
 * Luis Piovan
+* Marina Azevedo
 * Victor Hugo Oliveira
 
 # Nível 1
