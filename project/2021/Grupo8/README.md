@@ -31,13 +31,47 @@
 
 > Para cada componente será apresentado um documento conforme o modelo a seguir:
 
-## Componente `<Nome do Componente>`
+## Componente `PriceNotificator`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Identifica uma nova oferta realiza recomendações de acordo com o preço buscado pelo cliente.
 
-> Diagrama do componente, conforme exemplo a seguir:
+![PriceNotificator](images/nivel1/price_noti.png)
 
-![Componente](diagrama-componente-mensagens.png)
+## Componente `RecommendNotificator`
+
+> Identifica uma nova oferta e realiza recomendações de acordo com compras anteriores registradas no histórico. 
+
+![RecommendNotificator](images/nivel1/recommend_noti.png)
+
+## Componente `SponsoredNotificator`
+
+> Identifica uma nova oferta e realiza recomendações que foram patrocinadas por lojas parceiras.
+
+![SponsoredNotificator](images/nivel1/sponsored_noti.png)
+
+## Componente `Loja`
+
+> Representa a empresa/loja e adiciona ou remove ofertas.
+
+![Loja](images/nivel1/loja.png)
+
+## Componente `OrderManager`
+
+> Adiciona ou remove produtos desejados e finaliza o pedido.
+
+![OrderManager](images/nivel1/ordermanager.png)
+
+## Componente `TrackOrder`
+
+> Recebe uma identificação de pedido e informa o cliente sobre o rastreio.
+
+![TrackOrder](images/nivel1/trackorder.png)
+
+## Componente `NotificationAggregator`
+
+> Executa a união das recomendações feitas pelos componentes PriceNotificator, RecommendNotificator e SponsoredNotificator e envia ao cliente.
+
+![NotificationAggregator](images/nivel1/aggreg_noti.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
