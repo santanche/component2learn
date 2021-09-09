@@ -91,35 +91,41 @@ As interfaces listadas são detalhadas a seguir:
 * O componeten `Gerencia Pedido` envia os dados para o componente `Executa Listagem`. Este por sua vez executa a consulta de disponibilidade através do componente `Consulta Disponibilidade`.
 * Estando disponível os produtos, o componente `Gerencia Pedido` realiza a interação através do comunicador `Dados Selecionados` e envia os dados para o componente `Executa Calculo preço total`. Este por sua vez calcula o preço total através da interface `Consulta Preço final`.
 
-## Componente `Gerencia Pesquisa`
+## Componente `Gerencia Pedido View`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Gerencia Pesquisa](images/nivel2/diagrama-componente-gerencia-pesquisa.png)
+![Gerencia Pedido View](images/nivel2/diagrama-componente-gerencia-pedido-view.png)
 
-## Componente `Preenchimento de Palavra Chave`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Preenchimento de Palavra Chave](images/nivel2/diagrama-componente-preenchimento-de-palavra-chave.png)
-
-## Componente `Seleção de Produtos`
+## Componente `Valor do Pedido`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Seleção de Produtos](images/nivel2/diagrama-componente-selecao-de-produtos.png)
+![Valor do Pedido](images/nivel2/diagrama-componente-valor-do-pedido.png)
 
-## Componente `Gerencia Chamada`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Gerencia Chamada](images/nivel2/diagrama-componente-gerencia-chamada.png)
-
-## Componente `Executa Detalhamento`
+## Componente `Detalhe do Pedido`
 
 > Resumo do papel do componente e serviços que ele oferece.
 
-![Executa Detalhamento](images/nivel2/diagrama-componente-executa-detalhamento.png)
+![Detalhe do Pedido](images/nivel2/diagrama-componente-detalhe-do-pedido.png)
+
+## Componente `Gerencia Pedido Controller`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Gerencia Pedido Controller](images/nivel2/diagrama-componente-gerencia-pedido-controller.png)
+
+## Componente `Executa Listagem`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Executa Listagem](images/nivel2/diagrama-componente-executa-listagem.png)
+
+## Componente `Executa Calculo Preço Total`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Executa Calculo Preço Total](images/nivel2/diagrama-componente-executa-calculo-preco-total.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
