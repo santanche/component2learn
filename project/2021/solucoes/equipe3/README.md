@@ -1,4 +1,4 @@
-# Projeto Final - Sistema de Recoemndação de Ofertas
+# Projeto Final - Sistema de Recomendação de Ofertas
 
 # Equipe 3
 * Jean Costa
