@@ -147,6 +147,15 @@ RecebeProposta.
   }
 }
 ~~~
+# Nível 2
+> Apresente aqui o detalhamento do Nível 2 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
+
+## Diagrama do Nível 2
+
+> ![Modelo de diagrama no nível 2](images/diagrama-nivel-2.png)
+
+### Detalhamento da interação de componentes
+~~~
 # Nível 3
 
 > Interface App Inventor
