@@ -156,6 +156,7 @@ RecebeProposta.
 
 ### Detalhamento da interação de componentes
 ~~~
+~~~
 # Nível 3
 
 > Interface App Inventor
