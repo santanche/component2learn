@@ -271,17 +271,28 @@ Método | Objetivo
 
 ## Diagrama do Nível 3
 
-> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
+> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor:
 
 ![Modelo de diagrama no nível 2](images/nivel3/ide.jpg)
 
-> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
+> Apresente o diagrama referente ao protótipo:
 
+### Imagem 001
 ![Captura de Tela do Protótipo](images/nivel3/001.jpg)
+
+### Imagem 002
 ![Captura de Tela do Protótipo](images/nivel3/002.jpg)
+
+### Imagem 003
 ![Captura de Tela do Protótipo](images/nivel3/003.jpg)
+
+### Imagem 004
 ![Captura de Tela do Protótipo](images/nivel3/004.jpg)
+
+### Imagem 005
 ![Captura de Tela do Protótipo](images/nivel3/005.jpg)
+
+### Imagem 006
 ![Captura de Tela do Protótipo](images/nivel3/006.jpg)
 
 ### Detalhamento da interação de componentes
