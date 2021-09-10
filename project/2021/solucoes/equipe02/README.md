@@ -101,14 +101,19 @@ Método | Objetivo
 
 ## Diagrama do Nível 3
 
-> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
+![Layout do fluxo de compra de produto](images/layout_fluxo_compra.jpg)
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
+![Layout do fluxo de criar oferta](images/layout_fluxo_oferta.jpg)
 
-> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
+![Diagrama de interações para o fluxo de compra](images/diagrama_fluxo_compra.jpg)
 
-![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
+![Diagrama de interações para o fluxo de compra](images/diagrama_fluxo_oferta.jpg)
 
-### Detalhamento da interação de componentes
+### Detalhamento da interação de componentes no fluxo de `Compra`
 
-> O detalhamento deve seguir o mesmo formato usado no Nível 2.
+* Temos 4 principais componentes visuais nessa tela, o componente `Quantidade` e responsável por obter a quantidade do produto desejado pelo cliente,que ao preenchê-lo, mandamos para o componente 'Retrieve Stock Info` responsável por fazer o `Request` e obter o `Response` das informações de estoque. Temos também o componente `Forma de pagamento` para obter a forma de pagamento desejada, que ao realizar o `select` da forma desejada falamos com o componente `Validate Payment Method` que faz o request e response dos meios de pagamento disponíveis e caso seja **Cartão de Crédito** habilitar o componente `Parcelas` para que o cliente preencha as parcelas desejadas para efetuar a compra.
+Após todos os valores preenchidos, teremos uma interação com o componente `Validate Purchase` para validar se a compra pode ou não ser efetuada, mandando um `set enabled` para o botão `Comprar` como resposta à validação. Após o `click` do botão, temos o componente `Finish Purchase` que envia o pedido para um serviço responsável e obtém sua resposta, passando para o componente `Response handler` para que seja possível dar um feedback ao cliente.
+
+### Detalhamento da interação de componentes no fluxo de `Oferta`
+
+* Nesse fluxo temos bastantes componentes de campo de texto para serem preenchidos, todos eles nos levam para o componente `Validate Stock` que valida em alguns servicos externos a disponibilidade do estoque e, ao obter uma resposta envia a informacao `set enabled` para o componente `Criar Oferta` assim sendo possivel ou nao prosseguir no fluxo. Efetuando o `click` no botao falamos com o componente `Create Offer` que e responsavel por criar a oferta em si nos servicos externos e, obtendo uma resposta a envia para o componente `Response handler` sendo possivel passar um feedback ao cliente.
