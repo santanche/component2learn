@@ -12,3 +12,7 @@
 > Apresente aqui o detalhamento do Nível 1 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
 
 ## Diagrama Geral do Nível 1
+
+![Modelo de diagrama no nível 1](images/diagrama-barramento.png)
+
+* O item Busca inicia o processo publicando o produto requerido no barramento a mensagem de tópico search/{queryItem}/enviar através 
