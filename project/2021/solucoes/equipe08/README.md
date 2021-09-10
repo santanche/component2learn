@@ -304,5 +304,5 @@ Método | Objetivo
 > Ainda é possível adicionar mais produtos, clicando nas seções disponíveis ou pode buscar textualmente, conforme [Diagrama 001](images/nivel3/001.jpg) e [Diagrama 002](images/nivel3/002.jpg). As  informações do produto serão buscados no servidor e ao retornar as informações, a aplicação irá redirecionar para o componente relacionado ao produto escolhido.
 > Quando a compra estiver pronta, o cliente pode iniciar o fluxo de finalização, seguindo a [Diagrama 006](images/nivel3/006.jpg). As informações de compra será enviada para o servidor e ao retornar a confirmação, o aplicativo irá redirecionar para o componente de compra realizada.
 
-
+### Link para o aplicativo
 > [Infinity](resources/Infinity.aia)
