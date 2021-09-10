@@ -188,47 +188,47 @@ Tipo | Objetivo
 
 ### Detalhamento da interação de componentes
 
-* O componente `Manage Order` envia a quantidade de produtos selecionados com seus respectivos valores para o componente `Value of the order`. Este por sua vez envia o tópico "`Selected Product`" para a interface `Checkout`. Ao receber uma mensagem de tópico "`Selected Product`", são listados a disponibilidade e preço final dos produtos.
+* O componente `Manage Order` envia a quantidade de produtos selecionados com seus respectivos valores para o componente `Value of the order`. Este por sua vez envia o tópico "`product`" para a interface `Checkout`. Ao receber uma mensagem de tópico "`product`", são listados a disponibilidade e preço final dos produtos.
 * O componente `Order Detail` recebe os produtos selecionados da interface `Checkout` e retorna para o componente `Manage Order`, confirmando assim os produtos selecionados. 
-* O componeten `Manage Order` envia os dados para o componente `Run Listing`. Este por sua vez executa a consulta de disponibilidade através da interface `See Availability`.
-* Estando disponível os produtos, o componente `Manage Order` realiza a interação através do comunicador `Order Selection` e envia os dados para o componente `Perform Total Price Calculation`. Este por sua vez calcula o preço total através da interface `Consult Final Price`.
+* O componeten `Manage Order` envia os dados para o componente `Run Listing`. Este por sua vez executa a consulta de disponibilidade através da interface `Availability Query`.
+* Estando disponível os produtos, o componente `Manage Order` realiza a interação através do comunicador `Selected Data` e envia os dados para o componente `Perform Total Price Calculation`. Este por sua vez calcula o preço total através da interface `Final Price Inquiry`.
 
 ## Componente `Manage Order View`
 
 > Envia quantidade e valores de produtos selecionados.
 
-![Gerencia Pedido View](images/nivel2/diagrama-componente-gerencia-pedido-view.png)
+![Manage Order View](images/nivel2/diagrama-componente-gerencia-pedido-view.png)
 
 ## Componente `Value of the order`
 
-> Envia o tópico "`Selected Product`" para a interface `Checkout`.
+> Envia o tópico "`product`" para a interface `Checkout`.
 
-![Valor do Pedido](images/nivel2/diagrama-componente-valor-do-pedido.png)
+![Value of the order](images/nivel2/diagrama-componente-valor-do-pedido.png)
 
 ## Componente `Order Detail`
 
 > Recebe os produtos selecionados da interface `Checkout` e retorna para o componente `Manage Order`.
 
-![Detalhe do Pedido](images/nivel2/diagrama-componente-detalhe-do-pedido.png)
+![Order Detail](images/nivel2/diagrama-componente-detalhe-do-pedido.png)
 
-## Componente `Manage Order Controller`
+## Componente `Order Detail Controller`
 
 > Envia os dados para o componente `Run Listing`.
 > Envia os dados para o componente `Perform Total Price Calculation`.
 
-![Gerencia Pedido Controller](images/nivel2/diagrama-componente-gerencia-pedido-controller.png)
+![Gerencia Order Detail](images/nivel2/diagrama-componente-gerencia-pedido-controller.png)
 
 ## Componente `Run Listing`
 
-> Executa a consulta de disponibilidade através da interface `SeeAvailability`.
+> Executa a consulta de disponibilidade através da interface `Availability Query`.
 
-![Executa Listagem](images/nivel2/diagrama-componente-executa-listagem.png)
+![Run Listing](images/nivel2/diagrama-componente-executa-listagem.png)
 
 ## Componente `Perform Total Price Calculation`
 
-> Calcula o preço total através da interface `ConsultFinalPrice`.
+> Calcula o preço total através da interface `Final Price Inquiry`.
 
-![Executa Calculo Preço Total](images/nivel2/diagrama-componente-executa-calculo-preco-total.png)
+![Perform Total Price Calculation](images/nivel2/diagrama-componente-executa-calculo-preco-total.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
