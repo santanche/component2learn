@@ -188,45 +188,45 @@ Tipo | Objetivo
 
 ### Detalhamento da interação de componentes
 
-* O componente `Gerencia Pedido` envia a quantidade de produtos selecionados com seus respectivos valores para o componente `Valor do Pedido`. Este por sua vez envia o tópico "`produto`" para a interface `Finalizar Pedido`. Ao receber uma mensagem de tópico "`produto`", são listados a disponibilidade e preço final dos produtos.
-* O componente `Detalhe Pedido` recebe os produtos selecionados da interface `Finalizar Pedido` e retorna para o componente `Gerencia Pedido`, confirmando assim os produtos selecionados. 
-* O componeten `Gerencia Pedido` envia os dados para o componente `Executa Listagem`. Este por sua vez executa a consulta de disponibilidade através da interface `Consulta Disponibilidade`.
-* Estando disponível os produtos, o componente `Gerencia Pedido` realiza a interação através do comunicador `Dados Selecionados` e envia os dados para o componente `Executa Calculo preço total`. Este por sua vez calcula o preço total através da interface `Consulta Preço final`.
+* O componente `Manage Order` envia a quantidade de produtos selecionados com seus respectivos valores para o componente `Value of the order`. Este por sua vez envia o tópico "`Selected Product`" para a interface `Checkout`. Ao receber uma mensagem de tópico "`Selected Product`", são listados a disponibilidade e preço final dos produtos.
+* O componente `Order Detail` recebe os produtos selecionados da interface `Checkout` e retorna para o componente `Manage Order`, confirmando assim os produtos selecionados. 
+* O componeten `Manage Order` envia os dados para o componente `Run Listing`. Este por sua vez executa a consulta de disponibilidade através da interface `See Availability`.
+* Estando disponível os produtos, o componente `Manage Order` realiza a interação através do comunicador `Order Selection` e envia os dados para o componente `Perform Total Price Calculation`. Este por sua vez calcula o preço total através da interface `Consult Final Price`.
 
-## Componente `Gerencia Pedido View`
+## Componente `Manage Order View`
 
 > Envia quantidade e valores de produtos selecionados.
 
 ![Gerencia Pedido View](images/nivel2/diagrama-componente-gerencia-pedido-view.png)
 
-## Componente `Valor do Pedido`
+## Componente `Value of the order`
 
-> Envia o tópico "`produto`" para a interface `Finalizar Pedido`.
+> Envia o tópico "`Selected Product`" para a interface `Checkout`.
 
 ![Valor do Pedido](images/nivel2/diagrama-componente-valor-do-pedido.png)
 
-## Componente `Detalhe do Pedido`
+## Componente `Order Detail`
 
-> Recebe os produtos selecionados da interface `Finalizar Pedido` e retorna para o componente `Gerencia Pedido`.
+> Recebe os produtos selecionados da interface `Checkout` e retorna para o componente `Manage Order`.
 
 ![Detalhe do Pedido](images/nivel2/diagrama-componente-detalhe-do-pedido.png)
 
-## Componente `Gerencia Pedido Controller`
+## Componente `Manage Order Controller`
 
-> Envia os dados para o componente `Executa Listagem`.
-> Envia os dados para o componente `Executa Calculo preço total`.
+> Envia os dados para o componente `Run Listing`.
+> Envia os dados para o componente `Perform Total Price Calculation`.
 
 ![Gerencia Pedido Controller](images/nivel2/diagrama-componente-gerencia-pedido-controller.png)
 
-## Componente `Executa Listagem`
+## Componente `Run Listing`
 
-> Executa a consulta de disponibilidade através da interface `Consulta Disponibilidade`.
+> Executa a consulta de disponibilidade através da interface `SeeAvailability`.
 
 ![Executa Listagem](images/nivel2/diagrama-componente-executa-listagem.png)
 
-## Componente `Executa Calculo Preço Total`
+## Componente `Perform Total Price Calculation`
 
-> Calcula o preço total através da interface `Consulta Preço final`.
+> Calcula o preço total através da interface `ConsultFinalPrice`.
 
 ![Executa Calculo Preço Total](images/nivel2/diagrama-componente-executa-calculo-preco-total.png)
 
@@ -237,7 +237,7 @@ As interfaces listadas são detalhadas a seguir:
 
 ## Detalhamento das Interfaces
 
-### Interface `ConsultarDisponibilidade`
+### Interface `SeeAvailability`
 
 ![Diagrama da Interface ConsultarDisponibilidade](images/nivel2/consultarDisponibilidadeInterface.jpg)
 
@@ -245,9 +245,9 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`disponivel` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
+`available` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
 
-### Interface `ConsultarPrecoFinal`
+### Interface `ConsultFinalPrice`
 
 ![Diagrama da Interface ConsultarPrecoFinal](images/nivel2/consultarPrecoFinalInterface.jpg)
 
@@ -255,10 +255,10 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`calculoFrete` | Retorna o valor total do custo referente ao frete, tendo como parâmetro a entidade produto
-`calculoUnitario` | Retorna o valor total da unidade do produto, tendo como parâmetro a entidade produto
+`shippingCalculation` | Retorna o valor total do custo referente ao frete, tendo como parâmetro a entidade produto
+`unitCalculation` | Retorna o valor total da unidade do produto, tendo como parâmetro a entidade produto
 
-### Interface `FinalizarPedido`
+### Interface `Checkout`
 
 ![Diagrama da Interface FinalizarPedido](images/nivel2/finalizarPedidoInterface.jpg)
 
@@ -266,9 +266,9 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`disponivel` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
-`precoFinal` | Retorno o preco final do produto conforme consulta do preco final do produto
-`listagem` | Retorna a listagem de produtos tendo como parâmetro a entidade produto
+`available` | Retorna um booleano que indica se o produto em questão está disponível ou não, tendo como parâmetro o identificador `id` do produto
+`finalPrice` | Retorno o preco final do produto conforme consulta do preco final do produto
+`list` | Retorna a listagem de produtos tendo como parâmetro a entidade produto
 
 ## Diagrama do Nível 3
 
