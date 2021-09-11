@@ -1,3 +1,37 @@
+# Diagrama do Nível 1 
+
+## Diagrama Geral do Nível 1
+
+![Modelo de diagrama no nível 1](images/diagrama-componente-mensagens.PNG)
+
+### Detalhamento da interação de componentes
+
+* O componente `Customer` inicia a busca de produto publicando no barramento a mensagem de tópico "`search/{product-name}`" através da interface `Search`.
+
+* Os componentes Loja A, Loja B e Loja C assinam no barramento mensagens de tópico "`search/{productId}`" através da interface `SearchEngage`. Quando recebem a mensagem esses componentes realizam a busca e se houver produto disponível  publicam a mensagem de tópico "`offer/+/offer" através da interface `PlaceOffer`.
+
+* O componente `Customer` assina no barramento mensagens de tópico "`offer/+`" através da interface `Offer`. Esse componente é responsável por exibir as ofertas para o cliente. Além disso, esse componente se comunica com o componente `Assinatura` que pode aplicar descontos especiais, caso elegível, conforme plano de assinatura do cliente.
+
+* O componente `Customer` é ainda responsável por consolidar a compra do cliente e se comunica com o componente `Pagamento` onde é realizada a transação financeira, que por sua vez devolve para o componente `Customer` o status do pagamento.
+
+### Interface `Assinatura`
+
+> Interface de assinatura para ser acionada pelo usuário.
+
+![Diagrama de Interface de Mensagens](images/interface001.JPG)
+
+### Interface `Customer`
+
+> Interface de Customer que faz pedido de assinttura e dispara pagamento.
+
+![Diagrama de Interface de Mensagens](images/interface002.JPG)
+
+### Interface `Pagamento`
+
+> Interface de Pagamento pode conectar-se com Assinatura e Customer.
+
+![Diagrama de Interface de Mensagens](images/interface003.JPG)
+
 
 # Diagrama do Nível 2
 
