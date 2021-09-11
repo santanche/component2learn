@@ -193,21 +193,42 @@ Método | Objetivo
 
 ## Componente `<Seleciona Tipo Lançamento>`
 
-> Realiza o cadastro e atualização dos dados de contato do usuário.
+> Realiza o gerenciamento dos tipos de lançamentos de interesse do usuário
 
-![Componente](images/componente-lancamento.png)
+![Componente](images/componente-seleciona-lancamento.png)
 
 ## Detalhamento das Interfaces
 
-### Interface `<IInputInformaçõesUsuarios>`
+### Interface `<IInputInteresseLancamentos>`
 
-> Inserir informações de contato do usuário
+> Inserir e consultar os tipos de lançamentos de interesse do usuário
 
 Método | Objetivo
 -------| --------
-`requestInformation` | `< Retorna as informações armazenadas no cadastro do usuário>`
-`setRegistration` | `< Permite a inclusão de um novo usuário>`
-`setEditRegistration` | `< Permite a atualização/edição de um usuário através de seu `userId`>`
+`requestRelease` | `< Retorna os lançamentos de interesse do usuário>`
+`setRelease` | `< Permite a inclusão de lançamentos>`
+`setEditRelease` | `< Permite a atualização/edição de um lançamento através de seu `releaseId`>`
+
+
+
+
+## Componente `<Seleciona Oferta>`
+
+> Realiza o gerenciamento das ofertas de acordo com o perfil do usuário
+
+![Componente](images/componente-seleciona-oferta.png)
+
+## Detalhamento das Interfaces
+
+### Interface `<IInputInteresseLancamentos>`
+
+> Inserir e consultar as ofertas que se enquadram no perfil do usuário
+
+Método | Objetivo
+-------| --------
+`requestOffer` | `< Retorna as ofertas que se enquadram no interesse do usuário>`
+`setOffer` | `< Permite a inclusão de novas ofertas de acordo com o perfil de interesse>`
+`setEditOffer` | `< Permite a atualização de ofertas através de seu `offerId`>`
 
 ~~~
 ~~~
