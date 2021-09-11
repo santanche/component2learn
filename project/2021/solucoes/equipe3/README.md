@@ -158,20 +158,35 @@ RecebeProposta.
 
 * FAZER DETALHAMENTO
 
-## Componente `<Nome do Componente>`
+## Componente `<Gerencia Cadastro>`
 
-![Componente](images/componente-1.png)
+> Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
+
+![Componente](images/componente-cadastro.png)
 
 ## Detalhamento das Interfaces
 
 ### Interface `<nome da interface>`
 
-> Resumo do papel da interface EXEMPLO.
+> Esse componente não possui interfaces providas.
+
+## Componente `<Preenchimento Cadastro>`
+
+> Realiza o cadastro e atualização dos dados de contato do usuário.
+
+![Componente](images/componente-cadastro.png)
+
+## Detalhamento das Interfaces
+
+### Interface `<IInputInformaçõesUsuarios>`
+
+> Inserir informações de contato do usuário
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+`requestInformation` | `< Retorna as informações armazenadas no cadastro do usuário.>`
+`setRegistration` | `< Permite a inclusão de um novo usuário.>`
+`setEditRegistration` | `< Permite a atualização/edição de um usuário através de seu `userId`.>`
 ~~~
 ~~~
 
@@ -210,10 +225,10 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`checkAvailability` | Disponibiiza a existência de estoque através do parâmetro `offerId`
-`checkRestockingDate` | Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`
-`checkStockQtty` | Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`
-`itensOn Hold` | Disponibiiza o número de itens com status on hold para pagamentos ainda não processados, através do parâmetro `offerId`
+`< checkAvailability >` | `< Disponibiiza a existência de estoque através do parâmetro `offerId`>`
+`< checkRestockingDate >` | `< Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`>`
+`< checkStockQtty >` | `< Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`>`
+`< itensOn \Hold >` | `< Disponibiiza o número de itens com status on hold para [agamentos ainda não processados, através do parâmetro `offerId`>`
 
 ## Componente `<Processa Email>`
 
@@ -234,9 +249,9 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`setTemplate` | Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`
-`setOffers` | Permite a inserção de ofertas, pelo paraâmetro `offerId`
-`setDestination` | Permite a configuração de destinatário, atráves do parâmetro `userId`
+`< setTemplate >` | `< Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`>`
+`< setOffers >` | `< Permite a inserção de ofertas, pelo paraâmetro `offerId`>`
+`< setDestination >` | `< Permite a configuração de destinatário, atráves do parâmetro `userId`>`
 
 ### Interface `<IEnviaEmail>`
 
@@ -244,7 +259,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`sendToDestination` | Permite o envio do email, a partir dos parâmetros `userId` e `offerId`
+`< sendToDestination >` | `< Permite o envio do email, a partir dos parâmetros `userId` e `offerId`>`
 
 # Nível 3
 
