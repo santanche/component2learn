@@ -174,7 +174,7 @@ RecebeProposta.
 
 ## Componente `<Preenchimento Cadastro>`
 
-> Realiza o cadastro e atualização dos dados de contato do usuário.
+> Realiza o cadastro e atualização dos dados de contato do usuário
 
 ![Componente](images/componente-preenchimento.png)
 
@@ -195,7 +195,7 @@ Método | Objetivo
 
 > Realiza o cadastro e atualização dos dados de contato do usuário.
 
-![Componente](images/componente-preenchimento.png)
+![Componente](images/componente-lancamento.png)
 
 ## Detalhamento das Interfaces
 
