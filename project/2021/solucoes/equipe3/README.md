@@ -158,23 +158,9 @@ RecebeProposta.
 
 * FAZER DETALHAMENTO
 
-## Componente `<Gerencia Cadastro>`
+## Componente `<Nome do Componente>`
 
-> Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
-
-![Componente](images/componente-cadastro.png)
-
-## Detalhamento das Interfaces
-
-### Interface `<nome da interface>`
-
-> Esse componente não possui interfaces providas.
-
-## Componente `<Preenchimento Cadastro>`
-
-> Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
-
-![Componente](images/componente-cadastro.png)
+![Componente](images/componente-1.png)
 
 ## Detalhamento das Interfaces
 
@@ -224,10 +210,10 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`< checkAvailability >` | `< Disponibiiza a existência de estoque através do parâmetro `offerId`>`
-`< checkRestockingDate >` | `< Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`>`
-`< checkStockQtty >` | `< Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`>`
-`< itensOn \Hold >` | `< Disponibiiza o número de itens com status on hold para [agamentos ainda não processados, através do parâmetro `offerId`>`
+`checkAvailability` | Disponibiiza a existência de estoque através do parâmetro `offerId`
+`checkRestockingDate` | Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`
+`checkStockQtty` | Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`
+`itensOn Hold` | Disponibiiza o número de itens com status on hold para pagamentos ainda não processados, através do parâmetro `offerId`
 
 ## Componente `<Processa Email>`
 
@@ -248,9 +234,9 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`< setTemplate >` | `< Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`>`
-`< setOffers >` | `< Permite a inserção de ofertas, pelo paraâmetro `offerId`>`
-`< setDestination >` | `< Permite a configuração de destinatário, atráves do parâmetro `userId`>`
+`setTemplate` | Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`
+`setOffers` | Permite a inserção de ofertas, pelo paraâmetro `offerId`
+`setDestination` | Permite a configuração de destinatário, atráves do parâmetro `userId`
 
 ### Interface `<IEnviaEmail>`
 
@@ -258,7 +244,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`< sendToDestination >` | `< Permite o envio do email, a partir dos parâmetros `userId` e `offerId`>`
+`sendToDestination` | Permite o envio do email, a partir dos parâmetros `userId` e `offerId`
 
 # Nível 3
 
