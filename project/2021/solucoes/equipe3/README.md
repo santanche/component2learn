@@ -158,9 +158,23 @@ RecebeProposta.
 
 * FAZER DETALHAMENTO
 
-## Componente `<Nome do Componente>`
+## Componente `<Gerencia Cadastro>`
 
-![Componente](images/componente-1.png)
+> Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
+
+![Componente](images/componente-cadastro.png)
+
+## Detalhamento das Interfaces
+
+### Interface `<nome da interface>`
+
+> Esse componente não possui interfaces providas.
+
+## Componente `<Preenchimento Cadastro>`
+
+> Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
+
+![Componente](images/componente-cadastro.png)
 
 ## Detalhamento das Interfaces
 
