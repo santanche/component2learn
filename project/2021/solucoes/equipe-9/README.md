@@ -1,3 +1,11 @@
+# Projeto `Componetização da Assinatura`
+
+# Equipe 9 <br>
+    - Carlos Eduardo Araujo dos Santos <br>
+    - Felipe Starling Medeiros <br>
+    - Marcelo das Cruz Salvador <br>
+    - Tiago Fernandes de Oliveira <br>
+
 # Diagrama do Nível 1 
 
 ## Diagrama Geral do Nível 1
