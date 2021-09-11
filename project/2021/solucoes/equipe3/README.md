@@ -186,9 +186,9 @@ RecebeProposta.
 
 Método | Objetivo
 -------| --------
-`requestInformation` | `< Retorna as informações armazenadas no cadastro do usuário>`
-`setRegistration` | `< Permite a inclusão de um novo usuário>`
-`setEditRegistration` | `< Permite a atualização/edição de um usuário através de seu `userId`>`
+`requestInformation` | Retorna as informações armazenadas no cadastro do usuário
+`setRegistration` | Permite a inclusão de um novo usuário
+`setEditRegistration` |  Permite a atualização/edição de um usuário através de seu `userId`
 
 
 ## Componente `<Seleciona Tipo Lançamento>`
@@ -205,9 +205,9 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`requestRelease` | `< Retorna os lançamentos de interesse do usuário>`
-`setRelease` | `< Permite a inclusão de lançamentos>`
-`setEditRelease` | `< Permite a atualização/edição de um lançamento através de seu `releaseId`>`
+`requestRelease` | Retorna os lançamentos de interesse do usuário
+`setRelease` | Permite a inclusão de lançamentos
+`setEditRelease` | Permite a atualização/edição de um lançamento através de seu `releaseId`
 
 
 
@@ -226,9 +226,9 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`requestOffer` | `< Retorna as ofertas que se enquadram no interesse do usuário>`
-`setOffer` | `< Permite a inclusão de novas ofertas de acordo com o perfil de interesse>`
-`setEditOffer` | `< Permite a atualização de ofertas através de seu `offerId`>`
+`requestOffer` | Retorna as ofertas que se enquadram no interesse do usuário
+`setOffer` | Permite a inclusão de novas ofertas de acordo com o perfil de interesse
+`setEditOffer` | Permite a atualização de ofertas através de seu `offerId`
 
 ~~~
 ~~~
@@ -268,10 +268,10 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`< checkAvailability >` | `< Disponibiiza a existência de estoque através do parâmetro `offerId`>`
-`< checkRestockingDate >` | `< Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`>`
-`< checkStockQtty >` | `< Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`>`
-`< itensOn \Hold >` | `< Disponibiiza o número de itens com status on hold para [agamentos ainda não processados, através do parâmetro `offerId`>`
+`checkAvailability` | Disponibiiza a existência de estoque através do parâmetro `offerId`
+`checkRestockingDate` | Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`
+`checkStockQtt` |  Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`
+`itensOnHold` | Disponibiiza o número de itens com status on hold para pagamentos ainda não processados, através do parâmetro `offerId`
 
 ## Componente `<Processa Email>`
 
@@ -292,9 +292,9 @@ As interfaces listadas são detalhadas a seguir:
 
 Método | Objetivo
 -------| --------
-`< setTemplate >` | `< Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`>`
-`< setOffers >` | `< Permite a inserção de ofertas, pelo paraâmetro `offerId`>`
-`< setDestination >` | `< Permite a configuração de destinatário, atráves do parâmetro `userId`>`
+`setTemplate` | Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`
+`setOffers` | Permite a inserção de ofertas, pelo paraâmetro `offerId`
+`setDestination` | Permite a configuração de destinatário, atráves do parâmetro `userId`
 
 ### Interface `<IEnviaEmail>`
 
@@ -302,7 +302,7 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`< sendToDestination >` | `< Permite o envio do email, a partir dos parâmetros `userId` e `offerId`>`
+`sendToDestination` | `Permite o envio do email, a partir dos parâmetros `userId` e `offerId`
 
 # Nível 3
 
