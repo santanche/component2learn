@@ -160,6 +160,12 @@ RecebeProposta.
 
 * O componente "Preenchimento Cadastro" recebe informações de "Estoque Ofertas" e adiciona no cadastro do usuário através da interface "IinputInformacoesUsuarios" para registrar interesse nas ofertas.
 
+* O componente "Preenchimento Cadastro" recebe informações de "Gerencia Cadastro" através da interface "IinputInformacoesUsuarios" para registrar o cadastro ou atualização de um usuário.
+
+* O componente "Seleciona Tipo Lançamento" recebe informações de "Gerencia Cadastro" através da interface "IinputLançamentosInteresses" para armazenar os lançamentos que correspondem ao perfil do usuário.
+
+* O componente "Seleciona Oferta" recebe informações de "Gerencia Cadastro" através da interface "IinputInteressesOfertas" para armazenar as ofertas que o usuário gostaria de receber. 
+
 ## Componente `<Gerencia Cadastro>`
 
 > Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
