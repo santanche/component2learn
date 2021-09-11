@@ -156,7 +156,9 @@ RecebeProposta.
 
 ### Detalhamento da interação de componentes
 
-* FAZER DETALHAMENTO
+* O componente "Gerencia Cadastro" recebe mensagens através das interfaces "IDadosOfertas", "IDadosCadastroCliente", "InputInformacoesUsuarios", InputInteressesLancamentos" e "InputInteresseOferta". O componente funciona como uma orquestradora das informações recebidas e realiza a interface com o "Controller Entrega Oferta e Lançamento de Produtos".
+
+* O componente "Preenchimento Cadastro" recebe informações de "Estoque Ofertas" e adiciona no cadastro do usuário através da interface "IinputInformacoesUsuarios" para registrar interesse nas ofertas.
 
 ## Componente `<Gerencia Cadastro>`
 
