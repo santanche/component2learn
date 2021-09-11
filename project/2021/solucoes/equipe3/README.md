@@ -166,8 +166,6 @@ RecebeProposta.
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
-
 > Esse componente não possui interfaces providas.
 
 
