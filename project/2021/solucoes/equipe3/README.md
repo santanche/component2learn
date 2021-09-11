@@ -164,6 +164,14 @@ RecebeProposta.
 
 * O componente "Seleciona Oferta" recebe informações de "Gerencia Cadastro" através da interface "IinputInteressesOfertas" para armazenar as ofertas que o usuário gostaria de receber. 
 
+* O componente "Gerencia Estoque" recebe informações de "Gerencia Ofertas Produtos" através da interface "IVerificaDisponibilidade" para confirmar se o produto está disponível e contabilizar a quantidade.
+
+* O componente "Processa E-mail" recebe informações de "Gerencia Ofertas Produtos" através da interface "IPreparaEmail" para a montagem do layout da comunicação sobre as ofertas.
+
+* O componente "Processa E-mail" recebe informações de "Gerencia Ofertas Produtos" através da interface "IEnviaEmail" com o objetivo de disponibilizar a informação das ofertas.
+
+
+
 ## Componente `<Gerencia Cadastro>`
 
 > Gerencia o cadastro de usuários desde seus dados como e-mail e os interesses para recomendações de lançamentos e ofertas 
