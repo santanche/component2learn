@@ -170,11 +170,13 @@ RecebeProposta.
 
 > Esse componente não possui interfaces providas.
 
+
+
 ## Componente `<Preenchimento Cadastro>`
 
 > Realiza o cadastro e atualização dos dados de contato do usuário.
 
-![Componente](images/componente-cadastro.png)
+![Componente](images/componente-preenchimento.png)
 
 ## Detalhamento das Interfaces
 
@@ -184,9 +186,29 @@ RecebeProposta.
 
 Método | Objetivo
 -------| --------
-`requestInformation` | `< Retorna as informações armazenadas no cadastro do usuário.>`
-`setRegistration` | `< Permite a inclusão de um novo usuário.>`
-`setEditRegistration` | `< Permite a atualização/edição de um usuário através de seu `userId`.>`
+`requestInformation` | `< Retorna as informações armazenadas no cadastro do usuário>`
+`setRegistration` | `< Permite a inclusão de um novo usuário>`
+`setEditRegistration` | `< Permite a atualização/edição de um usuário através de seu `userId`>`
+
+
+## Componente `<Seleciona Tipo Lançamento>`
+
+> Realiza o cadastro e atualização dos dados de contato do usuário.
+
+![Componente](images/componente-preenchimento.png)
+
+## Detalhamento das Interfaces
+
+### Interface `<IInputInformaçõesUsuarios>`
+
+> Inserir informações de contato do usuário
+
+Método | Objetivo
+-------| --------
+`requestInformation` | `< Retorna as informações armazenadas no cadastro do usuário>`
+`setRegistration` | `< Permite a inclusão de um novo usuário>`
+`setEditRegistration` | `< Permite a atualização/edição de um usuário através de seu `userId`>`
+
 ~~~
 ~~~
 
