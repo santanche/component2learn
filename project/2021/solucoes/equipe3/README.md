@@ -155,6 +155,14 @@ RecebeProposta.
 > ![Modelo de diagrama no nível 2](images/diagrama-nivel-2.png)
 
 ### Detalhamento da interação de componentes
+
+* FAZER DETALHAMENTO
+
+## Componente `<Nome do Componente>`
+
+![Componente](images/componente-1.png)
+
+
 ~~~
 ~~~
 # Nível 3
