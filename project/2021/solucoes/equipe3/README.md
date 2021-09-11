@@ -174,6 +174,78 @@ Método | Objetivo
 `requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
 ~~~
 ~~~
+
+## Componente `<Gerencia Oferta Produtos>`
+
+> Ele verifica se as ofertas tem estoque e caso afirmativo, dispara e-mails para os assinantes
+
+![Componente](images/component1.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+> Esse componente não tem interfaces providas
+
+
+## Componente `<Gerencia Estoque>`
+
+> Ele gerencia o estoque, sabe o número de unidades em estoque e datas de reabastecimento
+
+![Componente](images/component2.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `<IVerificaDisponibilidade>`
+
+> Essa interface é responsável por enviar a disponibilidade de estoque da Oferta
+
+Método | Objetivo
+-------| --------
+`< checkAvailability >` | `< Disponibiiza a existência de estoque através do parâmetro `offerId`>`
+`< checkRestockingDate >` | `< Disponibiiza data de restoque para itens sem estoque, através do parâmetro `offerId`>`
+`< checkStockQtty >` | `< Disponibiiza o número de itens em estoque para itens sem estoque, através do parâmetro `offerId`>`
+`< itensOn \Hold >` | `< Disponibiiza o número de itens com status on hold para [agamentos ainda não processados, através do parâmetro `offerId`>`
+
+## Componente `<Processa Email>`
+
+> Grenecia o envio de emails de ofertas
+
+![Componente](images/component3.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `<IPreparaEmail>`
+
+> Essa interface é responsável por preparar o e-mail com as Ofertas
+
+Método | Objetivo
+-------| --------
+`< setTemplate >` | `< Permite a configuração do Template, a partir do parâmetro `htmlEmailBody`>`
+`< setOffers >` | `< Permite a inserção de ofertas, pelo paraâmetro `offerId`>`
+`< setDestination >` | `< Permite a configuração de destinatário, atráves do parâmetro `userId`>`
+
+### Interface `<IEnviaEmail>`
+
+> Essa interface é responsável por enviar a disponibilidade de estoque da Oferta
+
+Método | Objetivo
+-------| --------
+`< sendToDestination >` | `< Permite o envio do email, a partir dos parâmetros `userId` e `offerId`>`
+
 # Nível 3
 
 > Interface App Inventor
