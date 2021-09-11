@@ -14,25 +14,25 @@
 
 * O componente `Customer` é ainda responsável por consolidar a compra do cliente e se comunica com o componente `Pagamento` onde é realizada a transação financeira, que por sua vez devolve para o componente `Customer` o status do pagamento.
 
+## Detalhamento das Interfaces
+
 ### Interface `Assinatura`
 
 > Interface de assinatura para ser acionada pelo usuário.
 
-![Diagrama de Interface de Mensagens](images/interface001.JPG)
+![Diagrama de Interface de Assinatura](images/interface001.JPG)
 
 ### Interface `Customer`
 
-> Interface de Customer que faz pedido de assinttura e dispara pagamento.
+> Interface de Customer que faz pedido de assinatura e dispara pagamento.
 
-![Diagrama de Interface de Mensagens](images/interface002.JPG)
+![Diagrama de Interface de Customer](images/interface002.JPG)
 
 ### Interface `Pagamento`
 
 > Interface de Pagamento pode conectar-se com Assinatura e Customer.
 
-![Diagrama de Interface de Mensagens](images/interface003.JPG)
-
-
+![Diagrama de Interface de Pagamento](images/interface003.JPG)
 # Diagrama do Nível 2
 
 > ![Diagrama no nível 2](images/N2-diagrama.png)
