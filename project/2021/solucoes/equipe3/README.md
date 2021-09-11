@@ -179,7 +179,7 @@ Método | Objetivo
 
 > Ele verifica se as ofertas tem estoque e caso afirmativo, dispara e-mails para os assinantes
 
-![Componente](images/component1.png)
+![Componente](images/component-1.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
@@ -195,7 +195,7 @@ As interfaces listadas são detalhadas a seguir:
 
 > Ele gerencia o estoque, sabe o número de unidades em estoque e datas de reabastecimento
 
-![Componente](images/component2.png)
+![Componente](images/component-2.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
