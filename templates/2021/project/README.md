@@ -28,6 +28,9 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 # Equipe
 * `<nome completo>`
 
+# Projeto GitHub Original
+* `<link para o GitHub original do grupo>`
+
 # Nível 1
 
 > Apresente aqui o detalhamento do Nível 1 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
