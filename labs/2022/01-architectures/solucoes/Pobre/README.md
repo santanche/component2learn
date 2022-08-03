@@ -1,12 +1,4 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-~~~
+# Apresentação do Lab01 - Estilos Arquiteturais
 
 # Aluno
 * `Alejandro Boidi Rico`
@@ -75,13 +67,17 @@ Estrutura de pastas:
 <dcc-aggregator topic="aggregate/design" quantity="3" subscribe="rss/design">
 </dcc-aggregator>
 
-<dcc-button label="Design Próxima" topic="next/design">
+<dcc-button label="Start" topic="start/timer">
 </dcc-button>
 
-<dcc-button label="Ciências Próxima" topic="next/science">
-</dcc-button>
+<dcc-timer cycles="10" interval="1000" topic="next/count" subscribe="start/timer:start">
+</dcc-timer>
+<dcc-timer cycles="10" interval="2000" topic="next/count" subscribe="start/timer:start">
+</dcc-timer>
+<dcc-timer cycles="10" interval="2000" topic="next/count" subscribe="start/timer:start">
+</dcc-timer>
 
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="News: " subscribe="rss/science:speech" rate="1s">
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="News: " subscribe="rss/science:speech">
 </dcc-lively-talk>
 
 <dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Compact: " subscribe="aggregate/science:speech">
