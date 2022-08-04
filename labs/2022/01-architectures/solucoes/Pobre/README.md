@@ -55,40 +55,32 @@
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~html
-<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/science:next" topic="rss/science">
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="nextScience/rss:next" topic="rss/science">
+</dcc-rss>
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="nextDesign/rss:next" topic="rss/design">
 </dcc-rss>
 
-<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/design:next" topic="rss/design">
-</dcc-rss>
-
-<dcc-aggregator topic="aggregate/science" quantity="3" subscribe="rss/science">
+<dcc-aggregator topic="aggregate/news" quantity="3" subscribe="rss/#">
 </dcc-aggregator>
 
-<dcc-aggregator topic="aggregate/design" quantity="3" subscribe="rss/design">
-</dcc-aggregator>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" subscribe="rss/science:speech"></dcc-lively-talk>
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png"  subscribe="rss/design:speech">
+</dcc-lively-talk>
+<dcc-lively-talk subscribe="aggregate/news:speech"></dcc-lively-talk>
 
-<dcc-button label="Start" topic="start/timer">
+<dcc-timer interval="1000" topic="nextScience/rss" subscribe="start/feed:start">
+</dcc-timer>
+<dcc-timer interval="2000" topic="nextDesign/rss" subscribe="start/feed:start">
+</dcc-timer>
+<dcc-timer interval="2000" topic="nextAgregado/rss" subscribe="start/feed:start">
+</dcc-timer>
+
+<dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
-
-<dcc-timer cycles="10" interval="1000" topic="next/count" subscribe="start/timer:start">
-</dcc-timer>
-<dcc-timer cycles="10" interval="2000" topic="next/count" subscribe="start/timer:start">
-</dcc-timer>
-<dcc-timer cycles="10" interval="2000" topic="next/count" subscribe="start/timer:start">
-</dcc-timer>
-
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="News: " subscribe="rss/science:speech">
-</dcc-lively-talk>
-
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Compact: " subscribe="aggregate/science:speech">
-</dcc-lively-talk>
-
-<dcc-lively-talk speech="News :" subscribe="rss/design:speech">
-</dcc-lively-talk>
 ~~~
 
+![Tópico 03](images/topico_03.png)
+
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
->
-> Escreva aqui o parágrafo de breve discussão.
+
+![Web Components](images/tarefa04_dataflow.drawio.svg)
