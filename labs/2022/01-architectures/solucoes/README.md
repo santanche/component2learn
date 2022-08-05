@@ -117,3 +117,4 @@ speech="Science + Design Compact: ">
 ## Tarefa 4 - Web Components Dataflow
 ![Diagrama](images/tarefa4.png)
 
+Para os componentes serem intercambiáveis, foi projetado que todos usariam a mesma interface para entrada de dados, definida neste contexto como Values. Foi considerado tambem, que apesar dos componentes usarem a mesma interface para troca de mensagens, cada componente é responsável pela sua validação, como por exemplo um gráfico de dispersão não pode apresentar mais de 2 colunas ou valores não númericos nos dados de apresentação.
