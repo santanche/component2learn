@@ -37,7 +37,7 @@ Estrutura de pastas:
 
 > Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
 
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/exercicio1.png)
 
 ## Tarefa 2 - Web Components e RSS
 
@@ -66,6 +66,8 @@ Estrutura de pastas:
 <dcc-button label="Design Próxima" topic="next/rss/design">
 </dcc-button>
 ~~~
+
+![Composition Screenshot](images/exercicio2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
@@ -100,6 +102,8 @@ Estrutura de pastas:
 <dcc-button label="Inicia" topic="start/feed">
 </dcc-button>
 ~~~
+
+![Composition Screenshot](images/exercicio3.png)
 
 ## Tarefa 4 - Web Components Dataflow
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
