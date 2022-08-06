@@ -35,8 +35,6 @@ Estrutura de pastas:
   <dcc-lively-talk speech="Eu ouvi sobre: " subscribe="noticia/#:speech">
 ~~~
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
-
 ![Composition Screenshot](images/exercicio1.png)
 
 ## Tarefa 2 - Web Components e RSS
