@@ -26,7 +26,7 @@
 </dcc-lively-talk>
 ~~~
 
-![Composition Screenshot](../images/dcc-composition.png)
+![Composition Screenshot](images/dcc-composition.png)
 
 ## Tarefa 2 - Web Components e RSS
 ~~~html
@@ -57,7 +57,7 @@
 </dcc-lively-talk>
 ~~~
 
-![RSS Screenshot](../images/rss.png)
+![RSS Screenshot](images/rss.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~html
@@ -92,11 +92,11 @@
 </dcc-lively-talk>
 ~~~
 
-![Timer Screenshot](../images/timer.png)
+![Timer Screenshot](images/timer.png)
 
 ## Tarefa 4 - Web Components Dataflow
 
-![Diagrama Venda](../images/web-composition.png)
+![Diagrama Venda](images/web-composition.png)
 
 > Para que os componentes sejam intercambiáveis, eles precisam receber e enviar messagens seguindo sempre o mesmo schema. Dessa forma, eles sempre conseguirão ler e processar as messagens independente de quem as emitiu. No exemplo do enunciado, o componente de leitura CSV lê o arquivo e emite uma mensagem do tipo zumbi para cada linha do arquivo. Todos os zumbis seguirâo o mesmo schema das colunas do arquivo. O componente de filtro recebe as mensagem mas só passa a diante as mensagens em que o zumbi for do gênero feminino. O componente de projeção recebe os zumbis do gênero feminino e limpa todos os campos a não ser altura e peso. O componente de criação do gráfico também recebe zumbis e monta o gráfico de altura x peso.
 > 
