@@ -1,15 +1,6 @@
 # Modelo para Apresentação do Lab01 - Estilos Arquiteturais
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-~~~
-
 # Aluno
-* `Rafael Gonçalves Vastag - RG: 52107309-1`
+* `Rafael Gonçalves Vastag - RA: 2022601254`
 
 ## Tarefa 1 - Web Components e Tópicos
 
