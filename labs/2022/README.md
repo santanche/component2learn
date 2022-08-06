@@ -3,7 +3,6 @@
 ## Laboratórios
 
 * [Laboratório 1](01-architectures/)
-* [Laboratório 2](02-design/)
 
 ## Passos para submissão dos Laboratórios.
 
