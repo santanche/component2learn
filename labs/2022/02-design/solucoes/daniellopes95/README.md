@@ -1,4 +1,4 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
+# Modelo para Apresentação do Lab02 - Aprendizagem de Máquina no Brechó Online
 
 Estrutura de pastas:
 
@@ -9,25 +9,33 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Daniel Francisco Ferreira Lopes`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
 > Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Cliente
+  * idade
+  * genero
+  * interesses
+  * ultimosAcessos
+  * regiao
+* Venda
+  * produto
+  * quantidade
+  * preco
+* LogBusca
+  * descricao
 
 ### Recomendação
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Produto
+  * descricao
+  * categoria
+  * valor
+  * marca
+  * estadoProduto
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
