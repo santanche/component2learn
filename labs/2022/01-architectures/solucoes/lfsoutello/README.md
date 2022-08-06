@@ -151,7 +151,23 @@
 ![Composition Screenshot](images/tarefa-3.png)
 
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
+
+![Diagrama Venda](images/dataflow.png)
 >
-> Escreva aqui o parágrafo de breve discussão.
+> Para que os componentes sejam intercambiáveis, eles precisam receber e enviar messagens seguindo sempre o mesmo schema.
+> Dessa forma, eles sempre saberam ler, processar as messagens independente de quem emitiu a mensagem.
+> No exemplo do enunciado, o componente de leitura CSV lê o arquivo e emite uma mensagem do tipo zumbi para cada linha do arquivo.
+> Todos os zumbis seguirâo o mesmo schema das colunas do arquivo. O componente de filtro recebe as mensagem mas só passa a 
+> diante as mensagens em que o zumbi for do gênero feminino. O componente de projeção recebe os zumbis do gênero feminino
+> e limpa todos os campos a não ser altura e peso. O componente de criação do gráfico também recebe zumbis e monta o gráfico
+> de altura x peso.
+> 
+> Dessa forma podemos remover componentes como por exemplo tirar o componente de filtro. Nessa caso o componente de filtro
+> enviaria mensagens de zumbis direto para o componente de de criação de gráfico, que usaria apenas a altura e o peso para montar o gráfico.
+> 
+> Podemos trocar o componente de filtro com o de projeção e também não afeta a conectividade entre os componentes.
+> Nesse caso o componente de leitura CSV enviaria os zumbis para o componente de projeção, que limparia os dados dos zumbis
+> a não ser altura e peso e enviaria para o componente de filtro. Como nenhum dos zumbis recebidos pelo componente de filtro é do
+> gênero feminino, ela não passaria nenhuma mensagem a diante para o componente de criação de gráfico. O fluxo nessa caso seria
+> interrompido por uma questão lógico, mas, ainda assim, todos os componentes sabem se comunicar entre si.
+> 
