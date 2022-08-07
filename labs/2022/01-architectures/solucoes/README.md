@@ -116,4 +116,6 @@ Estrutura de pastas:
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
 ![Diagrama Venda](images/web-composition.png)
 >
-> Escreva aqui o parágrafo de breve discussão.
+> Os campos de female, Height, Weight, Height x, Weight Y passam pora os componentes por messages no barramento. 
+
+![Composition Screenshot](data_orange.png)
