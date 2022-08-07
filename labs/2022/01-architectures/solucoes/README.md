@@ -80,6 +80,38 @@ Estrutura de pastas:
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
 
+~~~html
+<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
+</dcc-rss>
+
+<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/design:next" topic="rss/design">
+</dcc-rss>
+
+<dcc-aggregator topic="aggregate" quantity="3">
+  <subscribe-dcc topic="rss/science"></subscribe-dcc>
+  <subscribe-dcc topic="rss/design"></subscribe-dcc>
+</dcc-aggregator>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" subscribe="+/science:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" subscribe="+/design:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk subscribe="aggregate:speech">
+</dcc-lively-talk>
+
+<dcc-timer cycles="4" interval="1000" topic="next/rss/science" subscribe="timer/start:start">
+</dcc-timer>
+<dcc-timer cycles="2" interval="2000" topic="next/rss/design" subscribe="timer/start:start">
+</dcc-timer>
+
+<dcc-button label="Inicia" topic="timer/start" >
+</dcc-button>
+~~~
+
+
+
 ## Tarefa 4 - Web Components Dataflow
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
 ![Diagrama Venda](images/web-composition.png)
