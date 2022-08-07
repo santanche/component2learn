@@ -104,7 +104,7 @@ Estrutura de pastas:
 ![Composition Screenshot](images/exercicio3.png)
 
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
->
-> Escreva aqui o parágrafo de breve discussão.
+
+![Composition Screenshot](images/exercicio4.png)
+
+> O primeiro componente da interface é a entrada da base de dados "Zombie Survey" seguido pela mensagem apresentando a base como um todo. O segundo componente é a seleção do gênero feminino dos zumbis seguido da mensagem apresentando os zumbis femininos. O terceiro componente é a projeção de altura e peso dos zumbis femininos seguido da mensagem contento essa projeção. E por fim, o quarto componente é gráfico de disperção gerado a partir da seleção e projeção da interface.
