@@ -16,20 +16,26 @@ Estrutura de pastas:
 > Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
 
 ~~~html
-<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss:next" topic="rss/science">
-</dcc-rss>
-
-<dcc-aggregator topic="aggregate/science" quantity="3" subscribe="rss/science">
-</dcc-aggregator>
-
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="News: " subscribe="rss/science:speech">
-</dcc-lively-talk>
-
-<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="Compact: " subscribe="aggregate/science:speech">
-</dcc-lively-talk>
-
-<dcc-button label="Next Item" topic="next/rss">
+<dcc-button label="Mundo Política" topic="news/world/politic" message="ONU is on crisis with afghanistan">
 </dcc-button>
+
+<dcc-button label="Brasil Política" topic="news/brazil/politic" message="Brazil reopens trades">
+</dcc-button>
+
+<dcc-button label="Brasil Dinos" topic="news/brazil/dinosaur" message="Brazilian Dinosaur??">
+</dcc-button>
+
+<dcc-button label="Bahia Dinos" topic="news/bahia/dinosaur" message="Nordeste Dinousar?">
+</dcc-button>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/doctor.png" speech="I heard about: " subscribe="#/politic:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="I heard about: " subscribe="news/brazil/#:speech">
+</dcc-lively-talk>
+
+<dcc-lively-talk speech="I heard about: " subscribe="news/#:speech">
+</dcc-lively-talk>
 ~~~
 
 > Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
