@@ -1,11 +1,18 @@
 # Modelo para Apresentação do Lab01 - Estilos Arquiteturais
 
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+└── images     <- arquivos de imagens usadas no documento
+~~~
 
 # Aluno
 * Giuliana Cirelli - RG 29.418.252-4
 
 ## Tarefa 1 - Web Components e Tópicos
-~~~
+
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="Noticia1">
 </dcc-button>
 <dcc-button label=" Brasil Política" topic="noticia/brasil/politica" message="Noticia2">
@@ -23,12 +30,11 @@
 
   <dcc-lively-talk speech="I heard about: " subscribe="noticia/+/+:speech">
   </dcc-lively-talk>
-~~~
 
-![Composition Screenshot](lab1-tarefa1.png)
+
+![Composition Screenshot](images/lab1-tarefa1.png.png)
 
 ## Tarefa 2 - Web Components e RSS
-~~~
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss_c:next" topic="rss/science">
 </dcc-rss>
 
@@ -52,11 +58,10 @@
 </dcc-button>
 <dcc-button label="Designs Proxima" topic="next/rss_d">
 </dcc-button>
-~~~
-![Composition Screenshot](lab1-tarefa2.png)
+
+![Composition Screenshot](images/lab1-tarefa2.png.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
-~~~
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss_c:next" topic="rss/science">
 </dcc-rss>
 
@@ -83,11 +88,12 @@
 
 <dcc-button label="Inicia" topic="start/timer">
 </dcc-button>
-~~~
-![Composition Screenshot](lab1-tarefa3.png)
+
+![Composition Screenshot](images/lab1-tarefa3.png.png)
 
 ## Tarefa 4 - Web Components Dataflow
+> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
+![Diagrama de componentes](images/lab1-tarefa4.png.png)
 
-![Composition Screenshot](lab1-tarefa4.png)
-
-Organizei a interface para coletar os dados brutos do arquivo CVS, filtar e depois projetar ou plotar o resultado no gráfico de disperção. Para obtermos componentes intercambiáveis, precisamos de dados padronizados. Ou seja, o input e o output de cada componente da interface deve ser o mesmo.
+Realizado em dupla: Giuliana Cirelli e Mayara Fernandes
+Organizamos projetar ou plotar o resultado no gráfico de disperção. Para obtermos componentes intercambiáveis, precisamos de dados padronizados. Ou seja, o input e o output de cada componente da interface deve ser o mesmo.
