@@ -1,12 +1,5 @@
 # Modelo para Apresentação do Lab01 - Estilos Arquiteturais
 
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-~~~
 
 # Aluno
 * Giuliana Cirelli - RG 29.418.252-4
@@ -32,7 +25,7 @@ Estrutura de pastas:
   </dcc-lively-talk>
 ~~~
 
-![Composition Screenshot](images/lab1-tarefa1.png.png)
+![Composition Screenshot](lab1-tarefa1.png.png)
 
 ## Tarefa 2 - Web Components e RSS
 ~~~
@@ -60,7 +53,7 @@ Estrutura de pastas:
 <dcc-button label="Designs Proxima" topic="next/rss_d">
 </dcc-button>
 ~~~
-![Composition Screenshot](images/lab1-tarefa2.png.png)
+![Composition Screenshot](lab1-tarefa2.png.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~
@@ -91,10 +84,10 @@ Estrutura de pastas:
 <dcc-button label="Inicia" topic="start/timer">
 </dcc-button>
 ~~~
-![Composition Screenshot](images/lab1-tarefa3.png.png)
+![Composition Screenshot](lab1-tarefa3.png.png)
 
 ## Tarefa 4 - Web Components Dataflow
 
-![Diagrama de componentes](images/lab1-tarefa4.png.png)
+![Diagrama de componentes](lab1-tarefa4.png.png)
 
 Organizei a interface para coletar os dados brutos do arquivo CVS, filtar e depois projetar ou plotar o resultado no gráfico de disperção. Para obtermos componentes intercambiáveis, precisamos de dados padronizados. Ou seja, o input e o output de cada componente da interface deve ser o mesmo.
