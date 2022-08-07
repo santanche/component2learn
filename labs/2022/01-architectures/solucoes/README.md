@@ -5,7 +5,7 @@ Estrutura de pastas:
 ~~~
 ├── README.md  <- arquivo apresentando a tarefa
 │
-└── images     <- arquivos de imagens usadas no documento
+└── images     <- dcc-composition.png, data_orange.png
 ~~~
 
 # Aluno
