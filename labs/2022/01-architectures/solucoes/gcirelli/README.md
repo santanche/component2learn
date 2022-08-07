@@ -25,7 +25,7 @@
   </dcc-lively-talk>
 ~~~
 
-![Composition Screenshot](lab1-tarefa1.png.png)
+![Composition Screenshot](lab1-tarefa1.png)
 
 ## Tarefa 2 - Web Components e RSS
 ~~~
@@ -53,7 +53,7 @@
 <dcc-button label="Designs Proxima" topic="next/rss_d">
 </dcc-button>
 ~~~
-![Composition Screenshot](lab1-tarefa2.png.png)
+![Composition Screenshot](lab1-tarefa2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~
@@ -84,10 +84,10 @@
 <dcc-button label="Inicia" topic="start/timer">
 </dcc-button>
 ~~~
-![Composition Screenshot](lab1-tarefa3.png.png)
+![Composition Screenshot](lab1-tarefa3.png)
 
 ## Tarefa 4 - Web Components Dataflow
 
-![Diagrama de componentes](lab 1-tarefa4.png.png)
+![Diagrama de componentes](lab 1-tarefa4.png)
 
 Organizei a interface para coletar os dados brutos do arquivo CVS, filtar e depois projetar ou plotar o resultado no gráfico de disperção. Para obtermos componentes intercambiáveis, precisamos de dados padronizados. Ou seja, o input e o output de cada componente da interface deve ser o mesmo.
