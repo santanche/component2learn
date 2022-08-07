@@ -88,6 +88,6 @@
 
 ## Tarefa 4 - Web Components Dataflow
 
-![Composition Screenshot](lab 1-tarefa4.png)
+![Composition Screenshot](lab1-tarefa4.png)
 
 Organizei a interface para coletar os dados brutos do arquivo CVS, filtar e depois projetar ou plotar o resultado no gráfico de disperção. Para obtermos componentes intercambiáveis, precisamos de dados padronizados. Ou seja, o input e o output de cada componente da interface deve ser o mesmo.
