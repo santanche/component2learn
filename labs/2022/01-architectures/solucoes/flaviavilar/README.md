@@ -52,7 +52,7 @@ Estrutura de pastas:
 
 > Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
 
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/image1.png)
 
 ## Tarefa 2 - Web Components e RSS
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
@@ -94,7 +94,7 @@ Estrutura de pastas:
 </dcc-lively-talk>
 ~~~
 
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/image2.png)
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
@@ -144,11 +144,11 @@ Estrutura de pastas:
 </dcc-button>
 ~~~
 
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/image3.png)
 
 ## Tarefa 4 - Web Components Dataflow
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
+![Diagrama Venda](images/image4.png)
 >
 > O componente de Zombie Survey envia os dados completos dos zumbis. Os dados passam por um filtro em que apenas os zumbis do sexo feminino são 
 > considerados, junto com sua altura e peso. Posteriormente esses dados passam para o componente gráfico, que consegue fazer  a visualizaçâo dos 
