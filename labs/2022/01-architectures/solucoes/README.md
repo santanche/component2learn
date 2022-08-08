@@ -109,3 +109,4 @@ Estrutura de pastas:
 ![Diagrama Venda](images/web-composition.png)
 >
 > Escreva aqui o parágrafo de breve discussão.
+Utilizamos dados padronizados para obtermos componentes intercambiáveis, dessa forma cada componente recebe os dados, realiza seu processamento e envia o resultado para o próximo.
