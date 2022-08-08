@@ -82,7 +82,8 @@ Estrutura de pastas:
 ![Composition Screenshot](images/lab1-tarefa3.png)
 
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
+
+![Diagrama Venda](images/lab1-tarefa4.png)
 >
-> Escreva aqui o parágrafo de breve discussão.
+Os componentes foram organizados de forma que possam receber e emitir mensagens de formato igual (Tabela), de forma que possa ser criado um fluxo independente da ordem em que esses componentes são organizados. Esse modelo simplificado não contempla os inputs necessários aos componentes para que possam realizar suas operações, mas padronizando o formato das mensagens, o sistema se torna mais versátil e intuitivo para os usuários.
+
