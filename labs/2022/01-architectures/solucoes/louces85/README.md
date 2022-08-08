@@ -82,7 +82,7 @@
 ![Composition Screenshot](images/tarefa03.png)
 
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/tafera04.png)
->
+
+![Composition Screenshot](images/tarefa04.png)
+
 > ...
