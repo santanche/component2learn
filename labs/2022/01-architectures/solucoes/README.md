@@ -29,7 +29,7 @@ Estrutura de pastas:
 <dcc-button label="Bahia Dinos" topic="noticia/bahia/dinos" message="Dinossauro do Acaraje faz sucesso"></dcc-button>
 ~~~
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
+![solução lab 1 componentes at1](https://user-images.githubusercontent.com/92058020/183501078-f6b57927-87e9-480f-a51d-b5fea4dee1e6.PNG)
 
 ![Composition Screenshot](images/dcc-composition.png)
 
@@ -53,6 +53,9 @@ Estrutura de pastas:
 <dcc-lively-talk speech="News: " subscribe="rss/design:speech"></dcc-lively-talk>
 
 ~~~
+
+![solução lab 1 componentes at2](https://user-images.githubusercontent.com/92058020/183501101-5c5823ef-be60-4a0a-ad8e-0dd638ca1021.PNG)
+
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 ~~~html
@@ -81,6 +84,9 @@ Estrutura de pastas:
 <dcc-rss source="https://www.wired.com/category/design/feed" subscribe="aggregatedtimer/next/rss:next" topic="rss/design"></dcc-rss>
 
 ~~~
+
+![solução lab 1 componentes at3](https://user-images.githubusercontent.com/92058020/183501125-a4d8e713-8b30-43fe-8fd1-3234af31d05c.PNG)
+
 
 ## Tarefa 4 - Web Components Dataflow
 ![solução lab 1 componentes](https://user-images.githubusercontent.com/92058020/183490847-9383082c-a3ac-4fdd-8337-5b7c4a137528.PNG)
