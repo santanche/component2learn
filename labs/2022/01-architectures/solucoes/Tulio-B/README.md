@@ -58,7 +58,7 @@
 ~~~
 
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
->
-> Escreva aqui o parágrafo de breve discussão.
+
+A ideia é que cada componente utiliza os dados de entrada, faz algum processamento, e envia o dado processado para o próximo componente na pipeline. É possível incluir, por exemplo, múltiplos filtros ou mesmo retirar todos os filtros. Também é possível incluir na pipeline um componente recém desenvolvido - como exemplo, podemos considerar um componente que calcula o BMI de um zumbi a partir de seu peso e altura.
+
+![image](imagens/Componentes.png)
