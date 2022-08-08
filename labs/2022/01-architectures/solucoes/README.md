@@ -9,7 +9,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* Lucas Lopes Moreira
 
 ## Tarefa 1 - Web Components e Tópicos
 
