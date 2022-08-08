@@ -1,120 +1,77 @@
-# Lab01 - Estilos Arquiteturais
+# Estilo Arquitetural I - Mensagens, Eventos e Barramento
+*Lab de Componentização e Reúso de Software 30/07/2022*
 
-# Aluno
-* `Guilherme Cavassan - RA: 2022601122`
+Esse lab será voltado a componentes na Web usando a implementação do Digital Content Component (DCC).
+
+Utilize o ambiente [DCC Playground](https://harena-lab.github.io/harena-docs/js/harena/dccs/playground/) testar a sua resposta, em seguida, copie e cole a resposta na respectiva resposta.
+
+Utilize o ambiente da seguinte maneira:
+1. Escreva o código em HTML no painel `Editor`
+2. Clique no botão `Render` para que ele execute o código
+3. Veja o resultado da execução no painel `Result`
+4. Mensagens enviadas por componentes podem ser vistas no painel `Messages`
+
+Para esta atividade, há um [Tutorial de DCCs](https://harena-lab.github.io/harena-docs/dccs/tutorial/) e uma [Referência](https://harena-lab.github.io/harena-docs/dccs/reference/) disponíveis para a atividade.
 
 ## Tarefa 1 - Web Components e Tópicos
-~~~html
-<dcc-button label="Mundo Política" topic="noticia/mundo/politica"
-message="Mundo Política">
-</dcc-button>
 
-<dcc-button label="Brasil Política" topic="noticia/brasil/politica"
-message="Brasil Política">
-</dcc-button>
+Crie quatro botões com rótulos `Mundo Política`, `Brasil Política`, `Brasil Dinos` e `Bahia Dinos` que, ao serem clicados, publiquem notícias nos seguintes tópicos (mensagem com conteúdo a sua escolha):
+* `noticia/mundo/politica`
+* `noticia/brasil/politica`
+* `noticia/brasil/dinos`
+* `noticia/bahia/dinos`
 
+O segundo nível do tópico indica a região da notícia e o terceiro o assunto. Associe a cada tópico o texto de uma mensagem de sua criação.
 
-<dcc-button label="Brasil Dinos" topic="noticia/brasil/dinos" message="Brasil
-Dinos">
-</dcc-button>
-
-<dcc-button label="Bahia Dinos" topic="noticia/bahia/dinos" message="Bahia
-Dinos">
-</dcc-button>
-
-
-<dcc-lively-talk subscribe="noticia/#/politica:speech"
-character="https://harena-lab.github.io/harena-docs/dccs/reference/images/doctor.png">
-</dcc-lively-talk>
-
-<dcc-lively-talk subscribe="noticia/brasil/#:speech"
-character="https://harena-lab.github.io/harena-docs/dccs/reference/images/nurse.png">
-</dcc-lively-talk>
-
-<dcc-lively-talk subscribe="noticia/#:speech" >
-</dcc-lively-talk>
-~~~
-
-![Screenshot](images/tarefa1.png)
+Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) notícias publicadas pelos botões, conforme os seguintes critérios:
+* `doutor` - mostra notícias sobre política (independentemente de região);
+* `enfermeira` - mostra notícias cuja região é o Brasil (independentemente do assunto);
+* `dino` - mostra todas as notícias.
 
 ## Tarefa 2 - Web Components e RSS
-~~~html
-<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/sci:next" topic="rss/sci">
-</dcc-rss>
 
-<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/dsg:next" topic="rss/dsg">
-</dcc-rss>
+Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
+  * canal 1 (ciência): https://www.wired.com/category/science/feed
+  * canal 2 (design): https://www.wired.com/category/design/feed
 
-<dcc-aggregator topic="aggregate/sci" quantity="4" subscribe="rss/sci">
-</dcc-aggregator>
+Crie um agregador de mensagens usando o `<dcc-aggregator>` para notícias de ciência em grupos de quatro.
 
+Apresente um botão com o rótulo `Ciências Próxima` que carregue o próximo RSS de Ciência.
 
-<dcc-button label="Ciências Próxima" topic="next/rss/sci">
-</dcc-button>
-<dcc-button label="Design Próxima" topic="next/rss/dsg">
-</dcc-button>
+Apresente um botão com o rótulo `Design Próxima` que carregue o próximo RSS de Design.
 
-
-<dcc-lively-talk subscribe="aggregate/sci:speech"
-speech="Science Compact: "
-character="https://harena-lab.github.io/harena-docs/dccs/reference/images/doctor.png">
-</dcc-lively-talk>
-
-<dcc-lively-talk subscribe="rss/sci:speech"
-speech="Science News: "
-character="https://harena-lab.github.io/harena-docs/dccs/reference/images/nurse.png">
-</dcc-lively-talk>
-
-<dcc-lively-talk subscribe="rss/dsg:speech"
-speech="Design News: ">
-</dcc-lively-talk>
-~~~
-
-![Screenshot](images/tarefa2.png)
+Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) RSSs ou agregados, conforme os seguintes critérios:
+* `doutor` - mostra notícias agregadas de ciências;
+* `enfermeira` - mostra notícias de ciências (sem agregar);
+* `dino` - mostra notícias de design (sem agregar).
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
-Adendo: Considerando que o timer de controle está atuando sobre o dcc-rss a cada 1 seg, e o dcc-aggregator está conectado ao barramento e que não existe outra forma de controle de atualização ou renderização seguindo os componentes mencionados no enunciado, não foi encontrado uma forma efetiva de controle de renderização do dcc-lively-talk referente ao Dino, com 3 notícias a cada 2 segundos.
+Crie dois componentes RSS usando o `<dcc-rss>` que assinem os canais:
+  * canal 1 (ciência): https://www.wired.com/category/science/feed
+  * canal 2 (design): https://www.wired.com/category/design/feed
 
-~~~html
-<dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/sci:next" topic="rss/sci">
-</dcc-rss>
-<dcc-rss source="https://www.wired.com/category/design/feed" subscribe="next/rss/dsg:next" topic="rss/dsg">
-</dcc-rss>
+Crie um agregador de mensagens usando o `<dcc-aggregator>` para notícias tanto de ciência quanto de design em grupos de três.
 
+Crie três personagens (`dino`, `doutor` e `enfermeira`) usando o `<dcc-lively-talk>`. Cada um deles deve mostrar seletivamente (em seu balão) RSSs ou agregados, conforme os seguintes critérios:
+* `doutor` - mostra notícias de ciências a cada 1.000 milisegundos;
+* `enfermeira` - mostra notícias de design a cada 2.000 milisegundos;
+* `dino` - mostra notícias agregadas a cada 2.000 milisegundos.
 
-<dcc-aggregator topic="aggregate/news" quantity="3" subscribe="rss/#:next">
-</dcc-aggregator>
+Apresente um botão com o rótulo `Inicia` que inicie o processo de mostrar notícias com timer.
 
+# Estilo Arquitetural II - Dataflow
 
-<dcc-timer cycles="10" interval="1000" topic="next/rss/sci" subscribe="start/timer:start">
-</dcc-timer>
-<dcc-timer cycles="10" interval="1000" topic="next/rss/dsg" subscribe="start/timer:start">
-</dcc-timer>
+Considerando que você vai reproduzir este processo do Orange em Web Components:
 
-
-<dcc-button label="Inicia" topic="start/timer">
-</dcc-button>
-
-
-<dcc-lively-talk subscribe="rss/sci:speech"
-speech="Science News: "
-character="https://harena-lab.github.io/harena-docs/dccs/reference/images/doctor.png">
-</dcc-lively-talk>
-
-<dcc-lively-talk subscribe="rss/dsg:speech"
-speech="Design News: "
-character="https://harena-lab.github.io/harena-docs/dccs/reference/images/nurse.png">
-</dcc-lively-talk>
-
-<dcc-lively-talk subscribe="aggregate/news:speech"
-speech="Science + Design Compact: ">
-</dcc-lively-talk>
-~~~
-
-![Screenshot](images/tarefa3.png)
+![Orange Workflow](images/orange-workflow.png)
 
 ## Tarefa 4 - Web Components Dataflow
-![Diagrama](images/tarefa4.png)
 
-Para os componentes serem intercambiáveis, foi projetado que todos usariam a mesma interface para entrada de dados, definida neste contexto como Values. Foi considerado tambem, que apesar dos componentes usarem a mesma interface para troca de mensagens, cada componente é responsável pela sua validação, como por exemplo um gráfico de dispersão não pode apresentar mais de 2 colunas ou valores não númericos nos dados de apresentação.
+Defina quais os componentes envolvidos na tarefa e que informações eles devem trocar entre si. Os componentes podem ser representados por retângulo com um título e breve descrição. As informações devem ser representadas por mensagens, em que são listados os títulos e breve descrição dos campos.
+
+Sugere-se que siga o [Modelo de Apresentação](https://docs.google.com/presentation/d/164yR2vLB9KOLCgsDWjbNun7A87emRfy6VI6DGEVX0J4/edit?usp=sharing).
+
+Lembre que os componentes são intercambiáveis e a interface deve suportar isso.
+
+Escreva uma breve discussão sobre como você organizou a interface para que os componentes sejam intercambiáveis (um parágrafo).
