@@ -29,7 +29,7 @@ Estrutura de pastas:
 <dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" speech="I heard about: " subscribe="+/brasil/#:speech"></dcc-lively-talk>
 ~~~
 
-![Tarefa 1 Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/dcc-composition.png)
 
 
 ## Tarefa 2 - Web Components e RSS
@@ -52,7 +52,7 @@ Estrutura de pastas:
 <dcc-lively-talk speech="I heard about: " subscribe="rss/design:speech"></dcc-lively-talk>
 ~~~
 
-![Tarefa 2 Screenshot](images/web-component-rss.png)
+![Composition Screenshot](images/web-component-rss.png)
 
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
@@ -77,11 +77,11 @@ Estrutura de pastas:
 <dcc-lively-talk speech="I heard about: " subscribe="aggregate/news:speech"></dcc-lively-talk>
 ~~~
 
-![Tarefa 3 Screenshot](images/timer-painel-message.png)
+![Composition Screenshot](images/timer-painel-message.png)
 
 
 ## Tarefa 4 - Web Components Dataflow
 
-![Diagrama Venda](images/web-composition.png)
->
-> Escreva aqui o parágrafo de breve discussão.
+![Composition Screenshot](images/web-composition.png)
+
+> O ponto inicial da arquitetura é uma aplicação responsável por fazer a captação dos dados que serão futuramente classificados, nela os dados vem com diversos parâmetros. Com os dados em posse, um sistema de filtragem faz a separação destes dados, deixando somente os indivíduos do gênero feminino. Após a filtragem do gênero, os dados resultantes são inseridos no modelo de classificação. Após a classificação finalizada uma estrutura de dados será gerada, e poderá ser utilizada para inserção no módulo responsável pela plotagem e  análise dos dados retornados.
