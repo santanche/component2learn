@@ -15,7 +15,6 @@
 <dcc-lively-talk character="https://harena-lab.github.io/harena-docs/dccs/tutorial/images/nurse.png" subscribe="noticia/brasil/#:speech"></dcc-lively-talk>
 ~~~
 
-
 ![Composition Screenshot](images/dcc-composition.png)
 
 ## Tarefa 2 - Web Components e RSS
