@@ -13,7 +13,7 @@ Estrutura de pastas:
 
 ## Tarefa 1 - Web Components e Tópicos
 
-> Código da composição de componentes Web:
+> Código da composição de componentes Web da tarefa 1:
 ~~~html
 <!-- Buttons -->
 <dcc-button
@@ -58,7 +58,7 @@ Estrutura de pastas:
 
 ## Tarefa 2 - Web Components e RSS
 
-> Código da composição de componentes Web:
+> Código da composição de componentes Web da tarefa 2:
 ~~~html
 <!-- RSS -->
 <dcc-rss
@@ -116,7 +116,7 @@ Estrutura de pastas:
 
 ## Tarefa 3 - Painéis de Mensagens com Timer
 
-> Código da composição de componentes Web:
+> Código da composição de componentes Web da tarefa 3:
 ~~~html
 <!-- RSS -->
 <dcc-rss
@@ -186,7 +186,11 @@ Estrutura de pastas:
 ## Tarefa 4 - Web Components Dataflow
 
 > Imagem (`PNG`) do diagrama de componentes:
-![Diagrama Venda](images/web-composition.png)
+![Diagrama Venda](images/tarefa4.png)
 
-> Parágrafo de breve discussão:
-> 
+> Parágrafo de breve discussão sobre a tarefa 4:
+> Todos os componentes alteram o mesmo tipo de dados, eles têm o mesmo
+> contrato de parâmetros, enviam e recebem o mesmo tipo de dados,
+> ou seja, "falam a mesma língua", dessa forma são intercambiáveis:
+> pode-se adicionar, remover ou alterar os componentes que manipulam esses dados.
+>
