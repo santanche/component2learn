@@ -13,7 +13,7 @@ Estrutura de pastas:
 
 ## Tarefa 1 - Web Components e Tópicos
 
-> Escreva aqui o código da sua composição de componentes Web, como mostra o exemplo a seguir:
+> Código da composição de componentes Web:
 
 ~~~html
 <dcc-button label="Mundo Política" topic="noticia/mundo/politica" message="política do mundo">
@@ -33,12 +33,12 @@ Estrutura de pastas:
   </dcc-lively-talk>
 ~~~
 
-> Acrescente uma imagem da composição em funcionamento, como o exemplo a seguir:
+> Imagem da composição em funcionamento:
 
-![Composition Screenshot](images/dcc-composition.png)
+![Composition Screenshot](images/tarefa01.png)
 
 ## Tarefa 2 - Web Components e RSS
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+> Código da composição de componentes Web:
 
 ~~~html
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
@@ -61,8 +61,12 @@ Estrutura de pastas:
 </dcc-button>
 ~~~
 
+> Imagem da composição em funcionamento:
+
+![Composition Screenshot](images/tarefa02.png)
+
 ## Tarefa 3 - Painéis de Mensagens com Timer
-> Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
+> Código da composição de componentes Web:
 
 ~~~html
 <dcc-rss source="https://www.wired.com/category/science/feed" subscribe="next/rss/science:next" topic="rss/science">
@@ -88,11 +92,16 @@ Estrutura de pastas:
 
 <dcc-button label="Start" topic="start/feed">
 </dcc-button>
-
 ~~~
 
+> Imagem da composição em funcionamento:
+
+![Composition Screenshot](images/tarefa03.png)
+
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
+> Imagem (`PNG`) do diagrama de componentes.
+![Diagrama 1](images/lab1_diagramas_de_referencia_01.png)
+![Diagrama 2](images/lab1_diagramas_de_referencia_02.png)
+![Diagrama 3](images/lab1_diagramas_de_referencia_03.png)
 >
 > Escreva aqui o parágrafo de breve discussão.
