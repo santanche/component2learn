@@ -115,6 +115,6 @@ Estrutura de pastas:
 ![Screenshot-tarefa03](images/Screenshot-03.png)
 
 ## Tarefa 4 - Web Components Dataflow
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
+> ![Screenshot-tarefa04](images/Screenshot-04.png)
 >
-> Escreva aqui o parágrafo de breve discussão.
+> Os componentes podem ser considerados intercambiáveis neste caso, pois o tipo da mensagem que entra e sai de cada componente é do mesmo tipo, ou seja, uma tabela. A intercambiabilidade de componentes está fortemente associada aos tipos de entrada e saída de cada componente. Neste caso, todos são tabelas, até a entrada do último componente(Plotter)
