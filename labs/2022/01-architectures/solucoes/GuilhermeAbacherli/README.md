@@ -1,12 +1,4 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-~~~
+# Lab01 - Estilos Arquiteturais
 
 # Aluno
 * `Guilherme Pedrozo Abacherli`
@@ -188,9 +180,10 @@ Estrutura de pastas:
 > Imagem (`PNG`) do diagrama de componentes:
 ![Diagrama Venda](images/tarefa4.png)
 
-> Parágrafo de breve discussão sobre a tarefa 4:
+> Parágrafo de breve discussão sobre a tarefa 4:\
 > Todos os componentes alteram o mesmo tipo de dados, eles têm o mesmo
 > contrato de parâmetros, enviam e recebem informações da mesma natureza,
 > ou seja, "falam a mesma língua", dessa forma são intercambiáveis:
-> pode-se adicionar, remover ou alterar os componentes que manipulam esses dados.
+> pode-se adicionar, remover ou alterar os componentes que manipulam e exibem
+> esses dados, assim é possível obter diferentes resultados que venham a ser desejados.
 >
