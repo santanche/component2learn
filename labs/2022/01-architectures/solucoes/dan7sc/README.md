@@ -104,4 +104,4 @@ Estrutura de pastas:
 ![Diagrama 2](images/lab1_diagramas_de_referencia_02.png)
 ![Diagrama 3](images/lab1_diagramas_de_referencia_03.png)
 >
-> Escreva aqui o parágrafo de breve discussão.
+> O CSVReader é o componente responsável por criar a tabela a partir dos dados contidos no arquivo CSV. Os dados em forma de tabela serão a mensagem do tipo Data que será enviada ao componente Selection. O componente Selection será reponsável por filtrar as linhas da tabela a partir da seleção do valor de uma determinada coluna da tabela. A mensagem enviada será uma mensagem também do tipo Data mas com os dados filtrados por uma determinada coluna. O componente Projection é reponsável por projetar uma tabela com os valores de determinada coluna no eixo X e de outra coluna no eixo Y. A mensagem enviada contém uma tabela do tipo Data com uma coluna contendo os valores da coordenada X e outra coluna contendo os valores da coordenada Y.
