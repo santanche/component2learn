@@ -83,6 +83,4 @@
 
 ## Tarefa 4 - Web Components Dataflow
 
-![Composition Screenshot](images/tarefa04.png)
-
 > ...
