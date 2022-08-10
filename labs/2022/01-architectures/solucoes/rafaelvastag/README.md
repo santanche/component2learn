@@ -79,6 +79,6 @@
 ![Composition Screenshot](imagens/item3-rafaelvastag.png)
 ## Tarefa 4 - Web Components Dataflow
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
->
-> Escreva aqui o parágrafo de breve discussão.
+![Diagrama Venda](imagens/item4-rafaelvastag.png)
+
+> Sendo os componentes intercambiáveis é necessário que a interface de assinatura seja padronizada entre eles, portanto, todos os componentes escolhidos possuem a mesma entrada e saída, se comportando como uma caixa preta para o sistema. O componente Data Input recebe os dados e o posta como uma mensagem contendo informações relevantes para a implementação como id, gênero, peso e altura. O componente accumulator and female filter realiza a captura de todos os dados postados e os acumula filtrando apenas os dados com atributo gênero do tipo fêmea, em seguida posta esses atributos usando a mesma mensagem de entrada, em seguida essas mensagens são projetadas pelo componente projector que também posta os dados que alimentarão o último componente que é o gráfico de dispersão. 
