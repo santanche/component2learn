@@ -7,7 +7,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `Guilherme Cavassan`
+* `Guilherme Cavassan - RA: 2022601122`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
