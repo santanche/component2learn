@@ -10,7 +10,7 @@
 > Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
-* Clinte
+* Cliente
   * genero
   * gasto_ultimas_compras
   * idade
