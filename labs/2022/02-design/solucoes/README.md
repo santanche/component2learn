@@ -54,6 +54,5 @@ Os serviços de recomendações são estáticos, pois a coleta de dados, o trata
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-![Diagrama Eventos](images/recomendation-composition.png)
+
+![Diagrama Eventos](Lab02 - exec3.png)
