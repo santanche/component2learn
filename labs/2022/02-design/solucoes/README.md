@@ -55,4 +55,4 @@ Os serviços de recomendações são estáticos, pois a coleta de dados, o trata
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
 
-![Diagrama Eventos](Lab02 - exec3.png)
+![Diagrama Eventos](Lab02-exec3.png)
