@@ -9,25 +9,39 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `João Paulo Cardoso`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
 > Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
-### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
-
-### Recomendação
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+## Treinamento
+* Entidade cliente
+  * campo id
+  * campo nome
+  * campo itens comprados
+  * campo lista de desejos
+  * campo carrinho
+* Entidade produto
+  * campo id
+  * campo nome
+  * campo valor
+  * campo categoria
+  * campo itens disponíveis
+ 
+ ## Recomendação 
+* Entidade cliente
+  * campo id
+  * campo nome
+  * campo itens comprados
+  * campo lista de desejos
+  * campo carrinho
+* Entidade produto
+  * campo id
+  * campo nome
+  * campo valor
+  * campo categoria
+  * campo itens disponíveis
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
