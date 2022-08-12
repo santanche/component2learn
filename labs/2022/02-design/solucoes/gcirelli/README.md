@@ -38,6 +38,7 @@
   
 * Vendedor
   * mais_proximo_do_cliente
+  * melhor_preço
   
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
