@@ -9,37 +9,70 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Flavia Machado Vilar`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
 > Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Entidade Categoria
+  * id
+  * nome
+
+* Entidade Subcategoria
+  * id
+  * categoria_id
+  * nome  
+
+* Entidade Produto
+  * id
+  * nome
+  * categoria_id
+  * subcategoria_id
+  *rating
+
+* Entidade tendencia
+  * id
+  * categoria_id
+  * subcategoria_id
+  * habiliada
+  
+
 
 ### Recomendação
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Entidade Cliente
+  * id
+  * faixa_valor_preferida
+  * perfil
+
+* Entidade Compra
+  * id
+  * produtos
+  * cliente_id
+  
+* Entidade Vendedor
+  * id
+  * rating
+  * categorias
+  * subcategorias
+  * perfil
+
+
+
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
 > Escreva duas breves descrições, conforme exemplos a seguir:
 >
 ### Composição Dinâmica
-> Aqui vem a breve descrição
+> A composição dinâmica incorpora o barramento de mensagem qu alimentará sob demanda as recomendações com base nas variações de tendêcia, rating do cliente e do vendedor. É formada pela troca de dados relacionados a venda, quando a compra é finalizada, é disparado efeitos para as recomendações e com isso de forma dinâmica novas recomendações são feitas com base no que foi recebido.
 ### Composição Estática
 > Aqui vem a breve descrição.
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
+> A composição estática tem a atribuição de interfaces de identificação do Cliente e Vendedor, analisando seus perfi e com isso é possivel entender qual serão as melhores indicaçoes.
+
 >
-![Diagrama Eventos](images/recomendation-composition.png)
+![Diagrama Eventos](./ComposicaoParaTreinamentoERecomendacao.png)
