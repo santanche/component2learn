@@ -9,34 +9,41 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Ricardo Capovilla
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
 > Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Usuário
+  * Itens comprados
+  * pesquisas efetuadas
+  * produtos anunciados
+  * faixa de preços
+  * marcas favoritas
+  * vendedores favoritos
+  * Novo/Usado
+  * Por localização
+  * Por tempo de entrega
 
 ### Recomendação
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Produtos
+  * por categorias
+  * por marca
+  * por preço
+  * por vendedor
+  * Novo/usado
+
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
 > Escreva duas breves descrições, conforme exemplos a seguir:
 >
 ### Composição Dinâmica
-> Aqui vem a breve descrição
+> Interrelacionamentos entre produtos similares, ou de mesma função, de acordo com as preferências que o usuário demonstra de acordo com suas movimentações, pesquisas, valores ou compras.
 ### Composição Estática
-> Aqui vem a breve descrição.
+> A categorização dos produtos não deve ser alterada com frequência, uma vez que essas alterações podem impactar no aprendizado da máquina, e na efetuação de suas tarefas.
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
