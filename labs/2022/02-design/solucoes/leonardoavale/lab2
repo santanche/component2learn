@@ -1,0 +1,33 @@
+# Aprendizagem de Máquina no Brechó Online
+
+## Tarefa 1 - 
+
+1. Cliente
+	1.1 ID
+	1.2 Localizacao
+2. Produto
+	2.1 Categoria
+	2.2
+3. Anuncio
+	3.1 Descricao
+	3.2 Preco
+	3.3 Visualizado
+	3.4 Comprado
+4. Venda
+	4.1 Valor
+	4.2 DataCompra
+5. Busca
+	5.1 Descricao
+	5.2 Categoria
+6. Vendedor
+	2.1 ID
+	2.2 Rate
+	2.3 Localizacao
+  
+## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
+
+O modelo descrito é composto por eventos que acontecem assíncronos e sem um padrão temporal, e outros que acontecem de forma sequencial e portanto são síncronos. Como exemplo do primeito caso, entendo que todos os eventos gerados pelos elementos descritos acima (ex: nova busca, novo anúncio, nova venda, etc) se encaixam nessa situação (dinâmica). Como contrapartida, os elementos do módulo de treinamento precisam ser estáticos pois possuem um sequenciamento de data flow. Por fim, o módulo de ranqueamento se encaixa em ambos os casos. Só ranqueamos ofertas quando ocorrer um evento de busca, mas por outro lado, dependemos da linearidade de processos vindos do modelo de machine learning resultante do módulo de treinamento.
+
+## Tarefa 3 - Composição para Treinamento e Recomendação
+
+Imagem: https://github.com/leonardoavale/component2learn/blob/main/INF331-Atividade2/Lab2.png
