@@ -1,13 +1,3 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-~~~
-
 # Aluno
 * `Fábio Fernandes Domingues`
 
@@ -105,7 +95,5 @@ Estrutura de pastas:
 
 ![Composition Screenshot](images/Exercicio4.png)
 
-> Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
-![Diagrama Venda](images/web-composition.png)
 >
 Utilizamos dados padronizados para obtermos componentes intercambiáveis, dessa forma cada componente recebe os dados, realiza seu processamento e envia o resultado para o próximo.
