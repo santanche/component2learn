@@ -1,4 +1,4 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
+# Modelo para Apresentação do Lab02 - Estilos Arquiteturais
 
 Estrutura de pastas:
 
