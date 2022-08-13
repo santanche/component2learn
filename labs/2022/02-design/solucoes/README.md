@@ -48,9 +48,9 @@ Estrutura de pastas:
 > Escreva duas breves descrições, conforme exemplos a seguir:
 >
 ### Composição Dinâmica
-> Aqui vem a breve descrição
+> Componentes do sistema podem ser adicionados, removidos, substuídos e reconfigurados em tempo de execução. A principal vantagem é que o sistema pode se adequar dinamicamente a novas necessidades.
 ### Composição Estática
-> Aqui vem a breve descrição.
+> Na composição estática, podem ser combinados diversos componentes em tempo de compilação ou projeto. A principal desvantagem é que uma vez gerado, o sistema não pode mais ser alterado em tempo de execução, pois toda alteração requer que o sistema seja interrompido, atualizado e reiniciado.
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
