@@ -1,19 +1,8 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagens usadas no documento
-~~~
-
 # Aluno
 * `Fábio Fernandes Domingues`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
-> Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
 * Vendedor
@@ -55,7 +44,6 @@ Estrutura de pastas:
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
-> Escreva duas breves descrições, conforme exemplos a seguir:
 >
 ### Composição Dinâmica
 > Centralizando em um componente agregador teremos os dados de negócio e de usuário. 
@@ -75,6 +63,4 @@ Estrutura de pastas:
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
 ![Diagrama Eventos](images/recomendation-composition.png)
