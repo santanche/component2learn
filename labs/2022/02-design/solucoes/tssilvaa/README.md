@@ -13,43 +13,42 @@ Estrutura de pastas:
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
->
 ### Treinamento
-Cliente :
-*genero
-*endereço
-*idade
-*carrinho
-*listaHistóricoDeCompras
-*listaDeDesejos
-*categoriasPreferidas
+*Cliente
+  *genero
+  *endereço
+  *idade
+  *carrinho
+  *listaHistóricoDeCompras
+  *listaDeDesejos
+  *categoriasPreferidas
 
-Vendedor :
-*genero
-*endereço
-*idade
-*listaDeVendas
-*listaDeAnuncios
-*categoriasMaisAnunciadas
+*Vendedor
+  *genero
+  *endereço
+  *idade
+  *listaDeVendas
+  *listaDeAnuncios
+  *categoriasMaisAnunciadas
 
-Produto :
-*id
-*nome
-*descricao
-*categoria
-*localizacao
-*dataDeCadastro
-*codigo
-*quantidadeEmEstoque
+*Produto
+  *id
+  *nome
+  *descricao
+  *categoria
+  *localizacao
+  *dataDeCadastro
+  *codigo
+  *quantidadeEmEstoque
 
-Venda :
-*id
-*vendedor
-*cliente
-*valor
-*pagamento
-*listaDeProdutos
-*dataDaVenda
+*Venda
+  *id
+  *vendedor
+  *cliente
+  *valor
+  *pagamento
+  *listaDeProdutos
+  *dataDaVenda
 
 ### Recomendação
 *Cliente
