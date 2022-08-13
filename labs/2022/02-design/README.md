@@ -12,33 +12,12 @@ O seu serviço de aprendizagem de máquina vai funcionar em duas partes: módulo
 
 Indique um que dados você usaria: (a) para treinar o módulo de aprendizagem constante; (2) para realizar a recomendação. Recomenda-se que seja apresentado da seguinte maneira:
 
-## Treinamento
-
-* Entidade cliente
-  * campo nome
-  * campo itens comprados
-  * campo lista de desejos
-  * campo carrinho
-* Entidade produto
-  * campo nome
-  * campo valor
-  * campo categoria
-  * campo itens disponíveis
- 
- ## Recomendação
- 
-* Entidade cliente
-  * campo id
-  * campo nome
-  * campo itens comprados
-  * campo lista de desejos
-  * campo carrinho
-* Entidade produto
-  * campo id
-  * campo nome
-  * campo valor
-  * campo categoria
-  * campo itens disponíveis
+* Entidade X
+  * campo A
+  * campo B
+* Entidade Y
+  * campo A
+  ...
 
 Exemplos de entidades são: cliente, vendedor, produto, venda, etc. Os campos pertencem à entidade, como: nome, valor, quantidade, etc. Não é necessária a especificação de tipos dos dados.
 
