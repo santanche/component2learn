@@ -1,4 +1,4 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
+# Apresentação do Lab02
 
 Estrutura de pastas:
 
@@ -9,37 +9,61 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Fabiano Louzada Cesario`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
-> Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
->
 ### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Vendedor
+  * categorias
+  * ranking
+  * total de vendas
+  
+* Produto
+  * nome
+  * valor
+  * categoria
+  * pontuacao
+  * quantidade comprada
+
+* Comprador
+  * favoritos
+  * gênero 
+  * historico de busca
+  * historico de compra
+
 
 ### Recomendação
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Vendedor
+  * categorias
+  * ranking
+  * total de vendas
+  
+* Produto
+  * nome
+  * valor
+  * categoria
+  * pontuacao
+  * quantidade comprada
+
+* Comprador
+  * favoritos
+  * gênero 
+  * historico de busca
+  * historico de compra
+
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
-> Escreva duas breves descrições, conforme exemplos a seguir:
->
+
 ### Composição Dinâmica
-> Aqui vem a breve descrição
+
+> A composição dinâmica se da de forma assincrona, como por exemplo em enventos gerados de forma indefinida entre usuários. 
+
 ### Composição Estática
-> Aqui vem a breve descrição.
+
+> Na composição estática, pode-se combinar diversos componentes, em tempo de compilação, e gerar uma aplicação ou uma atualização do sistema.
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
 ![Diagrama Eventos](images/recomendation-composition.png)
