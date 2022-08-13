@@ -1,4 +1,4 @@
-# Modelo para Apresentação do Lab01 - Estilos Arquiteturais
+# Estilos Arquiteturais
 
 Estrutura de pastas:
 
@@ -14,86 +14,86 @@ Estrutura de pastas:
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
 ### Treinamento
-*Cliente
-  *genero
-  *endereço
-  *idade
-  *carrinho
-  *listaHistóricoDeCompras
-  *listaDeDesejos
-  *categoriasPreferidas
+* Cliente
+  * genero
+  * endereço
+  * idade
+  * carrinho
+  * listaHistóricoDeCompras
+  * listaDeDesejos
+  * categoriasPreferidas
 
-*Vendedor
-  *genero
-  *endereço
-  *idade
-  *listaDeVendas
-  *listaDeAnuncios
-  *categoriasMaisAnunciadas
+* Vendedor
+  * genero
+  * endereço
+  * idade
+  * listaDeVendas
+  * listaDeAnuncios
+  * categoriasMaisAnunciadas
 
-*Produto
-  *id
-  *nome
-  *descricao
-  *categoria
-  *localizacao
-  *dataDeCadastro
-  *codigo
-  *quantidadeEmEstoque
+* Produto
+  * id
+  * nome
+  * descricao
+  * categoria
+  * localizacao
+  * dataDeCadastro
+  * codigo
+  * quantidadeEmEstoque
 
-*Venda
-  *id
-  *vendedor
-  *cliente
-  *valor
-  *pagamento
-  *listaDeProdutos
-  *dataDaVenda
+* Venda
+  * id
+  * vendedor
+  * cliente
+  * valor
+  * pagamento
+  * listaDeProdutos
+  * dataDaVenda
 
 ### Recomendação
-*Cliente
-  *id
-  *nome
-  *sobrenome
-  *cpf
-  *genero
-  *endereço
-  *idade
-  *carrinho
-  *listaHistóricoDeCompras
-  *listaDeDesejos
-  *categoriasPreferidas
+* Cliente
+  * id
+  * nome
+  * sobrenome
+  * cpf
+  * genero
+  * endereço
+  * idade
+  * carrinho
+  * listaHistóricoDeCompras
+  * listaDeDesejos
+  * categoriasPreferidas
 
-*Vendedor
-  *id
-  *nome
-  *sobrenome
-  *cpf
-  *genero
-  *endereço
-  *idade
-  *listaDeVendas
-  *listaDeAnuncios
-  *categoriasMaisAnunciadas
+* Vendedor
+  * id
+  * nome
+  * sobrenome
+  * cpf
+  * genero
+  * endereço
+  * idade
+  * listaDeVendas
+  * listaDeAnuncios
+  * categoriasMaisAnunciadas
 
-*Produto
-  *id
-  *nome
-  *descricao
-  *categoria
-  *localizacao
-  *dataDeCadastro
-  *codigo
-  *quantidadeEmEstoque
+* Produto
+  * id
+  * nome
+  * descricao
+  * categoria
+  * localizacao
+  * dataDeCadastro
+  * codigo
+  * quantidadeEmEstoque
 
-*Venda
-  *id
-  *vendedor
-  *cliente
-  *valor
-  *pagamento
-  *listaDeProdutos
-  *dataDaVenda
+* Venda
+  * id
+  * vendedor
+  * cliente
+  * valor
+  * pagamento
+  * listaDeProdutos
+  * dataDaVenda
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 >
