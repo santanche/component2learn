@@ -18,36 +18,42 @@ Estrutura de pastas:
   * gênero
   * idade
   * localização
-  * likes
+  * produtos favoritos
+  * vendedores favoritos
 * Vendedor
   * nicho
   * localização
   * número de vendas
-  * likes
+  * quantidade de favoritos
+  * quantidade de vendas
 * Produto
   * preço
   * tamanho
   * cor
   * categoria
-  * likes
+  * quantidade de favoritos
+  * quantidade de vendas
 
 ### Recomendação
 * Cliente
   * gênero
   * idade
   * localização
-  * likes
+  * produtos favoritos
+  * vendedores favoritos
 * Vendedor
   * nicho
   * localização
   * número de vendas
-  * likes
+  * quantidade de favoritos
+  * quantidade de vendas
 * Produto
   * preço
   * tamanho
   * cor
   * categoria
-  * likes
+  * quantidade de favoritos
+  * quantidade de vendas
 
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
