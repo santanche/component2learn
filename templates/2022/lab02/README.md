@@ -34,7 +34,7 @@ Estrutura de pastas:
 > Escreva duas breves descrições, conforme exemplos a seguir:
 >
 ### Composição Dinâmica
-> Aqui vem a breve descrição
+> Aqui vem a breve descrição.
 ### Composição Estática
 > Aqui vem a breve descrição.
 
