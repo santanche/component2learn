@@ -9,37 +9,54 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Daniel Salgado Costa`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
-> Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
->
 ### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Cliente
+  * gênero
+  * idade
+  * localização
+  * likes
+* Vendedor
+  * nicho
+  * localização
+  * número de vendas
+  * likes
+* Produto
+  * preço
+  * tamanho
+  * cor
+  * categoria
+  * likes
 
 ### Recomendação
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Cliente
+  * gênero
+  * idade
+  * localização
+  * likes
+* Vendedor
+  * nicho
+  * localização
+  * número de vendas
+  * likes
+* Produto
+  * preço
+  * tamanho
+  * cor
+  * categoria
+  * likes
+
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
-> Escreva duas breves descrições, conforme exemplos a seguir:
->
 ### Composição Dinâmica
-> Aqui vem a breve descrição
+> Os sistemas de treinamento e recomendação são dinâmicos pois recebem como dados as entidades que apesar de serem únicas, sejam elas Cliente, Vendedor ou Produto, para cada tipo de entidade podemos ter instâncias dessas entidades que se diferenciam uma da outra em relação as suas propriedades. Os sistemas de treinamento e recomendação portanto precisam lidar com essas diferenças.
 ### Composição Estática
-> Aqui vem a breve descrição.
+> As entidades Cliente, Vendedor e Produto tem propriedades estáticas, ou seja, que não podem ser modificadas, com isso cada entidade é única e não é confundida com outra entidade.
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
 ![Diagrama Eventos](images/recomendation-composition.png)
