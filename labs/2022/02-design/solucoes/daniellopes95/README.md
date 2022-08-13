@@ -53,6 +53,5 @@ Estrutura de pastas:
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
 ![Diagrama Eventos](images/exercicio3.png)
