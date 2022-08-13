@@ -9,22 +9,31 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `<Lucas Lopes Moreira>`
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
 > Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
-* Entidade X
-  * campo A
-  * campo B
-* Entidade Y
-  * campo A
+* Entidade Comprador
+  * Endereco
+  * Ultimas-Categorias
+  * Valor-Medio-Compras
+* Entidade Vendedor
+  * Endereco
+  * Avaliacao-Media
+  * Quantidade-de-Vendas
+* Entidade Produto
+  * Nome
+  * Descricao
+  * Categoria
+  * Qtd-Vendas
+  * Avaliacao-Media
 
 ### Recomendação
-* Entidade X
-  * campo A
+* Entidade Recomendado
+  * campo a
   * campo B
 * Entidade Y
   * campo A
