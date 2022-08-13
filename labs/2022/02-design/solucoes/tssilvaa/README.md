@@ -52,49 +52,49 @@ Venda :
 *dataDaVenda
 
 ### Recomendação
-*Cliente :
-*id
-*nome
-*sobrenome
-*cpf
-*genero
-*endereço
-*idade
-*carrinho
-*listaHistóricoDeCompras
-*listaDeDesejos
-*categoriasPreferidas
+*Cliente
+  *id
+  *nome
+  *sobrenome
+  *cpf
+  *genero
+  *endereço
+  *idade
+  *carrinho
+  *listaHistóricoDeCompras
+  *listaDeDesejos
+  *categoriasPreferidas
 
-*Vendedor :
-*id
-*nome
-*sobrenome
-*cpf
-*genero
-*endereço
-*idade
-*listaDeVendas
-*listaDeAnuncios
-*categoriasMaisAnunciadas
+*Vendedor
+  *id
+  *nome
+  *sobrenome
+  *cpf
+  *genero
+  *endereço
+  *idade
+  *listaDeVendas
+  *listaDeAnuncios
+  *categoriasMaisAnunciadas
 
-*Produto :
-*id
-*nome
-*descricao
-*categoria
-*localizacao
-*dataDeCadastro
-*codigo
-*quantidadeEmEstoque
+*Produto
+  *id
+  *nome
+  *descricao
+  *categoria
+  *localizacao
+  *dataDeCadastro
+  *codigo
+  *quantidadeEmEstoque
 
-*Venda :
-*id
-*vendedor
-*cliente
-*valor
-*pagamento
-*listaDeProdutos
-*dataDaVenda
+*Venda
+  *id
+  *vendedor
+  *cliente
+  *valor
+  *pagamento
+  *listaDeProdutos
+  *dataDaVenda
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 >
