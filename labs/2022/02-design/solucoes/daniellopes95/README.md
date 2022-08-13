@@ -13,7 +13,6 @@ Estrutura de pastas:
 
 ## Tarefa 1 - Dados para Treinamento e Recomendação
 
-> Coloque a lista de campos como itens e subitens, conforme exemplo a seguir:
 >
 ### Treinamento
 * Cliente
@@ -44,7 +43,6 @@ Estrutura de pastas:
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
-> Escreva duas breves descrições, conforme exemplos a seguir:
 >
 ### Composição Dinâmica
 > Os componentes dinâmicos são compostos por Vendedor, LogBusca. Visto que seus atributos não são necessariamente essenciais para a aprendizagem e recomendação de produtos à clientes. Um Vendedor pode vender diversos tipos de produtos e não pertencer a um nicho especifico de interesse do cliente. O LogBusca pode apresentar interesses situacionais do cliente.
