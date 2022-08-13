@@ -73,6 +73,7 @@ Estrutura de pastas:
 > os objetos definidos. Uma interface irá solicitar o treinamento do modelo, e assim ocorrerá o processo em backend, tendo como resultado
 > o modelo de dados treinado, que será retornado para o solicitante. 
 
+
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
