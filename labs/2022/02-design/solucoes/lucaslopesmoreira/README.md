@@ -45,9 +45,9 @@ Estrutura de pastas:
   * Preco
   * Historico-categorias-pesquisada
   * Avaliação-Vendedor
-  * 
-* Entidade Y
-  * campo A
+  * Produtos
+  * Qtd-de-vendas
+  * Avaliação-do-produto
 
 ## Tarefa 2 - Breve descrição de Composições Dinâmica e Estática
 
@@ -63,4 +63,4 @@ Estrutura de pastas:
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-![Diagrama Eventos](images/recomendation-composition.png)
+![Diagrama Eventos](images/diagrama lab 2.png)
