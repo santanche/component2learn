@@ -63,4 +63,4 @@ Estrutura de pastas:
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-![Diagrama Eventos](images/diagrama lab 2.png)
+![Diagrama Eventos]([images/diagrama lab 2.png](https://github.com/LucasLopesMoreira/component2learn/blob/master/labs/2022/02-design/solucoes/lucaslopesmoreira/imagens/diagrama%20lab%202.png))
