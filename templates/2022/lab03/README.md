@@ -43,7 +43,10 @@ a) Workflow em Orange para recomendação
 >
 ![Workflow Orange](images/example-workflow-orange.png)
 >
-> Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima). Coloque os arquivos de dados na mesma pasta. Ao importar os dados no workflow, é importante que (estando os arquivos na mesma pasta) você escolha a opção [Import  relative to workflow file...] como mostra a ilustração a seguir:
+> Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima). Coloque os arquivos de dados na mesma pasta. Veja exemplo a seguir:
+[Workflow em Orange](workflows/example-workflow.ows)
+> Ao importar os dados no workflow, é importante que (estando os arquivos na mesma pasta) você escolha a opção [Import  relative to workflow file...] como mostra a ilustração a seguir:
+>
 > ![Import Relative](images/import-relative.png)
 
 b) Workflow em uma representação UML
