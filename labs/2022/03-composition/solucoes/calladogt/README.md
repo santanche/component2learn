@@ -8,7 +8,7 @@
 >
 ### a) Representação do DTO
 
-![Diagrama Eventos](images/dton.png)
+![Diagrama Eventos](images/dto.png)
 
 ### b) Diagrama de Componentes e Descrição
 
