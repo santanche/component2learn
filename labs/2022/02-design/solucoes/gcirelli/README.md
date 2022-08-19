@@ -63,4 +63,4 @@ Os serviços de recomendações são estáticos, pois a coleta de dados, o trata
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-![Diagrama Eventos](Lab02-exec3.png)
+![Diagrama Eventos](images/Lab02-exec3.png)
