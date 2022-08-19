@@ -17,13 +17,13 @@ Estrutura de pastas:
 
 a) Representação do DTO
 
-> Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
+> Representação do DTO:
 >
 ![DTO](images/DTO-Diagram-Lab03-T1.png)
 
 b) Diagrama de Componentes e Descrição
 
-> Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
+> Representação Diagrama de Componentes:
 >
 ![Coreografia](images/coreografia.png)
 >
