@@ -22,9 +22,11 @@ b) Diagrama de Componentes e Descrição
 >
 > Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
 >
-> * passo 1
-> * passo 2
-> * passo 3
+ * passo 1: Fornecedores estão constantemente postando ofertas de produtos (interface OfertaFornecedor), o campo preço é o valor ofertado.
+ * passo 2: O módulo de aprendizado captura tudo que passa pelo barramento, ou seja, busca feita pelos clientes, ofertas de produtos dos fornecedores e contrapropostas dos clientes. Com esses dados, visto como uma caixa preta, faz a listagem dos interesses do cliente e envia esses dados para o ranqueamento dos fornecedores.
+ * passo 3: O ranqueamento ordena os fornecedores (realiza o ranqueamento de fato) e envia para os clientes as ofertas de interesse do cliente (interface OfertaFornecedorR).
+ * passo 4: O cliente recebe as ofertas ranqueadas e podem fazer uma contraproposta (preenchendo o campo bid e clientBidID da mensagem). 
+  * passo 5: O fornecedor recebe as contrapropostas e preenche o campo final_price e o clienteFinalId que ganhou o valor do leilão.
 
 ## Tarefa 2 - Recomendação de Preço
 
