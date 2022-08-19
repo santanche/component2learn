@@ -58,12 +58,6 @@ Os serviços de treinamento são dinâmicos, pois a avaliação dos produtos, do
 
 Os serviços de recomendações são estáticos, pois a coleta de dados, o tratamento de dados usados para o ranqueamento precisa de uma estabilidade, não podem mudar o tempo todo.
 
-## Tarefa 3 - Composição para Treinamento e Recomendação
-
-### Composição Dinâmica
-> Aqui vem a breve descrição
-### Composição Estática
-> Aqui vem a breve descrição.
 
 ## Tarefa 3 - Composição para Treinamento e Recomendação
 
