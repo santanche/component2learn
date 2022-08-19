@@ -25,7 +25,7 @@ b) Diagrama de Componentes e Descrição
 
 > Representação Diagrama de Componentes:
 >
-![Coreografia](images/coreografia.png)
+![Coreografia](images/Componentes-negociacao.png)
 >
 > Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
 >
