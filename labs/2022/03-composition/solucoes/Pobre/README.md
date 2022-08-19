@@ -1,4 +1,4 @@
-# Apresentação do Lab01 - Estilos Arquiteturais
+# Apresentação do Lab03 - Coreografia e Orquestração no Brechó Online
 
 # Aluno
 * `Alejandro Boidi Rico`
