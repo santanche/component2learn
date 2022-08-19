@@ -59,3 +59,13 @@ O sistema funciona de forma assíncrona, serviços responsáveis por passos dife
     - Sistema de ambos os lados deverá tratar mensagens de aceitação de oferta, comunicar os usuários e  completar a transação.
 
 ![Imagem Negociacao](images/tarefa_01_negociacao.jpg)
+
+## Tarefa 2 - Recomendação de Preço
+
+### a
+
+[Workflow](orange_data_scatter)
+
+### b
+
+![Imagem UML](images/2022-08-19-a2.jpg)
