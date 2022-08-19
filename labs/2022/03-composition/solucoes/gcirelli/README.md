@@ -41,8 +41,9 @@ a) Workflow em Orange para recomendação
 
 ![Workflow Orange](workflows/lab03-orange.png)
 
+
 ![Workflow Orange](workflows/lab03-prediction.png)
-Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima).
+
 
 b) Workflow em uma representação UML
 
