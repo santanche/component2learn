@@ -23,8 +23,8 @@ A ideia é que tanto o fornecedor quanto o comprador possam enviar o DTO de ofer
 >
 ### a) Workflow em Orange para recomendação
 
-![Diagrama Eventos](images/dton.png)
+![Diagrama Eventos](images/diagrama2.png)
 
 ### b) Workflow em uma representação UML
 
-![Diagrama Eventos](images/diagrama.png)
+![Diagrama Eventos](images/diagrama3.png)

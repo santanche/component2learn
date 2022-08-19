@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="ProdutosNegociados" position="(335.0, 271.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="ShowTable" position="(494.0, 169.0)" />
+		<node id="2" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="ProdutosNegociadosTeste" position="(472.7142857142857, 530.5714285714286)" />
+		<node id="3" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(948.9999999999999, 522.8571428571425)" />
+		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Define Target" position="(522.0, 363.0)" />
+		<node id="5" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Learn Tree" position="(739.0, 365.0)" />
+		<node id="6" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Define Target" position="(675.7142857142858, 532.1428571428568)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="5" sink_node_id="3" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="4" source_node_id="2" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="6" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/Users/Callado/Downloads/component2learn-master/component2learn-master/labs/2022/03-composition/products-negotiated.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/Callado/Downloads/component2learn-master/component2learn-master/labs/2022/03-composition', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1d\x00\x00\x01Z\x00\x00\x04c\x00\x00\x02\xa1\x00\x00\x03\x1d\x00\x00\x01Z\x00\x00\x04c\x00\x00\x02\xa1\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1d\x00\x00\x01Z\x00\x00\x04c\x00\x00\x02\xa1', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x020\x00\x00\x01\x04\x00\x00\x05O\x00\x00\x02\xf7\x00\x00\x020\x00\x00\x01\x04\x00\x00\x05O\x00\x00\x02\xf7\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x020\x00\x00\x01\x04\x00\x00\x05O\x00\x00\x02\xf7', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/Users/Callado/Downloads/component2learn-master/component2learn-master/labs/2022/03-composition/products-negotiated-test.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/Callado/Downloads/component2learn-master/component2learn-master/labs/2022/03-composition', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1c\x00\x00\x014\x00\x00\x04d\x00\x00\x02\xa2\x00\x00\x03\x1d\x00\x00\x01Z\x00\x00\x04c\x00\x00\x02\xa1\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1d\x00\x00\x01Z\x00\x00\x04c\x00\x00\x02\xa1', '__version__': 3}</properties>
+		<properties node_id="3" format="pickle">gASVIwEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAK6AAABggAABnwAAANhAAACugAAAYIAAAZ8AAADYQAAAAAAAAAAB4AAAAK6
+AAABggAABnwAAANhlIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwMc2hvd25fc2NvcmVzlI+UKIwCUjKUjANNU0WUjAlQcmVjaXNpb26UjAdDLUluZGV4lIwGUmVj
+YWxslIwDQVVDlIwCRjGUjAJDQZSMBFJNU0WUjANNQUWUkHOMC19fdmVyc2lvbl9flEsBjBBjb250
+ZXh0X3NldHRpbmdzlF2UdS4=
+</properties>
+		<properties node_id="4" format="pickle">gASVUQMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADS
+AAAE6wAAAykAAAKUAAAA0gAABOsAAAMpAAAAAAAAAAAHgAAAApQAAADSAAAE6wAAAymUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMBXByaWNllEsChpSMCWF0dHJpYnV0ZZRLAIaUjARkYXlzlEsChpRo
+FUsBhpSMCHNoaXBwaW5nlEsChpRoFUsChpSMBHJhbmuUSwGGlIwFY2xhc3OUSwCGlIwHcHJvZHVj
+dJRLA4aUjARtZXRhlEsAhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKGgTSwJoGksCaBdL
+AmgdSwF1jAVtZXRhc5R9lGghSwNzdWJoDCmBlH2UKGgPfZQoaBF9lCiMBXByaWNllEsChpRoFUsA
+hpSMBGRheXOUSwKGlGgVSwGGlIwIc2hpcHBpbmeUSwKGlGgVSwKGlIwHcHJvZHVjdJRLAYaUaBVL
+A4aUjARyYW5rlEsBhpRoH0sAhpR1Sv7///+GlGgHSwF1aCZ9lCiMB3Byb2R1Y3SUSwGMBXByaWNl
+lEsCjAhzaGlwcGluZ5RLAowEZGF5c5RLAowEcmFua5RLAXVoKH2UdWJoDCmBlH2UKGgPfZQoaBF9
+lCiMB3Byb2R1Y3SUSwGGlGgVSwCGlIwFcHJpY2WUSwKGlGgVSwGGlIwEZGF5c5RLAoaUaBVLAoaU
+jAhzaGlwcGluZ5RLAoaUaBVLA4aUjARyYW5rlEsChpRoH0sAhpR1Sv7///+GlGgHSwF1aCZ9lCiM
+B3Byb2R1Y3SUSwGMBXByaWNllEsCjAhzaGlwcGluZ5RLAowEZGF5c5RLAowEcmFua5RLAnVoKH2U
+dWJldS4=
+</properties>
+		<properties node_id="5" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x15\x00\x00\x01Z\x00\x00\x04k\x00\x00\x02\xa2\x00\x00\x03\x15\x00\x00\x01Z\x00\x00\x04k\x00\x00\x02\xa2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x15\x00\x00\x01Z\x00\x00\x04k\x00\x00\x02\xa2', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="6" format="pickle">gASV0AEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADS
+AAAE6wAAAykAAAKUAAAA0gAABOsAAAMpAAAAAAAAAAAHgAAAApQAAADSAAAE6wAAAymUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwFcHJpY2WUSwKGlIwJYXR0cmlidXRllEsAhpSMBGRheXOUSwKGlGgV
+SwGGlIwIc2hpcHBpbmeUSwKGlGgVSwKGlIwEcmFua5RLAoaUjARtZXRhlEsAhpSMB3Byb2R1Y3SU
+SwOGlGgfSwGGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQoaBNLAmgaSwJoF0sCaB1LAnWM
+BW1ldGFzlH2UaCFLA3N1YmF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
