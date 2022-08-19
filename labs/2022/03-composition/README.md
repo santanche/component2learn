@@ -16,10 +16,3 @@ b) Construa um diagrama dos componentes envolvidos na negociação e descreva co
 
 Para esta tarefa utilize os [Diagramas de Referência](https://docs.google.com/presentation/d/1g2mds_SA_w0WNuJmoMg1UZtNbPQMnEz54XWL_DoRDtg/edit?usp=sharing).
 
-## Tarefa 2 - Recomendação de Preço
-
-Considerando o que existe um conjunto de dados históricos sobre produtos, valores, frete e dias de entrega, ranqueados por preferência, escreva um sistema que ranqueie produtos de acordo com ofertas feitas pelos fornecedores.
-
-a) Elabore um workflow em Orange para recomendação.
-
-b) Transforme esse workflow em uma representação UML.
