@@ -19,7 +19,7 @@ a) Representação do DTO
 
 > Representação do DTO:
 >
-![DTO](images/DTO-Diagram-Lab03-T1.png)
+![DTO](images/DTO-Diagram-Lab03-T1-v2.png)
 
 b) Diagrama de Componentes e Descrição
 
