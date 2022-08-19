@@ -39,4 +39,4 @@ a) Workflow em Orange para recomendação
 b) Workflow em uma representação UML
 
 
-![Workflow UML](workflows/workflow.png)
+![Workflow UML](workflows/workflowUML.png)
