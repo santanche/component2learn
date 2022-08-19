@@ -60,9 +60,10 @@
 <dcc-button label="Designs Proxima" topic="next/rss_d">
 </dcc-button>
 
-![Composition Screenshot](images/lab1-tarefa2.png)
+
 
 ~~~
+![Composition Screenshot](images/lab1-tarefa2.png)
 ## Tarefa 3 - Painéis de Mensagens com Timer
 > Escreva aqui o código da sua composição de componentes Web seguida de uma imagem que captura o funcionamento, como foi feito na tarefa anterior.
 ~~~html
@@ -93,9 +94,10 @@
 <dcc-button label="Inicia" topic="start/timer">
 </dcc-button>
 
-![Composition Screenshot](images/lab1-tarefa3.png)
+
 
 ~~~
+![Composition Screenshot](images/lab1-tarefa3.png)
 ## Tarefa 4 - Web Components Dataflow
 > Imagem (`PNG`) do diagrama de componentes (veja exemplo abaixo).
 ![Diagrama Venda](images/lab1-tarefa4.png)
