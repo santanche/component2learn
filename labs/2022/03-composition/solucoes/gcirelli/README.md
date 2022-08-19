@@ -1,17 +1,8 @@
 # Modelo para Apresentação do Lab03 - Coreografia e Orquestração no Brechó Online
 
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-├── images     <- arquivos de imagens usadas no documento
-│
-└── workflows  <- arquivos de workflows
-~~~
 
 # Aluno
-* `<nome completo>`
+* `Giuliana Cirelli - RG 29.418.252-4`
 
 ## Tarefa 1 - Detalhando a Negociação das Ofertas
 
