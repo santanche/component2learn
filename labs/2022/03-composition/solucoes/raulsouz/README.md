@@ -25,6 +25,7 @@ b) Diagrama de Componentes e Descrição
 a) Workflow em Orange para recomendação
 
 ![Workflow Orange](images/workflow-orange.png)
+
 [orange.ows](workflows/orange.ows)
 
 b) Workflow em uma representação UML
