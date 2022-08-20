@@ -35,3 +35,15 @@ b) Diagrama de Componentes e Descrição
 > * 4. Os componente Loja recebem os dados da solicitacao no barramento e, apos receber a resposta dos vendedores, responde a solicitacao no barramento
 > * 5. Leilao recebe as respostas no barramento e envia a lista de volta ao cliente atravez do componentes auction e cliente
 > * 6. O processo se repete ate se concluir
+
+## Tarefa 2 - Recomendação de Preço
+
+Considerando o que existe um conjunto de dados históricos sobre produtos, valores, frete e dias de entrega, ranqueados por preferência, escreva um sistema que ranqueie produtos de acordo com ofertas feitas pelos fornecedores.
+
+a) Elabore um workflow em Orange para recomendação. Utilize o arquivo [products-negotiated.csv](products-negotiated.csv) para o treinamento e o arquivo [products-negotiated-test.csv]( products-negotiated-test.csv) para teste.
+
+![DTO](imagens/Orange.PNG)
+
+b) Transforme esse workflow em uma representação UML.
+
+![DTO](imagens/uml.PNG)
