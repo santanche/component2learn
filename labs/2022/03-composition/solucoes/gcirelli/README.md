@@ -10,16 +10,19 @@ a) Representação do DTO
 
 > Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
 >
-![DTO](images/dto.png)
+![DTO](images/mensagens.png)
+
 
 b) Diagrama de Componentes e Descrição
 
 > Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
 >
-![Coreografia](images/coreografia.png)
+![Coreografia](images/diagrama.png)
 >
 > Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
->
+
+![DTO](images/interfaces.png)
+
 > Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
 >
  * passo 1: Fornecedores estão constantemente postando ofertas de produtos (interface OfertaFornecedor), o campo preço é o valor ofertado.
