@@ -11,7 +11,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `<Lucas Lopes Moreira>`
 
 ## Tarefa 1 - Detalhando a Negociação das Ofertas
 
