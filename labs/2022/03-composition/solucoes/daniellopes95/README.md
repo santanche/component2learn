@@ -36,7 +36,7 @@ a) Workflow em Orange para recomendação
 
 ![Workflow Orange](images/tarefa2_a.png)
 >
-![Workflow Orange](workflows/tarefa2_a.ows)
+> * [Workflow Orange](workflows/tarefa2_a.ows)
 
 b) Workflow em uma representação UML
 
