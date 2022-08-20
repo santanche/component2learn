@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="data" position="(310.0, 520.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(518.0, 447.0)" />
+		<node id="2" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="select data" position="(517.0, 566.0)" />
+		<node id="3" name="kNN" qualified_name="Orange.widgets.model.owknn.OWKNNLearner" project_name="Orange3" version="" title="kNN" position="(720.0, 576.0)" />
+		<node id="4" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(930.0, 574.0)" />
+		<node id="5" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="select test" position="(736.0, 705.0)" />
+		<node id="6" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="test" position="(539.0, 727.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="4" source_node_id="5" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="6" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/leonardomoscardo/Downloads/products-negotiated.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/leonardomoscardo/Downloads', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03;\x00\x00\x01\xb6\x00\x00\x04\x80\x00\x00\x03-\x00\x00\x03;\x00\x00\x01\xd2\x00\x00\x04\x80\x00\x00\x03-\x00\x00\x00\x00\x02\x00\x00\x00\x08\x00\x00\x00\x03;\x00\x00\x01\xd2\x00\x00\x04\x80\x00\x00\x03-', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02N\x00\x00\x01j\x00\x00\x05m\x00\x00\x03y\x00\x00\x02N\x00\x00\x01\x86\x00\x00\x05m\x00\x00\x03y\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x02N\x00\x00\x01\x86\x00\x00\x05m\x00\x00\x03y', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="2" format="pickle">gASV1gEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAArIAAAE3
+AAAFCQAAA6oAAAKyAAABUwAABQkAAAOqAAAAAAAAAAAIAAAAArIAAAFTAAAFCQAAA6qUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwFcHJpY2WUSwKGlIwJYXR0cmlidXRllEsAhpSMCHNoaXBwaW5nlEsC
+hpRoFUsBhpSMBGRheXOUSwKGlGgVSwKGlIwEcmFua5RLAYaUjAVjbGFzc5RLAIaUjAdwcm9kdWN0
+lEsDhpSMBG1ldGGUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQoaBNLAmgXSwJoGksC
+aB1LAXWMBW1ldGFzlH2UaCFLA3N1YmF1Lg==
+</properties>
+		<properties node_id="3" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'learner_name': 'kNN', 'metric_index': 0, 'n_neighbors': 5, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03c\x00\x00\x01\xdc\x00\x00\x04Y\x00\x00\x03\x08\x00\x00\x03c\x00\x00\x01\xf8\x00\x00\x04Y\x00\x00\x03\x08\x00\x00\x00\x00\x02\x00\x00\x00\x08\x00\x00\x00\x03c\x00\x00\x01\xf8\x00\x00\x04Y\x00\x00\x03\x08', 'weight_index': 0, '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASV0wEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAALYAAAB4wAABRMAAAO2AAAC2AAAAf8AAAUTAAADtgAAAAAAAAAACAAAAALY
+AAAB/wAABRMAAAO2lIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwMc2hvd25fc2NvcmVzlI+UKIwDTVNFlIwCRjGUjAlQcmVjaXNpb26UjARSTVNFlIwHQy1JbmRl
+eJSMA0FVQ5SMAkNBlIwDTUFFlIwGUmVjYWxslIwCUjKUkHOMC19fdmVyc2lvbl9flEsBjBBjb250
+ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQo
+jAZ2YWx1ZXOUfZQojAtzaG93bl9wcm9ic5RLAYwMdGFyZ2V0X2NsYXNzlIwWKEF2ZXJhZ2Ugb3Zl
+ciBjbGFzc2VzKZRoB32UaBVLAXWMB2NsYXNzZXOUKIwBMZSMATKUjAEzlIwBNJSMATWUjAE2lIwB
+N5SMATiUjAE5lIwCMTCUdJR1YmF1Lg==
+</properties>
+		<properties node_id="5" format="pickle">gASV9wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAArIAAAE4
+AAAFCQAAA6sAAAKyAAABVAAABQkAAAOrAAAAAAAAAAAIAAAAArIAAAFUAAAFCQAAA6uUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwFcHJpY2WUSwKGlIwJYXR0cmlidXRllEsAhpSMCHNoaXBwaW5nlEsC
+hpRoFUsBhpSMBGRheXOUSwKGlGgVSwKGlIwEcmFua5RLAYaUjAVjbGFzc5RLAIaUjAdwcm9kdWN0
+lEsDhpSMBG1ldGGUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQojAVwcmljZZRLAowI
+c2hpcHBpbmeUSwKMBGRheXOUSwKMBHJhbmuUSwF1jAVtZXRhc5R9lIwHcHJvZHVjdJRLA3N1YmF1
+Lg==
+</properties>
+		<properties node_id="6" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/leonardomoscardo/Downloads/products-negotiated-test.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/leonardomoscardo/Downloads', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03;\x00\x00\x01\xb6\x00\x00\x04\x80\x00\x00\x03-\x00\x00\x03;\x00\x00\x01\xd2\x00\x00\x04\x80\x00\x00\x03-\x00\x00\x00\x00\x02\x00\x00\x00\x08\x00\x00\x00\x03;\x00\x00\x01\xd2\x00\x00\x04\x80\x00\x00\x03-', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
