@@ -6,18 +6,16 @@
 ## Tarefa 1 - Detalhando a Negociação das Ofertas
 
 a) Representação do DTO
-![DTO](images/Lab03-Tarefa1-a.png)
+
+![DTO](images/Lab03_tarefa1-a.png)
 
 b) Diagrama de Componentes e Descrição
-![Coreografia](images/Lab03-Tarefa1-b.png)
->
-> Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
->
-> Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
->
-> * passo 1
-> * passo 2
-> * passo 3
+
+![Coreografia](images/Lab03_tarefa1-b1.png)
+
+Diagrama de atividades relacionadas a orquestração dos serviços, passo a passo: 
+
+![Orquestração](images/Lab03_tarefa1-b2.png)
 
 ## Tarefa 2 - Recomendação de Preço
 
