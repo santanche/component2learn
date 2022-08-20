@@ -17,36 +17,21 @@ Estrutura de pastas:
 
 a) Representação do DTO
 
-> Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
->
-![DTO](images/dto.png)
+![DTO](images/diagram.png)
 
 b) Diagrama de Componentes e Descrição
 
 > Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
 >
-![Coreografia](images/coreografia.png)
+![DTO](images/dto.png)
 >
 > Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
 >
 > Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
 >
-> * passo 1
-> * passo 2
-> * passo 3
-
-## Tarefa 2 - Recomendação de Preço
-
-a) Workflow em Orange para recomendação
-
-> Coloque a imagem PNG da captura de tela workflow em Orange, conforme exemplo a seguir:
->
-![Workflow Orange](images/example-workflow-orange.png)
->
-> Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima).
-
-b) Workflow em uma representação UML
-
-> Coloque a imagem PNG da captura de tela workflow em UML, conforme exemplo a seguir:
->
-![Workflow UML](images/example-workflow-uml.png)
+> * 1. O componente cliente lanca uma nova solicitacao de compra feita pelo usuario
+> * 2. O componente Auction gerencia as mensagens entre o componentes cliente e leilao 
+> * 3. O componente Solicitacao Produto e Leilao Postam no barramento os produtos solicitados e o valor da oferta
+> * 4. Os componente Loja recebem os dados da solicitacao no barramento e, apos receber a resposta dos vendedores, responde a solicitacao no barramento
+> * 5. Leilao recebe as respostas no barramento e envia a lista de volta ao cliente atravez do componentes auction e cliente
+> * 6. O processo se repete ate se concluir
