@@ -1,25 +1,52 @@
-# Coreografia e Orquestração no Brechó Online
+# Modelo para Apresentação do Lab03 - Coreografia e Orquestração no Brechó Online
 
-Retomando o laboratório anterior que tem o desafio de trabalhar o tema de serviços de aprendizagem de máquina dentro do contexto do projeto Brechó Online. Mais especificamente será feito um recorte na recomendação de vendedores/produtos para clientes em busca de um produto.
+Estrutura de pastas:
 
-Retomando o cenário: no Brechó Online há uma grande quantidade (sempre crescente) de vendedores oferecendo produtos e de clientes buscando produtos. Você está projetando um serviço de recomendação que deve ranquear ofertas de produtos/vendedores de acordo com um produto buscado por um cliente.
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── images     <- arquivos de imagens usadas no documento
+│
+└── workflows  <- arquivos de workflows
+~~~
 
-O seu serviço de aprendizagem de máquina vai funcionar em duas partes: módulo de aprendizagem constante e módulo de ranqueamento. O módulo de aprendizagem constante, recebe constantemente dados do sistema (a sua escolha) e aprende padrões sobre preferências de clientes para futura recomendação. Como os produtos, preferências e tendências mudam ao longo do tempo, este módulo está constantemente aprendendo, a fim de atualizar seu conhecimento. O módulo de ranqueamento faz recomendações para clientes, ranqueando ofertas de produtos de acordo com alguma busca que esse cliente esteja executando. Ele deve levar em conta o perfil do cliente e do vendedor para realizar o ranqueamento.
+# Aluno
+* `<nome completo>`
 
 ## Tarefa 1 - Detalhando a Negociação das Ofertas
 
-Considere uma extensão desse ranqueamento funciona na forma de uma negociação automatizada. De um lado há vários fornecedores e, do outro, vários clientes. Cada vez que um cliente posta uma solicitação, isso vai para um espaço de negociação, acessível por qualquer fornecedor. Os fornecedores postam suas ofertas, que serão recebidas pelos clientes. Nesse espaço de negociação, os clientes podem fazer uma contra proposta para um fornecedor. Caso o fornecedor concorde com a contraproposta, ele comunica ao cliente.
+a) Representação do DTO
 
-a) Considere que haverá um DTO (Data Transfer Object) que incorpora toda a negociação (itens que o cliente quer comprar e valores oferecidos e negociados). Como você representaria esse DTO?
+> Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
+>
+![DTO](images/dto.png)
 
-b) Construa um diagrama dos componentes envolvidos na negociação e descreva com as suas palavras como eles interagem (escreva na forma de tópicos em que item é descrito brevemente).
+b) Diagrama de Componentes e Descrição
 
-Para esta tarefa utilize os [Diagramas de Referência](https://docs.google.com/presentation/d/1g2mds_SA_w0WNuJmoMg1UZtNbPQMnEz54XWL_DoRDtg/edit?usp=sharing).
+> Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
+>
+![Coreografia](images/coreografia.png)
+>
+> Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
+>
+> Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
+>
+> * passo 1
+> * passo 2
+> * passo 3
 
 ## Tarefa 2 - Recomendação de Preço
 
-Considerando o que existe um conjunto de dados históricos sobre produtos, valores, frete e dias de entrega, ranqueados por preferência, escreva um sistema que ranqueie produtos de acordo com ofertas feitas pelos fornecedores.
+a) Workflow em Orange para recomendação
 
-a) Elabore um workflow em Orange para recomendação. Utilize o arquivo [products-negotiated.csv](products-negotiated.csv) para o treinamento e o arquivo [products-negotiated-test.csv]( products-negotiated-test.csv) para teste.
+> Coloque a imagem PNG da captura de tela workflow em Orange, conforme exemplo a seguir:
+>
+![Workflow Orange](images/example-workflow-orange.png)
+>
+> Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima).
 
-b) Transforme esse workflow em uma representação UML.
+b) Workflow em uma representação UML
+
+> Coloque a imagem PNG da captura de tela workflow em UML, conforme exemplo a seguir:
+>
+![Workflow UML](images/example-workflow-uml.png)
