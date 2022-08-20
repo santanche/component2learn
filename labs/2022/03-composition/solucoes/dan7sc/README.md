@@ -11,29 +11,32 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `<nome completo>`
+* `Daniel Salgado Costa`
 
 ## Tarefa 1 - Detalhando a Negociação das Ofertas
 
 a) Representação do DTO
-
-> Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
 >
 ![DTO](images/dto.png)
 
 b) Diagrama de Componentes e Descrição
 
-> Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
->
 ![Coreografia](images/coreografia.png)
->
-> Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
+
+c) Representação das Interfaces
+
+![DTO](images/interfaces.png)
 >
 > Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
 >
-> * passo 1
-> * passo 2
-> * passo 3
+> * Comprador envia pedido de compra de um produto
+> * SolicitaProduto intercepta este pedido e envia para o leilao
+> * Leilao envia o pedido para os vendedores
+> * Vendedor envia sua oferta para o Leilao
+> * Leilao envia oferta para o Ranqueamento
+> * Ranqueamento envia o resultado do rank para o Leilao
+> * Leilao envia a melhor oferta para SolicitaProduto
+
 
 ## Tarefa 2 - Recomendação de Preço
 
