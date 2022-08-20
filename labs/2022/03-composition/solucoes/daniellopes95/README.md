@@ -23,8 +23,6 @@ b) Diagrama de Componentes e Descrição
 
 ![Coreografia](images/tarefa1_b.png)
 >
-> Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
->
 > * O Cliente gera novas solicitações de compras de produtos;
 > * O componente de Solicitação de Produtos recebe essas requisições do cliente, fornece no barramento para as lojas interessadas na venda e envia a relação de produtos ao Leilão;
 > * As lojas recebem as solicitações de produtos através do barramento e enviam suas propostas (negociações);
