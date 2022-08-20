@@ -15,3 +15,11 @@ a) Considere que haverá um DTO (Data Transfer Object) que incorpora toda a nego
 b) Construa um diagrama dos componentes envolvidos na negociação e descreva com as suas palavras como eles interagem (escreva na forma de tópicos em que item é descrito brevemente).
 
 Para esta tarefa utilize os [Diagramas de Referência](https://docs.google.com/presentation/d/1g2mds_SA_w0WNuJmoMg1UZtNbPQMnEz54XWL_DoRDtg/edit?usp=sharing).
+
+## Tarefa 2 - Recomendação de Preço
+
+Considerando o que existe um conjunto de dados históricos sobre produtos, valores, frete e dias de entrega, ranqueados por preferência, escreva um sistema que ranqueie produtos de acordo com ofertas feitas pelos fornecedores.
+
+a) Elabore um workflow em Orange para recomendação. Utilize o arquivo [products-negotiated.csv](products-negotiated.csv) para o treinamento e o arquivo [products-negotiated-test.csv]( products-negotiated-test.csv) para teste.
+
+b) Transforme esse workflow em uma representação UML.
