@@ -38,8 +38,6 @@ b) Diagrama de Componentes e Descrição
 
 ## Tarefa 2 - Recomendação de Preço
 
-Considerando o que existe um conjunto de dados históricos sobre produtos, valores, frete e dias de entrega, ranqueados por preferência, escreva um sistema que ranqueie produtos de acordo com ofertas feitas pelos fornecedores.
-
 a) Elabore um workflow em Orange para recomendação. Utilize o arquivo [products-negotiated.csv](products-negotiated.csv) para o treinamento e o arquivo [products-negotiated-test.csv]( products-negotiated-test.csv) para teste.
 
 ![Orange](imagens/Orange.PNG)
