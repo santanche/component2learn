@@ -28,4 +28,5 @@ a) Workflow em Orange para recomendação
 b) Workflow em uma representação UML
 
 ![Workflow UML](images/workflow-uml.png)
+>
 ![Workflow UML](images/predictions.png)
