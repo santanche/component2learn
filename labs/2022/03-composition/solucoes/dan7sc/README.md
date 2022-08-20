@@ -42,7 +42,7 @@ c) Representação das Interfaces
 
 a) Workflow em Orange para recomendação
 
-> Coloque a imagem PNG da captura de tela workflow em Orange, conforme exemplo a seguir:
+> Não consegui fazer o Orange funcionar na minha m.
 >
 ![Workflow Orange](images/example-workflow-orange.png)
 
