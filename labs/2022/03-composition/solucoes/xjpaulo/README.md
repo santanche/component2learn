@@ -28,12 +28,17 @@ b) Diagrama de Componentes e Descrição
 ![Coreografia](images/coreografia.png)
 >
 > Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
+> ![DTO2](images/dto2.png)
 >
 > Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
 >
-> * passo 1
-> * passo 2
-> * passo 3
+> * As negociações são abertas pelos clientes que iniciam o processo enviando uma oferta.
+> * O módulo aprendizado é responsável por capturar as ofertas que passam pelo barramento, sejam de fornecedores ou clientes.
+> * Após receber esses dados, a listagem é feita enviando para o ranqueamento dos fornecedores.
+> * O ranqueamento envia para o cliente as ofertas de seu interesse.
+> * O cliente pode fazer uma contraproposta após receber as ofertas ranqueadas.
+> * O fornecedor recebe as contrapropostas, podendo aceitá-la ou recusá-la.
+> * O DTO é responsável por essa troca de informações da negociação, informando campos como mensagem, sender (cliente/fornecedor), valor de contraproposta e um boolean para informar se a proposta foi aceita ou recusada.
 
 ## Tarefa 2 - Recomendação de Preço
 
