@@ -23,10 +23,10 @@ a) Workflow em Orange para recomendação
 
 ![Workflow Orange](images/workflow-orange.png)
 >
->![Workflow](workflows/workflow.ows)
+>![Workflow .ows](workflows/workflow.ows)
 
 b) Workflow em uma representação UML
 
 ![Workflow UML](images/workflow-uml.png)
 >
-![Workflow UML](images/predictions.png)
+![Predictions](images/predictions.png)
