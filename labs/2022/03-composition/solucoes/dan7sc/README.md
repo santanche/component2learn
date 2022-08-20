@@ -27,7 +27,7 @@ c) Representação das Interfaces
 
 ![DTO](images/interfaces.png)
 >
-> Escreva uma breve descrição de como a coreografia opera na forma de tópicos, conforme exemplo a seguir:
+> Descrição de como a coreografia opera na forma de tópicos:
 >
 > * Comprador envia pedido de compra de um produto
 > * SolicitaProduto intercepta este pedido e envia para o leilao
