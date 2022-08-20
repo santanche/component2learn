@@ -1,5 +1,11 @@
 # Template para Entrega dos Laboratórios Individuais e Projeto em Grupo
 
+# Template do Projeto
+
+O projeto deve seguir o template detalhado na pasta:
+
+* [Projeto](project/)
+
 # Templates de Laboratórios
 
 Cada laboratório tem seu template que está especificado dentro da respectiva pasta:

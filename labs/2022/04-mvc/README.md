@@ -1,5 +1,5 @@
 # MVC e Event-driven App
-*Lab de Componentização e Reúso de Software 14/08/2021*
+*Lab de Componentização e Reúso de Software 20/08/2022*
 
 ## Tarefa 1
 
