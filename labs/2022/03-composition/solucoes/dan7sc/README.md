@@ -42,7 +42,7 @@ c) Representação das Interfaces
 
 a) Workflow em Orange para recomendação
 
-> Não consegui fazer o Orange funcionar na minha m.
+> Não consegui fazer o Orange funcionar na minha máquina.
 >
 ![Workflow Orange](images/example-workflow-orange.png)
 
