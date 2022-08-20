@@ -42,8 +42,8 @@ Considerando o que existe um conjunto de dados históricos sobre produtos, valor
 
 a) Elabore um workflow em Orange para recomendação. Utilize o arquivo [products-negotiated.csv](products-negotiated.csv) para o treinamento e o arquivo [products-negotiated-test.csv]( products-negotiated-test.csv) para teste.
 
-![DTO](imagens/Orange.PNG)
+![Orange](imagens/Orange.PNG)
 
 b) Transforme esse workflow em uma representação UML.
 
-![DTO](imagens/uml.PNG)
+![UML](imagens/uml.PNG)
