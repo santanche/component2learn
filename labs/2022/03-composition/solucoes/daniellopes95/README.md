@@ -33,10 +33,10 @@ b) Diagrama de Componentes e Descrição
 
 a) Workflow em Orange para recomendação
 
-![Workflow Orange](images/tarefa2-a.png)
+![Workflow Orange](images/tarefa2_a.png)
 >
-> Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima).
+![Workflow Orange](workflows/tarefa2_a.ows)
 
 b) Workflow em uma representação UML
 
-![Workflow UML](images/tarefa2-b.png)
+![Workflow UML](images/tarefa2_b.png)
