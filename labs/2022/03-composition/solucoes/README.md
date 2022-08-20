@@ -17,13 +17,13 @@ Estrutura de pastas:
 
 a) Representação do DTO
 
-![DTO](images/diagram.png)
+![DTO](imagens/diagram.png)
 
 b) Diagrama de Componentes e Descrição
 
 > Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
 >
-![DTO](images/dto.png)
+![DTO](imagens/dtoJson.png)
 >
 > Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
 >
