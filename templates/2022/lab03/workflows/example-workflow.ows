@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Import Diet File" position="(147.94117647058823, 203.76470588235296)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Define Target" position="(305.0, 212.0)" />
+		<node id="2" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree" position="(455.0, 212.0)" />
+		<node id="3" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Import Test File" position="(303.57142857142867, 437.2380952380952)" />
+		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Define Target" position="(453.0952380952381, 435.33333333333326)" />
+		<node id="5" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predict" position="(603.0952380952381, 321.57142857142867)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Show Diet File" position="(309.0952380952381, 71.57142857142867)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="2" sink_node_id="5" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="0" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-diet.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 15, 'value': 'Categorical'}, {'start': 15, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/ds4h/data/zombie/raw/zombie-diet.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 15, 'value': 'Categorical'}, {'start': 15, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/component2learn/templates/2022/lab03/workflows', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03x\x00\x00\x01\x8e\x00\x00\x04\xc3\x00\x00\x02\xf6\x00\x00\x03x\x00\x00\x01\xb3\x00\x00\x04\xc3\x00\x00\x02\xf6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03x\x00\x00\x01\xb3\x00\x00\x04\xc3\x00\x00\x02\xf6', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASV+AIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAl4AAAEe
+AAAE3QAAAv0AAAJeAAABHgAABN0AAAL9AAAAAAAAAAAHgAAAAl4AAAEeAAAE3QAAAv2UjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwLYml0dGVyIGhlcmKUSwGGlIwJYXR0cmlidXRllEsAhpSMBXNsdWdz
+lEsBhpRoFUsBhpSMCmNvb2tlZCB2ZWeUSwGGlGgVSwKGlIwKZ2lhbnQgbWVhdJRLAYaUaBVLA4aU
+jAdyYXcgdmVnlEsBhpRoFUsEhpSMB2Rlc3NlcnSUSwGGlGgVSwWGlIwIcG90YXRvZXOUSwGGlGgV
+SwaGlIwKZ3JlZW4gbWVhdJRLAYaUaBVLB4aUjARlZ2dzlEsBhpRoFUsIhpSMBWJlYW5zlEsBhpRo
+FUsJhpSMBWhvbmV5lEsBhpRoFUsKhpSMBGZpc2iUSwGGlGgVSwuGlIwEbWlsa5RLAYaUaBVLDIaU
+jAVjaGlsaZRLAYaUaBVLDYaUjAlmcmllZCB2ZWeUSwGGlGgVSw6GlIwKY3VwcyB3YXRlcpRLAoaU
+aBVLD4aUjAZyZWdpb26USwGGlIwFY2xhc3OUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOU
+fZQoaBNLAWgXSwFoGksBaB1LAWggSwFoI0sBaCZLAWgpSwFoLEsBaC9LAWgySwFoNUsBaDhLAWg7
+SwFoPksBaEFLAmhESwF1jAVtZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="2" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x11\x00\x00\x00\xa2\x00\x00\x03\x8d\x00\x00\x02&gt;\x00\x00\x02\x11\x00\x00\x00\xa2\x00\x00\x03\x8d\x00\x00\x02&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02\x11\x00\x00\x00\xa2\x00\x00\x03\x8d\x00\x00\x02&gt;', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'zombie-diet-predict.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 15, 'value': 'Categorical'}, {'start': 15, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/ds4h/data/zombie/raw/zombie-diet-predict.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 15, 'value': 'Categorical'}, {'start': 15, 'stop': 16, 'value': 'Numeric'}, {'start': 16, 'stop': 17, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/component2learn/templates/2022/lab03/workflows', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xf8\x00\x00\x01G\x00\x00\x04C\x00\x00\x02\xaf\x00\x00\x02\xf8\x00\x00\x01l\x00\x00\x04C\x00\x00\x02\xaf\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xf8\x00\x00\x01l\x00\x00\x04C\x00\x00\x02\xaf', '__version__': 3}</properties>
+		<properties node_id="4" format="pickle">gASV+AIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAl4AAAEe
+AAAE3QAAAv0AAAJeAAABHgAABN0AAAL9AAAAAAAAAAAHgAAAAl4AAAEeAAAE3QAAAv2UjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwLYml0dGVyIGhlcmKUSwGGlIwJYXR0cmlidXRllEsAhpSMBXNsdWdz
+lEsBhpRoFUsBhpSMCmNvb2tlZCB2ZWeUSwGGlGgVSwKGlIwKZ2lhbnQgbWVhdJRLAYaUaBVLA4aU
+jAdyYXcgdmVnlEsBhpRoFUsEhpSMB2Rlc3NlcnSUSwGGlGgVSwWGlIwIcG90YXRvZXOUSwGGlGgV
+SwaGlIwKZ3JlZW4gbWVhdJRLAYaUaBVLB4aUjARlZ2dzlEsBhpRoFUsIhpSMBWJlYW5zlEsBhpRo
+FUsJhpSMBWhvbmV5lEsBhpRoFUsKhpSMBGZpc2iUSwGGlGgVSwuGlIwEbWlsa5RLAYaUaBVLDIaU
+jAVjaGlsaZRLAYaUaBVLDYaUjAlmcmllZCB2ZWeUSwGGlGgVSw6GlIwKY3VwcyB3YXRlcpRLAoaU
+aBVLD4aUjAZyZWdpb26USwGGlIwFY2xhc3OUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOU
+fZQoaBNLAWgXSwFoGksBaB1LAWggSwFoI0sBaCZLAWgpSwFoLEsBaC9LAWgySwFoNUsBaDhLAWg7
+SwFoPksBaEFLAmhESwF1jAVtZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="5" format="pickle">gASV3gEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAABEAAAAGwAAB38AAAQ3AAACXgAAAR4AAATdAAAC/QAAAAACAAAAB4AAAABE
+AAAAQAAAB38AAAQ3lIwJc2VsZWN0aW9ulF2USwFhjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJs
+ZZR9lIwMc2hvd25fc2NvcmVzlI+UKIwJUHJlY2lzaW9ulIwGUmVjYWxslIwCUjKUjAdDLUluZGV4
+lIwEUk1TRZSMA01BRZSMAkYxlIwDTVNFlIwCQ0GUjANBVUOUkHOMC19fdmVyc2lvbl9flEsBjBBj
+b250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGU
+fZQojAZ2YWx1ZXOUfZQojAtzaG93bl9wcm9ic5RLAYwMdGFyZ2V0X2NsYXNzlIwWKEF2ZXJhZ2Ug
+b3ZlciBjbGFzc2VzKZRoB32UaBVLAXWMB2NsYXNzZXOUKIwGZm9yZXN0lIwJaGlnaGxhbmRzlIwJ
+bW91bnRhaW5zlIwFbm9ydGiUjAVzb3V0aJR0lHViYXUu
+</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00D\x00\x00\x00\x1b\x00\x00\x07@\x00\x00\x03j\x00\x00\x00D\x00\x00\x00@\x00\x00\x07@\x00\x00\x03j\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00D\x00\x00\x00@\x00\x00\x07@\x00\x00\x03j', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
