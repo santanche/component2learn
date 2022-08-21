@@ -41,7 +41,7 @@ a) Workflow em Orange para recomendação
 
 > Coloque a imagem PNG da captura de tela workflow em Orange, conforme exemplo a seguir:
 >
-![Workflow Orange](images/example-workflow-orange.png)
+![Workflow Orange](workflows/example-workflow-orange.png)
 >
 > Coloque um link para o arquivo em Orange – o arquivo deverá estar na pasta workflows (veja estrutura acima).
 
@@ -49,4 +49,4 @@ b) Workflow em uma representação UML
 
 > Coloque a imagem PNG da captura de tela workflow em UML, conforme exemplo a seguir:
 >
-![Workflow UML](images/example-workflow-uml.png)
+![Workflow UML](worflows/example-workflow-uml.png)
