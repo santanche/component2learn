@@ -19,3 +19,6 @@
    3. Cliente: Componente responsável pela interação entre a negociação e  o cliente.
    4. Negociação: Componente responsável pelo gerenciamento da mensagem recebida pelo componente leilão e o cliente, tendo responsabilidade sobre a gestão dessa negociação.
    5. LojaX: Componentes relacionados com os vendedores, fazem tratamento e recebimento das mensagens recebidas pelo barramento, e também posta a negociação proposta pelo vendedor para determinado produto.
+
+## Tarefa 2 - Workflow Orange
+![Diagrama Eventos](images/orange.png)
