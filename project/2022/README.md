@@ -1,6 +1,6 @@
-# Projeto Final de 2021
+# Projeto Final de 2022
 
-Veja a [Especificação em PDF](trabalho-rcs-2021-v01.pdf). O template de submissão está na pasta de templates.
+Veja a [Especificação em PDF](trabalho-rcs-2022-v01.pdf). O template de submissão está na pasta de templates.
 
 ## Passos para submissão dos Laboratórios.
 
