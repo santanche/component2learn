@@ -49,4 +49,4 @@ b) Workflow em uma representação UML
 
 > Coloque a imagem PNG da captura de tela workflow em UML, conforme exemplo a seguir:
 >
-![Workflow UML](images/example-workflow-uml.png)
+![Workflow UML](images/example-workflow-uml.png) 
