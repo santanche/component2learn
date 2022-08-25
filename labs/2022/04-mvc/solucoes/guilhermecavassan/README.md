@@ -1,32 +1,38 @@
-# Modelo para Apresentação do Lab04 - MVC
-
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-├── images     <- arquivos de imagens usadas no documento
-│
-└── app        <- apps do MIT App Inventor exportados em formato `aia`
-~~~
+# Apresentação do Lab04 - MVC
 
 # Aluno
-* `<nome completo>`
+* `Guilherme Cavassan - RA: 2022601122`
 
 # Tarefa 1 - App no MIT App Inventor
 
-> Coloque as imagens PNG da captura de seis telas do seu aplicativo:
-> * tela 1 - captura da tela completa de design de interface
-> * tela 2 - captura de tela do app com nenhum produto selecionado
-> * tela 3 - captura de tela do app com primeiro produto selecionado
-> * tela 4 - captura de tela do app com segundo produto selecionado
-> * tela 5 - compra de um dos produtos efetivada
-> * tela 6 - diagrama de blocos do aplicativo
->
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+## Aplicativo e componentes:
+![Aplicativo e componentes](images/Lab04_tarefa1_a.png)
+
+## Eventos e ações
+![Eventos](images/Lab04_tarefa1_b.png)
+
+## Tela inicial:
+![Tela inicial](images/Lab04_tarefa1_c0.jpg)
+
+## Tela produto 1:
+![Tela produto 1](images/Lab04_tarefa1_c1.jpg)
+
+## Tela produto 2:
+![Tela produto 2](images/Lab04_tarefa1_c2.jpg)
+
+## Tela produto 3:
+![Tela produto 3](images/Lab04_tarefa1_c3.jpg)
+
+## Tela Compra realizada:
+![Tela Compra realizada](images/Lab04_tarefa1_c4.jpg)
+
+## Aplicativo AIA:
+![link](app/Lab04.aia)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+## Diagrama eventos Seleção de produtos:
+![Diagrama Eventos Seleção de produtos](images/Lab04_tarefa2_a.png)
+
+## Diagrama eventos compra:
+![Diagrama Eventos](images/Lab04_tarefa2_b.png)
