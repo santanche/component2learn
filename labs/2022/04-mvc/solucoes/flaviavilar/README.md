@@ -40,3 +40,4 @@ Estrutura de pastas:
 > ![Tela1](images/buy-button.png)
 > ![Tela1](images/init-screen.png)
 > ![Tela1](images/close-screen.png)
+
