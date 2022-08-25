@@ -17,11 +17,18 @@ Estrutura de pastas:
 
 > Coloque as imagens PNG da captura de seis telas do seu aplicativo:
 > * tela 1 - captura da tela completa de design de interface
-> * tela 2 - captura de tela do app com nenhum produto selecionado
+> ![Tela1](images/1.png)
+> * tela 2 - captura de tela do app com nenhum produto selecionado \
+> ![Tela1](images/2.png)
 > * tela 3 - captura de tela do app com primeiro produto selecionado
+> ![Tela1](images/3.png)
 > * tela 4 - captura de tela do app com segundo produto selecionado
-> * tela 5 - compra de um dos produtos efetivada
+> ![Tela1](images/4.png)
+> * tela 5 - compra de um dos produtos efetivada \
+> ![Tela1](images/5.png)
 > * tela 6 - diagrama de blocos do aplicativo
+> ![Tela1](images/6.png)
+> ![Tela1](images/7.png)
 >
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
@@ -29,4 +36,7 @@ Estrutura de pastas:
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> ![Tela1](images/item-list.png)
+> ![Tela1](images/buy-button.png)
+> ![Tela1](images/init-screen.png)
+> ![Tela1](images/close-screen.png)
