@@ -27,7 +27,7 @@ Estrutura de pastas:
 > * tela 5 - compra de um dos produtos efetivada:
 > ![Tela-Compra-Efetivada](images/tela05.png)
 > * tela 6 - diagrama de blocos do aplicativo:
-> ![Tela-Diagrama-Blocos](images/tela06.png)
+> ![Tela-Diagrama-Blocos](images/tela06_2.png)
 >
 > Link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. 
 > ![Link-Aplicativo](app/Lab04_T1.aia)
