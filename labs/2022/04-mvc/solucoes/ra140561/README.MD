@@ -11,7 +11,7 @@ Estrutura de pastas:
 ~~~
 
 # Aluno
-* `Daniel Pinheiro Cunha - **(RA) EX164437**`
+* `Daniel Pinheiro Cunha - __(RA) EX164437__`
 
 # Tarefa 1 - App no MIT App Inventor
 
