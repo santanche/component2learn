@@ -37,4 +37,4 @@ Estrutura de pastas:
 > Imagens do diagrama orientado a eventos:
 >
 > ![Diagrama Eventos1](images/diagrama-eventos-1.png)
-> ![Diagrama Eventos2](images/diagrama-eventos-2.png)
+> ![Diagrama Eventos2](images/diagrama-eventos-2_.png)
