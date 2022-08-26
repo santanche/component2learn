@@ -56,4 +56,4 @@ Estrutura de pastas:
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-![Diagrama Eventos](images/exercicio-comp.png)
+![Diagrama Eventos](exercicio-comp.png)
