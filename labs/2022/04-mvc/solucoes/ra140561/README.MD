@@ -34,6 +34,7 @@ Estrutura de pastas:
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> Imagem PNG do diagrama orientado a eventos:
+> Imagens do diagrama orientado a eventos:
 >
-> ![Diagrama Eventos](images/diagrama-eventos.png)
+> ![Diagrama Eventos1](images/diagrama-eventos-1.png)
+> ![Diagrama Eventos2](images/diagrama-eventos-2.png)
