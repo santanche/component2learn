@@ -1,6 +1,4 @@
-# Modelo para Apresentação do Lab04 - MVC
-
-Estrutura de pastas:
+# Lab04 - MVC
 
 # Aluno
 * `Mayara Ferreira Fernandes`
