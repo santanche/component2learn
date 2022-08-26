@@ -8,7 +8,7 @@
 ![Tela Inicial](images/tela-inicial.png)
 ![Tela Bicicleta](images/tela-bicicleta.png)
 ![Tela Casa](images/tela-casa.png)
-![Tela Compra](images/tela-carro.png)
+![Tela Carro](images/tela-carro.jpeg)
 ![Bloco lista](images/bloco-lista.png)
 ![Bloco Carro](images/bloco-carro.png)
 [Link App](app/lab4.aia)
