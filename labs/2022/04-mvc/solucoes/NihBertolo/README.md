@@ -36,4 +36,6 @@ Estrutura de pastas:
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
 >
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+> ![Diagrama Eventos](images/diagrama_componente.drawio.png)
+> ![Diagrama Eventos](images/diagrama_componente.drawio(1).png)
+> ![Diagrama Eventos](images/diagrama_componente.drawio(2).png)
