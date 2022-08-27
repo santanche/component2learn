@@ -27,6 +27,11 @@ Estrutura de pastas:
 > ![site3](images/appinventor3.png)
 > ![site4](images/appinventor4.png)
 
+> Imagens PNG da captura do diagrama de blocos do aplicativo:
+> ![bloco1](images/block1.png)
+> ![bloco2](images/block2.png)
+> ![bloco3](images/block3.png)
+> ![bloco4](images/block4.png)
 
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
