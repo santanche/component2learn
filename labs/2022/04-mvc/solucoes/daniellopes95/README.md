@@ -44,4 +44,5 @@ Estrutura de pastas:
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-> ![Diagrama Eventos](images/tarefa2.png)
+> ![Diagrama Eventos 1](images/tarefa2_a.png)
+> ![Diagrama Eventos 2](images/tarefa2_b.png)
