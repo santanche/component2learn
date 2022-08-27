@@ -16,10 +16,10 @@ Estrutura de pastas:
 # Tarefa 1 - App no MIT App Inventor
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
-![Diagrama Eventos](images/Slide1.png)
-![Diagrama Eventos](images/Slide2.png)
-![Diagrama Eventos](images/Slide3.png)
-![Diagrama Eventos](images/Slide4.png)
-![Diagrama Eventos](images/Slide5.png)
-![Diagrama Eventos](images/Slide6.png)
+![Diagrama Eventos](images/Slide1.PNG)
+![Diagrama Eventos](images/Slide2.PNG)
+![Diagrama Eventos](images/Slide3.PNG)
+![Diagrama Eventos](images/Slide4.PNG)
+![Diagrama Eventos](images/Slide5.PNG)
+![Diagrama Eventos](images/Slide6.PNG)
 
