@@ -21,6 +21,12 @@ Estrutura de pastas:
 > ![Detalhes produto 2](images/produto2_teclado.png)
 > ![Detalhes produto 3](images/produto3_caneta.png)
 
+> Imagens PNG da captura de telas do site:
+> ![site1](images/appinventor1.png)
+> ![site2](images/appinventor2.png)
+> ![site3](images/appinventor3.png)
+> ![site4](images/appinventor4.png)
+
 
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
