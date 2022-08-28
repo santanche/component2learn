@@ -19,7 +19,7 @@ b) Diagrama de Componentes e Descrição
 * Se os dados estiverem válidos, o serviço de nogociação publica uma mensagem avisando todos os fornecedores e compradores sobre esta negociação
 * Um fornecedor cria uma oferta, adiciona a NegociacaoDTO e manda uma mensagem no tópico de requisições
 * O serviço de nogiação recebe eventos de todos os fornecedores, tratando eventuais concorrencias, valida os dados, atualiza o estado da negociação e posta uma mensagem no tópico de negociação avisando todos os outros componentes
-* O comprador recebe esse ebvento e pode aceitar ou fazer uma contra proposta
+* O comprador recebe esse evento e pode aceitar ou fazer uma contra proposta
 * Se uma contra proposta for feita, o fornecedor pode aceitar ou não
 * É possível que um fornecedor faça uma oferta parcial, isto é, sem incluir todos os produtos da solicitação. Nesse caso, a oferta é aceita mas a negociação não acabada dando oportunidade para outros fornecedore completarem os resto dos pedidos.
 
