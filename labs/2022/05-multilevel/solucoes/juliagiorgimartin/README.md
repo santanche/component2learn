@@ -1,7 +1,5 @@
 # Lab 05 - Multilevel
 
-Estrutura de pastas:
-
 # Aluno
 
 - `Julia Giorgi Martin`
