@@ -7,3 +7,5 @@ Serão considerados pontos de qualidade:
 * se a app mostrar a imagem do romance
 * se aceitar com espaços e converter para underscore
 * se houver tratamento de erros
+
+O usuário não deve digitar o .json
