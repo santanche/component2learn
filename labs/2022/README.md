@@ -4,6 +4,9 @@
 
 * [Laboratório 1](01-architectures/)
 * [Laboratório 2](02-design/)
+* [Laboratório 3](03-composition/)
+* [Laboratório 4](04-mvc/)
+* [Laboratório 5](05-multilevel/)
 
 ## Passos para submissão dos Laboratórios.
 
