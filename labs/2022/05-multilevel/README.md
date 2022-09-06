@@ -2,7 +2,7 @@
 *Lab de Componentização e Reúso de Software 03/09/2022*
 
 Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inventor no qual:
-* ou se digite o nome de um romance e o aplicativo mostre dados desse romance
+* ou se digite o nome de um romance e o aplicativo mostre dados desse romance recuperados da DBPedia;
 * ou se digite o número do quadrinho e o aplicativo mostre dados sobre ele do xkcd.
 
 Serão considerados pontos de qualidade:
