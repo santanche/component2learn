@@ -13,6 +13,8 @@ Estrutura de pastas:
 # Aluno
 * `Daniel Francisco Ferreira Lopes`
 
+# Detalhes do App
+
 > * tela 1 - captura da tela completa de design de interface
 
 ![Tela 1](images/tela1.png)
