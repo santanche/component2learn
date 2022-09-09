@@ -778,9 +778,9 @@ Esquema das mensagens JSON:
 
 * O componente `TransportadoraLogistica` assina no barramento mensagens de tópico "`logistica/{userId}/{pedidoId}/status/request`" através da interface `StatusEntregaRequest`.
   * Ao receber uma mensagem de tópico "`logistica/{userId}/{pedidoId}/status/request`", realiza o processo de busca do pedido para obtenção do status, junto a transportadora responsável.
-  * O proprio componente tambem é responsável por fazer uma assinatura no barramento com o tópico "`logistica/{userId}/{pedidoId}/status`" e interface `StatusEntrega`, para retorno da solicitação.
+  * O proprio componente também é responsável por fazer uma assinatura no barramento com o tópico "`logistica/{userId}/{pedidoId}/status`" e interface `StatusEntrega`, para retorno da solicitação.
 
-* O componente `LogisticaInsightsConnector` ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos entregues, devolução e taxa de sucesso.
+* O componente `LogisticaInsightsConnector` ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligência artificial de escolha de transportadoras, levando em conta a região, prazo, últimos pedidos entregues, devolução e taxa de sucesso.
 
 
 ## Componente `PedidoLogistica`
@@ -801,7 +801,7 @@ Método | Objetivo
 
 
 ## Componente `VendedorLogistica`
-Este componente fornece informações do vendedor para os compoentnes `PedidoLogistica` e `LogisticaInsightsConnector`.
+Este componente fornece informações do vendedor para os componentes `PedidoLogistica` e `LogisticaInsightsConnector`.
 
 **Interfaces**
 > IVendedorLogistica
@@ -810,7 +810,7 @@ Este componente fornece informações do vendedor para os compoentnes `PedidoLog
 
 ## Detalhamento das Interfaces
 ### Interface `IVendedorLogistica`
-Interface requerida para busca de informações de um vendedor no compoente de logística.
+Interface requerida para busca de informações de um vendedor no componente de logística.
 
 Método | Objetivo
 -------| --------
@@ -818,18 +818,18 @@ Método | Objetivo
 `getVendedorId` | Retorna o vendedorId.
 
 ### Interface `IVendedorLogisticaInsights`
-Interface requerida para busca de informações de vendedores no compoente de logística, para treinamento da IA.
+Interface requerida para busca de informações de vendedores no componente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
-`setDataInicio` | Define a data início que as informações de vendedor serão selecionada para o treinamento.
-`getDataInicio` | Retorna a data início que as informações de vendedor serão selecionada para o treinamento.
+`setDataInicio` | Define a data de início que as informações de vendedor serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data de início que as informações de vendedor serão selecionada para o treinamento.
 `setCompleto` | Define se será pesquisado dados para um treinamento completo.
 `isComplete` | Retorna se será pesquisado dados para um treinamento completo.
 
 
 ## Componente `ClienteLogistica`
-Este componente fornece informações do cliente para os compoentnes `PedidoLogistica` e `LogisticaInsightsConnector`.
+Este componente fornece informações do cliente para os componentes `PedidoLogistica` e `LogisticaInsightsConnector`.
 
 **Interfaces**
 > IClienteLogistica
@@ -838,7 +838,7 @@ Este componente fornece informações do cliente para os compoentnes `PedidoLogi
 
 ## Detalhamento das Interfaces
 ### Interface `IClienteLogistica`
-Interface requerida para busca de informações de um cliente no compoente de logística.
+Interface requerida para busca de informações de um cliente no componente de logística.
 
 Método | Objetivo
 -------| --------
@@ -846,7 +846,7 @@ Método | Objetivo
 `getClienteId` | Retorna o clienteId.
 
 ### Interface `IClienteLogisticaInsights`
-Interface requerida para busca de informações de clientes no compoente de logística, para treinamento da IA.
+Interface requerida para busca de informações de clientes no componente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -858,7 +858,7 @@ Método | Objetivo
 
 
 ## Componente `TransportadoraLogistica`
-Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+Este componente assina o barramento para requisição de status de entrega e fornece a assinatura com o respectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
 
 **Interfaces**
 > IStatusEntregaRequest
@@ -892,7 +892,7 @@ Método | Objetivo
 
 
 ### Interface `ITransportadoraLogisticaInsights`
-Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
+Interface requerida para busca de informações de transportadoras no componente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -904,7 +904,7 @@ Método | Objetivo
 
 
 ## Componente `LogisticaInsightsConnector`
-Este componente se comunica com outro componente externo, para realização da busca de parceiros logísticos e fornece assinatura no barramento para opções de parceiros logísticos para um pedido. O componente ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos entregues, devolução e taxa de sucesso.
+Este componente se comunica com outro componente externo, para realização da busca de parceiros logísticos e fornece assinatura no barramento para opções de parceiros logísticos para um pedido. O componente ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligência artificial de escolha de transportadoras, levando em conta a região, prazo, últimos pedidos entregues, devolução e taxa de sucesso.
 
 **Interfaces**
 > IOpcoesLogistica
@@ -972,18 +972,18 @@ Método | Objetivo
 ### Detalhamento da interação de componentes
 
 * O componente `InformacaoPedido` assina no barramento mensagens de tópico "`pedido/{userId}/request`" através da interface `RecebePedido`.
-  * Ao receber uma mensagem de tópico "`pedido/{userId}/request`", realiza a busca das informações necessárias e inícia do processo de pagamento, passando as informações para o componente `PagamentoPedido` atraves da interface `IPagamentoPedido` .
+  * Ao receber uma mensagem de tópico "`pedido/{userId}/request`", realiza a busca das informações necessárias e inicia do processo de pagamento, passando as informações para o componente `PagamentoPedido` atraves da interface `IPagamentoPedido` .
   * O componente `PagamentoPedido` reserva os produtos solicitados atraves do componente `ReservaProduto`, utilizando a interface `IReservaProduto`
   * Para que o processo de pagamento, o componente `PagamentoPedido` disponibiliza ao barramento o tópico "`pagamento/{pedidoId}`" e aguarda a notificação de pagamento assinando o tópico "`pagamento/{pedidoId}/status`".
 
 * O componente `InformacaoPedido` ainda é responsável por assinar no barramento mensagens de tópico "`pedido/{pedidoId}/{userId}/status`" através da interface `ISolicitacaoStatus`.
   * Ao receber uma mensagem de tópico "`pedido/{pedidoId}/{userId}/status`", realiza o processo de busca do pedido para obtenção do status.
-  * O proprio componente tambem é responsável por fazer uma assinatura no barramento com o tópico "`pedido/{pedidoId}/{userId}/status/response`" e interface `IStatusPedido`, para retorno da solicitação.
+  * O proprio componente também é responsável por fazer uma assinatura no barramento com o tópico "`pedido/{pedidoId}/{userId}/status/response`" e interface `IStatusPedido`, para retorno da solicitação.
 
 
 
 ## Componente `InformacaoPedido`
-Este componente assina o barramento para recebimento de pedido e requisição de status do pedido e fornece a asssinatura com o recpectivo status.
+Este componente assina o barramento para recebimento de pedido e requisição de status do pedido e fornece a assinatura com o respectivo status.
 
 **Interfaces**
 > IRecebePedido
@@ -1000,8 +1000,8 @@ Método | Objetivo
 -------| --------
 `setUserId` | Define o userId.
 `getUserId` | Retorna o userId.
-`setPedidos` | Define uma lista de produtos que compoem um pedido.
-`getPedidos` | Retorna uma lista de produtos que compoem um pedido.
+`setPedidos` | Define uma lista de produtos que compõem um pedido.
+`getPedidos` | Retorna uma lista de produtos que compõem um pedido.
 
 ### Interface `ISolicitacaoStatus`
 Interface requerida para solicitação de status de um pedido.
@@ -1029,7 +1029,7 @@ Método | Objetivo
 
 
 ## Componente `PagamentoPedido`
-Este componente recebe um pedido e solicita ao barramento via assinatura um pagamento. Ele tambem recebe atraves do barramneto o status de pagamento de um pedido.
+Este componente recebe um pedido e solicita ao barramento via assinatura um pagamento. Ele também recebe através do barramento o status de pagamento de um pedido.
 
 **Interfaces**
 > ISolicitaPagamento
@@ -1114,7 +1114,7 @@ Método | Objetivo
 
 
 ## Componente `NotificaVendedor`
-Este componente é responsável por notificar o vendedor para movimentações do pedido.
+Este componente é responsável por notificar o vendedor para as movimentações do pedido.
 
 **Interfaces**
 > INotificaVendedor
@@ -1151,3 +1151,4 @@ Método | Objetivo
 
 ## Diagramas do Nível 2 MVC `PedidoComponent`
 > ![Modelo de diagrama no nível 2](images/PedidoComponenteDetailsMVC.png)
+> 
