@@ -1154,6 +1154,6 @@ Método | Objetivo
 > ![Modelo de diagrama no nível 2](images/PedidoComponenteDetailsMVC.png)
 > 
 # Nível 3
-> ![Modelo de diagrama no nível 2](images/appview.PNG)
-> ![Modelo de diagrama no nível 2](images/Componentes.PNG)
-> ![Modelo de diagrama no nível 2](images/Diagram.PNG)
+> ![View](images/appview.PNG)
+> ![Componentes](images/Componentes.PNG)
+> ![Diagrama](images/Diagrama.PNG)
