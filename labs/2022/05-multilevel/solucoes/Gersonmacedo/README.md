@@ -21,7 +21,8 @@ Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inven
 ![image](https://user-images.githubusercontent.com/96983768/189167136-9337d0e2-341c-411e-acab-6aafeca51591.png)
 
 
-
+# Link da aplicacao
+https://github.com/Gersonmmacedo/component2learn/blob/master/labs/2022/05-multilevel/solucoes/Gersonmacedo/Scala.aia
 Serão considerados pontos de qualidade:
 * se a app mostrar a imagem do romance (DBPedia)
 * se aceitar com espaços e converter para underscore (DBPedia)
