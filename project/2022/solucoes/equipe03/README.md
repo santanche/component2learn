@@ -1,4 +1,4 @@
-# Projeto `<Título>`
+# Projeto `Brechó Online - Equipe 03`
 
 # Equipe
 
