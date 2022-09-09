@@ -19,7 +19,7 @@ a) Representação do DTO
 
 > Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
 >
-![DTO](images/dto.png)
+![DTO](lab3-comp-exe1.png)
 
 b) Diagrama de Componentes e Descrição
 
