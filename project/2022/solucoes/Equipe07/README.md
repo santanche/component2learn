@@ -791,7 +791,7 @@ Este componente assina o barramento para recepção do pedido, orquestra a busca
 
 ## Detalhamento das Interfaces
 ### Interface `IBuscaLogistica`
-Interface requerida para busca de um parceiro logístico do sistema de brechó online.
+Interface para busca de um parceiro logístico do sistema de brechó online.
 
 Método | Objetivo
 -------| --------
@@ -810,7 +810,7 @@ Este componente fornece informações do vendedor para os componentes `PedidoLog
 
 ## Detalhamento das Interfaces
 ### Interface `IVendedorLogistica`
-Interface requerida para busca de informações de um vendedor no componente de logística.
+Interface para busca de informações de um vendedor no componente de logística.
 
 Método | Objetivo
 -------| --------
@@ -818,7 +818,7 @@ Método | Objetivo
 `getVendedorId` | Retorna o vendedorId.
 
 ### Interface `IVendedorLogisticaInsights`
-Interface requerida para busca de informações de vendedores no componente de logística, para treinamento da IA.
+Interface para busca de informações de vendedores no componente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -838,7 +838,7 @@ Este componente fornece informações do cliente para os componentes `PedidoLogi
 
 ## Detalhamento das Interfaces
 ### Interface `IClienteLogistica`
-Interface requerida para busca de informações de um cliente no componente de logística.
+Interface para busca de informações de um cliente no componente de logística.
 
 Método | Objetivo
 -------| --------
@@ -846,7 +846,7 @@ Método | Objetivo
 `getClienteId` | Retorna o clienteId.
 
 ### Interface `IClienteLogisticaInsights`
-Interface requerida para busca de informações de clientes no componente de logística, para treinamento da IA.
+Interface para busca de informações de clientes no componente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -869,7 +869,7 @@ Este componente assina o barramento para requisição de status de entrega e for
 
 ## Detalhamento das Interfaces
 ### Interface `IStatusEntregaRequest`
-Interface requerida para busca de informações de status de entrega de um pedido.
+Interface para busca de informações de status de entrega de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -879,7 +879,7 @@ Método | Objetivo
 `getPedidoId` | Retorna o pedidoId.
 
 ### Interface `IStatusEntrega`
-Interface requerida para retorno de informações de status de entrega de um pedido.
+Interface para retorno de informações de status de entrega de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -892,7 +892,7 @@ Método | Objetivo
 
 
 ### Interface `ITransportadoraLogisticaInsights`
-Interface requerida para busca de informações de transportadoras no componente de logística, para treinamento da IA.
+Interface para busca de informações de transportadoras no componente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -917,7 +917,7 @@ Este componente se comunica com outro componente externo, para realização da b
 
 ## Detalhamento das Interfaces
 ### Interface `IOpcoesLogistica`
-Interface requerida para retorno da busca de opções de entrega de um pedido.
+Interface para retorno da busca de opções de entrega de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -927,7 +927,7 @@ Método | Objetivo
 `getLogisticas` | Retorna uma coleção de parceiros logísticos.
 
 ### Interface `IBuscarLogisticaInsights`
-Interface requerida para  busca de opções de entrega de um pedido.
+Interface para  busca de opções de entrega de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -940,7 +940,7 @@ Método | Objetivo
 
 
 ### Interface `ILogistica`
-Interface requerida para comunicação com o componente de IA responsável pela busca de opções de parceiros logísticos.
+Interface para comunicação com o componente de IA responsável pela busca de opções de parceiros logísticos.
 
 Método | Objetivo
 -------| --------
@@ -952,7 +952,7 @@ Método | Objetivo
 `getPedidoDto` | Retorna o pedido.
 
 ### Interface `ILogisticaTraining`
-Interface requerida para comunicação com o componente de IA responsável pelo treinamento de opções de parceiros logísticos.
+Interface para comunicação com o componente de IA responsável pelo treinamento de opções de parceiros logísticos.
 
 Método | Objetivo
 -------| --------
@@ -974,16 +974,16 @@ Método | Objetivo
 * O componente `InformacaoPedido` assina no barramento mensagens de tópico "`pedido/{userId}/request`" através da interface `RecebePedido`.
   * Ao receber uma mensagem de tópico "`pedido/{userId}/request`", realiza a busca das informações necessárias e inicia do processo de pagamento, passando as informações para o componente `PagamentoPedido` atraves da interface `IPagamentoPedido` .
   * O componente `PagamentoPedido` reserva os produtos solicitados atraves do componente `ReservaProduto`, utilizando a interface `IReservaProduto`
-  * Para que o processo de pagamento, o componente `PagamentoPedido` disponibiliza ao barramento o tópico "`pagamento/{pedidoId}`" e aguarda a notificação de pagamento assinando o tópico "`pagamento/{pedidoId}/status`".
+  * Para que o processo de pagamento seja concluído o componente `PagamentoPedido` disponibiliza ao barramento o tópico "`pagamento/{pedidoId}`" e aguarda a notificação de pagamento assinando o tópico "`pagamento/{pedidoId}/status`".
 
 * O componente `InformacaoPedido` ainda é responsável por assinar no barramento mensagens de tópico "`pedido/{pedidoId}/{userId}/status`" através da interface `ISolicitacaoStatus`.
   * Ao receber uma mensagem de tópico "`pedido/{pedidoId}/{userId}/status`", realiza o processo de busca do pedido para obtenção do status.
-  * O proprio componente também é responsável por fazer uma assinatura no barramento com o tópico "`pedido/{pedidoId}/{userId}/status/response`" e interface `IStatusPedido`, para retorno da solicitação.
+  * O proprio componente também é responsável por disponibilizar uma assinatura no barramento com o tópico "`pedido/{pedidoId}/{userId}/status/response`" e interface `IStatusPedido`, para retorno da solicitação.
 
 
 
 ## Componente `InformacaoPedido`
-Este componente assina o barramento para recebimento de pedido e requisição de status do pedido e fornece a assinatura com o respectivo status.
+Este componente assina o barramento para recebimento de pedido. Ele tambèm é responsável pela requisição de status do pedido e fornece a assinatura com o respectivo status.
 
 **Interfaces**
 > IRecebePedido
@@ -994,7 +994,7 @@ Este componente assina o barramento para recebimento de pedido e requisição de
 
 ## Detalhamento das Interfaces
 ### Interface `IRecebePedido`
-Interface requerida para solicitação de um pedido.
+Interface para solicitação de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1004,7 +1004,7 @@ Método | Objetivo
 `getPedidos` | Retorna uma lista de produtos que compõem um pedido.
 
 ### Interface `ISolicitacaoStatus`
-Interface requerida para solicitação de status de um pedido.
+Interface para solicitação de status de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1015,7 +1015,7 @@ Método | Objetivo
 
 
 ### Interface `IStatusPedido`
-Interface para status de um pedido.
+Interface para retornar o status de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1040,7 +1040,7 @@ Este componente recebe um pedido e solicita ao barramento via assinatura um paga
 
 ## Detalhamento das Interfaces
 ### Interface `ISolicitaPagamento`
-Interface requerida para realização de pagamento de um pedido.
+Interface para realização de pagamento de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1056,7 +1056,7 @@ Método | Objetivo
 `getSecurityCode` | Retorna o código de segurança do cartão.
 
 ### Interface `IStatusPagamento`
-Interface requerida para retorno do status de pagamento de um pedido.
+Interface para retorno do status de pagamento de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1070,7 +1070,7 @@ Método | Objetivo
 `getStatus` | Retorna o status.
 
 ### Interface `IPagamentoPedido`
-Interface requerida para solicitar o pagamento de um pedido.
+Interface para solicitar o pagamento de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1088,7 +1088,7 @@ Este componente é responsável por validar os produtos de um pedido e reservá-
 > IReservaProduto
 
 ### Interface `IReservaProduto`
-Interface requerida para reserva de produto durante a realização da operação de pagamento.
+Interface para reserva de produto durante a realização da operação de pagamento.
 
 Método | Objetivo
 -------| --------
@@ -1104,7 +1104,7 @@ Este componente é responsável por gerenciar as notificações do componente de
 > INotificaStatus
 
 ### Interface `INotificaStatus`
-Interface requerida para realização de notificações relacionadas a um pedido.
+Interface para realização de notificações relacionadas a um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1120,7 +1120,7 @@ Este componente é responsável por notificar o vendedor para as movimentações
 > INotificaVendedor
 
 ### Interface `INotificaVendedor`
-Interface requerida para realização de notificações relacionadas a um vendedor.
+Interface para realização de notificações relacionadas a um vendedor.
 
 Método | Objetivo
 -------| --------
@@ -1138,7 +1138,7 @@ Este componente é responsável por notificar o comprador para movimentações d
 > INotificaComprador
 
 ### Interface `INotificaComprador`
-Interface requerida para realização de notificações relacionadas a um comprador.
+Interface para realização de notificações relacionadas a um comprador.
 
 Método | Objetivo
 -------| --------
