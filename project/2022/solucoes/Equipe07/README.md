@@ -976,22 +976,167 @@ Método | Objetivo
 * Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
   * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
 
-## Componente `PedidoLogistica`
-Resumo do papel do componente e serviços que ele oferece.
+
+
+## Componente `InformacaoPedido`
+Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
 
 **Interfaces**
-> IBuscaLogistica
+> IStatusEntregaRequest
+
+> IStatusEntrega
+
+> ITransportadoraLogisticaInsights
 
 ## Detalhamento das Interfaces
-
-### Interface `IBuscaLogistica`
-
-Interface requerida para busca de um parceiro logístico do sistema de brechó online.
+### Interface `IStatusEntregaRequest`
+Interface requerida para busca de informações de status de entrega de um pedido.
 
 Método | Objetivo
 -------| --------
-`setUserId` | Define o userId que pedido está aberto.
-`getUserId` | Retorna o userId que pedido está aberto.
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
+
+### Interface `IStatusEntrega`
+Interface requerida para retorno de informações de status de entrega de um pedido.
+
+Método | Objetivo
+-------| --------
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
+`setStatus` | Define o status.
+`getStatus` | Retorna o status.
+
+
+### Interface `ITransportadoraLogisticaInsights`
+Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
+
+Método | Objetivo
+-------| --------
+`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
+`setCompleto` | Define se será pesquisado dados para um treinamento completo.
+`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
+
+
+## Componente `PagamentoPedido`
+Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+
+**Interfaces**
+> IStatusEntregaRequest
+
+> IStatusEntrega
+
+> ITransportadoraLogisticaInsights
+
+## Detalhamento das Interfaces
+### Interface `IStatusEntregaRequest`
+Interface requerida para busca de informações de status de entrega de um pedido.
+
+Método | Objetivo
+-------| --------
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
+
+### Interface `IStatusEntrega`
+Interface requerida para retorno de informações de status de entrega de um pedido.
+
+Método | Objetivo
+-------| --------
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
+`setStatus` | Define o status.
+`getStatus` | Retorna o status.
+
+
+### Interface `ITransportadoraLogisticaInsights`
+Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
+
+Método | Objetivo
+-------| --------
+`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
+`setCompleto` | Define se será pesquisado dados para um treinamento completo.
+`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
+
+
+## Componente `ReservaProduto`
+Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+
+**Interfaces**
+> IReservaProduto
+
+### Interface `IReservaProduto`
+Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
+
+Método | Objetivo
+-------| --------
+`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
+`setCompleto` | Define se será pesquisado dados para um treinamento completo.
+`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
+
+
+## Componente `NotificaStatus`
+Este componente é responsável por gerenciar as notificações do componente de pedido.
+
+**Interfaces**
+> INotificaStatus
+
+### Interface `INotificaStatus`
+Interface requerida para realização de notificações relacionadas a um pedido.
+
+Método | Objetivo
+-------| --------
+`setPedidoId` | Define o ID do pedido.
+`getPedidoId` | Retorna o ID do pedido.
+
+
+
+## Componente `NotificaVendedor`
+Este componente é responsável por notificar o vendedor para movimentações do pedido.
+
+**Interfaces**
+> INotificaVendedor
+
+### Interface `INotificaVendedor`
+Interface requerida para realização de notificações relacionadas a um vendedor.
+
+Método | Objetivo
+-------| --------
+`setVendedorId` | Define o ID do vendedor.
+`getVendedorId` | Retorna o ID do vendedor.
+`setPedidoId` | Define o ID do pedido.
+`getPedidoId` | Retorna o ID do pedido.
+
+
+
+## Componente `NotificaComprador`
+Este componente é responsável por notificar o comprador para movimentações do pedido.
+
+**Interfaces**
+> INotificaComprador
+
+### Interface `INotificaComprador`
+Interface requerida para realização de notificações relacionadas a um comprador.
+
+Método | Objetivo
+-------| --------
+`setClienteId` | Define o ID do comprador.
+`getClienteId` | Retorna a ID do comprador.
+`setPedidoId` | Define o ID do pedido.
+`getPedidoId` | Retorna o ID do pedido.
 
 
 
