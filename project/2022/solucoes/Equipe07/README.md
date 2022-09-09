@@ -971,10 +971,14 @@ Método | Objetivo
 
 ### Detalhamento da interação de componentes
 
-* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
-  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
-* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
-  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+* O componente `InformacaoPedido` assina no barramento mensagens de tópico "`pedido/{userId}/request`" através da interface `RecebePedido`.
+  * Ao receber uma mensagem de tópico "`pedido/{userId}/request`", realiza a busca das informações necessárias e inícia do processo de pagamento, passando as informações para o componente `PagamentoPedido` atraves da interface `IPagamentoPedido` .
+  * O componente `PagamentoPedido` reserva os produtos solicitados atraves do componente `ReservaProduto`, utilizando a interface `IReservaProduto`
+  * Para que o processo de pagamento, o componente `PagamentoPedido` disponibiliza ao barramento o tópico "`pagamento/{pedidoId}`" e aguarda a notificação de pagamento assinando o tópico "`pagamento/{pedidoId}/status`".
+
+* O componente `InformacaoPedido` ainda é responsável por assinar no barramento mensagens de tópico "`pedido/{pedidoId}/{userId}/status`" através da interface `ISolicitacaoStatus`.
+  * Ao receber uma mensagem de tópico "`pedido/{pedidoId}/{userId}/status`", realiza o processo de busca do pedido para obtenção do status.
+  * O proprio componente tambem é responsável por fazer uma assinatura no barramento com o tópico "`pedido/{pedidoId}/{userId}/status/response`" e interface `IStatusPedido`, para retorno da solicitação.
 
 
 
