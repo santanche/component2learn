@@ -3,12 +3,22 @@
 # Aluno
 * `Guilherme Cavassan - RA: 2022601122`
 
-# Tarefa
+# Tarefa - App no MIT App Inventor
 
-> Coloque as imagens PNG da captura das seguintes telas do seu aplicativo:
-> * tela 1 - captura da tela completa de design de interface
-> * tela 2 - captura de tela do app sem digitar romance
-> * tela 3 - captura de tela do app com romance digitado e resultado retornado
-> * tela 4 - (opcional) captura de tela do app quando acontece um erro
->
-> Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
+## Aplicativo e componentes:
+![Aplicativo e componentes](images/componentes.png)
+
+## Eventos e ações
+![Eventos](images/blocos.png)
+
+## Tela inicial:
+![Tela inicial](images/tela-inicial.jpg)
+
+## Tela de busca com sucesso:
+![Tela produto 1](images/tela-busca-sucesso.jpg)
+
+## Tela de busca com tratamento de erro:
+![Tela produto 2](images/tela-busca-erro.jpg)
+
+## Aplicativo AIA:
+![link](app/Lab05_xkcd.aia)
