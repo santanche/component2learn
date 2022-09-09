@@ -781,31 +781,79 @@ Esquema das mensagens JSON:
 
 * O componente `LogisticaInsightsConnector` ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos emtregues, devolução e taxa de sucesso.
 
-## Componente `<Nome do Componente>`
-Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `PedidoLogistica`
+Este componente assina o barramento para recepção do pedido, orquestra a busca de informações do pedido em `VendedorLogistica` e `ClienteLogistica` e realiza uma chamada para o componente `LogisticaInsightsConnector`.
 
 **Interfaces**
-As interfaces listadas são detalhadas a seguir:
+> IBuscaLogistica
 
 ## Detalhamento das Interfaces
-
-### Interface `ITableProducer`
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+### Interface `IBuscaLogistica`
+Interface requerida para busca de um parceiro logístico do sistema de brechó online.
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+`setUserId` | Define o userId que pedido está aberto.
+`getUserId` | Retorna o userId que pedido está aberto.
 
-### Interface `IDataSetProperties`
 
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+
+## Componente `VendedorLogistica`
+Este componente fornece informações do vendedor para os compoentnes `PedidoLogistica` e `LogisticaInsightsConnector`.
+
+**Interfaces**
+> IVendedorLogistica
+
+> IVendedorLogisticaInsights
+
+## Detalhamento das Interfaces
+### Interface `IVendedorLogistica`
+Interface requerida para busca de um parceiro logístico do sistema de brechó online.
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`setVendedorId` | Define o vendedorId.
+`getVendedorId` | Retorna o vendedorId.
+
+### Interface `IVendedorLogisticaInsights`
+Interface requerida para busca de informações de um vendedor no compoente de logística.
+
+Método | Objetivo
+-------| --------
+`setDataInicio` | Define a data início que as informações de vendedor serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data início que as informações de vendedor serão selecionada para o treinamento.
+`setCompleto` | Define se será pesquisado dados para um treinamento completo.
+`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
+
+## Componente `ClienteLogistica`
+Este componente fornece informações do cliente para os compoentnes `PedidoLogistica` e `LogisticaInsightsConnector`.
+
+**Interfaces**
+> IClienteLogistica
+
+> IClienteLogisticaInsights
+
+## Detalhamento das Interfaces
+### Interface `IClienteLogistica`
+Interface requerida para busca de informações de um cliente no compoente de logística.
+
+Método | Objetivo
+-------| --------
+`setClienteId` | Define o clienteId.
+`getClienteId` | Retorna o clienteId.
+
+### Interface `IClienteLogisticaInsights`
+Interface requerida para busca de um parceiro logístico do sistema de brechó online.
+
+Método | Objetivo
+-------| --------
+`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
+`setCompleto` | Define se será pesquisado dados para um treinamento completo.
+`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
 
 ## Diagramas do Nível 2 `PedidoComponent`
 
@@ -818,31 +866,24 @@ Método | Objetivo
 * Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
   * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
 
-## Componente `<Nome do Componente>`
+## Componente `PedidoLogistica`
 Resumo do papel do componente e serviços que ele oferece.
 
 **Interfaces**
-As interfaces listadas são detalhadas a seguir:
+> IBuscaLogistica
 
 ## Detalhamento das Interfaces
 
-### Interface `ITableProducer`
+### Interface `IBuscaLogistica`
 
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
-
-Método | Objetivo
--------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
-
-### Interface `IDataSetProperties`
-
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+Interface requerida para busca de um parceiro logístico do sistema de brechó online.
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`setUserId` | Define o userId que pedido está aberto.
+`getUserId` | Retorna o userId que pedido está aberto.
+
+
 
 ## Diagramas do Nível 2 MVC `PedidoComponent`
 > ![Modelo de diagrama no nível 2](images/PedidoComponenteDetailsMVC.png)
