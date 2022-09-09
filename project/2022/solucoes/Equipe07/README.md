@@ -779,7 +779,7 @@ Esquema das mensagens JSON:
   * Ao receber uma mensagem de tópico "`logistica/{userId}/{pedidoId}/status/request`", realiza o processo de busca do pedido para obtenção do status, junto a transportadora responsável.
   * O proprio componente tambem é responsável por fazer uma assinatura no barramento com o tópico "`logistica/{userId}/{pedidoId}/status`" e interface `StatusEntrega`, para retorno da solicitação.
 
-* O componente `LogisticaInsightsConnector` ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos emtregues, devolução e taxa de sucesso.
+* O componente `LogisticaInsightsConnector` ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos entregues, devolução e taxa de sucesso.
 
 
 ## Componente `PedidoLogistica`
@@ -899,6 +899,68 @@ Método | Objetivo
 `getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
 `setCompleto` | Define se será pesquisado dados para um treinamento completo.
 `isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
+
+
+## Componente `LogisticaInsightsConnector`
+Este componente se comunica com outro componente externo, para realização da busca de parceiros logísticos e fornece assinatura no barramento para opções de parceiros logísticos para um pedido. O componente ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos entregues, devolução e taxa de sucesso.
+
+**Interfaces**
+> IOpcoesLogistica
+
+> IBuscarLogisticaInsights
+
+> ILogistica
+
+> ILogisticaTraining
+
+## Detalhamento das Interfaces
+### Interface `IOpcoesLogistica`
+Interface requerida para retorno da busca de opções de entrega de um pedido.
+
+Método | Objetivo
+-------| --------
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setLogisticas` | Define uma coleção de parceiros logísticos.
+`getLogisticas` | Retorna uma coleção de parceiros logísticos.
+
+### Interface `IBuscarLogisticaInsights`
+Interface requerida para  busca de opções de entrega de um pedido.
+
+Método | Objetivo
+-------| --------
+`setVendedorDto` | Define o vendedor.
+`getVendedorDto` | Retorna o vendedor.
+`setClienteDto` | Define o cliente.
+`getClienteDto` | Retorna o cliente.
+`setPedidoDto` | Define o pedido.
+`getPedidoDto` | Retorna o pedido.
+
+
+### Interface `ILogistica`
+Interface requerida para comunicação com o componente de IA responsável pela busca de opções de parceiros logísticos.
+
+Método | Objetivo
+-------| --------
+`setVendedorDto` | Define o vendedor.
+`getVendedorDto` | Retorna o vendedor.
+`setClienteDto` | Define o cliente.
+`getClienteDto` | Retorna o cliente.
+`setPedidoDto` | Define o pedido.
+`getPedidoDto` | Retorna o pedido.
+
+### Interface `ILogisticaTraining`
+Interface requerida para comunicação com o componente de IA responsável pelo treinamento de opções de parceiros logísticos.
+
+Método | Objetivo
+-------| --------
+`setVendedoresDto` | Define uma lista de vendedores.
+`getVendedoresDto` | Retorna uma lista de vendedores.
+`setClientesDto` | Define uma lista de clientes.
+`getClientesDto` | Retorna uma lista de clientes.
+`setPedidosDto` | Define uma lista de pedidos.
+`getPedidosDto` | Retorna uma lista de pedidos.
 
 
 
