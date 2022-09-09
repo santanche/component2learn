@@ -18,6 +18,7 @@
 * `Rafael Gonçalves Vastag`
 * `Guilherme Cavassan`
 * `Lucas Lopes Moreira`
+* `Fabiano Louzada Cesário`
 # Nível 1
 
 ## Diagrama Geral do Nível 1
@@ -1152,3 +1153,7 @@ Método | Objetivo
 ## Diagramas do Nível 2 MVC `PedidoComponent`
 > ![Modelo de diagrama no nível 2](images/PedidoComponenteDetailsMVC.png)
 > 
+# Nível 3
+> ![Modelo de diagrama no nível 2](images/appview.PNG)
+> ![Modelo de diagrama no nível 2](images/Componentes.PNG)
+> ![Modelo de diagrama no nível 2](images/Diagram.PNG)
