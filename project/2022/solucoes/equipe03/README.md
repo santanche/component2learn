@@ -241,14 +241,36 @@ Método | Objetivo
 
 ## Diagrama do Nível 3
 
-> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
+### Caputura tela de pagamento
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
+![Captura de tela pagamento no mit](images/captura-prototipo-tela-pagamento-mit.png)
 
-> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
+![Captura de tela pagamento no dispositivo](images/captura-prototipo-tela-pagamento-phone.png)
 
-![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
+![Captura de tela pagamento componentes 1](images/captura-prototipo-tela-pagamento-componentes-1.png)
+
+![Captura de tela pagamento componentes 2](images/captura-prototipo-tela-pagamento-componentes-2.png)
+
+![Captura de tela pagamento componentes 3](images/captura-prototipo-tela-pagamento-componentes-3.png)
+
+### Caputura tela de entrega
+
+![Captura de tela entrega no mit](images/captura-prototipo-tela-entrega-mit.png)
+
+![Captura de tela entrega no dispositivo](images/captura-prototipo-tela-entrega-phone.png)
+
+![Captura de tela entrega componentes 1](images/captura-prototipo-tela-entrega-componentes-1.png)
+
+![Captura de tela entrega componentes 2](images/captura-prototipo-tela-entrega-componentes-2.png)
+
+### Caputura tela de diagrama referente ao protótipo
+
+![Modelo de diagrama no nível 2 tela de pagamento](images/diagrama-prototipo-1.png)
+
+![Modelo de diagrama no nível 2 tela de entrega](images/diagrama-prototipo-2.png)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir o mesmo formato usado no Nível 2.
+O componente é composto por duas telas, sendo a tela de pagamento como solicitado e a tela de entrega.
+Tela de pagamentos: é composta pelos compontes de descrição do produto, quantidade, valor total e forma de pagamento. Esses componentes geram informação para a próxima tela de entrega.
+Tela de entrega: é composta pelos endereços já previamente cadastrados, componente de edição de endereço, adição de um novo endereço e finalização da compra. Ao finalizar a compra é enviado as informações de compra para o componente de recomendação, sendo o responsável por alimentar as informações para o aprendizado.
