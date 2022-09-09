@@ -17,6 +17,7 @@
 # Equipe
 * `Rafael Gonçalves Vastag`
 * `Guilherme Cavassan`
+* `Lucas Lopes Moreira`
 # Nível 1
 
 ## Diagrama Geral do Nível 1
