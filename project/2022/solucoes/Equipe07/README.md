@@ -769,10 +769,17 @@ Esquema das mensagens JSON:
 
 ### Detalhamento da interação de componentes
 
-* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
-  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
-* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
-  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+* O componente `PedidoLogistica` assina no barramento mensagens de tópico "`entrega/{userId}/request`" através da interface `BuscarLogistica`.
+  * Ao receber uma mensagem de tópico "`entrega/{userId}/request`", dispara o início do processo de busca de transportadoras para um conjunto de produtos.
+  * Para que o processo de precificação e datas de entrega sejam precisos, são obtidas informações com os componentes internos `VendedorLogistica` e `ClienteLogistica`.
+  * Apos obter informações do cliente e vendedor, as informações são transmitidas para o componente `LogisticaInsightsConnector`, que por sua vez se conecta com um compoente externo, responsável pela busca de transportadoras, em um sistema regionalizado que faz uso de IA.
+  * O retorno do componente `LogisticaInsightsConnector` faz uma assinatura no barramento com o tópico "`entrega/{userId}/opcoes`" e interface `OpçoesLogistica`
+
+* O componente `TransportadoraLogistica` assina no barramento mensagens de tópico "`logistica/{userId}/{pedidoId}/status/request`" através da interface `StatusEntregaRequest`.
+  * Ao receber uma mensagem de tópico "`logistica/{userId}/{pedidoId}/status/request`", realiza o processo de busca do pedido para obtenção do status, junto a transportadora responsável.
+  * O proprio componente tambem é responsável por fazer uma assinatura no barramento com o tópico "`logistica/{userId}/{pedidoId}/status`" e interface `StatusEntrega`, para retorno da solicitação.
+
+* O componente `LogisticaInsightsConnector` ainda é responsável por coletar os dados de `VendedorLogistica`, `ClienteLogistica` e  `TransportadoraLogistica` para alimentar o processo de inteligencia artificial de escolha de transportadoras, levando em conta a região, prazo, ultimos pedidos emtregues, devolução e taxa de sucesso.
 
 ## Componente `<Nome do Componente>`
 Resumo do papel do componente e serviços que ele oferece.
