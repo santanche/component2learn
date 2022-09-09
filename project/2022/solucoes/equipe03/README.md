@@ -239,6 +239,10 @@ Método | Objetivo
 -------| --------
 `getEndereco` | `retorna endereço registrado no Usuario`
 
+### UML dos Componentes unificado
+
+![UML Unificado](images/uml_unificado.png)
+
 ## Diagrama do Nível 3
 
 ### Caputura tela de pagamento
