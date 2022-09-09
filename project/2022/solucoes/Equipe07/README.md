@@ -20,7 +20,7 @@
 
 ## Diagrama Geral do Nível 1
 
-![Modelo de diagrama no nível 1](images/diagramamacro.png)
+![Modelo de diagrama no nível 1](images/projeto.png)
 
 ### Detalhamento da interação de componentes
 
