@@ -18,7 +18,7 @@ Estrutura de pastas:
 > * tela 1 - captura da tela completa de design de interface
 > ![Tela-Completa](images/tela01.png)
 
-> * tela 2 - captura de tela do app sem digitar romance
+> * tela 2 - captura de tela do app sem digitar romance<br />
 > ![Tela-Sem-Tirinha](images/tela02.jpeg)
 
 > * tela 3 - captura de tela do app com romance digitado e resultado retornado
