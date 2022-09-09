@@ -809,7 +809,7 @@ Este componente fornece informações do vendedor para os compoentnes `PedidoLog
 
 ## Detalhamento das Interfaces
 ### Interface `IVendedorLogistica`
-Interface requerida para busca de um parceiro logístico do sistema de brechó online.
+Interface requerida para busca de informações de um vendedor no compoente de logística.
 
 Método | Objetivo
 -------| --------
@@ -817,7 +817,7 @@ Método | Objetivo
 `getVendedorId` | Retorna o vendedorId.
 
 ### Interface `IVendedorLogisticaInsights`
-Interface requerida para busca de informações de um vendedor no compoente de logística.
+Interface requerida para busca de informações de um vendedor no compoente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -845,6 +845,37 @@ Método | Objetivo
 `getClienteId` | Retorna o clienteId.
 
 ### Interface `IClienteLogisticaInsights`
+Interface requerida para busca de informações de um cliente no compoente de logística, para treinamento da IA.
+
+Método | Objetivo
+-------| --------
+`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
+`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
+`setCompleto` | Define se será pesquisado dados para um treinamento completo.
+`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
+
+
+## Componente `TransportadoraLogistica`
+Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+
+**Interfaces**
+> IStatusEntregaRequest
+
+> IStatusEntrega
+
+> ITransportadoraLogisticaInsights
+
+## Detalhamento das Interfaces
+### Interface `IClienteLogistica`
+Interface requerida para busca de informações de um cliente no compoente de logística.
+
+Método | Objetivo
+-------| --------
+`setClienteId` | Define o clienteId.
+`getClienteId` | Retorna o clienteId.
+
+### Interface `ITransportadoraLogisticaInsights`
 Interface requerida para busca de um parceiro logístico do sistema de brechó online.
 
 Método | Objetivo
@@ -853,6 +884,7 @@ Método | Objetivo
 `getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
 `setCompleto` | Define se será pesquisado dados para um treinamento completo.
 `isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+
 
 
 ## Diagramas do Nível 2 `PedidoComponent`
