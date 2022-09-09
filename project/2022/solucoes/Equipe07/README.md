@@ -16,6 +16,7 @@
 
 # Equipe
 * `Rafael Gonçalves Vastag`
+* `Guilherme Cavassan`
 # Nível 1
 
 ## Diagrama Geral do Nível 1
@@ -760,3 +761,81 @@ Esquema das mensagens JSON:
     entregaStatus: number
 }
 ~~~
+
+# Nível 2
+## Diagramas do Nível 2 `LogisticaComponent`
+
+> ![Modelo de diagrama no nível 2](images/LogisticaComponenteDetails.png)
+
+### Detalhamento da interação de componentes
+
+* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
+  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
+* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
+  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+
+## Componente `<Nome do Componente>`
+Resumo do papel do componente e serviços que ele oferece.
+
+**Interfaces**
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `ITableProducer`
+
+Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+
+Método | Objetivo
+-------| --------
+`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
+`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+
+### Interface `IDataSetProperties`
+
+Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+
+Método | Objetivo
+-------| --------
+`getDataSource` | Retorna o caminho da fonte de dados.
+`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+
+## Diagramas do Nível 2 `PedidoComponent`
+
+> ![Modelo de diagrama no nível 2](images/PedidoComponenteDetails.png)
+
+### Detalhamento da interação de componentes
+
+* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
+  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
+* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
+  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+
+## Componente `<Nome do Componente>`
+Resumo do papel do componente e serviços que ele oferece.
+
+**Interfaces**
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `ITableProducer`
+
+Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+
+Método | Objetivo
+-------| --------
+`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
+`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+
+### Interface `IDataSetProperties`
+
+Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+
+Método | Objetivo
+-------| --------
+`getDataSource` | Retorna o caminho da fonte de dados.
+`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+
+## Diagramas do Nível 2 MVC `PedidoComponent`
+> ![Modelo de diagrama no nível 2](images/PedidoComponenteDetailsMVC.png)
