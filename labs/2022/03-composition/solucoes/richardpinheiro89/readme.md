@@ -25,7 +25,7 @@ b) Diagrama de Componentes e Descrição
 
 > Coloque a imagem PNG do diagrama de componentes, conforme exemplo a seguir:
 >
-![Coreografia](images/coreografia.png)
+![Coreografia](lab3-comp-exe2.png)
 >
 > Coloque a imagem PNG dos tópicos associados aos DTOs. Este item é opcional, a associação pode ser feita na descrição.
 >
