@@ -1025,66 +1025,71 @@ Método | Objetivo
 
 
 ## Componente `PagamentoPedido`
-Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+Este componente recebe um pedido e solicita ao barramento via assinatura um pagamento. Ele tambem recebe atraves do barramneto o status de pagamento de um pedido.
 
 **Interfaces**
-> IStatusEntregaRequest
+> ISolicitaPagamento
 
-> IStatusEntrega
+> IStatusPagamento
 
-> ITransportadoraLogisticaInsights
+> IPagamentoPedido
 
 ## Detalhamento das Interfaces
-### Interface `IStatusEntregaRequest`
-Interface requerida para busca de informações de status de entrega de um pedido.
+### Interface `ISolicitaPagamento`
+Interface requerida para realização de pagamento de um pedido.
 
 Método | Objetivo
 -------| --------
 `setUserId` | Define o userId.
 `getUserId` | Retorna o userId.
-`setPedidoId` | Define o pedidoId.
-`getPedidoId` | Retorna o pedidoId.
+`setValue` | Define o valor a ser cobrado.
+`getValue` | Retorna o valor a ser cobrado.
+`setCard` | Define o cartão de crédito a ser usado.
+`getCard` | Retorna o cartão de crédito a ser usado.
+`setCode` | Define o número do cartão.
+`getCode` | Retorna o número do cartão.
+`setSecurityCode` | Define o código de segurança do cartão.
+`getSecurityCode` | Retorna o código de segurança do cartão.
 
-### Interface `IStatusEntrega`
-Interface requerida para retorno de informações de status de entrega de um pedido.
+### Interface `IStatusPagamento`
+Interface requerida para retorno do status de pagamento de um pedido.
 
 Método | Objetivo
 -------| --------
 `setUserId` | Define o userId.
 `getUserId` | Retorna o userId.
+`setPaymentId` | Retorna o paymentId.
+`getPaymentId` | Retorna o paymentId.
 `setPedidoId` | Define o pedidoId.
 `getPedidoId` | Retorna o pedidoId.
 `setStatus` | Define o status.
 `getStatus` | Retorna o status.
 
-
-### Interface `ITransportadoraLogisticaInsights`
-Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
+### Interface `IPagamentoPedido`
+Interface requerida para solicitar o pagamento de um pedido.
 
 Método | Objetivo
 -------| --------
-`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
-`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
-`setCompleto` | Define se será pesquisado dados para um treinamento completo.
-`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
 
 
 
 ## Componente `ReservaProduto`
-Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+Este componente é responsável por validar os produtos de um pedido e reservá-los para realização do pagamento.
 
 **Interfaces**
 > IReservaProduto
 
 ### Interface `IReservaProduto`
-Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
+Interface requerida para reserva de produto durante a realização da operação de pagamento.
 
 Método | Objetivo
 -------| --------
-`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
-`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
-`setCompleto` | Define se será pesquisado dados para um treinamento completo.
-`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
+`setPedidoId` | Define o ID do pedido.
+`getPedidoId` | Retorna o ID do pedido.
 
 
 
