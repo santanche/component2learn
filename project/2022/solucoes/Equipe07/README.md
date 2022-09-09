@@ -979,18 +979,28 @@ Método | Objetivo
 
 
 ## Componente `InformacaoPedido`
-Este componente assina o barramento para requisição de status de entrega e fornece a asssinatura com o recpectivo status. Ele também é responsável por fornecer informações de transportes para o componente `LogisticaInsightsConnector`.
+Este componente assina o barramento para recebimento de pedido e requisição de status do pedido e fornece a asssinatura com o recpectivo status.
 
 **Interfaces**
-> IStatusEntregaRequest
+> IRecebePedido
 
-> IStatusEntrega
+> ISolicitacaoStatus
 
-> ITransportadoraLogisticaInsights
+> IStatusPedido
 
 ## Detalhamento das Interfaces
-### Interface `IStatusEntregaRequest`
-Interface requerida para busca de informações de status de entrega de um pedido.
+### Interface `IRecebePedido`
+Interface requerida para solicitação de um pedido.
+
+Método | Objetivo
+-------| --------
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidos` | Define uma lista de produtos que compoem um pedido.
+`getPedidos` | Retorna uma lista de produtos que compoem um pedido.
+
+### Interface `ISolicitacaoStatus`
+Interface requerida para solicitação de status de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -999,8 +1009,9 @@ Método | Objetivo
 `setPedidoId` | Define o pedidoId.
 `getPedidoId` | Retorna o pedidoId.
 
-### Interface `IStatusEntrega`
-Interface requerida para retorno de informações de status de entrega de um pedido.
+
+### Interface `IStatusPedido`
+Interface para status de um pedido.
 
 Método | Objetivo
 -------| --------
@@ -1010,17 +1021,6 @@ Método | Objetivo
 `getPedidoId` | Retorna o pedidoId.
 `setStatus` | Define o status.
 `getStatus` | Retorna o status.
-
-
-### Interface `ITransportadoraLogisticaInsights`
-Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
-
-Método | Objetivo
--------| --------
-`setDataInicio` | Define a data início que as informações de cliente serão selecionada para o treinamento.
-`getDataInicio` | Retorna a data início que as informações de cliente serão selecionada para o treinamento.
-`setCompleto` | Define se será pesquisado dados para um treinamento completo.
-`isComplete` | Retorna se será pesquisado dados para um treinamento completo.
 
 
 
