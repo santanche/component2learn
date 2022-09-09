@@ -108,54 +108,136 @@ Se o usuário selecionar a opção de finalizar a compra o subcomponente `prepar
 * subcomponente `Usuario` assina o tópico `usuario/vendedor/+/id` e `usuario/comprador/+/id`
 * subcomponente `Endereço` assina o tópico `endereco/usuario/+/id`
 
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
+## Componente `Recomendações`
 
-## Componente `<Nome do Componente>`
+> *Recomendações* é responsável por várias vertentes do Machine Learning, relacionando a compra/venda, produtos, região de entrega e forma de entrega, sendo elas:
+> * Registrar Formas de Entrega
+> * Registrar Comprador/Vendedor que é um Usuário
+> * Registrar Lista de Produtos
+> * Registrar Preco total
+> * Registrar Região
 
-> Resumo do papel do componente e serviços que ele oferece.
+![Componente](images/componente_recomendacoes.png)
 
-![Componente](images/diagrama-componente.png)
+## Componente `Solicita Lista Produtos`
+
+> Componente responsável em entregar lista de produtos atualizados da compra.
+
+![Componente](images/componente_solicita_lista_produtos.png)
+
+## Componente `Monta Lista Produtos`
+
+> Componente responsável em montar a lista, com o que o usuário provê e as recomendações que são providas durante a constante atualização
+> da lista de produtos utilizando as informações como Produtos, Região de entrega, Vendedor, Comprador.
+
+![Componente](images/componente_montar_lista_produto.png)
+
+## Componente `Usuário`
+
+> Componente que entrega os dados do Usuario, sendo ele comprador ou vendedor
+
+![Componente](images/componente_usuario.png)
+
+## Componente `Endereço`
+
+> Componente que entrega os endereços, relacionando ao Usuario
+
+![Componente](images/componente_endereco.png)
+
+## Componente `Preparar Compra`
+
+> Este componente é responsável em preparar a compra.
+> * Preparar recomendações e apresentar ao usuário
+> * Preparar envio, relacionando usuário, endereço para entrega
+> * Preparar lista de produtos com quantidade
+> * Calcular preço total
+> * Na confirmação, preparar encomenda.
+
+![Componente](images/componente_preparar_compra.png)
+
+## Componente `Estoque`
+
+> Controlador de estoque, verificando disponibilidade e quantidade.
+> * Verifica disponibilidade de estoque.
+> * Verifica quantidade do estoque.
+
+![Componente](images/componente_estoque.png)
+
+## Componente `Encomenda`
+
+> Prepara todas as informações, produtos, dados para a encomenda.
+> * Cria uma encomenda para enviar as compras.
+
+![Componente](images/componente_encomenda.png)
 
 **Interfaces**
 > Listagem das interfaces do componente.
 
-As interfaces listadas são detalhadas a seguir:
+* IListaProduto
+* IUsuario
+* IEndereco
+* ILearningMachine
+* IEncomenda
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
+### Interface `ILearningMachine`
 
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+![Diagrama da Interface](images/interface_learning_machine.png)
 
-> Resumo do papel da interface.
-
-Método | Objetivo
--------| --------
-`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
-
-## Exemplos:
-
-### Interface `ITableProducer`
-
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+> Sistema que está sempre relacionando informações para criar relações de compra, vendedor
+> para criar recomendações.
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+`registrarPreco` | `Registra preços dos produtos`
+`registrarProduto` | `Registra Produtos da compra para relacionar`
+`registrarComprador` | `Registrar Comprador e dados`
+`registrarVendedor` | `Registrar Vendedor e dados`
+`registrarEntrega` | `Registrar forma de entrega da compra`
 
-### Interface `IDataSetProperties`
+### Interface `IEncomenda`
 
-![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
+![Diagrama da Interface](images/interface_encomenda.png)
 
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+> Expõe funções para criar encomenda e pedir para enviar.
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`setEncomenda` | `Cria encomenda com lista de produto e usuário`
+`enviaEncomenda` | `Gera a encomenda e cria uma nova encomenda para envio.`
+
+### Interface `IListaProduto`
+
+![Diagrama da Interface](images/interface_lista_produto.png)
+
+> Expõe funções para lista de produtos.
+
+Método | Objetivo
+-------| --------
+`getListaProduto` | `retorna lista de produto`
+`getQtdProduto` | `retorna quantidade de produtos disponíveis através do Estoque`
+`getDisponibilidade` | `retorna disponibilidade do produto através do Estoque`
+
+### Interface `IUsuario`
+
+![Diagrama da Interface](images/interface_usuario.png)
+
+> Retorna Usuario.
+
+Método | Objetivo
+-------| --------
+`getUsuario` | `Retorna objeto Usuario para a instância`
+
+### Interface `IEndereco`
+
+![Diagrama da Interface](images/interface_endereco.png)
+
+> Responsável em retornar endereço do usuário.
+
+Método | Objetivo
+-------| --------
+`getEndereco` | `retorna endereço registrado no Usuario`
 
 ## Diagrama do Nível 3
 
