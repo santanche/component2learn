@@ -817,7 +817,7 @@ Método | Objetivo
 `getVendedorId` | Retorna o vendedorId.
 
 ### Interface `IVendedorLogisticaInsights`
-Interface requerida para busca de informações de um vendedor no compoente de logística, para treinamento da IA.
+Interface requerida para busca de informações de vendedores no compoente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -845,7 +845,7 @@ Método | Objetivo
 `getClienteId` | Retorna o clienteId.
 
 ### Interface `IClienteLogisticaInsights`
-Interface requerida para busca de informações de um cliente no compoente de logística, para treinamento da IA.
+Interface requerida para busca de informações de clientes no compoente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
@@ -867,16 +867,31 @@ Este componente assina o barramento para requisição de status de entrega e for
 > ITransportadoraLogisticaInsights
 
 ## Detalhamento das Interfaces
-### Interface `IClienteLogistica`
-Interface requerida para busca de informações de um cliente no compoente de logística.
+### Interface `IStatusEntregaRequest`
+Interface requerida para busca de informações de status de entrega de um pedido.
 
 Método | Objetivo
 -------| --------
-`setClienteId` | Define o clienteId.
-`getClienteId` | Retorna o clienteId.
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
+
+### Interface `IStatusEntrega`
+Interface requerida para retorno de informações de status de entrega de um pedido.
+
+Método | Objetivo
+-------| --------
+`setUserId` | Define o userId.
+`getUserId` | Retorna o userId.
+`setPedidoId` | Define o pedidoId.
+`getPedidoId` | Retorna o pedidoId.
+`setStatus` | Define o status.
+`getStatus` | Retorna o status.
+
 
 ### Interface `ITransportadoraLogisticaInsights`
-Interface requerida para busca de um parceiro logístico do sistema de brechó online.
+Interface requerida para busca de informações de transportadoras no compoente de logística, para treinamento da IA.
 
 Método | Objetivo
 -------| --------
