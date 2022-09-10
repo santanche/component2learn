@@ -27,7 +27,7 @@ Estrutura de pastas:
 > * tela 5 - compra de um dos produtos efetivada
 ![LAB1](lab4-e.jpeg)
 > * tela 6 - diagrama de blocos do aplicativo
-![LAB1](lab4-2.jpeg)
+![LAB1](lab4-2.png)
 >
 > Coloque um link para o arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`. Ele estará dentro da pasta `app`.
 
