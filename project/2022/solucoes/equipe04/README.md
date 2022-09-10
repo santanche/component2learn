@@ -29,45 +29,109 @@
 
 ## Componente `Vendedor`
 
-> 
+> Esse componente representa os usuários que vendem produtos na plataforma e as ações que eles podem executar incluindo a negociação com os parceiros de entrega.
 
 ## Componente `Serviço de Produtos`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse componente gerencia os produtos da plataforma incluindo nome, descrição, categoria, preço e também da a baixa no estoque quando o produto é vendido.
 
 ## Componente `Consumidor`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse componente representa os usuários que compram produtos na plataforma e as ações que podem executar como a busca de produtos, orçamento de frete e prazo, fechamento de pedido e consulta de status do pedido.
 
 ## Componente `Serviço de Pedidos`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse componente é responsável pelo domínio de pedidos. Ele lida com fechamento de pedidos e com a cobrança com o parceiro de pagamento.
 
 ## Componente `Serviço de Aprendizagem de Máquina`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse serviço é responsável por determinar o preço do frete e a data de entrega dos produtos de um pedido. Ele usa como base negociações anteriores de outros pedidos para tomar as decisões
 
 ## Componente `Parceiro de Pagamento`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Componente responsável por fazer a transação financeira da cobrança de um pedido e envia status das transações dos pedidos em cobraças que pode demorar como por exemplo boleto.
 
 ## Componente `Parceiro de Entrega`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Componente que representa um parceiro de entrega que participa da negociação e também envia o sattus das entregas dos pedidos.
 
 ## Componente `Serviço de Status do Pedido`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Componente no qual o consumidor pode consultar o status do pedido: status do pagamento, status da entrega e status da confirmação do pedido.
 
 # Nível 2
 
-> Apresente aqui o detalhamento do Nível 2 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
-
 ## Diagrama do Nível 2
 
-> Apresente um diagrama conforme o modelo a seguir:
+> ![Modelo de diagrama no nível 2](images/nivel-2-aprendizado.png)
 
-> ![Modelo de diagrama no nível 2](images/diagrama-subcomponentes.png)
+### Detalhamento da interação de componentes
+
+* O componente `Agregador de Dados` assina no barramento mensagens dos tópicos "`pedido/+/entrega`" através da interface `ConfirmaPedidoTodos` e "`pedido/{pedidoId}/oferta`" através da interface `OfertaEntrega`.
+  * Ao receber mensagens nesse dois tópicos, o componente apenas armazena os dados podendo estrturalos de outras formas ou não.
+* O componente `Serviço de Treinamento` oferece uma interface para que seja pedido um treinamento de um modelo de machine learning e também prove uma interface para devolver um modelo treinado para o serviço de modelos. Para fazer o treinamento, ele consulta dados no agregador de dados.
+* O componente `Serviço de Modelos` gerencias os possíveis modelos usados para calcular o frete e o prazo e também pede os treinamentos para o serviço de treinamento. Ele consegue alrerar o modelo que o serviço de decisão está usando e/ou alterar os parâmentros de um modelo já em uso.
+* O componente `Serviço de Decisão` atende as requisições de orçamento no tópico OrcamentoFretePrazo de frete e prazo, faz o predição e devolve o resultado no tópico ResultadoOrcamento.
+
+## Componente `Agregador de Dados`
+
+## Detalhamento das Interfaces
+
+### Interface `OfertaEntrega`
+
+Método | Objetivo
+-------| --------
+`recebeEventoDeOfertadeEntrega` | `Recebe os eventos das negociações entre parceiros de entrega e vendedores`
+
+### Interface `ConfirmaPedidoTodos`
+
+Método | Objetivo
+-------| --------
+`recebeEventoDeConfirmacaoDePedido` | `Recebe os eventos de pedido confirmado com detalhes dos produtos`
+
+### Interface `ConsultaDados`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `TreinaModelo`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `EnviarParametrosModeloTreinado`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `AtualizarModelo`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `AtualizarParametros`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `OrcamentoFretePrazo`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `ResultadoOrcamento`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+> ![Modelo de diagrama no nível 2](images/nivel-2-status.png)
 
 ### Detalhamento da interação de componentes
 
