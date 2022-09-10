@@ -135,61 +135,76 @@ Método | Objetivo
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
+* O componente `Preenchimento Número de Pedido` recebe um número de pedido
+* O componente `Preenchimento CPF` recebe um número de CPF
+  * Dependendo da escolha do consumidor a busca do pedido é feita usando um dos dados. Caso seja passado o CPF, o último pedido realizado será buscado.
+* O componente `Processa Pagamento` recebe eventos de atualizações de status de pagamento dos parceiros e também pode requisitar os status caso não tenha recebido.
+* O componente `Processa Entrega` recebe eventos de atualizações de status de entrega dos parceiros e também pode requisitar os status caso não tenha recebido.
+* O componente `Processa Eventos Confirmação Pedido` recebe eventos internos de confirmação de pedidos com dados dos produtos.
 
-* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
-  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
-* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
-  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
-
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
-
-## Componente `<Nome do Componente>`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Componente](images/diagrama-componente.png)
-
-**Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
+## Componente `Agregador de Dados`
 
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
-
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-> Resumo do papel da interface.
+### Interface `Input Numero Pedido`
 
 Método | Objetivo
 -------| --------
-`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
+`enviaNumeroPedido` | `Envia o número de pedido para ser realizada uma busca`
 
-## Exemplos:
-
-### Interface `ITableProducer`
-
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+### Interface `Input CPF`
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+`enviaCPF` | `Envia um CPF para ser a realizada uma busca de pedido feita por esse CPF`
 
-### Interface `IDataSetProperties`
-
-![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
-
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+### Interface `Consulta Dados Pagamento`
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`pegarStatusPagamento` | `Busca os dados de pagamento para um pedido`
+
+### Interface `Consulta Dados Entrega`
+
+Método | Objetivo
+-------| --------
+`pegarStatusEntrega` | `Busca os dados de entrega para um pedido`
+
+### Interface `Consulta Status Interno do Pedido`
+
+Método | Objetivo
+-------| --------
+`pegarStatusConfirmacaoPedido` | `Busca produtos e a confirmação de um pedido`
+
+### Interface `Eventos Pagamento`
+
+Método | Objetivo
+-------| --------
+`recebeEventoPagamento` | `Recebe um evento de pagamento do parceiro e persiste no sistema`
+
+### Interface `Consulta Parceiro Pagamento`
+
+Método | Objetivo
+-------| --------
+`consultarStatusPagamento` | `Busca com o parceiro o status de pagamento de um pedido`
+
+### Interface `Eventos Entrega`
+
+Método | Objetivo
+-------| --------
+`recebeEventosEntrega` | `Recebe um evento de entrega do parceiro e persiste no sistema`
+
+### Interface `Consulta Eventos Entrega`
+
+Método | Objetivo
+-------| --------
+`consultarStatusEntrega` | `Busca com o parceiro o status de entrega de um pedido`
+
+### Interface `Eventos Confirmação Pedido`
+
+Método | Objetivo
+-------| --------
+`recebeEventoConfirmacao` | `Recebe evento de confirmação de pedido com dados dos produtos comprados`
 
 ## Diagrama do Nível 3
 
@@ -230,7 +245,7 @@ Método | Objetivo
 
 ### Interface `INameImage (setName/SetImage)`
 
-![Diagrama da Interface](images/InameImage.png)
+![Diagrama da Interface](images/INameImage.png)
 
 Método | Objetivo
 -------| --------
