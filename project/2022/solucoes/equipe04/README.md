@@ -93,43 +93,43 @@ Método | Objetivo
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`consultaDadosParaTreinamento` | `Faz uma consulta nos dados armazenados pelo agregador para ser utilizado no treinamento dos modelos`
 
 ### Interface `TreinaModelo`
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`treinarModelo` | `Faz uma requisicao com um modelo para ser treinado`
 
 ### Interface `EnviarParametrosModeloTreinado`
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`resultadoModelo` | `Envia os paramentros de um modelo treinado`
 
 ### Interface `AtualizarModelo`
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`atualizarModelo` | `Atualiza o modelo usado para decisão`
 
 ### Interface `AtualizarParametros`
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`atualizarParametros` | `Atualiza os parametros do modelo usado para decisão`
 
 ### Interface `OrcamentoFretePrazo`
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`obterOrcamento` | `Recebe uma requisicao com dados de produto e um cep para calculo do orcamento de frete e prazo de entrega`
 
 ### Interface `ResultadoOrcamento`
 
 Método | Objetivo
 -------| --------
-`blaa` | `blaa`
+`devolverOrcamento` | `Devolve um orçamento calculado`
 
 > ![Modelo de diagrama no nível 2](images/nivel-2-status.png)
 
