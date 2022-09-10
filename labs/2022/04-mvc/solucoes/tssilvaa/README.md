@@ -18,7 +18,7 @@ Estrutura de pastas:
 >![Diagrama Eventos](images/Print_App.png)
 >
 > Link do arquivo do aplicativo exportado a partir do MIT App Inventor em formato `aia`.
-![Diagrama Eventos](app/Lab_04.aia)
+*[APP](app/Lab_04.aia/)
 
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
