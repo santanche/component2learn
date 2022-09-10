@@ -13,3 +13,9 @@ Serão considerados pontos de qualidade:
 * se houver tratamento de erros
 
 No caso da DBPedia, o usuário não deve digitar o .json. No caso do xkcd, não é suficiente mostrar a imagem dos quadrinhos, porque isso foi feito em sala. Devem ser mostrados outros dados, como título, ano de publicação etc.
+
+a) Design
+
+> Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
+>
+![DTO](lab5-png)
