@@ -1161,6 +1161,8 @@ Método | Objetivo
 
 
 
-# O `Controle de Interface` recebe as informações do produto,como Descrição,Preço e Quantidade, atravez da interface Consulta Produto Info que se comunica com os componentes Externos no barramento com o topico "`items/userId}`".
-# Tendo selecionado Quantidade, Forma de Pagamento e clicado em `Comprar Agora!` será enviado as informações da compra para `BrechoApp`que atravez da interface `Compra` postara os dados do pedido no barramento assim como ilustrado anteriormente usando o topico "`pedido/{userId}/request`".
-# Caso receba uma mensagem com o topico "`buscar/{userId}/request`" dispara a busca por determinado item.
+  O `Controle de Interface` recebe as informações do produto,como Descrição,Preço e Quantidade, atravez da interface Consulta Produto Info que se comunica com os componentes Externos no barramento com o topico "`items/userId}`".
+
+  Tendo selecionado Quantidade, Forma de Pagamento e clicado em `Comprar Agora!` será enviado as informações da compra para `BrechoApp`que atravez da interface `Compra` postara os dados do pedido no barramento assim como ilustrado anteriormente usando o topico "`pedido/{userId}/request`".
+ 
+  Caso receba uma mensagem com o topico "`buscar/{userId}/request`" dispara a busca por determinado item.
