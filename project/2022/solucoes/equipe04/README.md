@@ -1,0 +1,142 @@
+# Projeto `Visões de Componentes de um Sistema de Recommerce`
+
+# Equipe
+* `Luís Filipe Mentem Gomes de Soutello - 40009877-5`
+* `Richardson Guedes Pinheiro - 25471369-5`
+* `João Igor dos Santos Pereira - 7086176`
+* `Claudio Augusto Rolim - 16702922001-4`
+* `Gabriel T. Callado - 45022276-7`
+
+# Projeto GitHub Original
+* `https://github.com/lfsoutello/component2learn/tree/master/`
+
+# Nível 1
+
+## Diagrama Geral do Nível 1
+
+![Modelo de diagrama no nível 1](images/nivel-1.png)
+
+### Detalhamento da interação de componentes
+
+> Neste nível separamos os componentes de mais alto nível do sistema, conforme mostrado na figura abaixo. Segue uma explicação do funcionamento dos eventos:
+> * Tudo começa com vendedores publicando produtos. Esse evento é consumido pelo serviço de produtos que inclui esse produto na base e permite ele ser buscado pelos compradores.
+> * Os consumidores podem fazer busca de produtos no serviço de produtos passando um filtro. O serviço de produtos faz as consultas e retorna os produtos que satisfazem os critérios do filtro.
+> * Os consumidores podem também fazer um orçamento de frete e prazo de entrega por produto por cep. Quem define os preços e prazos é serviço de aprendizagem de máquina que utiliza dados de outros pedidos e negociações.
+> * Quando um consumidor decide finalizar uma compra, ele envia um evento de pedido para o serviço de pedidos com dados referentes aos produtos, o orçamento do frete e pagamento.
+> * O serviço de pedidos decide internamente qual parceiro de pagamento vai realizar essa transação e tenta fazer a cobrança retornando o resultado para o cliente.
+> * Quando a cobrança é realizada com sucesso, o serviço de pedidos envia também um evento de pedido confirmado. Esse evento é consumido pelos vendedores, pelos parceiros de entrega e também pelo serviço de aprendizagem de máquina.
+> * O evento de confirmação de pedido inicia uma negociação entre parceiros de entrega e os vendedores. Serão negociados valores e prazo de entrega por produto. A negociação sempre começa pelos parceiros, mas pode ter contraofertas dos vendedores e depois dos próprios parceiros também. Ela só acaba quando as duas partes aceitarem uma oferta. Todos os dados de negociação são enviados também para o serviço de aprendizagem de máquina.
+
+## Componente `Vendedor`
+
+> 
+
+## Componente `Serviço de Produtos`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `Consumidor`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `Serviço de Pedidos`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `Serviço de Aprendizagem de Máquina`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `Parceiro de Pagamento`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `Parceiro de Entrega`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+## Componente `Serviço de Status do Pedido`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+# Nível 2
+
+> Apresente aqui o detalhamento do Nível 2 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
+
+## Diagrama do Nível 2
+
+> Apresente um diagrama conforme o modelo a seguir:
+
+> ![Modelo de diagrama no nível 2](images/diagrama-subcomponentes.png)
+
+### Detalhamento da interação de componentes
+
+> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
+
+* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
+  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
+* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
+  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
+
+> Para cada componente será apresentado um documento conforme o modelo a seguir:
+
+## Componente `<Nome do Componente>`
+
+> Resumo do papel do componente e serviços que ele oferece.
+
+![Componente](images/diagrama-componente.png)
+
+**Interfaces**
+> Listagem das interfaces do componente.
+
+As interfaces listadas são detalhadas a seguir:
+
+## Detalhamento das Interfaces
+
+### Interface `<nome da interface>`
+
+![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+
+> Resumo do papel da interface.
+
+Método | Objetivo
+-------| --------
+`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
+
+## Exemplos:
+
+### Interface `ITableProducer`
+
+![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
+
+Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+
+Método | Objetivo
+-------| --------
+`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
+`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+
+### Interface `IDataSetProperties`
+
+![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
+
+Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+
+Método | Objetivo
+-------| --------
+`getDataSource` | Retorna o caminho da fonte de dados.
+`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+
+## Diagrama do Nível 3
+
+> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
+
+![Captura de Tela do Protótipo](images/captura-prototipo.png)
+
+> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
+
+![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
+
+### Detalhamento da interação de componentes
+
+> O detalhamento deve seguir o mesmo formato usado no Nível 2.
