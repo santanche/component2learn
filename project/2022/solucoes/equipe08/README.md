@@ -34,9 +34,13 @@
 ### Detalhamento da interação de componentes
 
 > O componente `Logistica Envio` contem uma assinatura em `SolicitarEnvio` pelo tópico `compra/{compraId}`.
+> 
 > As informações da compra solicitada para envio, são recuperadas como local de origem do produto e local de destino.
+> 
 > Ao serem recuperadas, as mesmas informações são enviadas aos tópicos `endereco/{endereco}/entrega` e `endereco/{endereco}/envio` para consultar o modelo de aprendizagem e escolher qual o melhor parceiro para essa entrega.
+> 
 > Após escolhido o melhor parceiro para a entrega possível, o componente `BuscarParceiroEntrega` publica no tópico `envio/{compraId}` para enviar ao transportador.
+> 
 > Ao final, o pedido é enviado e é publicado no tópico `envio/{compraId}/rastreamento/{rastreamentoId}` onde o componente `StatusEnvio` está inscrito para atualizar as informações da entrega.
 
 ![Modelo de diagrama no nível 1](images/Nivel2.png)
