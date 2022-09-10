@@ -1,182 +1,49 @@
-# Template para a Entrega do Projeto Final
+# Projeto `Recommerce Livros`
 
-# Estrutura de Arquivos e Pastas
-
-A seguir é apresentada a estrutura de pastas esperada para entrega do projeto:
-
-~~~
-├── README.md  <- arquivo com o relatório do projeto
-│
-├── images     <- arquivos de imagens usadas no documento
-│
-└── resources  <- outros recursos (se houver)
-~~~
-
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação da equipe e relatório do projeto, como detalhado na seção seguinte.
-
-# Modelo para Apresentação da Equipe e Relatório do Projeto
-
-Segue abaixo o modelo de como devem ser documentadas as entregas. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado.
-> Além disso, tudo o que aparecer neste modo de citação também se refere algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos da sua apresentação.
-
-Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Referência do Projeto Final](https://docs.google.com/presentation/d/1HWiTx0HU781sf3A7sdAda_LQeMHqbvIXkh-uSRDo0Js/edit?usp=sharing). Há versões em PPT e ODT no diretório [resources/](resources/).
-
-# Modelo para Apresentação da Equipe e Relatório do Projeto
-
-# Projeto `<Título>`
-
-# Equipe
-* `<nome completo>`
-
-# Projeto GitHub Original
-* `<link para o GitHub original do grupo>`
+# Equipe 08
+* `Fábio Fernandes Domingues	RG: 45129323-X`
+* `Giuliana Cirelli	        RG: 29418252-4`
+* `João Paulo Cardoso	      RG: 44863696`
+* `Nicole Bertolo Rodrigues	RG: 53991025-9`
+* `Ricardo Capovilla	        RG: 45129323-X`
 
 # Nível 1
 
-> Apresente aqui o detalhamento do Nível 1 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
+>Descrição da orquestração entre vendedores, parceiros de entrega e consumidores:
+
+>ClientID, PartnerID e CostumerID, identificam as partes envolvidas na transação de entrega.
+
+>A seguir temps os dados do produto e os dados da entrega.
+
+>Na mensagem JSON, usamos o array de strings LogisticsArray. Este campo é guardado no banco de dados e enviado no barramento no formato TLV (tag-lengh-values), conforme as etapas e informações da entrega acontecem, são inseridos uma nova tag nesse array. LogisticsArray também pode ser usado para mostrar as informações da entrega para o consumidor.
+
+>O uso do formato TLV, permite que o pacote de mensagem (em formato string), possa ser lido e interpretado por qualquer componente do barramento. O final da string (NULL), indica o final da mensagem.
+
+>Com uma tabela pré-determinando o significado de cada  tag e valor, pode-se usar o formato TLV para transmitir qualquer informação ou configuração. 
+
 
 ## Diagrama Geral do Nível 1
 
-> Apresente um diagrama conforme o modelo a seguir:
-
-![Modelo de diagrama no nível 1](images/diagrama-barramento.png)
-
-### Detalhamento da interação de componentes
-
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
-
-* O componente `Leilão` inicia o leilão publicando no barramento a mensagem de tópico "`auction/{auctionId}/start`" através da interface `AuctionStart`, iniciando um leilão.
-* Os componentes Loja assinam no barramento mensagens de tópico "`auction/+/start`" através da interface `AuctionEngage`. Quando recebe uma mensagem…
-
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
-
-## Componente `<Nome do Componente>`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-> Diagrama do componente, conforme exemplo a seguir:
-
-![Componente](diagrama-componente-mensagens.png)
-
-**Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
-
-## Detalhamento das Interfaces
-
-### Interface `<nome da interface>`
-
-> Resumo do papel da interface.
-
-> Dados da interface podem ser apresentados em formato texto, conforme exemplo:
-
-* Type: `sink`
-* Topic: `pedido/+/entrega`
-* Message type: `Order`
-
-> Ou em formato de imagem, conforme exemplo:
-
-![Diagrama de Interface de Mensagens](images/diagrama-interface-mensagens.png)
-
-> Diagrama representando o esquema das mensagens JSON utilizadas na interface, pode ser em formato texto conforme exemplo:
-
-~~~json
-{
-  orderId: string,
-  dueDate: date,
-  total: number,
-  items: [
-    {
-         itemid: string,
-         quantity: number
-    }
-  ]  
-}
-~~~
-
-> Ou em formato de imagem, conforme exemplo:
-
-![Diagrama de Mensagens JSON](images/diagrama-interface-json.png)
+![Modelo de diagrama no nível 1](images/Nivel1.png)
+![Modelo de diagrama no nível 1](images/Nivel1_2.png)
 
 # Nível 2
 
-> Apresente aqui o detalhamento do Nível 2 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
-
 ## Diagrama do Nível 2
-
-> Apresente um diagrama conforme o modelo a seguir:
-
-> ![Modelo de diagrama no nível 2](images/diagrama-subcomponentes.png)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir um formato de acordo com o exemplo a seguir:
+> O componente `Logistica Envio` contem uma assinatura em `SolicitarEnvio` pelo tópico `compra/{compraId}`.
+> As informações da compra solicitada para envio, são recuperadas como local de origem do produto e local de destino.
+> Ao serem recuperadas, as mesmas informações são enviadas aos tópicos `endereco/{endereco}/entrega` e `endereco/{endereco}/envio` para consultar o modelo de aprendizagem e escolher qual o melhor parceiro para essa entrega.
+> Após escolhido o melhor parceiro para a entrega possível, o componente `BuscarParceiroEntrega` publica no tópico `envio/{compraId}` para enviar ao transportador.
+> Ao final, o pedido é enviado e é publicado no tópico `envio/{compraId}/rastreamento/{rastreamentoId}` onde o componente `StatusEnvio` está inscrito para atualizar as informações da entrega.
 
-* O componente `Entrega Pedido Compra` assina no barramento mensagens de tópico "`pedido/+/entrega`" através da interface `Solicita Entrega`.
-  * Ao receber uma mensagem de tópico "`pedido/+/entrega`", dispara o início da entrega de um conjunto de produtos.
-* Os componentes `Solicita Estoque` e `Solicita Compra` se comunicam com componentes externos pelo barramento:
-  * Para consultar o estoque, o componente `Solicita Estoque` publica no barramento uma mensagem de tópico "`produto/<id>/estoque/consulta`" através da interface `Consulta Estoque` e assina mensagens de tópico "`produto/<id>/estoque/status`" através da interface `Posição Estoque` que retorna a disponibilidade do produto.
-
-> Para cada componente será apresentado um documento conforme o modelo a seguir:
-
-## Componente `<Nome do Componente>`
-
-> Resumo do papel do componente e serviços que ele oferece.
-
-![Componente](images/diagrama-componente.png)
-
-**Interfaces**
-> Listagem das interfaces do componente.
-
-As interfaces listadas são detalhadas a seguir:
-
-## Detalhamento das Interfaces
-
-### Interface `<nome da interface>`
-
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-> Resumo do papel da interface.
-
-Método | Objetivo
--------| --------
-`<id do método>` | `<objetivo do método e descrição dos parâmetros>`
-
-## Exemplos:
-
-### Interface `ITableProducer`
-
-![Diagrama da Interface](images/diagrama-interface-itableproducer.png)
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
-
-Método | Objetivo
--------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
-
-### Interface `IDataSetProperties`
-
-![Diagrama da Interface](images/diagrama-interface-idatasetproperties.png)
-
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
-
-Método | Objetivo
--------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+![Componente](Nivel2.png)
 
 ## Diagrama do Nível 3
 
-> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
+![Captura de Tela do Protótipo](images/Interface.png)
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
-
-> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
-
-![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
-
-### Detalhamento da interação de componentes
-
-> O detalhamento deve seguir o mesmo formato usado no Nível 2.
+![Modelo de diagrama no nível 2](images/Componentes1.png)
+![Modelo de diagrama no nível 2](images/Componentes2.png)
