@@ -16,6 +16,12 @@ No caso da DBPedia, o usuário não deve digitar o .json. No caso do xkcd, não 
 
 a) Design
 
-> Coloque a imagem PNG do diagrama do DTO, conforme exemplo a seguir:
->
-![DTO](lab5-png)
+![LAB1](lab5-1.png)
+
+b) Blocks
+
+![LAB1](lab5-2.png)
+
+c) Rodando no celular
+
+![LAB1](lab5-3.jpeg)
