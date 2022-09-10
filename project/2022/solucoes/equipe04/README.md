@@ -61,13 +61,77 @@
 
 # Nível 2
 
-> Apresente aqui o detalhamento do Nível 2 conforme detalhado na especificação com, no mínimo, as seguintes subseções:
-
 ## Diagrama do Nível 2
 
-> Apresente um diagrama conforme o modelo a seguir:
+> ![Modelo de diagrama no nível 2](images/nivel-2-aprendizado.png)
 
-> ![Modelo de diagrama no nível 2](images/diagrama-subcomponentes.png)
+### Detalhamento da interação de componentes
+
+* O componente `Agregador de Dados` assina no barramento mensagens dos tópicos "`pedido/+/entrega`" através da interface `ConfirmaPedidoTodos` e "`pedido/{pedidoId}/oferta`" através da interface `OfertaEntrega`.
+  * Ao receber mensagens nesse dois tópicos, o componente apenas armazena os dados podendo estrturalos de outras formas ou não.
+* O componente `Serviço de Treinamento` oferece uma interface para que seja pedido um treinamento de um modelo de machine learning e também prove uma interface para devolver um modelo treinado para o serviço de modelos. Para fazer o treinamento, ele consulta dados no agregador de dados.
+* O componente `Serviço de Modelos` gerencias os possíveis modelos usados para calcular o frete e o prazo e também pede os treinamentos para o serviço de treinamento. Ele consegue alrerar o modelo que o serviço de decisão está usando e/ou alterar os parâmentros de um modelo já em uso.
+* O componente `Serviço de Decisão` atende as requisições de orçamento no tópico OrcamentoFretePrazo de frete e prazo, faz o predição e devolve o resultado no tópico ResultadoOrcamento.
+
+## Componente `Agregador de Dados`
+
+## Detalhamento das Interfaces
+
+### Interface `OfertaEntrega`
+
+Método | Objetivo
+-------| --------
+`recebeEventoDeOfertadeEntrega` | `Recebe os eventos das negociações entre parceiros de entrega e vendedores`
+
+### Interface `ConfirmaPedidoTodos`
+
+Método | Objetivo
+-------| --------
+`recebeEventoDeConfirmacaoDePedido` | `Recebe os eventos de pedido confirmado com detalhes dos produtos`
+
+### Interface `ConsultaDados`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `TreinaModelo`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `EnviarParametrosModeloTreinado`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `AtualizarModelo`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `AtualizarParametros`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `OrcamentoFretePrazo`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+### Interface `ResultadoOrcamento`
+
+Método | Objetivo
+-------| --------
+`blaa` | `blaa`
+
+> ![Modelo de diagrama no nível 2](images/nivel-2-status.png)
 
 ### Detalhamento da interação de componentes
 
