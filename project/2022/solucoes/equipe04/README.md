@@ -129,14 +129,76 @@ Método | Objetivo
 
 ## Diagrama do Nível 3
 
-> Apresente uma imagem com a captura de tela de seu protótipo feito no MIT App Inventor, conforme modelo a seguir:
 
-![Captura de Tela do Protótipo](images/captura-prototipo.png)
+![Captura de Tela do Protótipo](images/nivel-3-print.png)
 
-> Apresente o diagrama referente ao protótipo conforme o modelo a seguir:
+> Diagrama referente:
 
-![Modelo de diagrama no nível 2](images/diagrama-prototipo.png)
+![Modelo de diagrama no nível 2](images/nivel-3-diagrama.png)
 
 ### Detalhamento da interação de componentes
 
-> O detalhamento deve seguir o mesmo formato usado no Nível 2.
+## Componente `Consulta Produtos`
+
+> O componente "Consulta Produtos" é responsável por trazer informações sobre o produto a partir das informações dadas nos campos, assim como setar a imagem do produto buscado.
+>
+
+[//]: ![Componente](images/diagrama-componente.png)
+
+**Interfaces**
+> setNome / setImage
+> Select Tipo Busca/ set Id Busca / Click Botão Busca
+
+
+## Componente `Consulta Status`
+
+> O componente "Consulta Status" é responsável por trazer informações sobre o pedido fechado partir das informações dadas nos campos, trazendo informações como status da entrega, data prevista e status do pagamento.
+
+
+[//]: ![Componente](images/diagrama-componente.png)
+
+**Interfaces**
+> setStatusPagamento / setStatusEntrega / SetDataPrevista
+> selectTipoBusca / setIdBusca / clickBotãoBusca
+
+ 
+## Detalhamento das Interfaces
+
+### Interface `INameImage (setName/SetImage)`
+
+![Diagrama da Interface](images/InameImage.png)
+
+Método | Objetivo
+-------| --------
+`setImage` |Seta uma string com a url da imagem do produto.
+`setName` | Seta uma string referente ao nome do produto pesquisado.
+`getImage` | Retorna uma string com a url da imagem do produto previamente setada pelo setImage ou na criação do objeto.
+`getName` | Retorna uma string referente ao nome do produto pesquisado.
+
+### Interface `IStatus (SetStatusPagamento/SetDataEntrega/SetStatusPagamento)`
+
+![Diagrama da Interface](images/IStatus.png)
+
+Método | Objetivo
+-------| --------
+`setData` |Seta uma string com a data prevista de entrega.
+`getData` | Retorna uma string referente a data prevista de entrega.
+`setEntrega` | Seta uma String referente ao status de entrega.
+`getEntrega` | Retorna uma string referente ao status de entrega.
+`setPagamento` | Seta uma String referente ao status de pagamento.
+`getPagamento` | Retorna uma string referente ao ao status de pagamento.
+
+
+### Interface `IInfo (selectTipoBusca/SetIdBusca)`
+
+![Diagrama da Interface](images/IInfo.png)
+
+Método | Objetivo
+-------| --------
+`setTipoBusca` | Seta uma string com o tipo de busca a ser feita (por CPF ou número de pedido).
+`getTipoBusca` | Retorna uma string com o tipo de busca a ser feita (por CPF ou número de pedido).
+`setIdBusca` | Seta a String referente à chave a ser buscada, relacionada ao tipo de busca escolhido.
+`getIdBusca` | Retorna a String referente à chave a ser buscada, relacionada ao tipo de busca escolhido.
+
+
+[//]: !https://drive.google.com/file/d/1jmqh3jMjfgb7XnStEIgTu3EmWTkw8qYV/view?usp=sharing
