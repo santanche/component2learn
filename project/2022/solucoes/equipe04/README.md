@@ -29,35 +29,35 @@
 
 ## Componente `Vendedor`
 
-> 
+> Esse componente representa os usuários que vendem produtos na plataforma e as ações que eles podem executar incluindo a negociação com os parceiros de entrega.
 
 ## Componente `Serviço de Produtos`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse componente gerencia os produtos da plataforma incluindo nome, descrição, categoria, preço e também da a baixa no estoque quando o produto é vendido.
 
 ## Componente `Consumidor`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse componente representa os usuários que compram produtos na plataforma e as ações que podem executar como a busca de produtos, orçamento de frete e prazo, fechamento de pedido e consulta de status do pedido.
 
 ## Componente `Serviço de Pedidos`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse componente é responsável pelo domínio de pedidos. Ele lida com fechamento de pedidos e com a cobrança com o parceiro de pagamento.
 
 ## Componente `Serviço de Aprendizagem de Máquina`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Esse serviço é responsável por determinar o preço do frete e a data de entrega dos produtos de um pedido. Ele usa como base negociações anteriores de outros pedidos para tomar as decisões
 
 ## Componente `Parceiro de Pagamento`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Componente responsável por fazer a transação financeira da cobrança de um pedido e envia status das transações dos pedidos em cobraças que pode demorar como por exemplo boleto.
 
 ## Componente `Parceiro de Entrega`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Componente que representa um parceiro de entrega que participa da negociação e também envia o sattus das entregas dos pedidos.
 
 ## Componente `Serviço de Status do Pedido`
 
-> Resumo do papel do componente e serviços que ele oferece.
+> Componente no qual o consumidor pode consultar o status do pedido: status do pagamento, status da entrega e status da confirmação do pedido.
 
 # Nível 2
 
