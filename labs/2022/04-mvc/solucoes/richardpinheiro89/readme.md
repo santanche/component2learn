@@ -36,5 +36,5 @@ https://github.com/richardpinheiro89/component2learn/blob/master/labs/2022/04-mv
 # Tarefa 2 - Diagrama de Componentes dirigida a Eventos
 
 > Coloque a imagem PNG do diagrama, conforme exemplo a seguir:
->
-> ![Diagrama Eventos](images/mit-app-inventor-events.png)
+
+![LAB1](diacomp.png)
