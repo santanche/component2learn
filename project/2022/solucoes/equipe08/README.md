@@ -39,7 +39,7 @@
 > Após escolhido o melhor parceiro para a entrega possível, o componente `BuscarParceiroEntrega` publica no tópico `envio/{compraId}` para enviar ao transportador.
 > Ao final, o pedido é enviado e é publicado no tópico `envio/{compraId}/rastreamento/{rastreamentoId}` onde o componente `StatusEnvio` está inscrito para atualizar as informações da entrega.
 
-![Componente](Nivel2.png)
+![Modelo de diagrama no nível 1](images/Nivel2.png)
 
 ## Diagrama do Nível 3
 
