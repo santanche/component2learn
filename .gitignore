@@ -35,3 +35,6 @@ build/
 
 ## Java .class files ##
 *.class
+
+## Node ##
+node_modules
