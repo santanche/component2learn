@@ -10,6 +10,11 @@ Todos os exemplos no diretório `notebook` são preparados para o ambiente Jupyt
 * Última versão disponível:
   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/component2learn/master)
 
+# Componentes em Web e Java
+
+* [Frameworks de Web Components](web/frameworks/)
+* [Componentes em Java com Eclipse](java/)
+
 # Disciplina de Componentização e Reúso de Software
 
 * [Especificação de Laboratórios](labs/)
