@@ -2,7 +2,7 @@
 
 This lab has two modalities:
 * **production** - in which webpack packs modules together and which can be processed strait by the browser;
-* **development** - presented in its raw version and needs the Web Dev Server, as browsers do not support javascript imports.
+* **development** - presented in its raw version and needs the Web Dev Server, as it refers to packages installed via npm.
 
 The *production* version is at `dist/index.html`. There is a `<script type="module">` in the example, and browsers do not accept module inclusion from `file:` pages; they must be `http(s):`. You can load it from a server (e.g., GitHub server) or by the Web Dev Server:
 
