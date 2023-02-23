@@ -1,22 +1,29 @@
 # Lab Notes
 
-This lab has two modalities:
-* **production** - in which webpack packs modules together and which can be processed strait by the browser;
-* **development** - presented in its raw version and needs the Web Dev Server, as it refers to packages installed via npm.
+This lab has three modalities:
+* **production** (`dist/index.html`) - in which webpack packs modules together and can be processed strait by the browser;
+* **map** (`dist/index-map.html`) - presented in its raw version with a mapping reference to external libraries;
+* **development** (`dist/index-dev.html`) - presented in its raw version and refers to packages installed locally via npm.
 
-The *production* version is at `dist/index.html`. There is a `<script type="module">` in the example, and browsers do not accept module inclusion from `file:` pages; they must be `http(s):`. You can load it from a server (e.g., GitHub server) or by the Web Dev Server:
+There is a `<script type="module">` clause in the *production* and *map* examples, and browsers do not accept module inclusion from `file:` pages; they must be `http(s):`. You can load them from a server (e.g., GitHub server) or by the Web Dev Server:
 
 ~~~
 npx web-dev-server --app-index dist/index.html --node-resolve --open
 ~~~
 
-The development version is at `dist/index-dev.html`. It works only through Web Dev Server.
+and
+
+~~~
+npx web-dev-server --app-index dist/index-map.html --node-resolve --open
+~~~
+
+The *development* version works only through Web Dev Server as it refers to files resolved locally:
 
 ~~~
 npx web-dev-server --app-index dist/index-dev.html --node-resolve --open
 ~~~
 
-Both files (`index.html` and `index-dev.html`) derive from the same template: `template/index.html` using the [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/), specifically the [HTML Webpack Template](https://github.com/jaketrent/html-webpack-template).
+The three files (`index.html`, `index-map.html`, and `index-dev.html`) derive from the same template: `template/index.html` using the [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/), specifically the [HTML Webpack Template](https://github.com/jaketrent/html-webpack-template).
 
 This insertion in the `webpack.config.js` produces both files:
 ~~~js
@@ -25,18 +32,27 @@ This insertion in the `webpack.config.js` produces both files:
       inject: false,
       filename: 'index.html',
       template: './template/index.html',
-      lib: 'test-pack.js'
+      lib: 'test-pack.js',
+      map: ''
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      filename: 'index-map.html',
+      template: './template/index.html',
+      lib: '../js/test.js',
+      map: '<script type="importmap"> { "imports": {"lit": "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js"} } </script>'
     }),
     new HtmlWebpackPlugin({
       inject: false,
       filename: 'index-dev.html',
       template: './template/index.html',
-      lib: '../js/test.js'
+      lib: '../js/test.js',
+      map: ''
     })
   ]
 ~~~
 
-The clause `inject:false` avoids automatic injection of the javascript packaged before. The `lib` property is dynamically replaced in the template.
+The clause `inject:false` avoids automatic injection of the javascript packaged before. The `lib` and `map` properties are dynamically replaced in the template.
 
 # Installation Commands
 
