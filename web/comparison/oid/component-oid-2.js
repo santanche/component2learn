@@ -1,5 +1,5 @@
 export class ComponentOid2 extends HTMLElement {
-  static oid = {
+  static spec = {
     properties: ['name']
   }
 
@@ -8,7 +8,7 @@ export class ComponentOid2 extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return this.oid.properties
+    return this.spec.properties
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -20,7 +20,7 @@ export class ComponentOid2 extends HTMLElement {
   }
 }
 
-ComponentOid2.oid.properties.forEach((property) => {
+ComponentOid2.spec.properties.forEach((property) => {
   Object.defineProperty(ComponentOid2.prototype, property, {
     get: function() {return this['_' + property]},
     set: function(newValue) {

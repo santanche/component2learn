@@ -2,7 +2,7 @@ import {LitElement, css, html} from 'lit';
 
 export class ComponentLit extends LitElement {
   static properties = {
-    name: {},
+    name: {}
   };
   // Define scoped styles right with your component, in plain CSS
   static styles = css`
