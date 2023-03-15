@@ -2,7 +2,7 @@
   "devDependencies": {
     "@web/dev-server": "^0.1.35",
     "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.75.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
