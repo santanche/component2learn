@@ -27,6 +27,9 @@
 * [MDX](https://mdxjs.com/)
 * [Figma Material](https://material.io/blog/material-3-figma-design-kit)
 
+## Embedable
+
+
 ## Specializations
 * Graphic Components
 * Data Processing Components

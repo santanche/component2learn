@@ -5,6 +5,10 @@ This lab has three modalities:
 * **map** (`dist/index-map.html`) - presented in its raw version with a mapping reference to external libraries;
 * **development** (`dist/index-dev.html`) - presented in its raw version and refers to packages installed locally via npm.
 
+~~~
+npx webpack
+~~~
+
 There is a `<script type="module">` clause in the *production* and *map* examples, and browsers do not accept module inclusion from `file:` pages; they must be `http(s):`. You can load them from a server (e.g., GitHub server) or by the Web Dev Server:
 
 ~~~
