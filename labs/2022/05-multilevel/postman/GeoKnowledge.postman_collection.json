@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "0174a9fa-aa7f-487f-b26d-779d69753acc",
+		"name": "GeoKnowledge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OSM - Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://nominatim.openstreetmap.org/search?format=json&q=emilio muñoz 35 Madrid",
+					"protocol": "http",
+					"host": [
+						"nominatim",
+						"openstreetmap",
+						"org"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "q",
+							"value": "emilio muñoz 35 Madrid"
+						}
+					]
+				},
+				"description": "[Full documentation](http://wiki.openstreetmap.org/wiki/Nominatim#Search)"
+			},
+			"response": []
+		},
+		{
+			"name": "OSM - Element (Node, Way, or Relation)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openstreetmap.org/api/0.6/:type/:id",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openstreetmap",
+						"org"
+					],
+					"path": [
+						"api",
+						"0.6",
+						":type",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "type",
+							"value": "node",
+							"description": "types: node, way, or relation"
+						},
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DBPedia - Data",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dbpedia.org/data/:concept.:format",
+					"protocol": "http",
+					"host": [
+						"dbpedia",
+						"org"
+					],
+					"path": [
+						"data",
+						":concept.:format"
+					],
+					"variable": [
+						{
+							"key": "concept",
+							"value": "Royal_Tyrrell_Museum_of_Palaeontology",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

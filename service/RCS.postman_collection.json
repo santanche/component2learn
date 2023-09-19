@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7d4f831c-74f7-4bd0-9a15-d11c1af6b66e",
+		"name": "RCS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7375845"
+	},
+	"item": [
+		{
+			"name": "DBPedia - Data",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dbpedia.org/data/:concept",
+					"protocol": "http",
+					"host": [
+						"dbpedia",
+						"org"
+					],
+					"path": [
+						"data",
+						":concept"
+					],
+					"variable": [
+						{
+							"key": "concept",
+							"value": "Tent_of_Miracles_(novel).json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xkcd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://xkcd.com/:comicid/info.0.json",
+					"protocol": "https",
+					"host": [
+						"xkcd",
+						"com"
+					],
+					"path": [
+						":comicid",
+						"info.0.json"
+					],
+					"variable": [
+						{
+							"key": "comicid",
+							"value": null,
+							"description": "Number of the comic to retrieve.\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Street Map",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://nominatim.openstreetmap.org/search?format=json&q=Royal Tyrrell Museum",
+					"protocol": "http",
+					"host": [
+						"nominatim",
+						"openstreetmap",
+						"org"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "q",
+							"value": "Royal Tyrrell Museum"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TheMealDB",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
