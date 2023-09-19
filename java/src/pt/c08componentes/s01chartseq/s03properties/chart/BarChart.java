@@ -9,12 +9,10 @@ public class BarChart {
    
    private GeometricProgression sequence;
    
-   public BarChart(boolean filled, char character, int n,
-                   GeometricProgression sequence) {
-      this.filled = filled;
-      this.character = character;
-      this.n = n;
-      this.sequence = sequence;
+   public BarChart() {
+      filled = true;
+      character = '*';
+      n = 3;
    }
 
    public boolean isFilled() {
@@ -41,6 +39,10 @@ public class BarChart {
       this.n = n;
    }
 
+   public void connect(GeometricProgression sequence) {
+      this.sequence = sequence;
+   }
+   
    public void plot() {
       if (sequence != null) {
          int value = sequence.first();

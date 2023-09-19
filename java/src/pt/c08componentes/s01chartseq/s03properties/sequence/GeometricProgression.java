@@ -5,9 +5,9 @@ public class GeometricProgression {
                ratio;
    private int current;
    
-   public GeometricProgression(int initial, int ratio) {
-      this.initial = initial;
-      this.ratio = ratio;
+   public GeometricProgression() {
+      initial = 1;
+      ratio = 2;
       current = initial;
    }
    
