@@ -4,5 +4,5 @@ scipy
 statsmodels
 networkx
 numpy
-gseapy
+orange3
 iplantuml
