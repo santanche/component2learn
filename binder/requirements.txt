@@ -1,0 +1,8 @@
+pandas
+matplotlib
+scipy
+statsmodels
+networkx
+numpy
+gseapy
+iplantuml
