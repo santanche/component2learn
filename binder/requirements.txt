@@ -4,5 +4,9 @@ scipy
 statsmodels
 networkx
 numpy
-orange3
 iplantuml
+
+# Orange 3 and dependencies
+PyQt5
+PyQtWebEngine
+orange3
