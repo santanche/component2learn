@@ -1,0 +1,17 @@
+@startuml
+
+!include components.iuml
+
+component Table {
+    $property(file_path)
+}
+[Table] -( DataFlow
+
+component ScatterPlot {
+    $property(xfield)
+    $property(yfield)
+    $property(title)
+}
+DataFlow - [ScatterPlot]
+
+@enduml

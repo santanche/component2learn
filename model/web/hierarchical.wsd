@@ -1,0 +1,8 @@
+@startuml
+
+component PacientList {
+  [Pesquisa] -[hidden]-> [PatientItem <<NavigationItem>>]
+  [PatientItem <<NavigationItem>>] -[hidden]-> [button]
+}
+
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+
+[Table] -( DataFlow
+DataFlow - [ScatterPlot]
+
+@enduml
