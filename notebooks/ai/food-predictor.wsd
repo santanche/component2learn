@@ -1,0 +1,8 @@
+@startuml
+
+interface Predictor {
+  + train(csv_file_path: string)
+  + predict(age: int, gender: int, ethnicity: int): string
+}
+
+@enduml
