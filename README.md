@@ -9,7 +9,7 @@ Todos os exemplos no diretório `notebook` são preparados para o ambiente Jupyt
 # Acionando os Notebooks via Binder
 
 * Última versão testada e estável:
-  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/component2learn/v1.1.9)
+  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/component2learn/v1.2.0)
 
 * Última versão disponível:
   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/component2learn/master)
