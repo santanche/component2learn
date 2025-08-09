@@ -55,3 +55,6 @@ Faça modificações no workflow com o intuito de explorar diferentes possibilid
 * mude o critério de recomendação mudando a expressão
 * modifique as features que você vai analisar para recomendação (quanto menos melhor)
 
+----------
+
+Source: based on [Cereals](https://web.archive.org/web/20000817072218/http://lib.stat.cmu.edu/DASL/Datafiles/Cereals.html) dataset. Cited in the tutorial: http://www.stat.yale.edu/Courses/1997-98/101/linmult.htm.
