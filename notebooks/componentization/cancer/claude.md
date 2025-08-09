@@ -392,3 +392,286 @@ if __name__ == "__main__":
     
     print("Example completed. Both plots were automatically updated with the data.")
 ~~~
+
+
+<hr>
+
+## Passo 4 - Propriedades
+
+Improve both classes transforming `path` in a property (with getter and setter) in the Table class, and transforming `xlabel`, `ylabel`, and `title` in properties in the ScatterPLot class.
+
+<hr>
+
+### Answer
+
+~~~python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+class Table:
+    """
+    A class to handle CSV file reading and data storage with observer pattern
+    """
+    def __init__(self, path):
+        """
+        Initialize the Table object by reading a CSV file
+        
+        Args:
+            path (str): Path to the CSV file
+        """
+        self._path = None
+        self.data = None
+        self.connected_plots = []  # List to store connected ScatterPlot objects
+        self.path = path  # Use the setter to initialize
+    
+    @property
+    def path(self):
+        """
+        Getter for the file path
+        
+        Returns:
+            str: Current file path
+        """
+        return self._path
+    
+    @path.setter
+    def path(self, value):
+        """
+        Setter for the file path - automatically reads the new file
+        
+        Args:
+            value (str): New file path
+        """
+        if value != self._path:
+            self._path = value
+            try:
+                self.data = pd.read_csv(value)
+                print(f"Successfully loaded data from: {value}")
+                # Automatically update all connected plots
+                for plot in self.connected_plots:
+                    plot.update_data(self.data)
+            except Exception as e:
+                print(f"Error loading file {value}: {e}")
+                self.data = None
+    
+    def get_data(self):
+        """
+        Returns the loaded DataFrame
+        
+        Returns:
+            pandas.DataFrame: The loaded data
+        """
+        return self.data
+    
+    def connect(self, scatter_plot):
+        """
+        Connect a ScatterPlot object to this Table
+        
+        Args:
+            scatter_plot (ScatterPlot): The ScatterPlot object to connect
+        """
+        self.connected_plots.append(scatter_plot)
+        # Send current data to the newly connected plot
+        if self.data is not None:
+            scatter_plot.update_data(self.data)
+    
+    def read_new_file(self, path):
+        """
+        Read a new CSV file and automatically update all connected plots
+        
+        Args:
+            path (str): Path to the new CSV file
+        """
+        self.path = path  # Use the setter which handles the file reading and updates
+    
+    def disconnect(self, scatter_plot):
+        """
+        Disconnect a ScatterPlot object from this Table
+        
+        Args:
+            scatter_plot (ScatterPlot): The ScatterPlot object to disconnect
+        """
+        if scatter_plot in self.connected_plots:
+            self.connected_plots.remove(scatter_plot)
+
+class ScatterPlot:
+    """
+    A class to create scatter plots with color-coded diagnosis values
+    """
+    def __init__(self, xlabel, ylabel, title):
+        """
+        Initialize the ScatterPlot object with plot configuration
+        
+        Args:
+            xlabel (str): Column name for x-axis and x-axis label
+            ylabel (str): Column name for y-axis and y-axis label
+            title (str): Title for the plot
+        """
+        self.df = None
+        self._xlabel = None
+        self._ylabel = None
+        self._title = None
+        
+        # Use setters to initialize (this allows for future validation if needed)
+        self.xlabel = xlabel
+        self.ylabel = ylabel
+        self.title = title
+    
+    @property
+    def xlabel(self):
+        """
+        Getter for the x-axis label and column name
+        
+        Returns:
+            str: Current x-axis label
+        """
+        return self._xlabel
+    
+    @xlabel.setter
+    def xlabel(self, value):
+        """
+        Setter for the x-axis label - updates plot if data exists
+        
+        Args:
+            value (str): New x-axis label and column name
+        """
+        if value != self._xlabel:
+            self._xlabel = value
+            if self.df is not None:
+                print(f"X-axis updated to: {value}")
+                self.create_plot()
+    
+    @property
+    def ylabel(self):
+        """
+        Getter for the y-axis label and column name
+        
+        Returns:
+            str: Current y-axis label
+        """
+        return self._ylabel
+    
+    @ylabel.setter
+    def ylabel(self, value):
+        """
+        Setter for the y-axis label - updates plot if data exists
+        
+        Args:
+            value (str): New y-axis label and column name
+        """
+        if value != self._ylabel:
+            self._ylabel = value
+            if self.df is not None:
+                print(f"Y-axis updated to: {value}")
+                self.create_plot()
+    
+    @property
+    def title(self):
+        """
+        Getter for the plot title
+        
+        Returns:
+            str: Current plot title
+        """
+        return self._title
+    
+    @title.setter
+    def title(self, value):
+        """
+        Setter for the plot title - updates plot if data exists
+        
+        Args:
+            value (str): New plot title
+        """
+        if value != self._title:
+            self._title = value
+            if self.df is not None:
+                print(f"Title updated to: {value}")
+                self.create_plot()
+    
+    def update_data(self, df):
+        """
+        Update the plot with new data
+        
+        Args:
+            df (pandas.DataFrame): The new dataset
+        """
+        self.df = df
+        self.create_plot()
+    
+    def create_plot(self):
+        """
+        Create and display the scatter plot
+        """
+        if self.df is None:
+            print("No data available to plot")
+            return
+        
+        if self._xlabel not in self.df.columns:
+            print(f"Error: Column '{self._xlabel}' not found in dataset")
+            return
+            
+        if self._ylabel not in self.df.columns:
+            print(f"Error: Column '{self._ylabel}' not found in dataset")
+            return
+        
+        plt.figure(figsize=(10, 6))
+        
+        # Check if diagnosis column exists
+        if 'diagnosis' not in self.df.columns:
+            print("Warning: 'diagnosis' column not found. Plotting all points in blue.")
+            plt.scatter(self.df[self._xlabel], self.df[self._ylabel], 
+                       c='blue', alpha=0.6, label='All data')
+        else:
+            # Plot B (Benign) cases in blue
+            benign = self.df[self.df['diagnosis'] == 'B']
+            if not benign.empty:
+                plt.scatter(benign[self._xlabel], benign[self._ylabel], 
+                           c='blue', alpha=0.6, label='Benign (B)')
+            
+            # Plot M (Malignant) cases in red
+            malignant = self.df[self.df['diagnosis'] == 'M']
+            if not malignant.empty:
+                plt.scatter(malignant[self._xlabel], malignant[self._ylabel], 
+                           c='red', alpha=0.6, label='Malignant (M)')
+        
+        # Add labels and title
+        plt.xlabel(self._xlabel)
+        plt.ylabel(self._ylabel)
+        plt.title(self._title)
+        plt.legend()
+        plt.grid(True, alpha=0.3)
+        
+        # Show the plot
+        plt.tight_layout()
+        plt.show()
+
+# Example usage demonstrating the properties
+if __name__ == "__main__":
+    # Create a Table object and load the initial data
+    data_table = Table('breast-cancer-wisconsin.csv')
+    
+    # Create ScatterPlot objects
+    plot1 = ScatterPlot('radius_mean', 
+                       'fractal_dimension_mean', 
+                       'Breast Cancer Data: Radius Mean vs Fractal Dimension Mean')
+    
+    # Connect the plot to the table
+    print("Connecting plot to table...")
+    data_table.connect(plot1)
+    
+    # Demonstrate property usage - changing plot properties
+    print("\nChanging plot properties...")
+    plot1.xlabel = 'texture_mean'  # This will automatically update the plot
+    plot1.ylabel = 'perimeter_mean'  # This will automatically update the plot
+    plot1.title = 'Updated Plot: Texture Mean vs Perimeter Mean'  # This will update the plot
+    
+    # Demonstrate changing the file path (would load new data automatically)
+    print("\nDemonstrating path property...")
+    print(f"Current path: {data_table.path}")
+    
+    # Uncomment the line below to test with a different file
+    # data_table.path = 'new-breast-cancer-data.csv'  # This would automatically load and update plots
+    
+    print("Example completed. Properties allow dynamic updates to both data source and plot configuration.")
+~~~
