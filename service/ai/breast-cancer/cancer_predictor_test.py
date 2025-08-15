@@ -17,7 +17,6 @@ Usage:
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import precision_score, recall_score, f1_score
 
 from cancer_predictor import CancerPredictor
 
@@ -33,11 +32,12 @@ data = pd.read_csv("breast-cancer-wisconsin.csv")
 # Split the data into train and test sets
 train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
 
-# Save the train data to a temporary CSV file
+# Save the train and test data to temporary CSV files
 train_data.to_csv("breast-cancer-wisconsin_train.csv", index=False)
+test_data.to_csv("breast-cancer-wisconsin_test.csv", index=False)
 
 # Train the model using the train data
-predictor.train("breast-cancer-wisconsin_train.csv")
+predictor.train("breast-cancer-wisconsin_train.csv", "breast-cancer-wisconsin_test.csv")
 
 # Use the model
 ###############
@@ -51,26 +51,9 @@ for index, row in test_data.iterrows():
 
     # Make the prediction
     predicted_diagnosis = predictor.predict(
-        radius_mean, texture_mean, symmetry_mean, fractal_dimension_mean)
+    radius_mean, texture_mean, symmetry_mean, fractal_dimension_mean)
 
     # Print the result for each row
-    print(f"For a person with radius_mean {radius_mean}, texture_mean {texture_mean}, " +
-          f"symmetry_mean {symmetry_mean}, and fractal_dimension_mean {fractal_dimension_mean}:")
-
-# Evaluate the model
-####################
-
-# Collect predictions and true labels
-y_true = test_data['diagnosis'].apply(lambda x: 1 if x == 'M' else 0).tolist()
-y_pred = test_data.apply(lambda row: 1 if predictor.predict(row['radius_mean'],
-                         row['texture_mean'], row['symmetry_mean'],
-                         row['fractal_dimension_mean']) == 'M' else 0, axis=1).tolist()
-
-# Compute precision, recall, and F1 score
-precision = precision_score(y_true, y_pred)
-recall = recall_score(y_true, y_pred)
-f1 = f1_score(y_true, y_pred)
-
-print(f"Precision: {precision:.2f}")
-print(f"Recall: {recall:.2f}")
-print(f"F1 Score: {f1:.2f}")
+    print(f"For a person with radius_mean {radius_mean}, texture_mean {texture_mean}, "
+          f"symmetry_mean {symmetry_mean}, and fractal_dimension_mean {fractal_dimension_mean}")
+    print(f"True diagnosis: {row['diagnosis']}, Predicted diagnosis: {predicted_diagnosis}")

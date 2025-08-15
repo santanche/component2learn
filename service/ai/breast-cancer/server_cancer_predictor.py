@@ -20,7 +20,6 @@ Run this module to start the API server. Use the endpoints to train the model an
 """
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
-from pydantic import BaseModel
 import uvicorn
 
 # Import the CancerPredictor class
@@ -34,18 +33,18 @@ predictor = CancerPredictor()
 # Global variable to store training status
 training_status = "Not started"
 
-def train_model(file_path: str):
+def train_model(train_path: str, test_path: str):
     global training_status
     training_status = "In progress"
     try:
-        predictor.train(file_path)
+        predictor.train(train_path, test_path)
         training_status = "Completed"
     except Exception as e:
         training_status = f"Failed: {str(e)}"
 
 @app.post("/train")
-async def train(file_path: str, background_tasks: BackgroundTasks):
-    background_tasks.add_task(train_model, file_path)
+async def train(train_path: str, test_path: str, background_tasks: BackgroundTasks):
+    background_tasks.add_task(train_model, train_path, test_path)
     return {"message": "Training started in the background"}
 
 @app.get("/training_status")

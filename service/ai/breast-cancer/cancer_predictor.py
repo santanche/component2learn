@@ -8,9 +8,7 @@ Classes:
     CancerPredictor: Handles training on a CSV dataset and making predictions
     based on input features.
 """
-
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
@@ -25,29 +23,37 @@ class CancerPredictor:
         self.model = LogisticRegression()
         self.le_diagnosis = LabelEncoder()
 
-    def train(self, csv_file_path):
+    def train(self, csv_train, csv_test):
         """
         Trains the logistic regression model using a CSV file containing breast cancer data.
         The CSV must include columns: 'radius_mean', 'texture_mean', 'symmetry_mean',
         'fractal_dimension_mean', and 'diagnosis'.
         Prints the model accuracy after training.
         """
-        # Load the data
-        data = pd.read_csv(csv_file_path)
+        # Load the train data
+        data_train = pd.read_csv(csv_train)
 
         # Encode categorical variables
-        data['diagnosis'] = self.le_diagnosis.fit_transform(data['diagnosis'])
+        data_train['diagnosis'] = self.le_diagnosis.fit_transform(data_train['diagnosis'])
 
         # Split features and target
-        X = data[['radius_mean', 'texture_mean', 'symmetry_mean', 'fractal_dimension_mean']]
-
-        y = data['diagnosis']
-
-        # Split data into train and test sets
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        X_train = data_train[
+            ['radius_mean', 'texture_mean', 'symmetry_mean', 'fractal_dimension_mean']]
+        y_train = data_train['diagnosis']
 
         # Train the model
         self.model.fit(X_train, y_train)
+
+        # Load the test data
+        data_test = pd.read_csv(csv_test)
+
+        # Encode categorical variables
+        data_test['diagnosis'] = self.le_diagnosis.fit_transform(data_test['diagnosis'])
+
+        # Split features and target
+        X_test = data_test[
+            ['radius_mean', 'texture_mean', 'symmetry_mean', 'fractal_dimension_mean']]
+        y_test = data_test['diagnosis']
 
         # Evaluate the model
         y_pred = self.model.predict(X_test)
