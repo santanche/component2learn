@@ -31,7 +31,7 @@ Com o que você conhece do Orange, prepare um workflow ilustrando algum tipo de 
 
 # Tarefa 2 - Workflow para Recomendação de Zombie Meals
 
-Considere o segundo workflow `zombie-meals-02.ows` que usa o recurso de `Feature Constructor` para criar uma coluna `recommended` que indica se o produto será recomendado (`Y`es ou `N`o). Produtos são recomendados se o seu rating for maior ou igual a 50. Foi usado o seguinte tipo de expressão no `Feature Constructor`:
+Considere o segundo workflow `zombie-meals-02.ows` que usa o recurso de `Formula` para criar uma coluna `recommended` que indica se o produto será recomendado (`Y`es ou `N`o). Produtos são recomendados se o seu rating for maior ou igual a 50. Foi usado o seguinte tipo de expressão no `Formula`:
 
 ~~~
 "y" if rating >= 50 else "n"
