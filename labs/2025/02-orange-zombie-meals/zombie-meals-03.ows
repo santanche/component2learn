@@ -40,7 +40,7 @@
 		<arrow id="1" start="(221.0, 525.8181818181818)" end="(173.72727272727275, 383.6363636363636)" fill="#C1272D" />
 		<text id="2" type="text/plain" rect="(526.5454545454543, 105.45454545454533, 322.0, 73.0)" font-family="Sans Serif" font-size="16">Defines the fields used to predict (meals compounds) and the field to be predicted (recommend).</text>
 		<arrow id="3" start="(648.9999999999998, 176.90909090909076)" end="(568.0909090909088, 289.2727272727271)" fill="#C1272D" />
-		<text id="4" type="text/plain" rect="(792.090909090909, 479.90909090909076, 286.0, 65.0)" font-family="Sans Serif" font-size="16">Splits the training dataset (up) from the validation dataset (straight).</text>
+		<text id="4" type="text/plain" rect="(792.090909090909, 479.90909090909076, 286.0, 65.0)" font-family="Sans Serif" font-size="16">Splits the training dataset (up) from the test dataset (straight).</text>
 		<arrow id="5" start="(927.0909090909092, 472.90909090909076)" end="(819.3636363636366, 376.4545454545453)" fill="#C1272D" />
 		<text id="6" type="text/plain" rect="(1112.0909090909092, 75.90909090909076, 273.0, 66.0)" font-family="Sans Serif" font-size="16">Support Vector Machine (SVM) is the method to predict the recommendation.</text>
 		<arrow id="7" start="(1106.0909090909092, 126.90909090909076)" end="(1021.0909090909092, 173.90909090909076)" fill="#C1272D" />
@@ -88,7 +88,7 @@ SwKGlGgcSwyGlIwEdHlwZZRLAYaUaBxLDYaUjAlyZWNvbW1lbmSUSwGGlGhHSwCGlHVK/v///4aU
 aAdLAXVoSn2UKGi5SwFo4EsBaL9LAmjCSwJoxUsCaMhLAmjLSwJozksCaNFLAmjUSwJo10sCaNpL
 Ami8SwJo3UsCaLZLAmjjSwF1aEx9lGizSwNzdWJldS4=
 </properties>
-		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06y\x00\x00\x01\xae\x00\x00\x07\x7f\x00\x00\x03\x81\x00\x00\x06y\x00\x00\x01\xd3\x00\x00\x07\x7f\x00\x00\x03\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x06y\x00\x00\x01\xd3\x00\x00\x07\x7f\x00\x00\x03\x81', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
 		<properties node_id="3" format="pickle">gASVrQIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
 lENCAdnQywADAAAAAAe+AAABAwAADmcAAAPoAAAHvgAAASgAAA5nAAAD6AAAAAAAAAAAB4AAAAe+
 AAABKAAADmcAAAPolIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
