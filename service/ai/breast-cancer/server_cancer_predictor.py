@@ -20,6 +20,8 @@ Run this module to start the API server. Use the endpoints to train the model an
 """
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi.responses import RedirectResponse
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 # Import the CancerPredictor class
@@ -27,11 +29,24 @@ from cancer_predictor import CancerPredictor
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Create a global instance of CancerPredictor
 predictor = CancerPredictor()
 
 # Global variable to store training status
 training_status = "Not started"
+
+# Redirect root to /docs
+@app.get("/")
+async def redirect_to_docs():
+    return RedirectResponse(url="/docs")
 
 def train_model(train_path: str, test_path: str):
     global training_status
