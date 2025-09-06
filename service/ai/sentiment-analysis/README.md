@@ -1,26 +1,31 @@
 # Sentiment Analysis Server
 
+Inside the root folder `sentiment-analysis`:
+
 ## Setting up the Environment
 
 These are the steps to set the environment for the first time.
 
-## Creating a Virtual Environment for Django
+### Creating a Virtual Environment for Django
 
-Inside the root folder `sentiment-analysis`:
 ~~~
 python3 -m venv .venv
 ~~~
 
-## Running a Virtual Environment for Django
+### Running a Virtual Environment for Django
 
-Inside the root folder `sentiment-analysis`:
 ~~~
 source .venv/bin/activate
 ~~~
 
-## Requirements Setup
+### Requirements Setup
 
-Inside the root folder `/`:
 ~~~
 pip install -r requirements.txt
+~~~
+
+## Running the FastAPI Server
+
+~~~
+fastapi dev server_sentiment_analysis.py
 ~~~
