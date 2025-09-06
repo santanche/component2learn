@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 393.31248 395.95359"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="light-green.svg"
+   width="117.99374"
+   height="118.78608"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.0750769"
+     inkscape:cx="199.51068"
+     inkscape:cy="200.23354"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="a">
+      <stop
+         stop-color="#db0e33"
+         offset="0"
+         id="stop1" />
+      <stop
+         stop-color="#fc1d1d"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="b"
+       x1="213.83"
+       x2="214.59"
+       y1="183.48"
+       y2="463.47"
+       gradientTransform="matrix(1.5539,0,0,0.64354,-1.0179,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#fff"
+         stop-opacity=".69072"
+         offset="0"
+         id="stop3" />
+      <stop
+         stop-color="#fff"
+         stop-opacity="0"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="d"
+       x2="0"
+       y1="506.29001"
+       y2="466.28"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#a" />
+    <linearGradient
+       id="c"
+       x2="0"
+       y1="469.5"
+       y2="505.07999"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#a" />
+  </defs>
+  <g
+     transform="translate(-136.67604,-99.077277)"
+     id="g5">
+    <path
+       transform="matrix(9.1612,0,0,9.1612,-4460.6,-4165)"
+       d="m 544.07,487.06 a 20.784,20.784 0 1 1 -41.567,0 20.784,20.784 0 1 1 41.567,0 z"
+       fill="url(#d)"
+       stroke="url(#c)"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.3644"
+       id="path4"
+       style="fill:url(#d);stroke:url(#c)" />
+    <path
+       d="m 471.57,246.89 c 44.367,-0.96679 -12.4,-123.15 -135.68,-123.8 -134.56,-0.68712 -162.1,110.96 -140.72,113 0,0 36.864,5.0626 71.94,14.856 56.473,15.931 125.55,-13.069 152.77,-17.284 30.342,-4.6979 47.373,15.392 51.692,13.233 z"
+       fill="url(#b)"
+       fill-rule="evenodd"
+       opacity="0.9"
+       id="path5"
+       style="fill:url(#b)" />
+  </g>
+</svg>

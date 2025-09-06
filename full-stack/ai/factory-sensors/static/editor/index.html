@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Playground Editor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mundorum/collections@0.3.0/full.min.css">
+  <script type="module" src="/static/editor/js/editor-rest.js"></script>
+  <script type="module">
+    import { EditorPg } from '/static/editor/js/editor-pg.js'
+    window.editorPg = EditorPg.i
+  </script>
+</head>
+<body onload="editorPg.start()">
+  <oid-sphere assets="/static/assets/" stydefault="https://cdn.jsdelivr.net/npm/@mundorum/collections@0.3.0/full.min.css" global></oid-sphere>
+  <div style="width:100%;height:100vh;display:flex;flex-direction:column">
+    <div style="width:100%">
+    <h2>
+      <oid-sphere id="control" stylesheets="https://cdn.jsdelivr.net/npm/@mundorum/collections@0.3.0/" 
+                  style="display: flex; align-items: center; gap: 20px;">
+        Playground Editor
+        <file-oid label="Composition" publish="dispatch~file/loaded" style="width:200px"></file-oid>
+        <select id="oid-list" class="btn btn-secondary">
+          <option value="" selected>Select an id</option>
+        </select>
+        <button-oid label="Render" publish="click~control/render"></button-oid>
+        <button-oid label="Code" publish="click~control/code"></button-oid>
+        <button-oid label="Clear" publish="click~control/clear"></button-oid>
+        <button-oid label="Download Code" publish="click~control/download/code"></button-oid>
+        <button-oid label="Download Page" publish="click~control/download/page"></button-oid>
+      </oid-sphere>
+    </h2>
+    </div>
+    
+    <div style="height:100%">
+    <split-pane-oid>
+      <div style="width:100%;height:100%" slot="side-a">
+        <split-pane-oid split="vertical">
+          <div id="pg-tree" slot="side-a"
+               style="width:100%;height:100%;padding:5px;border-style:solid;border-width:1px">
+            <oid-sphere id="control">
+              <graph-oid layout="vh"
+                         subscribe="tree/node~node/add;tree/edge~edge/add;tree/clear~graph/clear"></graph-oid>
+            </oid-sphere>
+          </div>
+          <textarea id="pg-editor" slot="side-b" class="code"
+                    style="width:100%;height:100%"></textarea>
+        </split-pane-oid>
+      </div>
+      <div style="width:100%;height:100%" slot="side-b">
+        <split-pane-oid split="vertical" proportion="75%">
+          <div id="pg-render" slot="side-a"
+               style="width:100%;height:100%;padding:5px;border-style:solid;border-width:1px">
+          </div>
+          <div id="pg-bus" style="width:100%;height:100%" slot="side-b">
+            <oid-sphere id="control">
+              <console-oid class="code" prompt="" subscribe="control/monitor~display">
+              </console-oid>
+            </oid-sphere>
+          </div>
+        </split-pane-oid>
+      </div>
+    </split-pane-oid>
+  </div>
+  </div>
+</body>
+</html>

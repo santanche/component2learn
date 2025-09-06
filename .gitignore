@@ -42,3 +42,4 @@ node_modules
 ### Python ###
 *.pyc
 __pycache__/
+.venv/

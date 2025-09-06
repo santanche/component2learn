@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 18.639 63.20567"
+   id="svg25"
+   sodipodi:docname="thermometer-c.svg"
+   width="55.917"
+   height="189.617"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs25" />
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="9.4169197"
+     inkscape:cx="-11.787294"
+     inkscape:cy="32.335414"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <g
+     transform="matrix(1.0355,0,0,1.0355,-452.5135,-362.51023)"
+     id="g17">
+    <rect
+       x="442"
+       y="356.23001"
+       width="8"
+       height="46.671001"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="#000000"
+       stroke-width="2"
+       id="rect9" />
+    <ellipse
+       cx="446"
+       cy="401.91"
+       rx="8"
+       ry="8.2110996"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="round"
+       stroke-width="2"
+       style="paint-order:normal"
+       id="ellipse9" />
+    <ellipse
+       cx="446"
+       cy="355.23001"
+       rx="4"
+       ry="4.1476998"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="round"
+       stroke-width="2"
+       style="paint-order:normal"
+       id="ellipse10" />
+    <rect
+       x="443"
+       y="355.23001"
+       width="6"
+       height="44.535"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="rect10" />
+    <rect
+       x="444"
+       y="360.26999"
+       width="4"
+       height="41.633999"
+       fill="#ff0000"
+       fill-rule="evenodd"
+       id="rect11" />
+    <path
+       d="m 441,357.01 h 5.5"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.3512px"
+       id="path11" />
+    <path
+       d="m 441,368.37 h 5.5"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.3512px"
+       id="path12" />
+    <path
+       d="m 441,379.72 h 5.5"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.3512px"
+       id="path13" />
+    <path
+       d="m 441,362.69 h 4.25"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.1915px"
+       id="path14" />
+    <path
+       d="m 441,374.04 h 4.25"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.1915px"
+       id="path15" />
+    <path
+       d="m 441,385.4 h 4.25"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.1915px"
+       id="path16" />
+    <path
+       d="m 441,391.08 h 5.5"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.3512px"
+       id="path17" />
+    <circle
+       cx="446"
+       cy="401.91"
+       r="6"
+       fill="#ff0000"
+       style="paint-order:normal"
+       id="circle17" />
+  </g>
+</svg>

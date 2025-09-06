@@ -1,0 +1,40 @@
+<div style="width: 100%; height: 60%; background-color: lightgrey; text-align: center">
+  <div style="font-size:larger;font-weight: bold">Factory</div>
+  <span id="engine" style="width: 45%; display: inline-block; vertical-align: middle">
+    <image-oid source="assets:images/di-pietro-engine.gif" publish="mouseleave~thermo/low;mouseenter~thermo/medium;click~thermo/high/alert">
+    </image-oid>
+  </span> 
+  <span id="cooler" style="width: 45%; display: inline-block; vertical-align: middle">
+    <state-pane-oid initial="off" subscribe="predictor/train~last">
+      <image-oid id="off" source="assets:images/evaporative-cooling.png"></image-oid>
+      <image-oid id="on" source="assets:images/evaporative-cooling.gif"></image-oid>
+    </state-pane-oid>
+  </span>
+</div>
+<div style="width: 100%; height: 35%; background-color: grey; text-align: center">
+  <div style="font-size: larger; font-weight: bold;">Control Panel</div>
+  <span id="alert" style="width: 20%; display: inline-block; vertical-align: middle">
+    <state-pane-oid initial="N" subscribe="update/alert~state">
+      <image-oid id="N" source="assets:images/light-green.svg"></image-oid>
+      <image-oid id="P" source="assets:images/light-red.svg"></image-oid>
+    </state-pane-oid>
+  </span>
+  <span id="train" style="width: 20%; display: inline-block; vertical-align: middle">
+    <switch-oid publish="on~predictor/train">
+    </switch-oid>
+  </span>
+  <span id="temperature" style="width: 20%; display: inline-block; vertical-align: middle">
+    <div style="font-size: larger; font-weight: bold;">Temperature</div>
+    <slider-oid min="40" max="120" value="40" index publish="change~predictor/temperature">
+    </slider-oid>
+  </span>
+  <span id="pressure" style="width: 20%; display: inline-block; vertical-align: middle">
+    <div style="font-size: larger; font-weight: bold;">Pressure</div>
+    <slider-oid min="40" max="200" value="40" index publish="change~predictor/pressure">
+    </slider-oid>
+  </span>
+  <rest-oid custom="factory-predictor"
+            subscribe="predictor/train~post/train;predictor/temperature~post/temperature;predictor/pressure~post/pressure"
+            publish="dispatch~update/alert">
+  </rest-oid>
+</div>
